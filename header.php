@@ -17,9 +17,6 @@
     <!--== Bootstrap Grid -->
     <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
 
-    <!--== FontAwesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-
     <!--== Plugins -->
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
 
