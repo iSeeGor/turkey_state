@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+// Mixins
+@import 'mixins';
+
+// Social Colors.scss
+@import 'vars-social-colors';
+
+// Main Varriables
+@import 'vars-main';
+
+// Normalize 
+@import 'normalize';
+
+// Fonts
+@import 'fonts';
+
+// Typography
+@import 'typography';
+
+// Elements
+@import 'elements';
+
+// Forms
+@import 'forms';
+
+// Header
+@import 'header';
+
+// Category layout
+@import 'layout/category-layout';
+
+// Sections All
+@import 'section_about';
+
+// Footer
+@import 'footer';
+
+

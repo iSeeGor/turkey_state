@@ -1,0 +1,123 @@
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	background: #fff;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+.container__no-padding {
+	padding-left: 0;
+	padding-right: 0; 
+}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+  
+	> .col,
+	> [class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+
+/* theme icons */
+
+.li-icon {
+	content: '';
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	// background-image: url('');
+	background-repeat: no-repeat;
+	background-size: 15px;
+	transition: background-image .2s ease;
+	cursor: pointer;
+}
+
+.li-youtube_w {
+	background-image: url('../images/icons/youtube_w.svg');
+}
+
+.li-youtube:hover {
+	background-image: url('../images/icons/youtube_h.svg');
+}
+
+.li-instagram_w {
+	background-image: url('../images/icons/instagram_w.svg');
+}
+
+.li-instagram:hover{
+	background-image: url('../images/icons/instagram_h.svg');
+}
+
+.li-facebook_w {
+	background-image: url('../images/icons/facebook_w.svg');
+}
+
+.li-facebook,
+.li-facebook_w,
+.li-facebook_h {
+	background-size: 15px 17px;
+}
+
+.li-facebook:hover {
+	background-image: url('../images/icons/facebook_h.svg');
+}

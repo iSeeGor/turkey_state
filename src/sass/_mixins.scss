@@ -1,0 +1,23 @@
+
+// Mixins
+// ====================================================================
+
+@mixin noto_normal{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin noto_bold{
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+
+@mixin open_normal{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+@mixin open_bold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}

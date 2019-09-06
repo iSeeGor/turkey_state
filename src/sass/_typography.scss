@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+}
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $font_color;
+	@include noto_normal;
+	font-size: 1.4rem;
+	line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	@include noto_bold;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 3rem;
+	letter-spacing: 0.075rem;
+	margin-bottom: 22px;
+}
+
+p {
+	letter-spacing: 0.035rem;
+	margin-bottom: 2.4rem;
+	line-height: 1.72;
+}
+
+a {
+	color: $font_color;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code, kbd, tt, var {
+	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+abbr, acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark, ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+a {
+	color: $font_color;
+}
+
+a:active,
+a:visited {
+	color: $font_color;
+}
