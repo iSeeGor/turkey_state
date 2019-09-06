@@ -2,7 +2,7 @@
 # Typography
 --------------------------------------------------------------*/
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body,
@@ -11,35 +11,62 @@ input,
 select,
 optgroup,
 textarea {
-	color: $font_color;
-	@include noto_normal;
-	font-size: 1.4rem;
-	line-height: 1.65;
+	color: $font_main;
+	@include ubuntu;
+	font-size: 1.6rem;
+	line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
-	@include noto_bold;
-	margin-top: 0;
+	@include ubuntuBold;
+	line-height: 1.14;
+	margin: 0;
+	margin-bottom: 2rem;
+}
+
+h1 {
+	font-size: 3.4rem;
 }
 
 h2 {
-	font-size: 3rem;
-	letter-spacing: 0.075rem;
-	margin-bottom: 22px;
+	font-size: 2.8rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+}
+
+h4 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1.8rem;
+}
+
+h6 {
+	font-size: 1.6rem;
 }
 
 p {
-	letter-spacing: 0.035rem;
-	margin-bottom: 2.4rem;
-	line-height: 1.72;
+	margin: 0;
+	margin-bottom: 2.4rem;	
 }
 
 a {
 	color: $font_color;
 }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
 	font-style: italic;
 }
 
@@ -63,18 +90,23 @@ pre {
 	padding: 1.6em;
 }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
 
-abbr, acronym {
+abbr,
+acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark, ins {
+mark,
+ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
