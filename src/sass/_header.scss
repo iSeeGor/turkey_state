@@ -104,6 +104,7 @@
         &::after {
             opacity: 1;
             transform: translateX(0);
+
         }
     }
 
@@ -140,9 +141,8 @@
     border-radius: 4px;   
     opacity: 0;
     visibility: hidden;
-    transition: transform .3s ease,
-                opacity .3s ease;
     z-index: 1;
+    @include transition;
 
     &.dropdown-menu {
         transform: translateY(30px);
@@ -173,7 +173,7 @@
     &.dropdown-submenu {
         top: -1px;
         left: -2px;
-        transform: translateX(105%);
+        transform: translateX(108%);
     }
 
     .main-menu__item {
