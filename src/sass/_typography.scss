@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
 	clear: both;
-	@include ubuntuBold;
+	@include ubuntu_bold;
 	line-height: 1.14;
 	margin: 0;
 	margin-bottom: 2rem;
@@ -60,7 +60,7 @@ p {
 }
 
 a {
-	color: $font_color;
+	color: $font_main;
 }
 
 dfn,
@@ -116,10 +116,11 @@ big {
 }
 
 a {
-	color: $font_color;
+	color: $font_main;
+	text-decoration: none;
 }
 
 a:active,
 a:visited {
-	color: $font_color;
+	color: $font_main;
 }

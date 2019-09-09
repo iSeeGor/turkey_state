@@ -1,23 +1,22 @@
 
-// // Nice  Select
-// $(function() {
+$(function() {
 
 //   preventDefaultLinks();
-//   selectCustom();
+  themeSelect();
 //   filterTabsToggle();
 //   categoryLinksToggle();
 //   bgLinesResize();
 //   hamburgerToggle();
  
-// });
+});
 
 
-// // Custom Select's
-// const selectCustom = () => {
+// Custom Select's
+const themeSelect = () => {
   
-//   $('select').niceSelect();
+  $('select').niceSelect();
 
-// }
+}
 
 
 // // Prevent Defult for all 'a' tag's

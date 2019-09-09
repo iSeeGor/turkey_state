@@ -1,3 +1,225 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.site__header {
+    padding: 5px 0;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Logo
+ ------------------------------------------------------------*/
+
+.nav__brand {
+    max-width: 100px;
+    margin-right: 70px;
+}
+
+.nav__brand-image {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.nav__brand-title  {
+    margin-bottom: 0;
+    font-size: 1.4rem;
+    color: $brand-color;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Menu
+ ------------------------------------------------------------*/
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.main-menu {
+    padding: 10px 0;
+    display: flex;
+    flex: 0 0 820px;
+    max-width: 820px;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.main-menu__item {
+    position: relative;
+
+    &:hover {
+        .main-menu__link{
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.main-menu__link {
+    position: relative;
+    padding: 14px 0;
+    display: block;
+    font-size: 1.3rem;
+    color: #1b253b;
+    @include ubuntu_bold;  
+    text-transform: uppercase;
+    @include transition(color);
+
+    &::before {
+        content: attr(data-text);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 0;
+        overflow: hidden;
+        color: $font-blue;
+        @include transition(width, 0.4s);
+        white-space: nowrap;
+        transform: translateY(-50.5%);
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 6px;
+        width: 31px;
+        height: 3px;
+        opacity: 0;
+        transform: translateX(-10px);
+        background-color: $font-blue;
+        @include transition;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+}
+
+.main-menu__link_active {
+    color: $font-blue;
+
+    &::after {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    &:active,
+    &:visited {
+        color: $font-blue;
+    }
+}
+
+.main-menu__item.item__has-dropdown:hover > .dropdown-menu,
+.main-menu__item.item__has-dropdown:hover > .dropdown-submenu  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-menu__dropdown {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;   
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .3s ease,
+                opacity .3s ease;
+    z-index: 1;
+
+    &.dropdown-menu {
+        transform: translateY(30px);
+
+        > .main-menu__item {
+            &::after {
+                content: '';
+                width: 6px;
+                height: 11px;
+                display: block;
+                position: absolute;
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url('../images/icons/arrow.svg');
+                background-position: center center;
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                &::after {
+                    background-image: url('../images/icons/arrow_hover.svg');
+                }
+            }
+        }
+    }
+    
+    &.dropdown-submenu {
+        top: -1px;
+        left: -2px;
+        transform: translateX(105%);
+    }
+
+    .main-menu__item {
+        width: 334px;
+        border-bottom: 1px solid #dcdcdc;
+
+        &:last-child {
+            border: none;
+        }
+
+        &:hover {
+            background-color: #e4f5ff;
+            
+            > .main-menu__link {
+                color: $font-blue;
+                transform: translateX(12px);
+
+            }
+        }
+
+    }
+
+    .main-menu__link {
+        font-size: 1.4rem;
+        padding: 11px 20px 13px;
+        font-weight: 400;
+        text-transform: none;
+        transition: transform .3s ease,
+                    color .3s ease;
+
+
+        &::after,
+        &::before {
+            content: none;
+        }
+
+    }
+}
+
+
+
+.main-menu__item.item__has-dropdown:hover > .dropdown-menu {
+    transform: translateY(0);
+}
+
+.main-menu__item.item__has-dropdown:hover > .dropdown-submenu {
+    transform: translateX(100%);
+}
+
