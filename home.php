@@ -5,7 +5,6 @@
                 <div class="col-12">
                     <h1>Turkey State</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, veniam?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error, atque!</p>
                 </div>
             </div>
         </div>        
