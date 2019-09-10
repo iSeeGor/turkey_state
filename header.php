@@ -90,9 +90,9 @@
                     </li>
                 </ul>
 
-                <div class="nav__search">
+                <form action="#" class="nav__search-form">
                     <a href="#" class="nav__search-btn">
-                        <svg  class="nav__search-icon icon-search" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450 450" xml:space="preserve" width="12" height="12">
+                        <svg  class="nav__search-icon nav__icon" width="12" height="12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 450 450" xml:space="preserve" >
                             <path class="svg-path" d="M464.5,412.8l-97.9-97.9c23.6-34.1,35.4-72,35.4-113.9c0-27.2-5.3-53.2-15.9-78.1
                                 c-10.6-24.8-24.8-46.3-42.8-64.2s-39.4-32.3-64.2-42.8C254.2,5.3,228.2,0,201,0c-27.2,0-53.2,5.3-78.1,15.8
                                 C98.1,26.4,76.7,40.7,58.7,58.7c-18,18-32.3,39.4-42.8,64.2C5.3,147.8,0,173.8,0,201c0,27.2,5.3,53.2,15.8,78.1
@@ -101,8 +101,23 @@
                                 M291.4,291.4c-25,25-55.1,37.5-90.4,37.5c-35.2,0-65.3-12.5-90.4-37.5c-25-25-37.5-55.1-37.5-90.4c0-35.2,12.5-65.3,37.5-90.4
                                 c25-25,55.1-37.5,90.4-37.5c35.2,0,65.3,12.5,90.4,37.5c25,25,37.5,55.1,37.5,90.4C328.9,236.2,316.4,266.3,291.4,291.4z"/>
                         </svg>
+
+                        <svg class="nav__close-icon nav__icon" version="1.1" width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 24.8 24.8" xml:space="preserve">
+
+                            <path d="M1.5,23.3c-0.8-0.8-0.8-2.1,0-2.9L20.4,1.5c0.8-0.8,2.1-0.8,2.9,0c0.8,0.8,0.8,2.1,0,2.9L4.4,23.3
+                                C3.6,24.1,2.3,24.1,1.5,23.3z M1.5,20.4L20.4,1.5c0.8-0.8,2.1-0.8,2.9,0c0.8,0.8,0.8,2.1,0,2.9L4.4,23.3"/>
+                            <path d="M20.4,23.3L1.5,4.3c-0.8-0.8-0.8-2.1,0-2.9s2.1-0.8,2.9,0l18.8,18.9c0.8,0.8,0.8,2.1,0,2.9
+                                C22.4,24.1,21.1,24.1,20.4,23.3z M20.4,23.3L1.5,4.3c-0.8-0.8-0.8-2.1,0-2.9s2.1-0.8,2.9,0l18.8,18.9"/>
+                        </svg>
                     </a>
-                </div>
+
+                    <div class="nav__search-collaps nav__search-collaps_disabled">
+                        <div class="nav__search-area nav__search-area_disabled">
+                            <input type="search" class="nav__search-input">
+                        </div>
+                    </div>
+                </form>
 
                 <div class="nav__wishlist">
                     <a href="#" class="nav__wishlist-btn">

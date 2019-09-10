@@ -3,6 +3,7 @@ $(function() {
 
 //   preventDefaultLinks();
   themeSelect();
+  searchCollaps();
 //   filterTabsToggle();
 //   categoryLinksToggle();
 //   bgLinesResize();
@@ -16,6 +17,45 @@ const themeSelect = () => {
   
   $('select').niceSelect();
 
+}
+
+
+// Header Search 
+
+const searchCollaps = () => {
+
+  let searchBtn = document.querySelector('.nav__search-btn');
+  let searchCollaps = document.querySelector('.nav__search-collaps');
+  let searchArea = document.querySelector('.nav__search-area');
+  let serchIcon = document.querySelector('.nav__search-icon');
+  let closeIcon = document.querySelector('.nav__close-icon');
+
+
+  searchBtn.addEventListener('click', (e) => {
+    
+    // console.log(searchBtn);
+    // console.log(searchCollaps.classList.value);
+    // console.log(searchArea);
+
+    if (searchCollaps.classList.contains('nav__search-collaps_disabled')){
+
+        searchCollaps.classList.remove('nav__search-collaps_disabled');
+        searchArea.classList.remove('nav__search-area_disabled');
+        serchIcon.style = 'opacity: 0';
+        closeIcon.style = 'opacity: 1';
+     
+    } else {
+
+        searchCollaps.classList.add('nav__search-collaps_disabled');
+        searchArea.classList.add('nav__search-area_disabled');
+        serchIcon.style = 'opacity: 1';
+        closeIcon.style = 'opacity: 0';
+
+    }
+
+    e.preventDefault();   
+  })
+  
 }
 
 
