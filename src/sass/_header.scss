@@ -1,12 +1,19 @@
 /*--------------------------------------------------------------
-# Header
+# Header Nav
 --------------------------------------------------------------*/
+
+.site__header {
+    position: absolute;
+    width: 100%;
+    background: white;
+}
 
 .nav {
     display: flex;
     flex-wrap: wrap;
-    // align-items: center;
     padding-top: 5px;
+    position: relative;
+    z-index: 1;
 }
 
 /* Logo
@@ -19,7 +26,7 @@
 
 .nav__brand-image {
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 11px;
 }
 
 .nav__brand-title  {
@@ -28,6 +35,7 @@
     color: $brand_color;
     font-weight: normal;
     text-transform: uppercase;
+    background-color: #fff;
 }
 
 /* Menu
@@ -136,6 +144,7 @@
     visibility: hidden;
     z-index: 1;
     @include transition;
+    background: #fff;
 
     &.dropdown-menu {
         transform: translateY(30px);
@@ -229,7 +238,7 @@
     width: 41px;
     display: block;
     border-radius: 50%;
-    border: 1px solid #a5a7ae;
+    border: 1px solid #e7e8ea;
     text-align: center;
     position: relative;
     z-index: 2;
@@ -294,23 +303,157 @@
     width: 100%;
     padding: 10px 40px 10px 30px;
     border-radius: 30px;
-    border: 1px solid #a5a7ae;
+    border: 1px solid #e7e8ea;
 }
 
 .nav__wishlist {
+    position: relative;
     flex: 1 1 auto;
     text-align: center;
     padding-right: 8px;
     margin: auto;
     transform: translateY(-4px);
 
-    &:hover .nav__wishlist-icon {
-        opacity: 1;
-    }
 }
 
 .nav__wishlist-icon {
     fill: #ff6d7e;
-    opacity: 0.5;
+    opacity: 1;
     @include transition;
+}
+
+.nav__wishlist-btn_disabled {
+    opacity: 0.5;
+}
+
+.nav__wishlist-count {
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    @include ubuntu_medium;
+    text-align: center;
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #ff6d7e;
+    top: 4px;
+    right: 3px;
+
+}
+
+/*--------------------------------------------------------------
+# Header Bottom
+--------------------------------------------------------------*/
+
+.head-meta__row {
+    display: flex;
+    margin-top: -4px;
+    border-top: 1px solid $border_color;
+    padding: 7px 0;
+}
+
+.head-meta__item {
+    position: relative;
+    color: $font_gray;
+    letter-spacing: 0.33px;
+}
+
+.head-meta__phone-list {
+    position: relative;
+    padding-right: 45px;
+    
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 4px;
+        height: 33px;
+        width: 1px;
+        display: block;
+        background-color: $border_color;
+    }
+}
+
+.head-meta__select {
+    padding: 10px 22px 0;
+    font-size: 13px;
+    border: 0;    
+}
+
+.head-meta__phone-select {
+    padding: 10px 28px 0 22px;
+    margin-left: -23px;
+    min-width: 186px;
+
+    &:after {
+        border-top-color: #40b5f8;
+    }
+
+
+    .option {
+        padding: 0 28px 0 22px;
+    }
+}
+
+.head-meta__email {
+    padding: 5px 47px;
+    margin-right: 57px;
+}
+
+.head-meta__email-link {
+    color: $font_gray;
+    font-size: 1.3rem;
+
+    &:active, &:visited {
+        color: $font_gray;
+    }
+}
+
+.head-meta__social-media {
+    padding: 8px 17px 4px 20px;
+}
+
+.social-media__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-media__item {
+    margin: 0 19px;
+}
+
+.social-media__link {
+    vertical-align: baseline;
+    @include transition(opacity);
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.social-media__icon {
+    fill: $font_green;
+}
+
+.head-meta__call-btn {
+    margin-right: 10px;
+}
+
+.head-meta__language, 
+.head-meta__currency {
+    .current {
+        @include ubuntu_bold;
+    }
+
+    .option {
+        padding: 0 27px 0 22px;
+        min-height: 28px;
+        line-height: 28px;
+    }
+
+    .list {
+        padding: 5px 0 10px; 
+    } 
 }

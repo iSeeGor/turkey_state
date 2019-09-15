@@ -339,6 +339,13 @@ template {
 
 @font-face {
   font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Medium.eot");
+  src: local("Ubuntu Medium"), local("Ubuntu-Medium"), url("../fonts/Ubuntu-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Medium.woff") format("woff"), url("../fonts/Ubuntu-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu-Bold.eot");
   src: local("Ubuntu Bold"), local("Ubuntu-Bold"), url("../fonts/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu-Bold.woff") format("woff"), url("../fonts/Ubuntu-Bold.ttf") format("truetype");
   font-weight: bold;
@@ -358,7 +365,7 @@ optgroup,
 textarea {
   color: #515460;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 1.6rem;
   line-height: 1.5; }
 
@@ -370,7 +377,7 @@ h5,
 h6 {
   clear: both;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.14;
   margin: 0;
   margin-bottom: 2rem; }
@@ -517,6 +524,30 @@ table {
     padding-right: 0;
     padding-left: 0; }
 
+.btn {
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: border-radius 0.4s ease;
+  transition: border-radius 0.4s ease; }
+  .btn:hover {
+    border-radius: 30px; }
+
+.pure-green__btn {
+  height: 36px;
+  line-height: 34px;
+  width: 153px;
+  color: #03ce77;
+  background: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 0.28px;
+  border: 1px solid #03ce77; }
+  .pure-green__btn:visited, .pure-green__btn:active {
+    color: #03ce77; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -598,15 +629,22 @@ textarea {
   width: 100%; }
 
 /*--------------------------------------------------------------
-# Header
+# Header Nav
 --------------------------------------------------------------*/
+.site__header {
+  position: absolute;
+  width: 100%;
+  background: white; }
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding-top: 5px; }
+  padding-top: 5px;
+  position: relative;
+  z-index: 1; }
 
 /* Logo
  ------------------------------------------------------------*/
@@ -616,14 +654,15 @@ textarea {
 
 .nav__brand-image {
   text-align: center;
-  margin-bottom: 12px; }
+  margin-bottom: 11px; }
 
 .nav__brand-title {
   margin-bottom: 0;
   font-size: 1.4rem;
   color: #024f5b;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: #fff; }
 
 /* Menu
  ------------------------------------------------------------*/
@@ -656,7 +695,7 @@ textarea {
   font-size: 1.3rem;
   color: #1b253b;
   font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease; }
@@ -718,7 +757,8 @@ textarea {
   visibility: hidden;
   z-index: 1;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  background: #fff; }
   .main-menu__dropdown.dropdown-menu {
     -webkit-transform: translateY(30px);
     transform: translateY(30px); }
@@ -785,7 +825,7 @@ textarea {
   width: 41px;
   display: block;
   border-radius: 50%;
-  border: 1px solid #a5a7ae;
+  border: 1px solid #e7e8ea;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -848,9 +888,10 @@ textarea {
   width: 100%;
   padding: 10px 40px 10px 30px;
   border-radius: 30px;
-  border: 1px solid #a5a7ae; }
+  border: 1px solid #e7e8ea; }
 
 .nav__wishlist {
+  position: relative;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -859,14 +900,124 @@ textarea {
   margin: auto;
   -webkit-transform: translateY(-4px);
   transform: translateY(-4px); }
-  .nav__wishlist:hover .nav__wishlist-icon {
-    opacity: 1; }
 
 .nav__wishlist-icon {
   fill: #ff6d7e;
-  opacity: 0.5;
+  opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+
+.nav__wishlist-btn_disabled {
+  opacity: 0.5; }
+
+.nav__wishlist-count {
+  width: 20px;
+  height: 20px;
+  font-size: 1.2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ff6d7e;
+  top: 4px;
+  right: 3px; }
+
+/*--------------------------------------------------------------
+# Header Bottom
+--------------------------------------------------------------*/
+.head-meta__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -4px;
+  border-top: 1px solid #dcdcdc;
+  padding: 7px 0; }
+
+.head-meta__item {
+  position: relative;
+  color: #a8beb7;
+  letter-spacing: 0.33px; }
+
+.head-meta__phone-list {
+  position: relative;
+  padding-right: 45px; }
+  .head-meta__phone-list:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 4px;
+    height: 33px;
+    width: 1px;
+    display: block;
+    background-color: #dcdcdc; }
+
+.head-meta__select {
+  padding: 10px 22px 0;
+  font-size: 13px;
+  border: 0; }
+
+.head-meta__phone-select {
+  padding: 10px 28px 0 22px;
+  margin-left: -23px;
+  min-width: 186px; }
+  .head-meta__phone-select:after {
+    border-top-color: #40b5f8; }
+  .head-meta__phone-select .option {
+    padding: 0 28px 0 22px; }
+
+.head-meta__email {
+  padding: 5px 47px;
+  margin-right: 57px; }
+
+.head-meta__email-link {
+  color: #a8beb7;
+  font-size: 1.3rem; }
+  .head-meta__email-link:active, .head-meta__email-link:visited {
+    color: #a8beb7; }
+
+.head-meta__social-media {
+  padding: 8px 17px 4px 20px; }
+
+.social-media__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.social-media__item {
+  margin: 0 19px; }
+
+.social-media__link {
+  vertical-align: baseline;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .social-media__link:hover {
+    opacity: 0.5; }
+
+.social-media__icon {
+  fill: #03ce77; }
+
+.head-meta__call-btn {
+  margin-right: 10px; }
+
+.head-meta__language .current,
+.head-meta__currency .current {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; }
+
+.head-meta__language .option,
+.head-meta__currency .option {
+  padding: 0 27px 0 22px;
+  min-height: 28px;
+  line-height: 28px; }
+
+.head-meta__language .list,
+.head-meta__currency .list {
+  padding: 5px 0 10px; }
 
 .text-block {
   padding: 38px 15px;
