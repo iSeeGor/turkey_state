@@ -1,18 +1,17 @@
-<footer class="site__footer footer">
-    <div class="footer-widget footer-widget__area">
+<footer class="site__footer">
+    <div class="footer-widgets">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <div class="footer-widget__item">
+                    <div class="footer-widget">
                         <h3 class="footer-widget__title">Контакты</h3>
 
                         <div class="footer-widget__content">
-                            <h4 class="footer-widget__content-title">Телефон:</h4>
 
-                            <div class="footer-widget__messengers">
-                                <div class="footer-widget__messenger">
+                            <div class="messengers footer-widget__messengers">
+                                <span class="messenger messenger__viber">
                                     <a href="#">
-                                        <svg class="footer-widget__messenger-icon icon-viber" width="19" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 227 227"  xml:space="preserve">
+                                        <svg class="messenger-icon messenger-icon_viber" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 227 227"  xml:space="preserve">
                                             <path d="M199.6,25.4C181.6,7.8,152.6-0.7,113.3,0C73.7,0.8,47.3,7.8,30,21.9C13.4,35.6,5.6,55.6,5.6,84.9v29.9
                                                 c0,34.6,18.5,72.6,54,78.4c4.1,0.7,7.9-2.1,8.6-6.2c0.7-4.1-2.1-7.9-6.2-8.6c-26.9-4.4-41.4-36-41.4-63.6V84.9
                                                 c0-42,15.6-68.3,93-69.9c35.1-0.7,60.5,6.4,75.4,21.1c11.7,11.4,17.3,27.4,17.3,48.8v29.9c0,45.3-20.3,65.2-72.4,71.1H97
@@ -33,11 +32,11 @@
                                                 C86.3,86.9,85.7,87.4,84.5,88.2z"/>
                                         </svg>
                                     </a>
-                                </div>
+                                </span>
 
-                                <div class="footer-widget__messenger">
+                                <span class="messenger messenger__whatsapp">
                                     <a href="#">
-                                        <svg class="footer-widget__messenger-icon icon-whatsapp" width="18" height="19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 220.3 220.3"  xml:space="preserve">
+                                        <svg class="messenger-icon messenger-icon_whatsapp" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 220.3 220.3"  xml:space="preserve">
                                             <path d="M110.1,0C50.6,0,2.2,48.4,2.2,107.9c0,23.3,9.5,44.2,13.5,52.1c1.9,3.7,6.4,5.1,10.1,3.2
                                                 c3.7-1.9,5.1-6.4,3.2-10.1c-3.6-6.9-11.9-25.2-11.9-45.3c0-51.2,41.7-92.9,92.9-92.9c51.3,0,93,41.7,93,92.9
                                                 c0,51.3-41.7,92.9-93,92.9c-20,0-36-6.9-41.9-9.9c-1.8-0.9-3.8-1-5.7-0.4l-47.2,15.1c-3.9,1.3-6.1,5.5-4.9,9.4c1,3.2,4,5.2,7.1,5.2
@@ -52,11 +51,11 @@
                                                 c0.4-0.2,0.7-0.2,0.9-0.2c3.4,2,12,12.4,13.7,16.5C90.2,88.4,89.8,88.8,88.8,89.5z"/>
                                         </svg>
                                     </a>
-                                </div>
+                                </span>
 
-                                <div class="footer-widget__messenger">
+                                <span class="messenger messenger__telegram">
                                     <a href="#">
-                                        <svg class="footer-widget__messenger-icon icon-telegram" width="16" height="15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 189.5 189.5" xml:space="preserve">
+                                        <svg class="messenger-icon messenger-icon_telegram" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 189.5 189.5" xml:space="preserve">
                                             <path d="M152.5,179.5c-1.5,0-2.9-0.4-4.2-1.3l-47.6-32.3l-25.6,18.4c-2,1.4-4.6,1.8-6.9,1c-2.3-0.8-4.1-2.8-4.7-5.1
                                                 l-12.8-48.6L4.8,93.9C1.9,92.8,0,90.1,0,87c0-3.1,1.9-5.9,4.7-7L179,10.6c0.8-0.3,1.6-0.5,2.5-0.6c0.3,0,0.6,0,0.9,0
                                                 c1.7,0.1,3.5,0.8,4.8,2.1c0.1,0.1,0.3,0.3,0.4,0.4c1.1,1.3,1.7,2.8,1.8,4.4c0,0.4,0,0.8,0,1.2c0,0.3-0.1,0.6-0.1,0.9l-29.4,154.4
@@ -65,27 +64,69 @@
                                                 l31.5,12c2.3,0.9,4,2.8,4.6,5.1l4,15.1c0.2-1.7,1-3.4,2.3-4.6l78.8-75.8L28.1,86.8z"/>
                                         </svg>
                                     </a>    
-                                </div>
-
+                                </span>
 
                             </div>
 
-                            <ul class="footer-widget__phone-list">
-                                <li><a href="#">TR + 90 242 528 52 34</a></li>
-                                <li><a href="#">RU +7 499 390 52 89</a></li>
-                                <li><a href="#">RU +7(495) 517 22 42</a></li>
+                            <h4 class="footer-widget__title-content">Телефон:</h4>
+
+                            <ul class="footer-widget__list">
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link">TR + 90 242 528 52 34</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link">RU +7 499 390 52 89</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link">RU +7(495) 517 22 42</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <h3>Виджет</h3>
+                    <div class="footer-widget">
+
+                        <div class="footer-widget__content footer-widget__content--no-title">
+
+                            <h4 class="footer-widget__title-content">Адресс:</h4>
+
+                            <ul class="footer-widget__list">
+                                <li class="footer-widget__list-item footer-widget__list-item--address">Турция, Алания, Махмутлар. Пр. Барбаросса, CEBECI 8, офис 6.</li>
+                                <li class="footer-widget__list-item footer-widget__list-item--address">Россия, Москва ул. Льва Толстого, д.8 стр.2, м. Парк Культуры</li>
+                            </ul>
+
+                        </div>
+
+                    </div>    
                 </div>
+
                 <div class="col-lg-3">
-                    <h3>Виджет</h3>
+                    <div class="footer-widget">
+
+                        <div class="footer-widget__content footer-widget__content--no-title">
+
+                            <h4 class="footer-widget__title-content">Почта:</h4>
+
+                            <ul class="footer-widget__list">
+                                <li class="footer-widget__list-item footer-widget__list-item--email"><a href="mailto:se@max.com" class="footer-widget__link">se@max.com</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
                 </div>
+
                 <div class="col-lg-3">
-                    <h3>Виджет</h3>
+                    <div class="footer-widget">
+
+                        <h3 class="footer-widget__title">Полезные ссылки</h3>
+
+                        <div class="footer-widget__content">
+
+                            <ul class="footer-widget__list footer-widget__list--links">
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link">Каталог недвижимости</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link">Услуги</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link">Вопросы - Ответы</a></li>
+                            </ul>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

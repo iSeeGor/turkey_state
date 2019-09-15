@@ -1032,5 +1032,121 @@ textarea {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+.messenger-icon {
+  margin-right: 7px;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .messenger-icon:hover {
+    opacity: 1; }
+  .messenger-icon_viber {
+    width: 20px;
+    height: 20px;
+    fill: #784F98; }
+  .messenger-icon_whatsapp {
+    width: 19px;
+    height: 19px;
+    fill: #3FC451;
+    margin-right: 4px; }
+  .messenger-icon_telegram {
+    width: 16px;
+    height: 16px;
+    fill: #2BA0DA; }
+
+.site__footer {
+  background-color: #272b38; }
+
+.footer-widgets {
+  padding: 68px 0 17px 0; }
+
+.footer-widget {
+  color: #767e82; }
+  .footer-widget__content {
+    position: relative; }
+  .footer-widget__messengers {
+    position: absolute;
+    top: -4px;
+    left: 118px; }
+  .footer-widget__title {
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    padding-bottom: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    margin-bottom: 3rem; }
+    .footer-widget__title:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 27px;
+      height: 3px;
+      background-color: #767e82; }
+  .footer-widget__content--no-title {
+    padding: 76px 0 0 0; }
+  .footer-widget__title-content {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem; }
+  .footer-widget__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .footer-widget__list-item {
+    position: relative; }
+    .footer-widget__list-item:last-child {
+      margin-bottom: 0; }
+    .footer-widget__list-item::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: 0;
+      background-position: center center;
+      background-repeat: no-repeat; }
+  .footer-widget__list-item--phone {
+    margin-bottom: 25px;
+    padding-left: 32px; }
+    .footer-widget__list-item--phone::before {
+      width: 18px;
+      height: 18px;
+      background-image: url("../images/icons/phone.svg"); }
+  .footer-widget__list-item--address {
+    margin-bottom: 19px;
+    padding-left: 33px; }
+    .footer-widget__list-item--address::before {
+      top: 2px;
+      left: -2px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/icons/map-marker.svg"); }
+  .footer-widget__list-item--email {
+    margin-bottom: 19px;
+    padding-left: 33px; }
+    .footer-widget__list-item--email::before {
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/icons/mail.svg"); }
+  .footer-widget__list-item--link {
+    margin-bottom: 11px;
+    padding-bottom: 14px;
+    padding-left: 29px;
+    border-bottom: 1px solid #353a45; }
+    .footer-widget__list-item--link::before {
+      width: 9px;
+      height: 9px;
+      top: 9px;
+      left: -1px;
+      background-image: url("../images/icons/widget-list__arrow.svg"); }
+  .footer-widget__link {
+    color: #767e82 !important; }
+    .footer-widget__link:active, .footer-widget__link:focus {
+      color: #767e82 !important; }
+  .footer-widget__list--links {
+    padding-top: 33px; }
 
 /*# sourceMappingURL=main.css.map */

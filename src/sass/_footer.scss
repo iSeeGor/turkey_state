@@ -2,3 +2,175 @@
 # Footer
 --------------------------------------------------------------*/
 
+.messenger-icon {
+
+    margin-right: 7px;
+    opacity: 0.7;
+    @include transition(opacity);
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &_viber {
+        width: 20px;
+        height: 20px;
+        fill: #784F98;
+    }
+
+    &_whatsapp {
+        width: 19px;
+        height: 19px;
+        fill: #3FC451;
+        margin-right: 4px;
+    }
+
+    &_telegram {
+        width: 16px;
+        height: 16px;
+        fill: #2BA0DA;
+    }
+}
+
+.site__footer {
+    background-color: $brand_footer;
+}
+
+.footer-widgets {
+    padding: 68px 0 17px 0;
+}
+
+.footer-widget {
+
+    color: $font_footer;
+
+    &__content {
+        position: relative;
+    }
+
+    &__messengers {
+        position: absolute;
+        top: -4px;
+        left: 118px;
+    }
+    
+    &__title {
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        padding-bottom: 25px;
+        @include ubuntu_medium;
+        margin-bottom: 3rem;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 27px;
+            height: 3px;
+            background-color: $font_footer;
+        }
+    }
+
+    &__content--no-title {
+        padding:76px 0 0 0; 
+    }
+
+    &__title-content {
+        color: white;
+        @include ubuntu;
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__list-item {
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 4px;
+            left: 0;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__list-item--phone {
+        margin-bottom: 25px;
+        padding-left: 32px;
+
+        &::before {
+            width: 18px;
+            height: 18px;
+            background-image: url('../images/icons/phone.svg');
+        }
+    }
+
+    &__list-item--address {
+        margin-bottom: 19px;
+        padding-left: 33px;
+
+
+        &::before {
+            top: 2px;
+            left: -2px;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/icons/map-marker.svg');
+        }
+    }
+
+    &__list-item--email {
+        margin-bottom: 19px;
+        padding-left: 33px;
+
+        &::before {
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/icons/mail.svg');
+        }
+    }
+
+    &__list-item--link {
+        margin-bottom: 11px;
+        padding-bottom: 14px; 
+        padding-left: 29px;
+        border-bottom: 1px solid #353a45;
+
+        &::before {
+            width: 9px;
+            height: 9px;
+            top: 9px;
+            left: -1px;
+            background-image: url('../images/icons/widget-list__arrow.svg');
+        }
+    }
+    
+    &__link {
+        color: $font_footer !important;
+
+        &:active,
+        &:focus {
+            color: $font_footer !important;
+        } 
+    }
+
+    &__list--links {
+        padding-top: 33px;
+    }
+
+}
