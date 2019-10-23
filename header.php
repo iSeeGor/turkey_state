@@ -15,13 +15,13 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 
     <!--== Bootstrap Grid -->
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-grid.css" />
 
     <!--== Plugins -->
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
 
     <!--== CSS main style -->
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
 
     <!--== CSS @media -->
     <link rel="stylesheet" href="assets/css/media.css" />
