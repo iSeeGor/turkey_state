@@ -9,11 +9,39 @@ let browserSync = require('browser-sync').create();
 let gulpsass = require('gulp-sass');
 let sourcemaps = require('gulp-sourcemaps');
 let babel = require("gulp-babel");
+const imagemin = require('gulp-imagemin');
+const imageminJpegRecompress = require('imagemin-jpeg-recompress');
+const pngquant = require('imagemin-pngquant');
 
 let jsFileList =  [
     './src/js/lib.js',
     './src/js/main.js'
 ]
+
+function image() {
+    return gulp.src('./src/images/**')
+        .pipe(imagemin([
+            // imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imageminJpegRecompress({
+                loops: 5,
+                min: 60,
+                max: 75,
+                quality: 'medium'
+            }),
+            imagemin.svgo(),
+            imagemin.optipng({optimizationLevel: 3}),
+            pngquant(),
+            ], {
+                verbose: true
+            }))
+        .pipe(gulp.dest('./assets/images'))
+}
+
+function imageDev() {
+    return gulp.src('./src/images/**')
+        .pipe(gulp.dest('./assets/images'))
+}
 
 function js() {
     return gulp.src(jsFileList)
@@ -75,7 +103,12 @@ gulp.task('del', clean);
 gulp.task('watch', watch);
 gulp.task('sass', sass);
 gulp.task('cssMin', cssmin);
+gulp.task(' ', imageDev);
+gulp.task('image', image);
 
 // gulp.task('build', gulp.series(clean, gulp.parallel(sass, js)));
-gulp.task('build', gulp.series(clean, gulp.parallel(sass, js), cssmin));
+gulp.task('build', gulp.series(clean, gulp.parallel(sass, js, image), cssmin));
 gulp.task('dev', gulp.series('build','watch'));
+
+// Just Copy Images
+gulp.task('work', gulp.series(clean, gulp.parallel(sass, js, imageDev), cssmin, watch));
