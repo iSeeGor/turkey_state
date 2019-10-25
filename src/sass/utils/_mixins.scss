@@ -2,17 +2,17 @@
 // Mixins
 // ====================================================================
 
-@mixin ubuntu{
+@mixin font_regular{
     font-family: 'Ubuntu', sans-serif;
     font-weight: normal;
 }
 
-@mixin ubuntu_medium{
+@mixin font_medium{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
 
-@mixin ubuntu_bold{
+@mixin font_bold{
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
 }

@@ -70,7 +70,7 @@
     display: block;
     font-size: 1.3rem;
     color: #1b253b;
-    @include ubuntu_bold;  
+    @include font_bold;  
     text-transform: uppercase;
     @include transition(color);
 
@@ -330,7 +330,7 @@
     width: 20px;
     height: 20px;
     font-size: 1.2rem;
-    @include ubuntu_medium;
+    @include font_medium;
     text-align: center;
     position: absolute;
     background: #fff;
@@ -444,7 +444,7 @@
 .head-meta__language, 
 .head-meta__currency {
     .current {
-        @include ubuntu_bold;
+        @include font_bold;
     }
 
     .option {

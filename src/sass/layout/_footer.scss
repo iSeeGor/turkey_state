@@ -59,7 +59,7 @@
         color: white;
         font-size: 2rem;
         padding-bottom: 25px;
-        @include ubuntu_medium;
+        @include font_medium;
         margin-bottom: 3rem;
 
         &:after {
@@ -80,7 +80,7 @@
 
     &__title-content {
         color: white;
-        @include ubuntu;
+        @include font_regular;
         font-size: 1.6rem;
         margin-bottom: 1.5rem;
     }

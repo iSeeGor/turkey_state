@@ -1,3 +1,7 @@
-<section class="section site-slider">
-    <img src="/assets/images/slider.jpg" alt="">
+<section class="search-filter">
+    <div class="container">
+        <form class="filter-form search-filter__form" action="#">
+
+        </form>
+    </div>
 </section>

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
 
     <!--== CSS main style -->
-    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!--== CSS @media -->
     <link rel="stylesheet" href="assets/css/media.css" />

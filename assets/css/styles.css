@@ -344,44 +344,11 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff; }
-
-hr {
-  background-color: #ccc;
-  border: 0;
-  height: 1px;
-  margin-bottom: 1.5em; }
-
-ul, ol {
-  margin: 0 0 1.5em 3em; }
-
-ul {
-  list-style: disc; }
-
-ol {
-  list-style: decimal; }
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em; }
-
-dt {
-  font-weight: bold; }
-
-dd {
-  margin: 0 1.5em 1.5em; }
+  background: white; }
 
 img {
   height: auto;
   max-width: 100%; }
-
-figure {
-  margin: 1em 0; }
-
-table {
-  margin: 0 0 1.5em;
-  width: 100%; }
 
 .container__no-padding {
   padding-left: 0;
@@ -394,6 +361,12 @@ table {
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
+
+.link {
+  color: #515460;
+  text-decoration: none; }
+  .link:active, .link:visited {
+    color: #515460; }
 
 .btn {
   display: block;
@@ -424,6 +397,22 @@ table {
   .pure-green__btn:visited, .pure-green__btn:active {
     color: #03ce77; }
 
+.section-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 4.2rem;
+  color: #0c1937;
+  position: relative;
+  padding-bottom: 20px; }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 5px;
+    background: #0c1937; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -436,63 +425,103 @@ input,
 select,
 optgroup,
 textarea {
-  color: #515460;
+  color: #0c1937;
   font-family: 'Ubuntu', sans-serif;
   font-weight: normal;
   font-size: 1.6rem;
   line-height: 1.5; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
   clear: both;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
   line-height: 1.14;
-  margin: 0;
-  margin-bottom: 2rem; }
+  margin: 0 0 2.0rem 0; }
 
-h1 {
+.typography h1 {
   font-size: 3.4rem; }
 
-h2 {
+.typography h2 {
   font-size: 2.8rem; }
 
-h3 {
+.typography h3 {
   font-size: 2.4rem; }
 
-h4 {
-  font-size: 2rem; }
+.typography h4 {
+  font-size: 2.0rem; }
 
-h5 {
+.typography h5 {
   font-size: 1.8rem; }
 
-h6 {
+.typography h6 {
   font-size: 1.6rem; }
 
-p {
-  margin: 0;
-  margin-bottom: 2.4rem; }
+.typography strong {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold; }
 
-a {
+.typography a {
+  color: #515460;
+  text-decoration: none; }
+
+.typography a:active,
+.typography a:visited {
   color: #515460; }
 
-dfn,
-cite,
-em,
-i {
+.typography p {
+  margin: 0 0 2.4rem 0; }
+
+.typography hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em; }
+
+.typography ul, .typography ol {
+  margin: 0 0 1.5em 3em; }
+
+.typography ul {
+  list-style: disc; }
+
+.typography ol {
+  list-style: decimal; }
+
+.typography li > ul,
+.typography li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em; }
+
+.typography dt {
+  font-weight: bold; }
+
+.typography dd {
+  margin: 0 1.5em 1.5em; }
+
+.typography figure {
+  margin: 1em 0; }
+
+.typography table {
+  margin: 0 0 1.5em;
+  width: 100%; }
+
+.typography dfn,
+.typography cite,
+.typography em,
+.typography i {
   font-style: italic; }
 
-blockquote {
+.typography blockquote {
   margin: 0 1.5em; }
 
-address {
+.typography address {
   margin: 0 0 1.5em; }
 
-pre {
+.typography pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
@@ -503,34 +532,26 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code,
-kbd,
-tt,
-var {
+.typography code,
+.typography kbd,
+.typography tt,
+.typography var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr,
-acronym {
+.typography abbr,
+.typography acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark,
-ins {
+.typography mark,
+.typography ins {
   background: #fff9c0;
   text-decoration: none; }
 
-big {
+.typography big {
   font-size: 125%; }
-
-a {
-  color: #515460;
-  text-decoration: none; }
-
-a:active,
-a:visited {
-  color: #515460; }
 
 /*--------------------------------------------------------------
 # Forms

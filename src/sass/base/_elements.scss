@@ -12,54 +12,12 @@ html {
 }
 
 body {
-	background: #fff;
-}
-
-hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
-}
-
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
-ul {
-	list-style: disc;
-}
-
-ol {
-	list-style: decimal;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: 0 1.5em 1.5em;
+	background: white;
 }
 
 img {
 	height: auto;
 	max-width: 100%;
-}
-
-figure {
-	margin: 1em 0;
-}
-
-table {
-	margin: 0 0 1.5em;
-	width: 100%;
 }
 
 .container__no-padding {
@@ -77,6 +35,16 @@ table {
 		padding-left: 0;
 	}
 }
+
+.link {
+	color: $font_main;
+	text-decoration: none;
+
+	&:active, &:visited {
+		color: $font_main;
+	}
+}
+
 
 .btn {
 	display: block;
@@ -105,5 +73,24 @@ table {
 	&:visited,
 	&:active {
 		color: $font_green;
+	}
+}
+
+.section-title {
+	@include font_bold;
+	font-size: 4.2rem;
+	color: #0c1937;
+	position: relative;
+	padding-bottom: 20px;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 40px;
+		height: 5px;
+		background: #0c1937;
+
 	}
 }
