@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 .site__header {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     background: white;
 }
@@ -81,7 +81,7 @@
         left: 0;
         width: 0;
         overflow: hidden;
-        color: $font_blue;
+        color: $skyBlue;
         @include transition(width, 0.4s);
         white-space: nowrap;
         transform: translateY(-50.5%);
@@ -97,7 +97,7 @@
         height: 3px;
         opacity: 0;
         transform: translateX(-10px);
-        background-color: $font_blue;
+        background-color: $skyBlue;
         @include transition;
     }
 
@@ -112,7 +112,7 @@
 }
 
 .main-menu__link_active {
-    color: $font_blue;
+    color: $skyBlue;
 
     &::after {
         opacity: 1;
@@ -121,7 +121,7 @@
 
     &:active,
     &:visited {
-        color: $font_blue;
+        color: $skyBlue;
     }
 }
 
@@ -190,7 +190,7 @@
             background-color: #e4f5ff;
             
             > .main-menu__link {
-                color: $font_blue;
+                color: $skyBlue;
                 transform: translateX(12px);
 
             }
@@ -245,7 +245,7 @@
     background: #fff;
 
     &:hover .nav__search-icon {
-        fill: $font_blue;
+        fill: $skyBlue;
     }
 }
 
@@ -264,7 +264,7 @@
 }
 
 .nav__close-icon {
-    fill: $font_blue;
+    fill: $skyBlue;
     opacity: 0;
 }
 

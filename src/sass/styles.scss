@@ -4,10 +4,15 @@
 // Base
 @import 'base/main';
 
+// Components
+@import 'components/main';
+
 // Header
 @import 'layout/header';
 
 // Blocks
+@import 'blocks/home';
+@import 'blocks/advanced-search';
 
 // Pages
 

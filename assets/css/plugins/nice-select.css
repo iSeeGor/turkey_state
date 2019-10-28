@@ -1,5 +1,5 @@
 .nice-select {
-  -webkit-tap-highlight-color: transparent;
+  /* -webkit-tap-highlight-color: transparent;
   background-color: #fff;
   border-radius: 5px;
   border: solid 1px #e8e8e8;
@@ -10,10 +10,10 @@
   float: left;
   font-family: inherit;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: normal; */
   /* height: 42px; */
   /* line-height: 40px; */
-  outline: none;
+  /* outline: none;
   padding-left: 18px;
   padding-right: 30px;
   position: relative;
@@ -25,7 +25,8 @@
   -ms-user-select: none;
   user-select: none;
   white-space: nowrap;
-  width: auto;
+  width: auto; */
+  -webkit-tap-highlight-color: transparent;
 }
 .nice-select:hover {
   border-color: #dbdbdb;
@@ -38,10 +39,10 @@
 .nice-select:after {
   /* border-bottom: 2px solid #999;
     border-right: 2px solid #999; */
-  content: "";
-  display: block;
+  /* content: "";
+  display: block; */
   /* height: 8px; */
-  margin-top: -6px;
+  /* margin-top: -6px;
   pointer-events: none;
   position: absolute;
   right: 5px;
@@ -50,22 +51,22 @@
   background-repeat: no-repeat;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  transform-origin:center 2px ;
+  transform-origin:center 2px ; */
   /* width: 8px; */
-  background-size: 10px;
+  /* background-size: 10px; */
   /* background-image: url('../../images/icons/angel_arrow.svg'); */
-  background-position: 0 center;
+  /* background-position: 0 center;
   border: 4px solid transparent;
   border-top: 4px solid #a8beb7;
-  z-index: 2;
+  z-index: 2; */
 }
 
-.nice-select.open:after {
+/* .nice-select.open:after {
   transform-origin:center 2px;
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
-}
+} */
 .nice-select.open .list {
   opacity: 1;
   pointer-events: auto;

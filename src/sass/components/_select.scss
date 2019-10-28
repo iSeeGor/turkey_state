@@ -1,0 +1,28 @@
+.select {
+    position: relative;
+    width: 100%;
+    border-bottom: 2px solid #d9dde8;
+    padding: 6px 4px;
+    cursor: pointer;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 20px;
+        border: 0.45rem solid transparent;
+        border-top: 0.43rem solid #a5a7ae;
+        transition: transform 0.5s ease;
+        transform-origin: center 0.1rem;
+    }
+
+    &.open::after {
+        transform: rotate(180deg);
+        transform-origin: center 0.1rem;
+    }
+}
+
+.iconf {
+    width: 100px;
+    height: 100px;
+}

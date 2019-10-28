@@ -12,6 +12,12 @@ let babel = require("gulp-babel");
 const imagemin = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const pngquant = require('imagemin-pngquant');
+const csscomb = require('gulp-csscomb');
+let gulpSvgSprite = require('gulp-svg-sprite'),
+    svgmin = require('gulp-svgmin'),
+    cheerio = require('gulp-cheerio'),
+    replace = require('gulp-replace');
+let cleanSvg   = require('gulp-cheerio-clean-svg');
 
 let jsFileList =  [
     './src/js/lib.js',
@@ -29,7 +35,11 @@ function image() {
                 max: 75,
                 quality: 'medium'
             }),
-            imagemin.svgo(),
+            imagemin.svgo({
+                plugins: [{
+                    cleanupAttrs: true
+                }]
+            }),
             imagemin.optipng({optimizationLevel: 3}),
             pngquant(),
             ], {
@@ -39,8 +49,44 @@ function image() {
 }
 
 function imageDev() {
-    return gulp.src('./src/images/**')
+    return gulp.src('./src/images/**/*')
         .pipe(gulp.dest('./assets/images'))
+}
+
+function svgSprite () {
+    return gulp.src('./src/svg/*.svg')
+        .pipe(svgmin({
+            js2svg: {
+                pretty: true
+            }
+        }))
+        // .pipe(cheerio({
+        //     run: function ($) {
+        //         $('[fill]').removeAttr('fill');
+        //         $('[stroke]').removeAttr('stroke');
+        //         $('[style]').removeAttr('style');
+        //         $('[id]').removeAttr('id');
+        //     },
+        //     parserOptions: {xmlMode: true}
+        // }))
+        .pipe(cheerio(cleanSvg({
+            removeSketchType: true,
+            removeEmptyGroup: true,
+            removeEmptyDefs: true,
+            removeEmptyLines: true,
+            removeComments: true,
+            tags: ["title", "desc", "linearGradient", "style"],
+            attributes: ["id", "style", "fill*", "clip*", "stroke*", "mask", "opacity", "width", "height", "transform"]
+          })))
+        .pipe(replace('&gt;', '>'))
+        .pipe(gulpSvgSprite({
+            mode: {
+                symbol: {
+                    sprite: "sprite.svg"
+                }
+            }
+        }))
+        .pipe(gulp.dest('./assets/images'));
 }
 
 function js() {
@@ -63,6 +109,7 @@ function sass() {
             overrideBrowserslist: ['> 50%', 'last 20 versions', 'Firefox ESR', "Edge 16", 'ie >= 8'],
             cascade: true
         }))
+        .pipe(csscomb())
         // .pipe(cleanCSS({
         //     level: 2 //Level: 0, 1, 2
         // }))
@@ -82,7 +129,10 @@ function cssmin(){
 }
 
 function clean() {
-    return del(['./assets/css/*.css'])
+    return del(['./assets/css/*.css', 
+                './assets/css/*.map',
+                './assets/images/**/*'
+                ])
 }
 
 function watch() {
@@ -94,6 +144,7 @@ function watch() {
     })
     gulp.watch('./src/js/**/*.js', js)
     gulp.watch('./src/sass/**/*.scss', sass)
+    gulp.watch(['./src/images/**/*.{png,jpg,gif}'], gulp.series('imageDev'))
     gulp.watch("./**/*.php").on('change', browserSync.reload)
     // gulp.watch("./*.html").on('change', browserSync.reload)
 }
@@ -103,12 +154,13 @@ gulp.task('del', clean);
 gulp.task('watch', watch);
 gulp.task('sass', sass);
 gulp.task('cssMin', cssmin);
-gulp.task(' ', imageDev);
+gulp.task('imageDev', imageDev);
 gulp.task('image', image);
+gulp.task('svgSprite', svgSprite);
 
 // gulp.task('build', gulp.series(clean, gulp.parallel(sass, js)));
-gulp.task('build', gulp.series(clean, gulp.parallel(sass, js, image), cssmin));
+gulp.task('build', gulp.series(clean, gulp.parallel(sass, js, image, svgSprite), cssmin));
 gulp.task('dev', gulp.series('build','watch'));
 
 // Just Copy Images
-gulp.task('work', gulp.series(clean, gulp.parallel(sass, js, imageDev), cssmin, watch));
+gulp.task('work', gulp.series(clean, gulp.parallel(sass, js, imageDev, svgSprite), cssmin, watch));
