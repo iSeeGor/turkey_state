@@ -12,19 +12,23 @@
     <meta name="description" content="Turkey State site description" />
     <meta name="keywords" content="Turkey State keywords" />
 
-    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
     <!--== Bootstrap Grid -->
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap-grid.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/bootstrap-grid.css" />
 
     <!--== Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/nice-select.css" />
 
     <!--== CSS main style -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
 
     <!--== CSS @media -->
-    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="/assets/css/media.css" />
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
 </head>    
 
 <body>
@@ -227,12 +231,16 @@
                     </div>
 
                     <div class="head-meta__item">
-                        <div class="head-meta__language">
-                            <select name="language" class="head-meta__lng-select head-meta__select">
-                                <option value="RU">RU</option>
-                                <option value="DE">DE</option>
-                                <option value="EN">EN</option>
-                            </select>
+                        <div class="head-meta__dropdown meta-dropdown">
+                            <button class="meta-dropdown__button">RU</button>
+
+                            <div class="meta-dropdown__body">
+                                <ul class="meta-dropdown__list">
+                                    <li class="meta-dropdown__list-item meta-dropdown__list-item_current">RU</li>
+                                    <li class="meta-dropdown__list-item">DE</li>
+                                    <li class="meta-dropdown__list-item">EN</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     

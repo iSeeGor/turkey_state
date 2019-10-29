@@ -144,7 +144,7 @@ function watch() {
     })
     gulp.watch('./src/js/**/*.js', js)
     gulp.watch('./src/sass/**/*.scss', sass)
-    gulp.watch(['./src/images/**/*.{png,jpg,gif}'], gulp.series('imageDev'))
+    gulp.watch(['./src/images/**/*.{png,jpg,gif,svg}'], gulp.series('imageDev'))
     gulp.watch("./**/*.php").on('change', browserSync.reload)
     // gulp.watch("./*.html").on('change', browserSync.reload)
 }

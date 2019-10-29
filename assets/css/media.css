@@ -1,2 +1,53 @@
+@media (max-width: 1199.98px)
+{
+    .advanced-search__form
+    {
+        padding: 55px 60px 0;
+    }
+    .search-form__input
+    {
+        max-width: 42.5%;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    .search-form__select
+    {
+        margin-bottom: 40px;
+    }
+    .search-form__fieldset-price
+    {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .home__advanced-search
+    {
+        margin-top: 0;
+    }
+    .advanced-search__form
+    {
+        padding: 30px 0 0;
+    }
+    .search-form__select
+    {
+        margin-bottom: 30px;
+    }
+    .search-form__fieldset-price
+    {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1199.98px)
+{
+    .site__header
+    {
+        display: none;
+    }
+}
 
 /*# sourceMappingURL=media.css.map */

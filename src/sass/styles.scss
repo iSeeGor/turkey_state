@@ -11,12 +11,16 @@
 @import 'layout/header';
 
 // Blocks
-@import 'blocks/home';
-@import 'blocks/advanced-search';
+@import 'blocks/main';
 
 // Pages
+@import 'pages/main';
 
 // Footer
 @import 'layout/footer';
 
-
+.test-slider {
+    height: 750px;
+    background: url('../images/content/slider.jpg') no-repeat center;
+    background-size: cover;
+}

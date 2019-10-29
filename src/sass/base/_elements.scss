@@ -36,43 +36,18 @@ img {
 	}
 }
 
+.fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
 .link {
 	color: $font_main;
 	text-decoration: none;
 
 	&:active, &:visited {
 		color: $font_main;
-	}
-}
-
-
-.btn {
-	display: block;
-	border-radius: 4px;
-	cursor: pointer;
-	text-transform: uppercase;
-	@include transition(border-radius, .4s);
-
-	&:hover {
-		border-radius: 30px; 
-	}
-}
-
-.pure-green__btn {
-	height: 36px;
-	line-height: 34px;
-	width: 153px;	
-	color: $font_green;
-	background: #fff;
-	text-align: center;
-	font-size: 1.1rem;
-	font-weight: bold;
-	letter-spacing: 0.28px;
-	border: 1px solid $font_green;	
-
-	&:visited,
-	&:active {
-		color: $font_green;
 	}
 }
 
@@ -92,4 +67,78 @@ img {
 		height: 5px;
 		background: $strong_color;
 	}
+}
+
+.head-meta__dropdown {
+
+}
+
+.meta-dropdown {
+	position: relative;
+
+	&__button {
+		display: block;
+		border: 0;
+		background: transparent;
+		margin: 0;
+		padding: 0;
+		color: $body_color;
+		font-size: 1.3rem;
+		@include font_bold;
+		position: relative;
+		padding: 10px 20px 10px 15px;
+		cursor: pointer;
+
+		&::after {
+			position: absolute;
+			top: 20px;
+			right: 4px;
+			content: '';
+			transition: transform .5s ease;
+			transform-origin: center .1rem;
+			border: .45rem solid transparent;
+			border-top: .43rem solid $body_color;
+		}
+	}
+	&__body {
+		position: absolute;
+		top: -4px;
+		left: -10px;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0.4s ease,
+					opacity 0.4s ease,
+					transform 0.4s ease;
+	}
+
+	&__list {
+		padding: 6px 0;
+		margin: 0;
+		list-style: none;
+		border: 1px solid #dcdcdc;
+		border-radius: 4px;
+		background: #fff;
+	}
+
+	&__list-item {
+		@include font_bold;
+		font-size: 1.3rem;
+		color: #a8beb7;
+		padding: 7px 24px;
+		cursor: pointer;
+
+		&_current {
+			background: #e4f5ff;
+			color: $springGreen;
+		}
+
+		&:hover {
+			background: #e4f5ff;
+		}
+	}
+}
+
+.meta-dropdown_opened .meta-dropdown__body {
+	visibility: visible;
+	opacity: 1;
 }
