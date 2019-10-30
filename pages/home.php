@@ -102,14 +102,14 @@
                                 <option value="7+1">7+1</option>
                             </select>
                         </div>
-                        <div class="col-xl-4 col-lg-6">
+                        <div class="col-lg-4 col-md-6">
                             <fieldset class="fieldset search-form__fieldset-price">
                                 <input class="input search-form__input" type="text" name="price_from" placeholder="Цена от">
                                 <input class="input search-form__input" type="text" name="price_to" placeholder="до">
                                 <span class="search-form__currency">EUR</span>
                             </fieldset>
                         </div>
-                        <div class="col-xl-4 col-lg-6">
+                        <div class="col-lg-4 col-md-6">
                             <button class="button button_green search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
                         </div>
                     </div>
@@ -195,20 +195,98 @@
                                 <option value="7+1">7+1</option>
                             </select>
                         </div>
-                        <div class="col-xl-4 col-lg-6">
+                        <div class="col-lg-4 col-md-6">
                             <fieldset class="fieldset search-form__fieldset-price">
                                 <input class="input search-form__input" type="text" name="price_from" placeholder="Цена от">
                                 <input class="input search-form__input" type="text" name="price_to" placeholder="до">
                                 <span class="search-form__currency">EUR</span>
                             </fieldset>
                         </div>
-                        <div class="col-xl-4 col-lg-6">
+                        <div class="col-lg-4 col-md-6">
                             <button class="button button_green search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
+    </div>
+</section>
+
+<!--== Company Stufs  -->
+<section class="home__about-section about-section">
+    <div class="container about-section__container" data-scroll=''>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-section__years-block years-block">
+                    <div class="years-block__num">
+                        <img src="../assets/images/general/home/about-years-num.png" alt="Years" >
+                    </div>
+                    <div class="years-block__body">
+                        <div class="years-block__year-text">Лет</div>
+                        <div class="years-block__desc">На рынке недвижимости в Турции</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-block service-block_square about-section__service-block">
+                    <div class="service-block__inner">
+                         <header class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg class="service-icon service-icon__workon">
+                                    <use xlink:href="/assets/images/symbol/sprite.svg#service-icon__workon"></use>
+                                </svg>
+                            </div>
+                         </header>
+                         <div class="service-block__body">
+                             <h5 class="service-block__desc">Работаем в управлении продаваемых объектов</h5>
+                         </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="service-block service-block_square about-section__service-block">
+                    <div class="service-block__inner">
+                         <header class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg class="service-icon service-icon__partnership">
+                                    <use xlink:href="/assets/images/symbol/sprite.svg#service-icon__partnership"></use>
+                                </svg>
+                            </div>
+                         </header>
+                         <div class="service-block__body">
+                             <h5 class="service-block__desc">Помощь на всех этапах покупки</h5>
+                         </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-section__company-info" data-scroll=''>
+                    <h2 class="about-section__company-name">Turkey State</h2>
+                    <div class="about-section__company-slogan">Путь к успеху.<br> Финансовый нетворкинг</div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="service-block service-block_horizontal">
+                    <div class="service-block__inner">
+                         <header class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg class="service-icon service-icon__building-size">
+                                    <use xlink:href="/assets/images/symbol/sprite.svg#service-icon__building-size"></use>
+                                </svg>
+                            </div>
+                         </header>
+                         <div class="service-block__body">
+                             <h5 class="service-block__desc">Более 1000 проверенных  объектов</h5>
+                         </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__green"></i></button>
+            </div>
+        </div>
     </div>
 </section>
 </main>

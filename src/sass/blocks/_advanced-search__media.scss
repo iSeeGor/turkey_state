@@ -9,10 +9,6 @@
     }
 }
 
-
-
-
-
 // Средние девайсы («таблетки», < 992px) 
 @media (max-width: 991.98px) {
     .search-form__select {
@@ -45,5 +41,21 @@
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
+    .search-form__tab-icon {
+        width: 34px;
+        height: 34px;
+    }
+    .search-form__tab-name {
+        margin: 0 10px;
+    }
 
+    .search-form__tab {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .search-form__tab-icon {
+        display: none;
+    }
 }

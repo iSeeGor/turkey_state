@@ -8,6 +8,7 @@ $(function () {
     searchFormTabs();
     svg4everybody();
     metaDropdown();
+    scrollOutPlugin();
     
     //   filterTabsToggle();
     //   categoryLinksToggle();
@@ -105,6 +106,19 @@ const metaDropdown = () => {
             $('.meta-dropdown').removeClass('meta-dropdown_opened'); 
         }
     });
+}
+
+// Scroll Out Plugin Run
+const scrollOutPlugin = () => {
+    ScrollOut({
+        // onShown(el) {
+        //     el.classList.add("animated");
+        // }
+        once: true,
+    });
+
+    console.log(1);
+    
 }
 
 

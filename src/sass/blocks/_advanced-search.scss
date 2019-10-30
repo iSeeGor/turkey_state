@@ -5,7 +5,7 @@
 .advanced-search {
 
     &__form {
-        padding: 55px 140px 0;
+        padding: 55px 145px 54px 140px;
         background: white;
         border-radius: 4px;
         position: relative;
@@ -17,6 +17,7 @@
 
     &__tabs {
         display: flex;
+        margin-bottom: 34px;
     }
 
     &__tab {
@@ -29,7 +30,7 @@
         @include font_bold;
         max-width: 50%;
         flex: 0 0 50%;
-        padding: 13px 0;
+        padding: 12px 0;
         border-bottom: 2px solid $skyBlue;
         cursor: pointer;
         position: relative;
@@ -82,10 +83,6 @@
         }
     }
 
-    &__tabs-content {
-        padding: 32px 0;
-    }
-
     &__tab-content {
   
         visibility: hidden;
@@ -119,7 +116,7 @@
         -webkit-appearance: none; 
         -moz-appearance:textfield;
         padding: 6px 4px;
-        max-width: 42.7%;
+        max-width: 42.5%;
 
         &::placeholder {
             color: inherit;

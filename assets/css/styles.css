@@ -1084,7 +1084,7 @@ textarea
 
     display: block;
 
-    padding: 10px 30px;
+    padding: 12px 30px 10px;
 
     cursor: pointer;
     -webkit-transition: -webkit-border-radius .4s ease;
@@ -1093,7 +1093,7 @@ textarea
             transition:         border-radius .4s ease;
             transition:         border-radius .4s ease, -webkit-border-radius .4s ease;
     text-align: center;
-    letter-spacing: .08em; 
+    letter-spacing: .1em; 
     text-transform: uppercase;
 
     border: 2px solid #03ce77;
@@ -1802,7 +1802,7 @@ textarea
     position: relative;
     z-index: 1; 
 
-    padding: 55px 140px 0;
+    padding: 55px 145px 54px 140px;
 
     -webkit-border-radius: 4px;
             border-radius: 4px;
@@ -1815,6 +1815,8 @@ textarea
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+
+    margin-bottom: 34px;
 }
 
 .search-form__tab
@@ -1832,7 +1834,7 @@ textarea
     overflow: hidden; 
 
     max-width: 50%;
-    padding: 13px 0;
+    padding: 12px 0;
 
     cursor: pointer;
     text-transform: uppercase;
@@ -1909,11 +1911,6 @@ textarea
             border-bottom-left-radius: 0;
 }
 
-.search-form__tabs-content
-{
-    padding: 32px 0;
-}
-
 .search-form__tab-content
 {
     visibility: hidden;
@@ -1956,7 +1953,7 @@ textarea
 
 .search-form__input
 {
-    max-width: 42.7%; 
+    max-width: 42.5%; 
     padding: 6px 4px;
 
     border: 0;
@@ -2028,13 +2025,326 @@ textarea
     padding: 6px 30px 5px;
 }
 
+/*--------------------------------------------------------------
+# About Home Section
+--------------------------------------------------------------*/
+.about-section
+{
+    position: relative;
+
+    overflow: hidden;
+
+    padding-top: 31px; 
+    padding-bottom: 70px;
+}
+.about-section__container
+{
+    position: relative;
+}
+.about-section__container::before
+{
+    position: absolute;
+    right: -10010px;
+
+    width: 10000px;
+    height: 232px;
+
+    content: '';
+    -webkit-transition: opacity 1s ease .5s,    -webkit-transform 1s ease .5s;
+         -o-transition: transform 1s ease .5s,    opacity 1s ease .5s;
+            transition: opacity 1s ease .5s,    -webkit-transform 1s ease .5s;
+            transition: transform 1s ease .5s,    opacity 1s ease .5s;
+            transition: transform 1s ease .5s,    opacity 1s ease .5s,    -webkit-transform 1s ease .5s; 
+
+    -webkit-border-radius: 4px 0 0 4px;
+            border-radius: 4px 0 0 4px;
+    background: #e4f5ff;
+}
+.about-section__company-info
+{
+    position: relative;
+}
+.about-section__company-info::before
+{
+    position: absolute;
+    top: -66px;
+    right: 0;
+
+    width: 10000px;
+    height: 244px;
+
+    content: '';
+    -webkit-transition: opacity 1s ease .5s,    -webkit-transform 1s ease .5s;
+         -o-transition: transform 1s ease .5s,    opacity 1s ease .5s;
+            transition: opacity 1s ease .5s,    -webkit-transform 1s ease .5s;
+            transition: transform 1s ease .5s,    opacity 1s ease .5s;
+            transition: transform 1s ease .5s,    opacity 1s ease .5s,    -webkit-transform 1s ease .5s; 
+
+    -webkit-border-radius: 0 4px 4px 0;
+            border-radius: 0 4px 4px 0;
+    background: #40b5f8;
+}
+.about-section__company-name
+{
+    font-size: 4.8rem;
+    line-height: 1;
+
+    position: relative; 
+
+    margin: 35px 0 12px 0;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    color: white;
+}
+.about-section__company-name::before
+{
+    position: absolute;
+    top: -40px;
+    left: -40px; 
+
+    display: block;
+
+    width: 212px;
+    height: 150px;
+
+    content: '';
+
+    opacity: .2;
+    background: url('../images/icons/title-figure.svg') no-repeat;
+    background-size: contain;
+}
+.about-section__company-slogan
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+
+    position: relative;
+
+    padding-left: 76px; 
+
+    color: white;
+}
+.about-section__company-slogan::before
+{
+    position: absolute;
+    top: 14px; 
+    left: 0;
+
+    width: 56px;
+    height: 2px;
+
+    content: '';
+
+    background: white;
+}
+.about-section__button
+{
+    margin: 48px auto 0;
+}
+
+[data-scroll='out'].about-section__company-info::before
+{
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+
+    opacity: 0;
+}
+
+[data-scroll='in'].about-section__company-info::before
+{
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+
+    opacity: 1;
+}
+
+[data-scroll='out'].about-section__container::before
+{
+    -webkit-transform: translateX(1000px);
+        -ms-transform: translateX(1000px);
+            transform: translateX(1000px);
+
+    opacity: 0;
+}
+
+[data-scroll='in'].about-section__container::before
+{
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+
+    opacity: 1;
+}
+
+.about-section__service-block
+{
+    margin-bottom: 30px;
+}
+
+/*
+* Years Block 
+* ------------------------------------------------------------*/
+.years-block
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    padding-top: 5px;
+}
+.years-block__num
+{
+    max-width: 224px;
+    margin-right: 60px;
+
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 224px;
+        -ms-flex: 0 0 224px;
+            flex: 0 0 224px;
+}
+.years-block__year-text
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: .8;
+
+    margin-bottom: 20px; 
+
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    color: #40b5f8;
+}
+.years-block__desc
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.0rem; 
+    font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# Services Blocks
+--------------------------------------------------------------*/
+.service-block
+{
+    border: 10px solid #e4f5ff;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+.service-block__icon
+{
+    position: relative;
+
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
+}
+.service-block__icon::after
+{
+    position: absolute;
+    z-index: -1; 
+    top: 0;
+    left: 0;
+
+    width: 69px;
+    height: 69px;
+
+    content: '';
+
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background: #e4f5ff;
+}
+.service-block__desc
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    margin: 0;
+}
+
+.service-block_square
+{
+    min-height: 232px;
+}
+.service-block_square .service-block__header
+{
+    margin-bottom: 20px; 
+    padding: 40px 0 0 0;
+}
+.service-block_square .service-block__body
+{
+    overflow: hidden; 
+
+    max-height: 74px;
+    padding: 0 25px;
+}
+
+.service-block_horizontal .service-block__inner
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    min-height: 192px;
+    padding: 0 85px; 
+
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+
+.service-block_horizontal .service-block__header
+{
+    margin-top: 18px;
+    margin-right: 94px;
+}
+
+.service-block_horizontal .service-block__body
+{
+    margin-top: -8px;
+}
+
+.service-block__icon .service-icon
+{
+    -webkit-transform: translate(-10px, -10px);
+        -ms-transform: translate(-10px, -10px);
+            transform: translate(-10px, -10px);
+}
+
+.service-block__icon .service-icon__workon
+{
+    -webkit-transform: translate(-9px, -14px);
+        -ms-transform: translate(-9px, -14px);
+            transform: translate(-9px, -14px);
+}
+
+.service-icon
+{
+    width: 66px;
+    height: 66px;
+}
+
 .home__advanced-search
 {
     position: relative;
     z-index: 10;
 
     margin-top: -90px;
-    padding: 0 0 154px;
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,97 @@
+/*--------------------------------------------------------------
+# Services Blocks
+--------------------------------------------------------------*/
+
+.service-block {
+
+    border: 10px solid $lightSkyBlue;
+    border-radius: 4px;
+
+    &__header {
+
+    }
+
+    &__icon {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+        transform: translateX(10px);
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 69px;
+            height: 69px;
+            background: $lightSkyBlue;
+            border-radius: 50%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+
+    &__desc {
+        font-size: 1.6rem;
+        @include font_medium;
+        margin: 0;
+    }
+
+
+}
+
+.service-block_square {
+
+    min-height: 232px;
+
+    .service-block__header {
+        padding: 40px 0 0 0;
+        margin-bottom: 20px;
+    }
+
+    .service-block__body {
+        padding: 0 25px;
+        max-height: 74px;
+        overflow: hidden;
+    }
+
+}
+
+.service-block_horizontal {
+    
+
+    .service-block__inner {
+        display: flex;
+        min-height: 192px;
+        align-items: center;
+        padding: 0 85px;
+    }
+
+    .service-block__header {
+        margin-top: 18px;
+        margin-right: 94px;
+    }
+
+    .service-block__body {
+        margin-top: -8px;
+    }
+
+}
+
+.service-block__icon {
+    
+
+    .service-icon {
+        transform: translate(-10px, -10px);
+    }
+
+    .service-icon__workon {
+        transform: translate(-9px, -14px);
+    }
+
+}
+
+.service-icon {
+    width: 66px;
+    height: 66px;
+}

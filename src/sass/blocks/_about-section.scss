@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+# About Home Section
+--------------------------------------------------------------*/
+.about-section {
+
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 70px;
+    padding-top: 31px;
+
+    &__container {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 232px;
+            width: 10000px;
+            background: $lightSkyBlue;
+            border-radius: 4px 0 0 4px;
+            right: -10010px;
+
+            transition: transform 1s ease 0.5s,
+                        opacity 1s ease 0.5s;
+        }
+    }
+
+    &__company-info {
+        // background: $skyBlue;
+        position: relative;
+
+        &::before {
+            content: '';
+            height: 244px;
+            width: 10000px;
+            background: $skyBlue;
+            position: absolute;
+            border-radius: 0 4px 4px 0;
+            top: -66px;
+            right: 0;
+            transition: transform 1s ease 0.5s,
+                        opacity 1s ease 0.5s;
+        }
+    }
+
+    &__company-name {
+        font-size: 4.8rem;
+        line-height: 1;
+        letter-spacing: 0.1em;
+        color: white;
+        text-transform: uppercase;
+        margin: 35px 0 12px 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 212px;
+            height: 150px;
+            background: url('../images/icons/title-figure.svg') no-repeat;
+            background-size: contain;
+            display: block;
+            opacity: 0.2;
+            position: absolute;
+            top:-40px;
+            left: -40px;
+        }
+    }
+
+    &__company-slogan {
+        position: relative;
+        color: white;
+        font-size: 2.0rem;
+        @include font_medium;
+        padding-left: 76px;
+
+        &::before {
+            content: '';
+            width: 56px;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: 0;
+            top: 14px;
+        }
+    }
+
+    &__button {
+        margin: 48px auto 0;
+    }
+}
+
+// Animation Before Block
+[data-scroll="out"].about-section__company-info::before {
+    transform: translateX(-1000px);
+    opacity: 0;
+}
+[data-scroll="in"].about-section__company-info::before {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+[data-scroll="out"].about-section__container::before {
+    transform: translateX(1000px);
+    opacity: 0;
+}
+[data-scroll="in"].about-section__container::before {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+
+.about-section__service-block {
+    margin-bottom: 30px;   
+}
+
+/*
+* Years Block 
+* ------------------------------------------------------------*/
+.years-block {
+    display: flex;
+    // flex-wrap: wrap;
+    padding-top: 5px;
+
+    &__num {
+        margin-right: 60px;
+        max-width: 224px;
+        flex: 0 0 224px;
+    }
+    
+    &__year-text {
+        color: $skyBlue;
+        font-size: 4.8rem;
+        @include font_bold;
+        line-height: 0.8;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        @include font_medium;
+        font-size: 2.0rem;
+    }
+}
