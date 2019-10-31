@@ -9,6 +9,8 @@ $(function () {
     svg4everybody();
     metaDropdown();
     scrollOutPlugin();
+    toFavoritToggle();
+    propertySLider();
     
     //   filterTabsToggle();
     //   categoryLinksToggle();
@@ -97,7 +99,7 @@ const metaDropdown = () => {
         let html = $(this).html();
         $('.meta-dropdown__list-item').removeClass('meta-dropdown__list-item_current');
         $(this).addClass('meta-dropdown__list-item_current');
-        $('.meta-dropdown__button').html(html);
+        $(this).parent().parent().prev().html(html);
         $('.meta-dropdown').removeClass('meta-dropdown_opened');      
     })
     
@@ -115,10 +117,96 @@ const scrollOutPlugin = () => {
         //     el.classList.add("animated");
         // }
         once: true,
+    });  
+}
+
+// Add To Favorit Button Toggle
+const  toFavoritToggle = () => {
+    $('.to-favorit__button').on('click', function(){
+        $(this).toggleClass('to-favorit__button_active');
+    });
+}
+
+// Property Slider
+const propertySLider = () => {
+    let bestsellerSLider;
+    let newPropertySlider;
+
+    bestsellerSLider = new Swiper('.property-slider__bestseller', {
+        wrapperClass: 'property-slider__body',
+        slideClass : 'property-slider__slide',
+        // loop: true,
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        threshold: 10,
+
+        navigation: {
+            nextEl: '.property-slider__button-next',
+            prevEl: '.property-slider__button-prev',
+        },
+
+        scrollbar: {
+            el: '.property-slider__scrollbar',
+            draggable: true,
+        },
+
+        breakpoints : {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 60
+            },
+
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            991: {
+                slidesPerView: 3,
+            },
+            
+        },
     });
 
-    console.log(1);
-    
+    newPropertySlider = new Swiper('.property-slider__newPropertys', {
+        wrapperClass: 'property-slider__body',
+        slideClass : 'property-slider__slide',
+        // loop: true,
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        threshold: 10,
+
+        navigation: {
+            nextEl: '.property-slider__button-next',
+            prevEl: '.property-slider__button-prev',
+        },
+
+        scrollbar: {
+            el: '.property-slider__scrollbar',
+            draggable: true,
+        },
+
+        breakpoints : {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 60
+            },
+
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            991: {
+                slidesPerView: 3,
+            },
+            
+        },
+    });
 }
 
 

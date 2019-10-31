@@ -3,7 +3,7 @@
 <section class="test-slider"></section>
 
 <!--== Advanced Search  -->
-<section class="home__advanced-search advanced-search">
+<section class="advanced-search home__advanced-search">
     <div class="container">
         <form class="search-form advanced-search__form" action="#">
             <div class="search-form__tabs">
@@ -212,8 +212,8 @@
     </div>
 </section>
 
-<!--== Company Stufs  -->
-<section class="home__about-section about-section">
+<!--== About Company Services  -->
+<section class="about-section home__about-section">
     <div class="container about-section__container" data-scroll=''>
         <div class="row">
             <div class="col-lg-6">
@@ -287,6 +287,665 @@
                 <button class="button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__green"></i></button>
             </div>
         </div>
+    </div>
+</section>
+
+<!--== Bestsellers Section  -->
+<section class="bestseller-section home__bestseller-section">
+    <div class="container">
+        
+        <h2 class="section-title">Горячие предложения</h2>
+
+        <div class="property-slider">
+
+            <div class="property-slider__container property-slider__bestseller">
+                <header class="property-slider__navigation">
+                    <div class="property-slider__button-prev">
+                        <svg class="property-slider__icon-arrow icon-arrow">
+                            <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                        </svg> 
+                    </div>
+                    <div class="property-slider__button-next">
+                        <svg class="property-slider__icon-arrow icon-arrow">
+                            <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                        </svg>
+                    </div>
+    
+                    <div class="property-slider__scrollbar"></div>
+    
+                </header>              
+                <div class="property-slider__body">
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">120 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_02.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">875 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе 
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_pure property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="button button_green property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></button>
+        </div>
+
+    </div>
+</section>
+
+<!--== New Propertys Section  -->
+<section class="newPropertys-section home__newPropertys-section">
+    <div class="container">
+        
+        <h2 class="section-title">Новые объекты</h2>
+
+        <div class="property-slider">
+            
+            <div class="property-slider__container property-slider__newPropertys">  
+                <header class="property-slider__navigation">
+                    <div class="property-slider__button-prev">
+                        <svg class="property-slider__icon-arrow icon-arrow">
+                            <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                        </svg> 
+                    </div>
+                    <div class="property-slider__button-next">
+                        <svg class="property-slider__icon-arrow icon-arrow">
+                            <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                        </svg>
+                    </div>
+    
+                    <div class="property-slider__scrollbar"></div>
+    
+                </header>
+
+                <div class="property-slider__body">
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">120 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_02.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">875 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе 
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="property-card property-card_blue property-slider__slide">
+                        <div class="property-card__inner">
+                            <header class="property-card__header">
+                                <figure class="property-card__figure">
+                                    <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
+                                    </a>
+                                </figure>
+
+                                <div class="property-card__header-meta">
+                                    <div class="property-card__price">80 000 000</div>
+                                    <div class="meta-dropdown property-card__meta-dropdown">
+                                        <button class="meta-dropdown__button">EUR</button>
+                                        <div class="meta-dropdown__body">
+                                            <ul class="meta-dropdown__list">
+                                                <li class="meta-dropdown__list-item meta-dropdown__list-item_current">EUR</li>
+                                                <li class="meta-dropdown__list-item">USD</li>
+                                                <li class="meta-dropdown__list-item">RUB</li>
+                                                <li class="meta-dropdown__list-item">KZT</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button class="property-card__to-favorit to-favorit__button ">
+                                    <svg class="to-favorit__icon-heart icon-heart">
+                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__heart"></use>
+                                    </svg>
+                                </button>
+                            </header>
+
+                            <div class="property-card__content">
+                                <div class="property-card__description">
+                                    Квартира на берегу Средиземного моря в комплексе с собственным пляжем с собственным пляжем
+                                </div>
+
+                                <div class="property-card__meta">
+                                    <ul class="property-card__meta-list">
+                                        <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
+                                        <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                        <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
+                                    </ul>
+                                </div>
+
+                                <button class="button button_blue property-card__button">подробнее</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="button button_green property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></button>
+        </div>
+
     </div>
 </section>
 </main>

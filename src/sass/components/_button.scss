@@ -51,7 +51,12 @@
 
     &_pure {
         color: $springGreen;
+    }
 
+    &_blue {
+        border-color: $lightSkyBlue;
+        background: $lightSkyBlue;
+        color: skyBlue;
     }
 
 
@@ -79,6 +84,35 @@
     &__green {
         background: url('../images/icons/arrow_button_green.svg') no-repeat;
     }
+}
+
+.to-favorit__button {
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 39px;
+    height: 39px;
+    display: block;
+    background: #a5daf8;
+    cursor: pointer;
+    text-align: center;
+    padding: 7px 0;
+    box-sizing: border-box;
+}
+
+.to-favorit__icon-heart {
+    fill: white;
+    width: 17px;
+    height: 14px;
+    transition: fill 0.3s ease;
+}
+
+.to-favorit__button:hover .icon-heart {
+    fill: rgba(255, 107, 124, 0.5);
+}
+
+.to-favorit__button_active .icon-heart,
+.to-favorit__button_active:hover .icon-heart {
+    fill: #ff6d7e;
 }
 
 

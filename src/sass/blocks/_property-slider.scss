@@ -1,0 +1,108 @@
+.property-slider {
+    position: relative;    
+
+    &__container {
+        overflow: hidden;
+    }
+
+    &__body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: flex;
+        transition-property: transform;
+        box-sizing: content-box;
+        padding-top: 20px;
+    }
+    
+
+    &__slide {
+        flex-shrink: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition-property: transform;
+    }
+
+    &__navigation {
+        position: relative;
+        height: 41px;
+        margin-bottom: 20px;
+    }
+
+    &__button-prev,
+    &__button-next {
+        // background: #ccc;
+        width: 41px;
+        height: 41px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: #e4f5ff;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: transform .4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        }
+
+        &:hover::before {
+            transform: scale(1);
+        }
+    }
+
+    &__button-prev {
+        left: 0;
+
+        .icon-arrow {
+            transform: translateX(-1px);
+        }
+    }
+
+    &__button-next {
+        transform: scaleX(-1);
+        right: 0;
+
+        .icon-arrow {
+            transform: translateX(-1px);
+        }
+    }
+
+    &__icon-arrow {
+        height: 14px;
+        width: 8px;
+        fill: $skyBlue;
+    }
+
+    &__scrollbar {
+        cursor: pointer;
+        position: absolute;
+        height: 2px;
+        border-radius: 10px;
+        background: #d9dde8;
+        width: calc(100% - 140px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        .swiper-scrollbar-drag {
+            background: $skyBlue;
+        }
+    }
+
+    &__button {
+        margin: 50px auto 0;
+        letter-spacing: 0.02em;
+    }
+}

@@ -5,4 +5,13 @@
         z-index: 10;
         margin-top: -90px;
     }
+
+    &__bestseller-section {
+        padding-top: 52px;
+        padding-bottom: 80px ;
+
+        .section-title {
+            margin-bottom: 35px;
+        }
+    }
 }

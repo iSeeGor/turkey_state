@@ -67,6 +67,19 @@
     }
 }
 
+@media (max-width: 767.98px)
+{
+    .property-slider__container
+    {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .property-slider__container .property-card
+    {
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 1199.98px)
 {
     .site__header
