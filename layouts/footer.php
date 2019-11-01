@@ -140,10 +140,12 @@
 
 <!--== JS Plugins -->
 <script src="/assets/js/plugins/jquery.nice-select.min.js"></script>
+<script src="/assets/js/plugins/smooth-scroll.min.js"></script>
 <script src="/assets/js/plugins/jquery.mask.min.js"></script>
 <script src="/assets/js/plugins/svg4everybody.min.js"></script>
 <script src="/assets/js/plugins/scroll-out.min.js"></script>
 <script src="/assets/js/plugins/swiper.min.js"></script>
+<script src="/assets/js/plugins/aos.min.js"></script>
 
 <!--== JS Scripts -->
 <script src="/assets/js/script.min.js"></script>

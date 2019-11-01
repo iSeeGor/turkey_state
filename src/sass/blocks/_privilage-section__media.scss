@@ -1,0 +1,56 @@
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+
+    .privilages-section__service-list {
+        padding: 68px 10px 40px 10px;
+    }
+
+    .privilages-section .section-title::before {
+        top: -210px;
+        right: 10px;
+    }
+
+    .privilages-section__container-inner::before {
+        display: none;
+    }
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+
+    .privilages-section__container-inner::after {
+        display: none;
+    }
+
+    .privilages-section .section-title::before {
+        content: '';
+        width: 647px;
+        height: 523px;
+        background: url('../images/general/privilage-section-title-bg.png') no-repeat;
+        background-size: contain;
+        transform: rotate(-8deg);
+        top: -194px;
+        right: 70px;
+    }
+
+    .privilages-section__title-area {
+        margin-bottom: 140px;
+    }
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+    .privilages-section .section-title::before {
+        right: -30px;
+    }
+
+    .privilages-section__button {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+}

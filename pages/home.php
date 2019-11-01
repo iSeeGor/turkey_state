@@ -619,6 +619,142 @@
     </div>
 </section>
 
+<!--== Catalogs Front Section  -->
+<section class="catalog-grid home__catalog-grid">
+    <div class="container">
+        <header class="catalog-grid__header">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="catalog-grid__slogan">"Turkey State"</h5>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="section-title">Компания "Turkey State" предлагает Вам:</h2>
+                </div>
+            </div>
+        </header>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="catalog-grid__box">
+                                    <a href="#" class="catalog-grid__box-inner" title="Виллы и дома">
+                                        <figure class="catalog-grid__figure">
+                                            <img src="../assets/images/content/cat-grid/cat-grid-image-01.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                        </figure>
+                                        <div class="catalog-grid__content">
+                                            <h4 class="catalog-grid__title">Виллы и дома</h4>
+                                            <div class="catalog-grid__descr">от 60 000 €</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="catalog-grid__box">
+                                    <a href="#" class="catalog-grid__box-inner" title="От застройщика">
+                                        <figure class="catalog-grid__figure">
+                                            <img src="../assets/images/content/cat-grid/cat-grid-image-02.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                        </figure>
+                                        <div class="catalog-grid__content">
+                                            <h4 class="catalog-grid__title">От застройщика</h4>
+                                            <div class="catalog-grid__descr">от 605 000 €</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>              
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="catalog-grid__box catalog-grid__box_full catalog-grid__box_dark-bg">
+                            <a href="#" class="catalog-grid__box-inner" title="Недвижимость у моря">
+                                <figure class="catalog-grid__figure">
+                                    <img src="../assets/images/content/cat-grid/cat-grid-image-03.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                </figure>
+                                <div class="catalog-grid__content">
+                                    <h4 class="catalog-grid__title">Недвижимость у моря</h4>
+                                    <div class="catalog-grid__descr">от 120 000 €</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="catalog-grid__box catalog-grid__box_dark-bg">
+                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
+                                <figure class="catalog-grid__figure">
+                                    <img src="../assets/images/content/cat-grid/cat-grid-image-04.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                </figure>
+                                <div class="catalog-grid__content">
+                                    <h4 class="catalog-grid__title">Недорогая недвижимость</h4>
+                                    <div class="catalog-grid__descr">от 26 000 €</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="catalog-grid__box">
+                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
+                                <figure class="catalog-grid__figure">
+                                    <img src="../assets/images/content/cat-grid/cat-grid-image-05.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                </figure>
+                                <div class="catalog-grid__content">
+                                    <h4 class="catalog-grid__title">вторичная недвижимость</h4>
+                                    <div class="catalog-grid__descr">от 75 000 €</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="catalog-grid__box catalog-grid__box_dark-bg">
+                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
+                                <figure class="catalog-grid__figure">
+                                    <img src="../assets/images/content/cat-grid/cat-grid-image-06.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
+                                </figure>
+                                <div class="catalog-grid__content">
+                                    <h4 class="catalog-grid__title">элитная недвижимость</h4>
+                                    <div class="catalog-grid__descr">от 55 000 €</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--== Privilages Section  -->
+<section class="privilages-section home__privilages-section">
+    <div class="container privilages-section__container">
+        <div class="privilages-section__container-inner">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="privilages-section__title-area">
+                        <h2 class="section-title section-title_white" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">Приумножте Ваш капитал с Turkey State</h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="service-list  privilages-section__service-list">
+                        <li class="service-list__item service-list__item_finance" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1500"><strong>Финансовые консультации</strong> от ведущих бизнес практиков на тему: "Сохранение и преумножение, финансовая защита капитала"</li>
+                        <li class="service-list__item service-list__item_instruments" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">Инструменты для <strong>приобретения недвижимости каждые 3 года</strong>, без дополнительного финансирования</li>
+                        <li class="service-list__item service-list__item_marketing" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1500"><strong>Современные расширенные маркетинговые технологии</strong> для получения максимально возможной прибыли от операций по недвижимости</li>
+                        <li class="service-list__item service-list__item_rent" data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1500"><strong>Проверенные и эффективные методы заработка на аренде.</strong> Ваша недвижимость работает за Вас</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <button class="button button_pure privilages-section__button">Узнать больше про инвестирование в Турции <i class="button-icon button-icon__green"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!--== New Propertys Section  -->
 <section class="newPropertys-section home__newPropertys-section">
     <div class="container">
@@ -948,4 +1084,5 @@
 
     </div>
 </section>
+
 </main>

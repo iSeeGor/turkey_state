@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/assets/css/plugins/bootstrap-grid.css" />
 
     <!--== Plugins -->
+    <link rel="stylesheet" href="/assets/css/plugins/aos.css" />
     <link rel="stylesheet" href="/assets/css/plugins/nice-select.css" />
     <link rel="stylesheet" href="/assets/css/plugins/animate.css" />
     <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css" />

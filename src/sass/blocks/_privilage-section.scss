@@ -1,0 +1,152 @@
+/*--------------------------------------------------------------
+# Privilages Section
+--------------------------------------------------------------*/
+.privilages-section {
+    overflow: hidden;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        bottom: 230px;
+        right: 0;
+        content: url('../images/general/stars-figure-bg-02.svg');
+        width: 160px;
+        height: 140px;
+    }
+
+    .row {
+        z-index: 10;
+        position: relative;
+    }
+
+    &__container {
+        position: relative;
+        background: white;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 10px solid $lightSkyBlue;
+        }
+    }
+
+    &__container-inner {
+        background: white;
+        
+        &::before {
+            position: absolute;
+            content: url('../images/general/privilages-deco-figure-02.png');
+            top: 250px;
+            left: -730px;
+        }
+
+        &::after {
+            position: absolute;
+            content: url('../images/general/privilages-deco-figure-01.png');
+            top: 0px;
+            right: -450px;
+            z-index: -2;
+        }
+    }
+
+    &__title-area {
+        position: relative;
+        margin-top: 128px;
+        z-index: 1;
+        height: 100%;
+
+        &::before {
+            position: absolute;
+            content: url('../images/general/stars-figure-bg-01.svg');
+            top: -140px;
+            left: 390px;
+            width: 110px;
+            height: 140px;
+        }
+
+        &::after {
+            position: absolute;
+            content: url('../images/general/stars-figure-bg-03.svg');
+            bottom: -50px;
+            left: -250px;
+            width: 400px;
+            height: 240px;
+        }
+    }
+
+    .section-title {
+        z-index: 1;
+        &::before {
+            position: absolute;
+            content: url('../images/general/privilage-section-title-bg.png');
+            top: -135px;
+            right: -25px;
+            z-index: -1;
+        }
+    }
+
+    &__service-list {
+        padding: 68px 72px 40px 40px;
+    }
+
+    &__button {
+        margin: -6px auto 70px;
+    }
+}
+
+.service-list {
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        padding-left: 90px;
+        margin-bottom: 56px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 69px;
+            height: 69px;
+            background: $lightSkyBlue;
+            border-radius: 50%;
+            top: 6px;
+            left: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 57px;
+            height: 57px;
+            left: 0;
+            top: 0;
+        }
+
+        &_finance::after {
+            background-image: url('../images/icons/couching.svg');
+        }
+
+        &_instruments::after {
+            background-image: url('../images/icons/finance-gisto.svg');
+            width: 53px;
+            height: 53px;
+        }
+
+        &_marketing::after {
+            background-image: url('../images/icons/marketing.svg');
+            width: 55px;
+            height: 55px;
+        }
+
+        &_rent::after {
+            background-image: url('../images/icons/house_rent.svg');
+        }
+        
+    }
+
+}
