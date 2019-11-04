@@ -7,10 +7,20 @@
 // Privilages Section
 @import "blocks/privilage-section__media";
 
+// Privilages Section
+@import "blocks/tour-section__media";
+
+// Blog
+@import "blog/news-posts__media";
+
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {
   .site__header {
     display: none;
+  }
+
+  .section-title {
+    font-size: 3.6rem;
   }
 }
 

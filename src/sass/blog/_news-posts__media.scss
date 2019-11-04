@@ -1,0 +1,68 @@
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+    .news-post {
+        max-width: 280px;
+    }
+    .news-post__expert {
+        font-size: 1.9rem;
+    }  
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+
+    .news-post {
+        margin-bottom: 40px;
+        max-width: 47%;
+
+        &:last-child {
+            max-width: 100%;
+        }
+    }
+
+    .news-posts-row__inner::before {
+        height: 95%;
+    }
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+    .news-post {
+        max-width: 100%;
+    }
+
+    .news-post__expert {
+        height: 50px;
+    }
+
+    .news-posts-row__inner {
+        padding: 0 15px;
+    }
+
+    .news-posts-row__inner::before {
+        height: 97%;
+        width: calc(100% + 30px);
+        left: -15px;
+    }
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+}
+
+@media (max-width: 420px) {
+    .news-post__figure {
+        height: 280px;
+    }
+
+    .news-post__expert {
+        height: 78px;
+    }
+}
+
+@media (max-width: 320px) {
+    .news-post__figure {
+        height: 260px;
+    }
+}

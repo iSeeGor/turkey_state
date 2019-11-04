@@ -1,0 +1,151 @@
+.tour-section {
+    overflow: hidden;
+
+    &__section-title {
+        margin-bottom: 60px;
+        z-index: 2;
+
+        &::before {
+            content: url('../images/icons/title-figure.svg');
+            width: 212px;
+            height: 150px;
+            position: absolute;
+            z-index: -1;
+            left: -60px;
+            top: -15px;
+            
+        }
+    }
+
+    &__block {
+        position: relative;
+        // z-index: 1;
+
+        &_left {
+            padding: 96px 0 550px;
+            
+            
+            &::before {
+                content: '';
+                height: 100%;
+                width: 10000px;
+                background-color: $lightSkyBlue;
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-image: url('../images/general/tour-section-block-left-bg.png');
+                background-position: right bottom;
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../images/general/tour-section-block-left-figure.svg');
+                width: 505px;
+                height: 480px;
+                top: -250px;
+                left: -580px;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+            }
+
+            .tour-section__text-content {
+                padding: 0 120px 0 20px;
+            }
+        }
+
+        &_right {
+            position: relative;
+            padding: 398px 0 110px 28px;
+
+            &::before {
+                content: '';
+                height: 100%;
+                width: 10000px;
+                background: url('../images/general/tour-section-block-left-figure.svg') no-repeat 5% -45%;
+                background-size: 500px;
+                background-color: $lightSkyBlue;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            &::after {
+                content: '';
+                position: absolute;
+                background: url('../images/general/tour-section-block-right-figure.svg');
+                width: 505px;
+                height: 480px;
+                right: -740px;
+                bottom: -20px;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+            }
+
+            .tour-section__text-content {
+                padding-right: 100px;
+            }
+        }
+    }
+
+    &__text-content {
+        position: relative;
+    }
+
+    &__quote {
+        display: inline-block;
+        margin-top: 83px;
+        margin-bottom: -2px;
+        border: 2px solid $lightSkyBlue;
+        position: relative;
+        line-height: 1.3;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 28px;width: 34px;
+            content: url('../images/icons/quots_small.svg');
+            transform: scaleX(-1);
+        }
+
+        &-text {
+            @include font_medium;
+            font-size: 2.0rem;
+            margin: 0;
+            padding: 28px 48px 38px 60px;
+        }
+    }
+
+    &__block_right-image {
+        position: absolute;
+        content: url('../images/general/tour-section-block-right-image.png');
+        top: 10px;
+    }
+
+    .button { position: relative; margin-top: 58px;}
+}
+
+// Animation Blocks Backgrounds
+.tour-section__block_left::before,
+.tour-section__block_right::before {
+    transition: transform 1s ease 0.6s;
+}
+[data-scroll="out"].tour-section__block_left::before {
+    transform: translateY(100%);
+}
+
+[data-scroll="in"].tour-section__block_left::before {
+    transform: translateY(0);
+}
+
+[data-scroll="out"].tour-section__block_right::before {
+    transform: translateY(-150%);
+}
+
+[data-scroll="in"].tour-section__block_right::before {
+    transform: translateY(0);
+}

@@ -43,11 +43,11 @@ img {
 }
 
 .link {
-	color: $font_main;
+	color: $body_color;
 	text-decoration: none;
 
 	&:active, &:visited {
-		color: $font_main;
+		color: $body_color;
 	}
 }
 

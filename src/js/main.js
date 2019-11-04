@@ -11,6 +11,7 @@ $(function() {
   toFavoritToggle();
   propertySLider();
   aosRun();
+  testimonialSlider();
 
   //   filterTabsToggle();
   //   categoryLinksToggle();
@@ -111,12 +112,15 @@ const metaDropdown = () => {
 
 // Scroll Out Plugin Run
 const scrollOutPlugin = () => {
-  ScrollOut({
-    // onShown(el) {
-    //     el.classList.add("animated");
-    // }
-    once: true
-  });
+  if(window.matchMedia("(min-width:992px)").matches === true){
+    ScrollOut({
+      // onShown(el) {
+      //     el.classList.add("animated");
+      // }
+      once: true,
+      threshold: 0.3
+    });
+  }
 };
 
 // Add To Favorit Button Toggle
@@ -213,9 +217,61 @@ const aosRun = () => {
 		duration: 800,
 		once: true
 	});
-
-	console.log(1);
 	
+}
+
+const testimonialSlider = () => {
+
+  let slider = new Swiper(".swiper-container", {
+    // wrapperClass: "testimonialSlider__container",
+    // slideClass: "testimonialSlider__slide",
+    // loop: true,
+    speed: 600,
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    threshold: 10,
+    effect: 'fade',
+
+    navigation: {
+      nextEl: ".property-slider__button-next",
+      prevEl: ".property-slider__button-prev"
+    },
+
+    scrollbar: {
+      el: ".property-slider__scrollbar",
+      draggable: true
+    },
+
+    fadeEffect: {
+      crossFade: true
+    },
+
+    // breakpoints: {
+    //   // when window width is >= 320px
+    //   320: {
+    //     slidesPerView: 1,
+    //     spaceBetween: 60
+    //   },
+
+    //   767: {
+    //     slidesPerView: 2,
+    //     spaceBetween: 30
+    //   },
+
+    //   991: {
+    //     slidesPerView: 3
+    //   }
+    // }
+
+    
+  });
+  
+  $(document).on('click', '.testimonialSlider__thumbs-items', function(){
+    let slideThumbs = $('.testimonialSlider__thumbs-items');
+    let current = slideThumbs.index(this);
+
+    slider.slideTo(current); 
+  });
 }
 
 // // Prevent Defult for all 'a' tag's

@@ -140,9 +140,104 @@
 
 @media (max-width: 1199.98px)
 {
+    .tour-section__block_left .tour-section__text-content
+    {
+        padding-right: 100px;
+    }
+    .tour-section__block_right .tour-section__text-content
+    {
+        padding-right: 80px;
+    }
+    .tour-section .button
+    {
+        width: 100%; 
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 1199.98px)
+{
+    .news-post
+    {
+        max-width: 280px;
+    }
+    .news-post__expert
+    {
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    .news-post
+    {
+        max-width: 47%; 
+        margin-bottom: 40px;
+    }
+    .news-post:last-child
+    {
+        max-width: 100%;
+    }
+    .news-posts-row__inner::before
+    {
+        height: 95%;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .news-post
+    {
+        max-width: 100%;
+    }
+    .news-post__expert
+    {
+        height: 50px;
+    }
+    .news-posts-row__inner
+    {
+        padding: 0 15px;
+    }
+    .news-posts-row__inner::before
+    {
+        left: -15px; 
+
+        width: -webkit-calc(100% + 30px);
+        width:         calc(100% + 30px);
+        height: 97%;
+    }
+}
+
+@media (max-width: 420px)
+{
+    .news-post__figure
+    {
+        height: 280px;
+    }
+    .news-post__expert
+    {
+        height: 78px;
+    }
+}
+
+@media (max-width: 320px)
+{
+    .news-post__figure
+    {
+        height: 260px;
+    }
+}
+
+@media (max-width: 1199.98px)
+{
     .site__header
     {
         display: none;
+    }
+    .section-title
+    {
+        font-size: 3.6rem;
     }
 }
 

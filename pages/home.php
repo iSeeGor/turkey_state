@@ -1085,4 +1085,152 @@
     </div>
 </section>
 
+<!--== Tour Info Section  -->
+<section class="tour-section home__tour-section" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="tour-section__block tour-section__block_left" data-scroll=''>
+                    <h2 class="section-title tour-section__section-title">Ознакомительный тур от компании "Turkey State"</h2>
+                    <div class="tour-section__text-content typography">
+                        <p>Если Вам не терпится поехать в Турцию и выбрать для себя второй дом у моря, нужно просто позвонить 
+                            нам и сообщить удобную для Вас дату вылета.</p>
+                        <p><strong>Сотрудники нашей компании возьмут на себя все организационные вопросы,</strong> касающиеся ознакомительного тура. 
+                            Обычно, для окончательного выбора достаточно 3-4 дней. Этого времени хватит для знакомства с городом и 
+                            понравившимися Вам объектами турецкой недвижимости. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="tour-section__quote">
+                    <blockquote class="tour-section__quote-text">
+                        Превратим просмотр понравишихся Вам объектов недвижимости в незабываемый мини-отпуск!
+                    </blockquote>
+                </div>
+                <div class="tour-section__block tour-section__block_right" data-scroll=''>
+                    <div class="tour-section__block_right-image" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="400">
+                        
+                    </div>
+
+                    <div class="tour-section__text-content typography">
+                        <h4>Проживание</h4>
+                        <p>Для проживания Вы можете выбрать для себя отель самостоятельно, либо воспользоваться апартаментами, 
+                            которые мы предоставляем нашим потенциальным клиентам на период ознакомительной поездки совершенно 
+                            бесплатно.</p>
+                        <p>В этом случае у Вас появится <strong>прекрасная возможность ощутить совершенно другой опыт пребывания в курортном регионе,</strong> 
+                            вне гостиничных режимов и обстановки, от которых уже начали уставать многие российские туристы. Побывав в 
+                            неформальных условиях, Вы увидите все преимущества такого отдыха и, несомненно, укрепитесь в желании иметь свой 
+                            собственный кусочек рая в теплых, южных краях.</p>
+                    </div>
+
+                    <button class="button button_green">Заказать ознакомительный тур<i class="button-icon button-icon__white"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--== Latest News  -->
+<section class="related-posts home__latestNews-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12"><h2 class="section-title related-posts__title">Последние новости в Турции</h2></div>
+        </div>
+        <div class="news-posts-row" data-aos="fade-up" data-aos-delay="400">
+            <div class="news-posts-row__inner">
+                <article class="news-post" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                    <div class="news-post__content">
+                        <a href="#" title="News Post Title" class="news-post__expert link">
+                            Длинное название новостей, состоящее из нескольких строк
+                        </a>
+                        <div class="news-post__meta">
+                            <div class="news-post__meta-item news-post__meta-category"><a href="#" title="Category Name" class="link">Название категории</a></div>
+                            <div class="news-post__meta-item news-post__meta-date">дд.мм.гггг</div>
+                        </div>
+                    </div>
+                    <figure class="news-post__figure">
+                        <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                    </figure>
+                </article>
+                <article class="news-post" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
+                    <div class="news-post__content">
+                        <a href="#" title="News Post Title" class="news-post__expert link">
+                            Длинное название новостей, состоящее из нескольких строк
+                        </a>
+                        <div class="news-post__meta">
+                            <div class="news-post__meta-item news-post__meta-category"><a href="#" title="Category Name" class="link">Название категории</a></div>
+                            <div class="news-post__meta-item news-post__meta-date">дд.мм.гггг</div>
+                        </div>
+                    </div>
+                    <figure class="news-post__figure">
+                    <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                    </figure>
+                </article>
+                <article class="news-post" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1200">
+                    <div class="news-post__content">
+                        <a href="#" title="News Post Title" class="news-post__expert link">
+                            Длинное название новостей, состоящее из нескольких строк, состоящее из нескольких строк
+                        </a>
+                        <div class="news-post__meta">
+                            <div class="news-post__meta-item news-post__meta-category"><a href="#" title="Category Name" class="link">Название категории</a></div>
+                            <div class="news-post__meta-item news-post__meta-date">дд.мм.гггг</div>
+                        </div>
+                    </div>
+                    <figure class="news-post__figure">
+                        <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                    </figure>
+                </article>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="button button_green">Смотреть все<i class="button-icon button-icon__white"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--== Testimonial Slider  -->
+<section class="testimonialSlider home__testimonialSlider">
+    <div class="container">
+        <div class="testimonialSlider__container swiper-container">
+            <div class="testimonialSlider__wrapper swiper-wrapper">
+                <div class="testimonialSlider__slide swiper-slide">
+                    <h3>Slide 01</h3>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                     более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                        публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                      универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, 
+                      что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                </div>
+                <div class="testimonialSlider__slide swiper-slide">
+                    <h3>Slide 02</h3>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                     более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                        публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                      универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, 
+                      что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                </div>
+                <div class="testimonialSlider__slide swiper-slide">
+                    <h3>Slide 03</h3>
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев
+                     более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык
+                        публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный
+                      универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, 
+                      что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                </div>
+            </div>
+
+            <div class="testimonialSlider__thumbs">
+                <ul class="testimonialSlider__thumbs-list">
+                    <li class="testimonialSlider__thumbs-items"><h2>1</h2></li>
+                    <li class="testimonialSlider__thumbs-items"><h2>2</h2></li>
+                    <li class="testimonialSlider__thumbs-items"><h2>3</h2></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 </main>
