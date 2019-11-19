@@ -2,7 +2,7 @@ $(function() {
   //   preventDefaultLinks();
   smoothScroll();
   themeSelect();
-  searchCollaps();
+  // searchCollaps();
   searchFormPriceMask();
   searchFormTabs();
   svg4everybody();

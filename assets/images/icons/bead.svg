@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 384 304" style="enable-background:new 0 0 384 304;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#40B5F8;}
-</style>
-<path class="st0" d="M368,96c-8.8,0-16,7.2-16,16v32H120v-8c0-26.5-21.5-48-48-48H32V16c0-8.8-7.2-16-16-16S0,7.2,0,16v144v64v64
-	c0,8.8,7.2,16,16,16s16-7.2,16-16v-48h320v48c0,8.8,7.2,16,16,16s16-7.2,16-16v-64v-64v-48C384,103.2,376.8,96,368,96z M72,120
-	c8.8,0,16,7.2,16,16v8H32v-24H72z M32,208v-32h320v32H32z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 304"><path d="M368 96c-8.8 0-16 7.2-16 16v32H120v-8c0-26.5-21.5-48-48-48H32V16c0-8.8-7.2-16-16-16S0 7.2 0 16v272c0 8.8 7.2 16 16 16s16-7.2 16-16v-48h320v48c0 8.8 7.2 16 16 16s16-7.2 16-16V112c0-8.8-7.2-16-16-16zM72 120c8.8 0 16 7.2 16 16v8H32v-24h40zm-40 88v-32h320v32H32z" fill="#40b5f8"/></svg>
