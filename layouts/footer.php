@@ -146,6 +146,7 @@
 <script src="/assets/js/plugins/scroll-out.min.js"></script>
 <script src="/assets/js/plugins/swiper.min.js"></script>
 <script src="/assets/js/plugins/aos.min.js"></script>
+<script src="/assets/js/plugins/simplebar.min.js"></script>
 
 <!--== JS Scripts -->
 <script src="/assets/js/script.min.js"></script>

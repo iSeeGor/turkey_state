@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/assets/css/plugins/nice-select.css" />
     <link rel="stylesheet" href="/assets/css/plugins/animate.css" />
     <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/simplebar.css" />
 
     <!--== CSS main style -->
     <link rel="stylesheet" href="/assets/css/styles.css" />

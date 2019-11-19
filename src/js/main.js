@@ -12,6 +12,7 @@ $(function() {
   propertySLider();
   aosRun();
   testimonialSlider();
+  scrollBar();
 
   //   filterTabsToggle();
   //   categoryLinksToggle();
@@ -222,7 +223,7 @@ const aosRun = () => {
 
 const testimonialSlider = () => {
 
-  let slider = new Swiper(".swiper-container", {
+  let testimonialSlider = new Swiper(".swiper-container", {
     // wrapperClass: "testimonialSlider__container",
     // slideClass: "testimonialSlider__slide",
     // loop: true,
@@ -231,49 +232,49 @@ const testimonialSlider = () => {
     spaceBetween: 30,
     threshold: 10,
     effect: 'fade',
+    allowTouchMove: false,
 
     navigation: {
-      nextEl: ".property-slider__button-next",
-      prevEl: ".property-slider__button-prev"
-    },
-
-    scrollbar: {
-      el: ".property-slider__scrollbar",
-      draggable: true
+      nextEl: ".testimonialSlider__button-next",
+      prevEl: ".testimonialSlider__button-prev"
     },
 
     fadeEffect: {
       crossFade: true
     },
+   
+  });
+  
 
-    // breakpoints: {
-    //   // when window width is >= 320px
-    //   320: {
-    //     slidesPerView: 1,
-    //     spaceBetween: 60
-    //   },
+  // Add 'current' class when slide is changed  
+  testimonialSlider.on('slideChange', function () {
+    let slideThumb = $('.testimonialSlider-thumbs__list-item');
+    let currentIndex = testimonialSlider.activeIndex;
 
-    //   767: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 30
-    //   },
-
-    //   991: {
-    //     slidesPerView: 3
-    //   }
-    // }
-
+    slideThumb.removeClass('testimonialSlider-thumbs__list-item_current');
+    slideThumb.eq(currentIndex).addClass('testimonialSlider-thumbs__list-item_current');
     
   });
   
-  $(document).on('click', '.testimonialSlider__thumbs-items', function(){
-    let slideThumbs = $('.testimonialSlider__thumbs-items');
-    let current = slideThumbs.index(this);
+  // Change Slide when user click on Thumb
+  $(document).on('click', '.testimonialSlider-thumbs__list-item', function(){
+    let slideThumb = $('.testimonialSlider-thumbs__list-item');
+    let current = slideThumb.index(this);
+    
+    slideThumb.removeClass('testimonialSlider-thumbs__list-item_current');
+    $(this).addClass('testimonialSlider-thumbs__list-item_current');
 
-    slider.slideTo(current); 
+    testimonialSlider.slideTo(current); 
   });
 }
 
+// Custom Scrollbar 
+const scrollBar = () => {
+  new SimpleBar(document.querySelector('.testimonialSlider__message-inner'), { autoHide: false });
+
+  console.log(1);
+  
+}
 // // Prevent Defult for all 'a' tag's
 // const preventDefaultLinks = () => {
 
