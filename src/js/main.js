@@ -13,12 +13,12 @@ $(function() {
   aosRun();
   testimonialSlider();
   scrollBar();
-
   //   filterTabsToggle();
   //   categoryLinksToggle();
   //   bgLinesResize();
   //   hamburgerToggle();
 });
+
 
 // SmoothScroll
 const smoothScroll = () => {
@@ -272,7 +272,7 @@ const testimonialSlider = () => {
 const scrollBar = () => {
   new SimpleBar(document.querySelector('.testimonialSlider__message-inner'), { autoHide: false });
 
-  console.log(1);
+  // console.log(1);
   
 }
 // // Prevent Defult for all 'a' tag's

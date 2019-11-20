@@ -10,6 +10,11 @@
 
 .header {
     padding-top: 10px;
+    // position: fixed;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 59px -34px #000;
 
     &__container {
         display: flex;
@@ -19,6 +24,12 @@
     &__main {
         flex: 1 1 auto;
     }
+
+    transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+[data-scroll-dir-y="1"] .header{
+    transform: translate3d(0, -100%, 0);
 }
 
 .nav {
@@ -34,6 +45,10 @@
 
 /* Logo
  ------------------------------------------------------------*/
+
+.header__branding {
+    margin-left: -15px;
+}
 
 .nav__brand {
     // max-width: 100px;
@@ -384,6 +399,8 @@
 
 .head-meta__row {
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     margin-top: -4px;
     border-top: 1px solid $border_color;
     padding: 7px 0;
@@ -429,7 +446,7 @@
     }
 
     .meta-dropdown__button {
-        padding: 8px 25px 10px 0px;
+        padding: 6px 25px 6px 0px;
         .link {
             color: $blue;
             letter-spacing: 0.02em;
@@ -437,7 +454,7 @@
     }
 
     .meta-dropdown__button::after {
-        top: 18px;
+        top: 16px;
         right: 2px;
     }
 
@@ -456,7 +473,7 @@
     }
 
     .meta-dropdown__body {
-        top: -2px;
+        top: -4px;
         left: -25px;
     }
 
@@ -492,7 +509,7 @@
 
 .head-meta__email {
     padding: 5px 47px;
-    margin-right: 57px;
+    // margin-right: 57px;
 }
 
 .head-meta__email-link {
@@ -505,8 +522,8 @@
     }
 }
 
-.head-meta__social-media {
-    padding: 8px 17px 4px 20px;
+.head-meta__item_social-media {
+    margin-left: auto;
 }
 
 .social-media__list {
@@ -514,27 +531,71 @@
     padding: 0;
     list-style: none;
     display: flex;
+    margin-right: 8px;
 }
 
 .social-media__item {
-    margin: 0 19px;
+    margin-right: 23px;
 }
 
 .social-media__link {
-    vertical-align: baseline;
-    @include transition(opacity);
+    // vertical-align: baseline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    @include transition(background);
 
-    &:hover {
-        opacity: 0.5;
+    &_facebook:hover {
+        background: #2363b0;
+    }
+
+    &_vk:hover {
+        background: #4f7db3;
+    }
+
+    &_instagram:hover {
+        background: #ed4c63;
+    }
+
+    &_youtube:hover {
+        background: #FF0000;
+    }
+
+    &:hover .social-media__icon {
+        fill: white;
     }
 }
 
 .social-media__icon {
-    fill: $font_green;
-}
+    width: 30px;
+    height: 30px;
+    transition: fill 0.3s ease;
 
-.head-meta__call-btn {
-    margin-right: 10px;
+    &.icon-facebook {
+        height: 13px;
+        fill: #2363b0;
+    }
+
+    &.icon-vk {
+        width: 16px;
+        fill: #4f7db3;
+    }
+
+    &.icon-instagram {
+        height: 13px;
+        fill: #ed4c63;
+    }
+
+    &.icon-youtube {
+        width: 15px;
+        fill: #FF0000;
+        // transform: translate(1px, 0);
+    }
+
 }
 
 .head-meta__language, 
