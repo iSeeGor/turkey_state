@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 .messenger-icon {
-
     margin-right: 7px;
     opacity: 0.7;
     @include transition(opacity);
@@ -15,20 +14,36 @@
     &_viber {
         width: 20px;
         height: 20px;
-        fill: #784F98;
+        fill: #784f98;
     }
 
     &_whatsapp {
         width: 19px;
         height: 19px;
-        fill: #3FC451;
+        fill: #3fc451;
         margin-right: 4px;
     }
 
     &_telegram {
         width: 16px;
         height: 16px;
-        fill: #2BA0DA;
+        fill: #2ba0da;
+    }
+}
+
+.messenger {
+    display: inline-block;
+    margin-left: 2px;
+
+    &__icon {
+        opacity: 0.7;
+        width: 20px;
+        height: 20px;
+        @include transition(opacity);
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -37,11 +52,10 @@
 }
 
 .footer-widgets {
-    padding: 68px 0 17px 0;
+    padding: 64px 0 17px 0;
 }
 
 .footer-widget {
-
     color: $font_footer;
 
     &__content {
@@ -53,17 +67,17 @@
         top: -4px;
         left: 118px;
     }
-    
+
     &__title {
         position: relative;
         color: white;
         font-size: 2rem;
-        padding-bottom: 25px;
+        padding-bottom: 21px;
         @include font_medium;
-        margin-bottom: 3rem;
+        margin-bottom: 26px;
 
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             bottom: 0;
@@ -75,7 +89,7 @@
     }
 
     &__content--no-title {
-        padding:76px 0 0 0; 
+        padding: 76px 0 0 0;
     }
 
     &__title-content {
@@ -99,7 +113,7 @@
         }
 
         &::before {
-            content: '';
+            content: "";
             display: block;
             position: absolute;
             top: 4px;
@@ -116,7 +130,7 @@
         &::before {
             width: 18px;
             height: 18px;
-            background-image: url('../images/icons/phone.svg');
+            background-image: url("../images/icons/phone.svg");
         }
     }
 
@@ -124,13 +138,12 @@
         margin-bottom: 19px;
         padding-left: 33px;
 
-
         &::before {
             top: 2px;
             left: -2px;
             width: 20px;
             height: 20px;
-            background-image: url('../images/icons/map-marker.svg');
+            background-image: url("../images/icons/map-marker.svg");
         }
     }
 
@@ -141,13 +154,13 @@
         &::before {
             width: 20px;
             height: 20px;
-            background-image: url('../images/icons/mail.svg');
+            background-image: url("../images/icons/mail.svg");
         }
     }
 
     &__list-item--link {
         margin-bottom: 11px;
-        padding-bottom: 14px; 
+        padding-bottom: 14px;
         padding-left: 29px;
         border-bottom: 1px solid #353a45;
 
@@ -156,21 +169,144 @@
             height: 9px;
             top: 9px;
             left: -1px;
-            background-image: url('../images/icons/widget-list__arrow.svg');
+            background-image: url("../images/icons/widget-list__arrow.svg");
         }
     }
-    
+
     &__link {
         color: $font_footer !important;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $blue !important;
+        }
 
         &:active,
         &:focus {
             color: $font_footer !important;
-        } 
+        }
     }
 
     &__list--links {
-        padding-top: 33px;
+        padding-top: 38px;
+    }
+}
+
+/* Footer Midle Area (Logo + Socail Links)
+ ------------------------------------------------------------*/
+.footer__middle {
+    padding-bottom: 54px;
+
+    // border-bottom: 1px solid #353a45;
+}
+
+.footer-social {
+    border: 1px solid #6d757a;
+    border-radius: 4px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        color: $font_footer;
+        padding: 20px 30px;
+        flex: 1 1 auto;
     }
 
+    &__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        flex: 1 1 auto;
+        justify-content: flex-end;
+    }
+
+    &__item {
+        max-width: 64px;
+        flex: 0 0 64px;
+        border-left: 1px solid #6d757a;
+    }
+
+    &__link {
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            background: #2ba0da;
+            border-radius: 50%;
+            z-index: -1;
+            transition: transform .3s ease;
+        }
+    }
+}
+
+.footer-social__link_facebook::before {
+    background: #2363b0;
+}
+
+.footer-social__link_vk::before {
+    background: #4f7db3;
+}
+
+.footer-social__link_instagram::before {
+    background: #ed4c63;
+}
+
+.footer-social__link_youtube::before {
+    background: #f00;
+}
+
+.footer-social__link:hover .social-media__icon { fill: white; }
+.footer-social__link:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Footer Copyrights
+ ------------------------------------------------------------*/
+.copyrights {
+    // padding:20px 0;
+    color: #53565f;
+
+    &__container {
+        padding-top: 22px;
+        padding-bottom: 28px;
+        border-top: 1px solid #353a45;
+    }
+
+    &__text {
+        align-self: center;
+    }
+}
+
+/* Creater
+ ------------------------------------------------------------*/
+.copyrights__creater {
+    justify-content: flex-end;
+}
+
+.creater {
+    display: flex;
+    align-items: center;
+
+    &__text {
+        margin: auto 30px;
+        margin-left: 0;
+    }
+
+    &__logo {
+        flex: 0 0 auto;
+    }
 }

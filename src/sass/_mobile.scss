@@ -1,0 +1,309 @@
+/*--------------------------------------------------------------
+# Mobile Header & Nav 
+--------------------------------------------------------------*/
+
+@media(min-width:992px){
+    .mobile-header {
+        display: none;
+    }  
+}
+
+.mobile-header {
+    height: 60px;
+    background: white;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+
+    overflow: auto;
+    
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/* Hamburger 
+ ------------------------------------------------------------*/
+.hamburger {
+    width: 60px;
+    height: 60px;
+    // margin: 0 5px;
+}
+
+.hamburger-icon {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.hamburger-icon_rotate{
+    transition-delay: 0.1s;
+    transition: transform 400ms;
+}
+
+.hamburger-icon_rotate.hamburger-icon_active {
+    transform: rotate(45deg);
+}
+
+.hamburger-icon__line {
+    fill: none;
+    transition-delay: 0.1s;
+    transition: stroke-dasharray .6s, stroke-dashoffset .6s;
+    stroke: #0691e0;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+.hamburger-icon__line_top {
+    stroke-dasharray: 40 139;
+}
+.hamburger-icon__line_bottom {
+    stroke-dasharray: 40 180;
+}
+.hamburger-icon_active .hamburger-icon__line_top {
+    stroke-dashoffset: -98px;
+}
+.hamburger-icon_active .hamburger-icon__line_bottom {
+    stroke-dashoffset: -138px;
+}
+
+.mobile-logo {
+    padding: 0 18px 0 0 ;
+}
+
+/* Side-Nav
+ ------------------------------------------------------------*/
+
+.side-nav {
+    background: #E4F5FF;
+    position: fixed;
+    width: calc(100% - 60px);
+    height: 100%;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: auto;
+
+    &__container {
+        padding: 0 20px ;
+    }
+
+    &__header {
+        padding: 20px 0 12px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(100% + 40px);
+            left: -20px;
+            bottom: 0;
+            height: 1px;
+            background: #fff;
+        }
+    }
+
+    &_active {
+        transform: translateX(0); 
+    }
+
+    &__button {
+        background: transparent;
+        // margin: 0 auto;
+        padding-left: 26px;
+        padding-right: 26px;
+        margin-bottom: 30px;
+
+    }
+
+    &__social-list {
+        margin: 0 auto;
+
+        .social-media__icon.icon-facebook {
+            height: 18px;
+        }
+
+        .social-media__icon.icon-vk {
+            width: 21px;
+        }
+
+        .social-media__icon.icon-instagram {
+            height: 18px;
+        }
+
+        .social-media__icon.icon-youtube {
+            width: 21px;
+        }
+    }
+
+    &__footer {
+        // border-top: 1px solid white;
+        padding: 20px 0;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: calc(100% + 40px);
+            left: -20px;
+            top: 0;
+            height: 1px;
+            background: #fff;
+        }
+    }
+}
+
+/* Mobile Menu
+ ------------------------------------------------------------*/
+
+.mobile-nav {
+    // padding: 0 25px 0 15px;
+    margin: 20px 0 30px 0;
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 6px;
+    }
+
+    &__link {
+        @include font_bold;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        display: block;
+        padding: 8px 0;
+    }
+
+    &__subnav {
+        display: none;
+        height: 0;
+        overflow: hidden;
+        transition: height 350ms ease-in-out;
+        margin-left: 20px;
+    }
+}
+
+.link_active {
+    color: $orange !important;
+}
+
+.has-dropdown {
+    display: inline-block;
+
+    &::after {
+        content: '';
+        width: 11px;
+        height: 11px;
+        margin-left: 10px;
+        display: inline-block;
+        background: url('../images/icons/icon__arrow_black.svg') no-repeat center;
+        transition: transform .3s ease;
+
+    }
+}
+
+.mobile-subnav__link.has-dropdown::after {
+    width: 8px;
+    height: 8px;
+} 
+
+.open > .has-dropdown::after {
+    transform: rotate(90deg);
+}
+
+.mobile-subnav {
+
+    &__list {
+        padding: 0;
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        display: block;
+        padding: 4px 0;
+    }
+}
+
+.mobile-nav__item,
+.mobile-subnav__item {
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+}
+
+
+/* Side-Nav Phone List
+ ------------------------------------------------------------*/
+.side-nav__item_phone-list {
+
+    .meta-dropdown__phone-list {
+        padding-right: 0;
+        padding-left: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 10;
+
+        &::before {
+            content: '';
+            height: 18px;
+            width: 18px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+            position: absolute;
+            background: url('../images/icons/phone.svg') no-repeat center;
+        }
+    }
+
+    .meta-dropdown__phone-list::after {
+        display: none;
+    }
+
+    .meta-dropdown__list .link {
+        letter-spacing: 0.02em;
+    }
+    
+    .meta-dropdown__body {
+        left: 5px !important;
+    }
+
+    .link {
+        color: #A8BEB7 !important;
+    }
+
+}
+
+/* Side-Nav Email 
+ ------------------------------------------------------------*/
+
+.side-nav__item_email {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+
+    &::before {
+        content: '';
+        height: 18px;
+        width: 18px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-block;
+        position: absolute;
+        background: url('../images/icons/mail.svg') no-repeat center;
+    }
+}
+
+.side-nav__email {
+    color: #A8BEB7;
+}

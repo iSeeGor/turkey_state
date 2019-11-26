@@ -14,7 +14,7 @@
     position: fixed;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 0 59px -34px #000;
+    border-bottom: 1px solid #e7e7e7;
 
     &__container {
         display: flex;
@@ -26,10 +26,15 @@
     }
 
     transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
+    transition-delay: 0.3s;
 
-[data-scroll-dir-y="1"] .header{
-    transform: translate3d(0, -100%, 0);
+    &_hide {
+        transform: translate3d(0, -100%, 0);
+    }
+
+    &_show {
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .nav {

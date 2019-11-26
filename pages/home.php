@@ -2,15 +2,17 @@
 
 <!--== Hero Banner  -->
 <section class="hero home__hero">
-    <div class="hero__banner" style="background-image: url('../assets/images/content/hero-image.jpg');" >
+    <div class="hero__banner" style="background-image: url('../assets/images/content/hero-image_02.jpg');" >
         <!-- <img class="hero__banner-image" src="../assets/images/content/hero-image.jpg" alt="Hero Banner Image"> -->
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6">
-                <h1 class="hero__banner-title">
-                    Лучшие предложения по недвижимости <br>в Турции 
-                </h1>
+            <div class="col-xl-6 col-lg-7 col-md-10">
+                <div class="hero__banner-inner">
+                    <h1 class="hero__banner-title">
+                        Лучшие предложения по недвижимости <br>в Турции 
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
@@ -34,7 +36,7 @@
                     <div class="search-form__tab-name">Аренда</div>
                 </div>
                 <div class="search-form__tab search-form__tab_commercial" data-tab="commercial">                    
-                    <svg class="search-form__tab-icon">
+                    <svg class="search-form__tab-icon search-form__tab-icon_commercial">
                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__tab-icon_commercial"></use>
                     </svg>
                     <div class="search-form__tab-name">Коммерческая <br>недвижимость</div>
@@ -43,283 +45,260 @@
 
             <div class="search-form__tabs-content">
                 <div class="search-form__tab-content search-form__tab-content_current search-form__tab-content_sales">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="object" class="select search-form__select">
-                                <option selected="" value="Все объекты">Все объекты</option>
-                                <option value="Квартиры">Квартиры</option>
-                                <option value="Виллы/Таунхаусы">Виллы/Таунхаусы</option>
-                                <option value="Пентхаусы">Пентхаусы</option>
-                                <option value="Квартиры/Пентхаусы">Квартиры/Пентхаусы</option>
-                                <option value="Коммерческая недвижимость ">Коммерческая недвижимость </option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="сity" class="select search-form__select">
-                                <option selected="" value="Город">Город</option>
-                                <option value="Алания">Алания</option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Анталия">Анталия</option>
-                                <option value="Стамбул">Стамбул</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="area" class="select search-form__select">
-                                <option value="Район ">Район </option>
-                                <option value="Авсаллар ">Авсаллар </option>
-                                <option value="Махмутлар ">Махмутлар </option>
-                                <option value="Кестель ">Кестель </option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Оба">Оба</option>
-                                <option value="Тосмур ">Тосмур </option>
-                                <option value="Конаклы">Конаклы</option>
-                                <option value="Джикджилли">Джикджилли</option>
-                                <option value="Каргыджак">Каргыджак</option>
-                                <option value="Демирташ">Демирташ</option>
-                                <option value="Окурджалар ">Окурджалар </option>
-                                <option value="Алания центр">Алания центр</option>
-                                <option value="Бекташ">Бекташ</option>
-                                <option value="Тепе">Тепе</option>
-                                <option value="Белек">Белек</option>
-                                <option value="Коньялты">Коньялты</option>
-                                <option value="Лара">Лара</option>
-                                <option value="Кемер ">Кемер </option>
-                                <option value="Османгази">Османгази</option>
-                                <option value="Хисароню">Хисароню</option>
-                                <option value="Оваджик">Оваджик</option>
-                                <option value="Сейдикемер">Сейдикемер</option>
-                                <option value="Фетхие центр">Фетхие центр</option>
-                                <option value="Каргипинари">Каргипинари</option>
-                                <option value="Чешмели ">Чешмели </option>
-                                <option value="Искеле ">Искеле </option>
-                                <option value="Фамагуста">Фамагуста</option>
-                                <option value="Искеле/Боаз">Искеле/Боаз</option>
-                                <option value="Эсентепе">Эсентепе</option>
-                                <option value="Кирения">Кирения</option>
-                                <option value="Эсуньюр ">Эсуньюр </option>
-                                <option value="Сарыер">Сарыер</option>
-                                <option value="Атакент">Атакент</option>
-                                <option value="Бахчешехир ">Бахчешехир </option>
-                                <option value="Бейликдюзю">Бейликдюзю</option>
-                                <option value="Газиосманпаша ">Газиосманпаша </option>
-                                <option value="Башакшехир">Башакшехир</option>
-                                <option value="Кадыкёй">Кадыкёй</option>
-                                <option value="Маслак">Маслак</option>
-                                <option value="Крючюкчекмедже">Крючюкчекмедже</option>
-                                <option value="Шишли">Шишли</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="layout" class="select search-form__select">
-                                <option selected="" value="Все планировки ">Все планировки </option>
-                                <option value="0+1">0+1</option>
-                                <option value="1+1">1+1</option>
-                                <option value="2+1">2+1</option>
-                                <option value="3+1">3+1</option>
-                                <option value="4+1">4+1</option>
-                                <option value="5+1">5+1</option>
-                                <option value="6+1">6+1</option>
-                                <option value="7+1">7+1</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <fieldset class="fieldset search-form__fieldset-price">
-                                <input class="input search-form__input" type="text" name="price_from" placeholder="Цена от">
-                                <input class="input search-form__input" type="text" name="price_to" placeholder="до">
-                                <span class="search-form__currency">EUR</span>
-                            </fieldset>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
-                        </div>
+                    <div class="search-form__tab-item">
+                        <select name="сity" class="select search-form__select">
+                            <option selected="" value="Город">Город</option>
+                            <option value="Алания">Алания</option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Анталия">Анталия</option>
+                            <option value="Стамбул">Стамбул</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="area" class="select search-form__select">
+                            <option value="Район ">Район </option>
+                            <option value="Авсаллар ">Авсаллар </option>
+                            <option value="Махмутлар ">Махмутлар </option>
+                            <option value="Кестель ">Кестель </option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Оба">Оба</option>
+                            <option value="Тосмур ">Тосмур </option>
+                            <option value="Конаклы">Конаклы</option>
+                            <option value="Джикджилли">Джикджилли</option>
+                            <option value="Каргыджак">Каргыджак</option>
+                            <option value="Демирташ">Демирташ</option>
+                            <option value="Окурджалар ">Окурджалар </option>
+                            <option value="Алания центр">Алания центр</option>
+                            <option value="Бекташ">Бекташ</option>
+                            <option value="Тепе">Тепе</option>
+                            <option value="Белек">Белек</option>
+                            <option value="Коньялты">Коньялты</option>
+                            <option value="Лара">Лара</option>
+                            <option value="Кемер ">Кемер </option>
+                            <option value="Османгази">Османгази</option>
+                            <option value="Хисароню">Хисароню</option>
+                            <option value="Оваджик">Оваджик</option>
+                            <option value="Сейдикемер">Сейдикемер</option>
+                            <option value="Фетхие центр">Фетхие центр</option>
+                            <option value="Каргипинари">Каргипинари</option>
+                            <option value="Чешмели ">Чешмели </option>
+                            <option value="Искеле ">Искеле </option>
+                            <option value="Фамагуста">Фамагуста</option>
+                            <option value="Искеле/Боаз">Искеле/Боаз</option>
+                            <option value="Эсентепе">Эсентепе</option>
+                            <option value="Кирения">Кирения</option>
+                            <option value="Эсуньюр ">Эсуньюр </option>
+                            <option value="Сарыер">Сарыер</option>
+                            <option value="Атакент">Атакент</option>
+                            <option value="Бахчешехир ">Бахчешехир </option>
+                            <option value="Бейликдюзю">Бейликдюзю</option>
+                            <option value="Газиосманпаша ">Газиосманпаша </option>
+                            <option value="Башакшехир">Башакшехир</option>
+                            <option value="Кадыкёй">Кадыкёй</option>
+                            <option value="Маслак">Маслак</option>
+                            <option value="Крючюкчекмедже">Крючюкчекмедже</option>
+                            <option value="Шишли">Шишли</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="layout" class="select search-form__select">
+                            <option selected="" value="Все планировки ">Все планировки </option>
+                            <option value="0+1">0+1</option>
+                            <option value="1+1">1+1</option>
+                            <option value="2+1">2+1</option>
+                            <option value="3+1">3+1</option>
+                            <option value="4+1">4+1</option>
+                            <option value="5+1">5+1</option>
+                            <option value="6+1">6+1</option>
+                            <option value="7+1">7+1</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_price">
+                        <fieldset class="fieldset search-form__fieldset-price">
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_from" placeholder="Цена от">
+                                <span class="dash"></span>
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_to" placeholder="до">
+                            <span class="search-form__currency">EUR</span>
+                        </fieldset>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_id">
+                        <input class="input search-form__input search-form__input_id" type="text" name="object_id" placeholder="ID объекта">
+                    </div>
+                    <div class="search-form__tab-item">
+                        <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
                     </div>
                 </div>
 
                 <div class="search-form__tab-content search-form__tab-content_rent">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="object" class="select search-form__select">
-                                <option selected="" value="Все объекты">Все объекты</option>
-                                <option value="Квартиры">Квартиры</option>
-                                <option value="Виллы/Таунхаусы">Виллы/Таунхаусы</option>
-                                <option value="Пентхаусы">Пентхаусы</option>
-                                <option value="Квартиры/Пентхаусы">Квартиры/Пентхаусы</option>
-                                <option value="Коммерческая недвижимость ">Коммерческая недвижимость </option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="сity" class="select search-form__select">
-                                <option selected="" value="Город">Город</option>
-                                <option value="Алания">Алания</option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Анталия">Анталия</option>
-                                <option value="Стамбул">Стамбул</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="area" class="select search-form__select">
-                                <option value="Район ">Район </option>
-                                <option value="Авсаллар ">Авсаллар </option>
-                                <option value="Махмутлар ">Махмутлар </option>
-                                <option value="Кестель ">Кестель </option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Оба">Оба</option>
-                                <option value="Тосмур ">Тосмур </option>
-                                <option value="Конаклы">Конаклы</option>
-                                <option value="Джикджилли">Джикджилли</option>
-                                <option value="Каргыджак">Каргыджак</option>
-                                <option value="Демирташ">Демирташ</option>
-                                <option value="Окурджалар ">Окурджалар </option>
-                                <option value="Алания центр">Алания центр</option>
-                                <option value="Бекташ">Бекташ</option>
-                                <option value="Тепе">Тепе</option>
-                                <option value="Белек">Белек</option>
-                                <option value="Коньялты">Коньялты</option>
-                                <option value="Лара">Лара</option>
-                                <option value="Кемер ">Кемер </option>
-                                <option value="Османгази">Османгази</option>
-                                <option value="Хисароню">Хисароню</option>
-                                <option value="Оваджик">Оваджик</option>
-                                <option value="Сейдикемер">Сейдикемер</option>
-                                <option value="Фетхие центр">Фетхие центр</option>
-                                <option value="Каргипинари">Каргипинари</option>
-                                <option value="Чешмели ">Чешмели </option>
-                                <option value="Искеле ">Искеле </option>
-                                <option value="Фамагуста">Фамагуста</option>
-                                <option value="Искеле/Боаз">Искеле/Боаз</option>
-                                <option value="Эсентепе">Эсентепе</option>
-                                <option value="Кирения">Кирения</option>
-                                <option value="Эсуньюр ">Эсуньюр </option>
-                                <option value="Сарыер">Сарыер</option>
-                                <option value="Атакент">Атакент</option>
-                                <option value="Бахчешехир ">Бахчешехир </option>
-                                <option value="Бейликдюзю">Бейликдюзю</option>
-                                <option value="Газиосманпаша ">Газиосманпаша </option>
-                                <option value="Башакшехир">Башакшехир</option>
-                                <option value="Кадыкёй">Кадыкёй</option>
-                                <option value="Маслак">Маслак</option>
-                                <option value="Крючюкчекмедже">Крючюкчекмедже</option>
-                                <option value="Шишли">Шишли</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="layout" class="select search-form__select">
-                                <option selected="" value="Все планировки ">Все планировки </option>
-                                <option value="0+1">0+1</option>
-                                <option value="1+1">1+1</option>
-                                <option value="2+1">2+1</option>
-                                <option value="3+1">3+1</option>
-                                <option value="4+1">4+1</option>
-                                <option value="5+1">5+1</option>
-                                <option value="6+1">6+1</option>
-                                <option value="7+1">7+1</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <fieldset class="fieldset search-form__fieldset-price">
-                                <input class="input search-form__input" type="text" name="price_from" placeholder="Цена от">
-                                <input class="input search-form__input" type="text" name="price_to" placeholder="до">
-                                <span class="search-form__currency">EUR</span>
-                            </fieldset>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
-                        </div>
+                    <div class="search-form__tab-item">
+                        <select name="сity" class="select search-form__select">
+                            <option selected="" value="Город">Город</option>
+                            <option value="Алания">Алания</option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Анталия">Анталия</option>
+                            <option value="Стамбул">Стамбул</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="area" class="select search-form__select">
+                            <option value="Район ">Район </option>
+                            <option value="Авсаллар ">Авсаллар </option>
+                            <option value="Махмутлар ">Махмутлар </option>
+                            <option value="Кестель ">Кестель </option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Оба">Оба</option>
+                            <option value="Тосмур ">Тосмур </option>
+                            <option value="Конаклы">Конаклы</option>
+                            <option value="Джикджилли">Джикджилли</option>
+                            <option value="Каргыджак">Каргыджак</option>
+                            <option value="Демирташ">Демирташ</option>
+                            <option value="Окурджалар ">Окурджалар </option>
+                            <option value="Алания центр">Алания центр</option>
+                            <option value="Бекташ">Бекташ</option>
+                            <option value="Тепе">Тепе</option>
+                            <option value="Белек">Белек</option>
+                            <option value="Коньялты">Коньялты</option>
+                            <option value="Лара">Лара</option>
+                            <option value="Кемер ">Кемер </option>
+                            <option value="Османгази">Османгази</option>
+                            <option value="Хисароню">Хисароню</option>
+                            <option value="Оваджик">Оваджик</option>
+                            <option value="Сейдикемер">Сейдикемер</option>
+                            <option value="Фетхие центр">Фетхие центр</option>
+                            <option value="Каргипинари">Каргипинари</option>
+                            <option value="Чешмели ">Чешмели </option>
+                            <option value="Искеле ">Искеле </option>
+                            <option value="Фамагуста">Фамагуста</option>
+                            <option value="Искеле/Боаз">Искеле/Боаз</option>
+                            <option value="Эсентепе">Эсентепе</option>
+                            <option value="Кирения">Кирения</option>
+                            <option value="Эсуньюр ">Эсуньюр </option>
+                            <option value="Сарыер">Сарыер</option>
+                            <option value="Атакент">Атакент</option>
+                            <option value="Бахчешехир ">Бахчешехир </option>
+                            <option value="Бейликдюзю">Бейликдюзю</option>
+                            <option value="Газиосманпаша ">Газиосманпаша </option>
+                            <option value="Башакшехир">Башакшехир</option>
+                            <option value="Кадыкёй">Кадыкёй</option>
+                            <option value="Маслак">Маслак</option>
+                            <option value="Крючюкчекмедже">Крючюкчекмедже</option>
+                            <option value="Шишли">Шишли</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="layout" class="select search-form__select">
+                            <option selected="" value="Все планировки ">Все планировки </option>
+                            <option value="0+1">0+1</option>
+                            <option value="1+1">1+1</option>
+                            <option value="2+1">2+1</option>
+                            <option value="3+1">3+1</option>
+                            <option value="4+1">4+1</option>
+                            <option value="5+1">5+1</option>
+                            <option value="6+1">6+1</option>
+                            <option value="7+1">7+1</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_price">
+                        <fieldset class="fieldset search-form__fieldset-price">
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_from" placeholder="Цена от">
+                                <span class="dash"></span>
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_to" placeholder="до">
+                            <span class="search-form__currency">EUR</span>
+                        </fieldset>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_id">
+                        <input class="input search-form__input search-form__input_id" type="text" name="object_id" placeholder="ID объекта">
+                    </div>
+                    <div class="search-form__tab-item">
+                        <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
                     </div>
                 </div>
 
                 <div class="search-form__tab-content search-form__tab-content_commercial">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="object" class="select search-form__select">
-                                <option selected="" value="Все объекты">Все объекты</option>
-                                <option value="Квартиры">Квартиры</option>
-                                <option value="Виллы/Таунхаусы">Виллы/Таунхаусы</option>
-                                <option value="Пентхаусы">Пентхаусы</option>
-                                <option value="Квартиры/Пентхаусы">Квартиры/Пентхаусы</option>
-                                <option value="Коммерческая недвижимость ">Коммерческая недвижимость </option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="сity" class="select search-form__select">
-                                <option selected="" value="Город">Город</option>
-                                <option value="Алания">Алания</option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Анталия">Анталия</option>
-                                <option value="Стамбул">Стамбул</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="area" class="select search-form__select">
-                                <option value="Район ">Район </option>
-                                <option value="Авсаллар ">Авсаллар </option>
-                                <option value="Махмутлар ">Махмутлар </option>
-                                <option value="Кестель ">Кестель </option>
-                                <option value="Газипаша">Газипаша</option>
-                                <option value="Оба">Оба</option>
-                                <option value="Тосмур ">Тосмур </option>
-                                <option value="Конаклы">Конаклы</option>
-                                <option value="Джикджилли">Джикджилли</option>
-                                <option value="Каргыджак">Каргыджак</option>
-                                <option value="Демирташ">Демирташ</option>
-                                <option value="Окурджалар ">Окурджалар </option>
-                                <option value="Алания центр">Алания центр</option>
-                                <option value="Бекташ">Бекташ</option>
-                                <option value="Тепе">Тепе</option>
-                                <option value="Белек">Белек</option>
-                                <option value="Коньялты">Коньялты</option>
-                                <option value="Лара">Лара</option>
-                                <option value="Кемер ">Кемер </option>
-                                <option value="Османгази">Османгази</option>
-                                <option value="Хисароню">Хисароню</option>
-                                <option value="Оваджик">Оваджик</option>
-                                <option value="Сейдикемер">Сейдикемер</option>
-                                <option value="Фетхие центр">Фетхие центр</option>
-                                <option value="Каргипинари">Каргипинари</option>
-                                <option value="Чешмели ">Чешмели </option>
-                                <option value="Искеле ">Искеле </option>
-                                <option value="Фамагуста">Фамагуста</option>
-                                <option value="Искеле/Боаз">Искеле/Боаз</option>
-                                <option value="Эсентепе">Эсентепе</option>
-                                <option value="Кирения">Кирения</option>
-                                <option value="Эсуньюр ">Эсуньюр </option>
-                                <option value="Сарыер">Сарыер</option>
-                                <option value="Атакент">Атакент</option>
-                                <option value="Бахчешехир ">Бахчешехир </option>
-                                <option value="Бейликдюзю">Бейликдюзю</option>
-                                <option value="Газиосманпаша ">Газиосманпаша </option>
-                                <option value="Башакшехир">Башакшехир</option>
-                                <option value="Кадыкёй">Кадыкёй</option>
-                                <option value="Маслак">Маслак</option>
-                                <option value="Крючюкчекмедже">Крючюкчекмедже</option>
-                                <option value="Шишли">Шишли</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-sm-6">
-                            <select name="layout" class="select search-form__select">
-                                <option selected="" value="Все планировки ">Все планировки </option>
-                                <option value="0+1">0+1</option>
-                                <option value="1+1">1+1</option>
-                                <option value="2+1">2+1</option>
-                                <option value="3+1">3+1</option>
-                                <option value="4+1">4+1</option>
-                                <option value="5+1">5+1</option>
-                                <option value="6+1">6+1</option>
-                                <option value="7+1">7+1</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <fieldset class="fieldset search-form__fieldset-price">
-                                <input class="input search-form__input" type="text" name="price_from" placeholder="Цена от">
-                                <input class="input search-form__input" type="text" name="price_to" placeholder="до">
-                                <span class="search-form__currency">EUR</span>
-                            </fieldset>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                            <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
-                        </div>
+                    <div class="search-form__tab-item">
+                        <select name="сity" class="select search-form__select">
+                            <option selected="" value="Город">Город</option>
+                            <option value="Алания">Алания</option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Анталия">Анталия</option>
+                            <option value="Стамбул">Стамбул</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="area" class="select search-form__select">
+                            <option value="Район ">Район </option>
+                            <option value="Авсаллар ">Авсаллар </option>
+                            <option value="Махмутлар ">Махмутлар </option>
+                            <option value="Кестель ">Кестель </option>
+                            <option value="Газипаша">Газипаша</option>
+                            <option value="Оба">Оба</option>
+                            <option value="Тосмур ">Тосмур </option>
+                            <option value="Конаклы">Конаклы</option>
+                            <option value="Джикджилли">Джикджилли</option>
+                            <option value="Каргыджак">Каргыджак</option>
+                            <option value="Демирташ">Демирташ</option>
+                            <option value="Окурджалар ">Окурджалар </option>
+                            <option value="Алания центр">Алания центр</option>
+                            <option value="Бекташ">Бекташ</option>
+                            <option value="Тепе">Тепе</option>
+                            <option value="Белек">Белек</option>
+                            <option value="Коньялты">Коньялты</option>
+                            <option value="Лара">Лара</option>
+                            <option value="Кемер ">Кемер </option>
+                            <option value="Османгази">Османгази</option>
+                            <option value="Хисароню">Хисароню</option>
+                            <option value="Оваджик">Оваджик</option>
+                            <option value="Сейдикемер">Сейдикемер</option>
+                            <option value="Фетхие центр">Фетхие центр</option>
+                            <option value="Каргипинари">Каргипинари</option>
+                            <option value="Чешмели ">Чешмели </option>
+                            <option value="Искеле ">Искеле </option>
+                            <option value="Фамагуста">Фамагуста</option>
+                            <option value="Искеле/Боаз">Искеле/Боаз</option>
+                            <option value="Эсентепе">Эсентепе</option>
+                            <option value="Кирения">Кирения</option>
+                            <option value="Эсуньюр ">Эсуньюр </option>
+                            <option value="Сарыер">Сарыер</option>
+                            <option value="Атакент">Атакент</option>
+                            <option value="Бахчешехир ">Бахчешехир </option>
+                            <option value="Бейликдюзю">Бейликдюзю</option>
+                            <option value="Газиосманпаша ">Газиосманпаша </option>
+                            <option value="Башакшехир">Башакшехир</option>
+                            <option value="Кадыкёй">Кадыкёй</option>
+                            <option value="Маслак">Маслак</option>
+                            <option value="Крючюкчекмедже">Крючюкчекмедже</option>
+                            <option value="Шишли">Шишли</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item">
+                        <select name="layout" class="select search-form__select">
+                            <option selected="" value="Все планировки ">Все планировки </option>
+                            <option value="0+1">0+1</option>
+                            <option value="1+1">1+1</option>
+                            <option value="2+1">2+1</option>
+                            <option value="3+1">3+1</option>
+                            <option value="4+1">4+1</option>
+                            <option value="5+1">5+1</option>
+                            <option value="6+1">6+1</option>
+                            <option value="7+1">7+1</option>
+                        </select>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_price">
+                        <fieldset class="fieldset search-form__fieldset-price">
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_from" placeholder="Цена от">
+                                <span class="dash"></span>
+                            <input class="input search-form__input search-form__input_price" type="text" name="price_to" placeholder="до">
+                            <span class="search-form__currency">EUR</span>
+                        </fieldset>
+                    </div>
+                    <div class="search-form__tab-item search-form__tab-item_id">
+                        <input class="input search-form__input search-form__input_id" type="text" name="object_id" placeholder="ID объекта">
+                    </div>
+                    <div class="search-form__tab-item">
+                        <button class="button button_orange search-form__button">Поиск<i class="button-icon button-icon__white"></i></button>
                     </div>
                 </div>
+
             </div>
         </form>
     </div>
@@ -330,17 +309,25 @@
     <div class="container about-section__container" data-scroll=''>
         <div class="row">
             <div class="col-lg-6">
+                <div class="about-section__company-info" data-scroll=''>
+                    <h2 class="about-section__company-name">Turkey State</h2>
+                    <div class="about-section__company-slogan">Путь к успеху.<br> Финансовый нетворкинг</div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex order-2 order-lg-0">
+                <button class="button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__orange"></i></button>
+            </div>
+            <div class="col-lg-3 col-sm-6">
                 <div class="about-section__years-block years-block">
                     <div class="years-block__num">
                         <img src="../assets/images/general/home/about-years-num.png" alt="Years" >
                     </div>
                     <div class="years-block__body">
-                        <div class="years-block__year-text">Лет</div>
-                        <div class="years-block__desc">На рынке недвижимости в Турции</div>
+                        <div class="years-block__desc">Лет на рынке недвижимости в Турции</div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
                 <div class="service-block service-block_square about-section__service-block">
                     <div class="service-block__inner">
                          <header class="service-block__header">
@@ -356,7 +343,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-sm-6">
                 <div class="service-block service-block_square about-section__service-block">
                     <div class="service-block__inner">
                          <header class="service-block__header">
@@ -372,14 +359,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="about-section__company-info" data-scroll=''>
-                    <h2 class="about-section__company-name">Turkey State</h2>
-                    <div class="about-section__company-slogan">Путь к успеху.<br> Финансовый нетворкинг</div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="service-block service-block_horizontal">
+            <div class="col-lg-3 col-sm-6">
+                <div class="service-block service-block_square">
                     <div class="service-block__inner">
                          <header class="service-block__header">
                             <div class="service-block__icon">
@@ -395,9 +376,56 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!--== Video Section -->
+<section class="video-section">
+    <div class="container video-section__container">
         <div class="row">
-            <div class="col-12">
-                <button class="button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__green"></i></button>
+            <div class="col-md-4">
+                <div class="video-section__item">
+                    <div class="video-section__prev-img">
+                        <a class="video-section__link" href="https://www.youtube.com/watch?v=wmGvDWSb9A8" title="Video Player Link">
+                            <img src="../assets/images/content/video-section/preview-video-image-01.jpg" alt="Video Section Image" class="video-section__image">
+                            <button class="play-button video-section__button">
+                                <svg class="play-button__icon">
+                                    <use xlink:href="../assets/images/symbol/sprite.svg#play__icon"></use>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="video-section__item">
+                    <div class="video-section__prev-img">
+                        <a class="video-section__link" href="https://www.youtube.com/watch?v=a9UKV_ED_xU" title="Video Player Link">
+                            <img src="../assets/images/content/video-section/preview-video-image-02.jpg" alt="Video Section Image" class="video-section__image">
+                            <button class="play-button video-section__button">
+                                <svg class="play-button__icon">
+                                    <use xlink:href="../assets/images/symbol/sprite.svg#play__icon"></use>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="video-section__item">
+                    <div class="video-section__prev-img">
+                        <a class="video-section__link" href="https://www.youtube.com/watch?v=H98J4KqzJEk" title="Video Player Link">
+                            <img src="//img.youtube.com/vi/H98J4KqzJEk/mqdefault.jpg" alt="Video Section Image" class="video-section__image">
+                            <button class="play-button video-section__button">
+                                <svg class="play-button__icon">
+                                    <use xlink:href="../assets/images/symbol/sprite.svg#play__icon"></use>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -429,7 +457,7 @@
                 </header>              
                 <div class="property-slider__body">
 
-                    <div class="property-card property-slider__slide">
+                    <div class="property-card property-card__special-price property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -473,7 +501,7 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -522,7 +550,7 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -571,7 +599,7 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -620,7 +648,7 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -669,7 +697,7 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -718,127 +746,21 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_pure property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-            <button class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></button>
         </div>
-
-    </div>
-</section>
-
-<!--== Catalogs Front Section  -->
-<section class="catalog-grid home__catalog-grid">
-    <div class="container">
-        <header class="catalog-grid__header">
-            <div class="row">
-                <div class="col-lg-6">
-                    <h5 class="catalog-grid__slogan">"Turkey State"</h5>
-                </div>
-                <div class="col-md-6">
-                    <h2 class="section-title">Компания "Turkey State" предлагает Вам:</h2>
-                </div>
-            </div>
-        </header>
 
         <div class="row">
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="catalog-grid__box">
-                                    <a href="#" class="catalog-grid__box-inner" title="Виллы и дома">
-                                        <figure class="catalog-grid__figure">
-                                            <img src="../assets/images/content/cat-grid/cat-grid-image-01.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                        </figure>
-                                        <div class="catalog-grid__content">
-                                            <h4 class="catalog-grid__title">Виллы и дома</h4>
-                                            <div class="catalog-grid__descr">от 60 000 €</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="catalog-grid__box">
-                                    <a href="#" class="catalog-grid__box-inner" title="От застройщика">
-                                        <figure class="catalog-grid__figure">
-                                            <img src="../assets/images/content/cat-grid/cat-grid-image-02.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                        </figure>
-                                        <div class="catalog-grid__content">
-                                            <h4 class="catalog-grid__title">От застройщика</h4>
-                                            <div class="catalog-grid__descr">от 605 000 €</div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>              
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="catalog-grid__box catalog-grid__box_full catalog-grid__box_dark-bg">
-                            <a href="#" class="catalog-grid__box-inner" title="Недвижимость у моря">
-                                <figure class="catalog-grid__figure">
-                                    <img src="../assets/images/content/cat-grid/cat-grid-image-03.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                </figure>
-                                <div class="catalog-grid__content">
-                                    <h4 class="catalog-grid__title">Недвижимость у моря</h4>
-                                    <div class="catalog-grid__descr">от 120 000 €</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="catalog-grid__box catalog-grid__box_dark-bg">
-                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
-                                <figure class="catalog-grid__figure">
-                                    <img src="../assets/images/content/cat-grid/cat-grid-image-04.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                </figure>
-                                <div class="catalog-grid__content">
-                                    <h4 class="catalog-grid__title">Недорогая недвижимость</h4>
-                                    <div class="catalog-grid__descr">от 26 000 €</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="catalog-grid__box">
-                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
-                                <figure class="catalog-grid__figure">
-                                    <img src="../assets/images/content/cat-grid/cat-grid-image-05.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                </figure>
-                                <div class="catalog-grid__content">
-                                    <h4 class="catalog-grid__title">вторичная недвижимость</h4>
-                                    <div class="catalog-grid__descr">от 75 000 €</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="catalog-grid__box catalog-grid__box_dark-bg">
-                            <a href="#" class="catalog-grid__box-inner" title="Недорогая недвижимость">
-                                <figure class="catalog-grid__figure">
-                                    <img src="../assets/images/content/cat-grid/cat-grid-image-06.jpg" class="catalog-grid__image" alt="Catalog Grid Image">
-                                </figure>
-                                <div class="catalog-grid__content">
-                                    <h4 class="catalog-grid__title">элитная недвижимость</h4>
-                                    <div class="catalog-grid__descr">от 55 000 €</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 d-flex">
+                <a href="#" class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></a>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -862,7 +784,7 @@
                 </div>
             </div>
             <div class="row">
-                <button class="button button_pure privilages-section__button">Узнать больше про инвестирование в Турции <i class="button-icon button-icon__green"></i></button>
+                <button class="button button_pure privilages-section__button">Узнать больше про инвестирование в Турции <i class="button-icon button-icon__orange"></i></button>
             </div>
         </div>
     </div>
@@ -895,7 +817,7 @@
 
                 <div class="property-slider__body">
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -939,12 +861,12 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -988,12 +910,12 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -1037,12 +959,12 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -1086,12 +1008,12 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -1135,12 +1057,12 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="property-card property-card_blue property-slider__slide">
+                    <div class="property-card  property-slider__slide">
                         <div class="property-card__inner">
                             <header class="property-card__header">
                                 <figure class="property-card__figure">
@@ -1184,15 +1106,19 @@
                                     </ul>
                                 </div>
 
-                                <button class="button button_blue property-card__button">подробнее</button>
+                                <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+        </div>
 
-            <button class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></button>
+        <div class="row">
+            <div class="col-12 d-flex">
+                <a href="#" class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></a>
+            </div>
         </div>
 
     </div>
@@ -1393,7 +1319,18 @@
                         <div class="testimonialSlider__message testimonialSlider__message_video">
                             <div class="testimonialSlider__message-inner">
                                 
-                                <iframe  src="https://www.youtube.com/embed/FT0odx2LoyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <div class="video-section__item">
+                                    <div class="video-section__prev-img">
+                                        <a class="video-section__link" href="https://www.youtube.com/watch?v=wmGvDWSb9A8" title="Video Player Link">
+                                            <img src="../assets/images/content/video-section/preview-video-image-01.jpg" alt="Video Section Image" class="video-section__image">
+                                            <button class="play-button video-section__button">
+                                                <svg class="play-button__icon">
+                                                    <use xlink:href="../assets/images/symbol/sprite.svg#play__icon"></use>
+                                                </svg>
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
                             
                             </div>
                         </div>
@@ -1447,7 +1384,7 @@
             </div>
 
             <!-- Button -->
-            <button class="button button_pure testimonialSlider__button">смотреть все<i class="button-icon button-icon__green"></i></button>
+            <a href="#" class="button button_pure testimonialSlider__button">смотреть все<i class="button-icon button-icon__orange"></i></a>
         </div>
     </div>
 </section>
@@ -1506,8 +1443,8 @@
 
         </div>
         <div class="row">
-            <div class="col-12">
-                <button class="button button_orange">Смотреть все<i class="button-icon button-icon__white"></i></button>
+            <div class="col-12 d-flex">
+                <a href="#" class="button button_orange">Смотреть все<i class="button-icon button-icon__white"></i></a>
             </div>
         </div>
     </div>

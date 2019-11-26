@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------
+# Testimonial Slider
+--------------------------------------------------------------*/
+
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+
+    .testimonialSlider__message {
+        padding-left: 50px;
+    }
+
+    .testimonialSlider__message_video {
+        padding: 30px;
+    }
+
+    .testimonialSlider__button {
+        right: 200px;
+    }
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+
+    .testimonialSlider__title {
+        margin-bottom: 100px;
+    }
+
+    .testimonialSlider__slide {
+        flex-wrap: wrap;
+    }
+
+    .testimonialSlider__header {
+        height: auto;
+    }
+
+    .testimonialSlider-meta {
+        position: absolute;
+        top: 180px;
+        left: 340px;
+        width: 100%;
+    
+    }
+
+    .testimonialSlider__body {
+        margin-top: -20px;
+    }
+
+    .testimonialSlider__header::after {
+        bottom: -130px;
+    }
+
+    .testimonialSlider__body::before {
+        width: calc(100% + 20px);
+    }
+
+    .testimonialSlider-thumbs {
+        position: inherit;
+        padding-top: 55px;
+        top: inherit;
+        padding-left: 0;
+    }
+
+    .testimonialSlider__button {
+        right: 0;
+        bottom: -35px;
+    }
+
+    .testimonialSlider-navigation {
+        top: 220px;
+        right: 30px;
+        // bottom: 135px;
+    }
+
+    .testimonialSlider__button-prev, .testimonialSlider__button-next {
+        background: white;
+    }
+
+    .testimonialSlider-thumbs__list-item_current .testimonialSlider-thumbs__user-image {
+        border-color: #0691e0;
+    }
+
+    .testimonialSlider-thumbs__list-item_current::after {
+        border-bottom: 10px solid #0691e0;
+    }
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+    .testimonialSlider__button {
+        position: inherit;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .testimonialSlider__figure {
+        width: 260px;
+        height: 260px;
+    }
+
+    .testimonialSlider__figure::after {
+        top: 20px;
+    }
+
+    .testimonialSlider__date {
+        left: 310px;
+        top: 70px;
+    }
+
+    .testimonialSlider-meta {
+        top: 100px;
+        left: 300px;
+    }
+
+    .testimonialSlider__body {
+        margin-top: -60px;
+    }
+
+    .testimonialSlider-navigation {
+        top: 170px;
+        right: 0;
+    }
+
+    .testimonialSlider__message {
+        padding: 20px 0 20px 20px;
+    }
+
+    .testimonialSlider__body {
+        min-height: 355px;
+    }
+
+    .testimonialSlider__message {
+        height: 330px;
+    }
+    .testimonialSlider__body::before {
+        z-index: 1;
+    }
+
+    .testimonialSlider__message {
+        border-radius: 0;
+    }
+
+    .testimonialSlider__message_video {
+        padding-right: 20px;
+    }
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+    .testimonialSlider__body {
+        margin-top: 0px;
+    }
+
+    .testimonialSlider-meta {
+        top: 200px;
+        left: 40px;
+    }
+
+    .testimonialSlider-navigation {
+        top: 220px;
+        right: 0;
+    }
+    
+}
+
+@media(max-width: 420px){
+    .testimonialSlider__figure {
+        left: -10px;
+    }
+
+    .testimonialSlider-meta {
+        left: 0;
+    }
+
+    .testimonialSlider__header {
+        max-width: inherit;
+        flex: 1 1 auto;
+        margin-right: auto;
+    }
+
+    .testimonialSlider__date {
+        right: 3px;
+        left: inherit;
+        top: 180px;
+    }
+
+    .testimonialSlider-thumbs {
+        display: none;
+    }
+}

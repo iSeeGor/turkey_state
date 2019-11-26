@@ -3,7 +3,8 @@
 	border-radius: 4px;
 	cursor: pointer;
 	text-transform: uppercase;
-	@include transition(border-radius, .4s);
+    @include transition(border-radius, .4s);
+    text-decoration: none;
 
 	&:hover {
 		border-radius: 30px; 
@@ -20,7 +21,8 @@
 	font-size: 1.1rem;
 	font-weight: bold;
 	letter-spacing: 0.28px;
-	border: 2px solid $orange;	
+    border: 2px solid $orange;
+    text-decoration: none;	
 
 	&:visited,
 	&:active {
@@ -41,6 +43,7 @@
     background: white;
     @include transition(border-radius, .4s);
     letter-spacing: 0.1em;
+    text-decoration: none;
 
     &_orange {
         background: $orange;
@@ -83,6 +86,40 @@
 
     &__green {
         background: url('../images/icons/arrow_button_green.svg') no-repeat;
+    }
+
+    &__orange {
+        background: url('../images/icons/arrow_button_orange.svg') no-repeat;
+    }
+}
+
+.play-button {
+    background: white;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease;
+    text-decoration: none;
+
+    &__icon {
+        width: 23px;
+        height: 23px;
+        fill: #cc0000;
+        transform: translate(2px, 0);
+        transition: fill 0.3s ease;
+    }
+
+    &:hover {
+        background: #cc0000;
+
+        .play-button__icon {
+            fill: white;
+        }
     }
 }
 

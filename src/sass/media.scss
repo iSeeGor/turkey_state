@@ -1,3 +1,12 @@
+// Header
+@import "layout/header-media";
+
+// Home Page
+@import "pages/home__media";
+
+// Blocks Advanced Search
+@import "blocks/about-section__media";
+
 // Blocks Advanced Search
 @import "blocks/advanced-search__media";
 
@@ -10,14 +19,20 @@
 // Privilages Section
 @import "blocks/tour-section__media";
 
+// Testimonial Slider 
+@import "blocks/testimonial-slider__media";
+
 // Blog
 @import "blog/news-posts__media";
 
+// Footer
+@import "layout/footer__media";
+
+// Block's
+@import "blocks/main__media.scss";
+
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {
-  .site__header {
-    display: none;
-  }
 
   .section-title {
     font-size: 3.6rem;

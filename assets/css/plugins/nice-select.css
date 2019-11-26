@@ -149,11 +149,11 @@
 .nice-select .option.focus,
 .nice-select .option.selected.focus {
   background-color: #e4f5ff;
-  color: #03ce77;
+  color: #0691e0;
 }
 
 .nice-select .option:hover {
-  color: #03ce77;
+  color: #0691e0;
 }
 
 .nice-select .option.selected {

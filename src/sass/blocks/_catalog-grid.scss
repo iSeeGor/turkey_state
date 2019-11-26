@@ -133,3 +133,21 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#023c5b",endColorstr="#023c5b",GradientType=1);
     }
 }
+
+@media (max-width: 992px){
+    .catalog-grid__box_full {
+        height: 689px;
+    }
+}
+
+@media (max-width: 767px){
+    .catalog-grid__box_full {
+        height: 327px;
+    }
+}
+
+@media (max-width: 400px){
+    .catalog-grid__box {
+        height: 275px !important;
+    }
+}

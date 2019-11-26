@@ -82,7 +82,7 @@
     &__icon-arrow {
         height: 14px;
         width: 8px;
-        fill: $skyBlue;
+        fill: $blue;
     }
 
     &__scrollbar {
@@ -97,12 +97,13 @@
         transform: translate(-50%,-50%);
 
         .swiper-scrollbar-drag {
-            background: $skyBlue;
+            background: $blue;
         }
     }
 
     &__button {
         margin: 50px auto 0;
         letter-spacing: 0.02em;
+        display: inline-block;
     }
 }

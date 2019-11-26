@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="/assets/css/plugins/animate.css" />
     <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css" />
     <link rel="stylesheet" href="/assets/css/plugins/simplebar.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/magnific-popup.css" />
 
     <!--== CSS main style -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
@@ -37,7 +38,159 @@
 
 <body>
 
+<!--== Site   -->
 <div class="site">
+    <!--== Side-Nav  -->
+    <div class="side-nav">
+        <div class="side-nav__container">
+            <header class="side-nav__header">
+                <div class="nav__wishlist">
+                    <a href="#" class="nav__wishlist-btn nav__wishlist-btn_active link">
+                        <svg class="nav__wishlist-icon icon-wishlist" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 279.9 245" xml:space="preserve" width="24" height="21">
+                            <path class="svg-path" d="M255.4,24.4C213.9-17,172.8,1.1,139.9,30.6C107,1.1,66.3-17.4,24.5,24.4c-32.6,32.6-32.7,84.9,0,117.2 C139.6,245.2,139.5,245,139.5,245s0.2,0.3,115.8-103.3C288.1,109.3,287.9,57,255.4,24.4z"></path>
+                        </svg>
+                        <div class="nav__wishlist-count">
+                            <span>88</span>
+                        </div>
+                    </a>
+
+                </div>
+            </header>
+            
+            <nav class="side-nav__mobile-nav mobile-nav">
+                <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link link_active" title="mobile-nav__link">Главная</a></li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">О компании</a></li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Каталог недвижимости</a>
+
+                        <ul class="mobile-nav__subnav mobile-subnav__list">
+                            <li class="mobile-subnav__item">
+                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                            <li class="mobile-subnav__item">
+                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                            <li class="mobile-subnav__item">
+                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a>
+
+                                <ul class="mobile-nav__subnav mobile-subnav__list">
+                                    <li class="mobile-subnav__item">
+                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                    <li class="mobile-subnav__item">
+                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                    <li class="mobile-subnav__item">
+                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                    <li class="mobile-subnav__item">
+                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                </ul>
+                            </li>    
+                            <li class="mobile-subnav__item">
+                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                        </ul>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Услуги</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Вопросы-ответы</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Отзывы</a>
+                    </li>
+                    <li class="mobile-nav__item">
+                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Новости</a>
+                    </li>
+                </ul>
+
+                
+            </nav>
+
+            <div class="side-nav__item">
+                <button class="button button_pure side-nav__button">Обратный звонок</button>
+            </div>
+
+            <div class="side-nav__item side-nav__item_phone-list">
+                <div class="head-meta__dropdown meta-dropdown meta-dropdown__phone-list">
+                    <button class="meta-dropdown__button"><a class="link" href="tel:+905346642710" title="TR +90 534 664 27 10"><span class="meta-dropdown__country">TR: +90 534 664 27 10</a></button>
+
+                    <div class="meta-dropdown__body">
+                        <ul class="meta-dropdown__list">
+                            <li class="meta-dropdown__list-item meta-dropdown__list-item_current"><a class="link" href="tel:+905346642710" title="TR +90 534 664 27 10">TR: +90 534 664 27 10</a></li>
+                            <li class="meta-dropdown__list-item"><a class="link" href="tel:+74993905289" title="RU +7 499 390 52 89">RU: +7 499 390 52 89</a></li>
+                            <li class="meta-dropdown__list-item"><a class="link" href="tel:+74993905289" title="RU +7 499 390 52 89">UA: +38 098 000 00 01</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="side-nav__item side-nav__item_email">
+                <a href="mailto:turkeystate@gmail.com" class="side-nav__email link" title="turkeystate@gmail.com">turkeystate@gmail.com</a>
+            </div>
+
+            <footer class="side-nav__footer">
+                <ul class="social-media__list side-nav__social-list">
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link social-media__link_facebook">
+                            <svg class="social-media__icon icon-facebook">
+                                <use xlink:href="/assets/images/symbol/sprite.svg#facebook__icon"></use>
+                            </svg> 
+                        </a>
+                    </li>
+
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link social-media__link_vk">
+                            <svg class="social-media__icon icon-vk">
+                                <use xlink:href="/assets/images/symbol/sprite.svg#vk__icon"></use>
+                            </svg> 
+                        </a>
+                    </li>
+
+                    <li class="social-media__item">
+                        <a href="#" class="social-media__link social-media__link_instagram">
+                            <svg class="social-media__icon icon-instagram">
+                                <use xlink:href="/assets/images/symbol/sprite.svg#instagram__icon"></use>
+                            </svg> 
+                        </a>
+                    </li>
+
+                    <li class="social-media__item ">
+                        <a href="#" class="social-media__link social-media__link_youtube">
+                            <svg class="social-media__icon icon-youtube">
+                                <use xlink:href="/assets/images/symbol/sprite.svg#youtube__icon"></use>
+                            </svg> 
+                        </a>
+                    </li>
+                
+                </ul>
+            </footer>
+        </div>    
+    </div>
+
+    <!--== Mobile Header  -->
+    <div class="mobile-header">
+        <div class="mobile-header__container">
+            <div class="hamburger">
+                <svg class="hamburger-icon hamburger-icon_rotate" viewBox="0 0 100 100" width="60" >
+                    <path
+                        class="hamburger-icon__line hamburger-icon__line_top"
+                        d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                        class="hamburger-icon__line hamburger-icon__line_middle"
+                        d="m 30,50 h 40" />
+                    <path
+                        class="hamburger-icon__line hamburger-icon__line_bottom"
+                        d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
+            </div>
+
+            <div class="mobile-logo">
+                <a href="/" title="Логотип"><img src="assets/images/general/mobile__logo.png" alt="Логотип" width="140"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--== Main Header  -->
     <header class="site__header header">
         <div class="container header__container">
 

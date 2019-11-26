@@ -18,12 +18,50 @@
 
 // Средние девайсы («таблетки», < 992px)
 @media (max-width: 991.98px) {
+
+    .tour-section__block_left::before {
+        right: 50%;
+        transform: translateX(50%);
+        width: 850px;
+        background-position: center 180px;
+        background-size: cover;
+    }
+
+    .tour-section__block_left {
+        padding: 96px 0 340px;
+    }
+
+    .tour-section__block_right::before {
+        width: 100%;
+    }
+
+    .tour-section__block_right {
+        padding: 398px 30px 110px;
+    }
 }
 
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width: 767.98px) {
+    .tour-section__block_left .tour-section__text-content {
+        padding: 0 20px;
+    }
+
+    .tour-section__block_left {
+        padding: 100px 0 200px;
+    }
+
+    .tour-section__block_right-image {
+        left: -12%;
+    }
+
+    .tour-section__block_right .tour-section__text-content {
+        padding-right: 0px;
+    }
 }
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
+    .tour-section__block_right-image {
+        left: -37%;
+    }
 }

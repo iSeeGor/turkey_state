@@ -4,17 +4,13 @@
 
 .advanced-search {
 
-    &__container {
-        padding: 0;
-        max-width: 1170px;
-    }
-
     &__form {
         padding: 50px 45px 50px 45px;
         background: white;
         border-radius: 4px;
         position: relative;
         z-index: 1;
+        // overflow: hidden;
     }
 }
 
@@ -68,6 +64,10 @@
             fill: $blue;
             height: 41px;
             width: 41px;
+
+            &_commercial {
+                width: 44px;
+            }
         }
 
         &-name {
@@ -86,6 +86,7 @@
 
             &::before {
                 height: 100%;
+                
             }
         }
 
@@ -96,13 +97,17 @@
         visibility: hidden;
         opacity: 0;
         height: 0;
+        width: 0;
         transform: translateY(-10px);
+        display: flex;
+
 
 
         &_current {
             visibility: visible;
             opacity: 1;
             height: 100%;
+            width: 100%;
             transform: translateY(0px);
             transition: opacity 0.8s ease,
                         visibility 0.8s ease,
@@ -110,8 +115,31 @@
         }
     }
 
+    &__tab-item {
+        max-width: 175px;
+        flex: 0 0 175px;
+        margin-right: 20px;
+        margin-bottom: 62px; 
+
+        &:last-child {
+            margin-right: 0;
+            max-width: inherit;
+            flex: 1 1 auto;
+        }
+
+        &_price {
+            flex: 0 0 250px;
+            max-width: 250px;
+        }
+        
+        &_id {
+            flex: 0 0 95px;
+            max-width: 95px;
+        }
+    }
+
     &__select {
-        margin-bottom: 62px;     
+            
     }
 
     &__fieldset-price {
@@ -124,7 +152,8 @@
         -webkit-appearance: none; 
         -moz-appearance:textfield;
         padding: 6px 4px;
-        max-width: 42.5%;
+        max-width: 41.8%;
+        background: transparent;
 
         &::placeholder {
             color: inherit;
@@ -141,16 +170,46 @@
                 color:transparent;
             }
         }
+
+        &_id {
+            border-bottom: 2px solid #d9dde8;
+            max-width: 100%;
+        }
     }
 
     &__currency {
         text-align: right;
         margin-left: auto;
         display: inline-block;
+        color: #a9adb6;
     }
 
     &__button {
-        padding: 6px 30px 5px;
+        padding: 7px 10px 7px;
         width: 100%;
+    }
+    
+}
+
+.search-form__fieldset-price .dash {
+    position: relative;
+    display: inline-block;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 5px);
+        left: -8px;
+        width: 10px;
+        height: 2px;
+        background: #1b253b;
+    }
+}
+
+@media(min-width: 1200px){
+    .search-form__button {
+        top: -14px;
+        position: relative;
+        padding: 14px 10px 12px;
     }
 }

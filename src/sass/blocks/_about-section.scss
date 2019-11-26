@@ -5,8 +5,8 @@
 
     position: relative;
     overflow: hidden;
-    padding-bottom: 70px;
-    padding-top: 31px;
+    // padding-bottom: 70px;
+    padding-top: 40px;
 
     &__container {
         position: relative;
@@ -19,6 +19,7 @@
             background: $lightSkyBlue;
             border-radius: 4px 0 0 4px;
             right: -10010px;
+            bottom: 30px;
 
             transition: transform 1s ease 0.5s,
                         opacity 1s ease 0.5s;
@@ -28,18 +29,36 @@
     &__company-info {
         // background: $skyBlue;
         position: relative;
+        padding: 60px 0 52px;
+        margin-bottom: 24px;
 
-        &::before {
+        &::after {
             content: '';
-            height: 244px;
+            height: 100%;
             width: 10000px;
-            background: $skyBlue;
+            background: #0690e0;
             position: absolute;
             border-radius: 0 4px 4px 0;
-            top: -66px;
+            top: 0;
             right: 0;
             transition: transform 1s ease 0.5s,
                         opacity 1s ease 0.5s;
+                        z-index: -1;
+        }
+
+        &::before {
+            content: '';
+            height: 100%;
+            width: 10000px;
+            background: url('../images/general/about-section-deco-image.jpg') no-repeat bottom right;
+            background-size: 960px;
+            position: absolute;
+            border-radius: 0 4px 4px 0;
+            top: 0;
+            right: 0;
+            transition: transform 1s ease 0.5s,
+                        opacity 1s ease 0.5s;
+            opacity: 0.4 !important;
         }
     }
 
@@ -49,21 +68,21 @@
         letter-spacing: 0.1em;
         color: white;
         text-transform: uppercase;
-        margin: 35px 0 12px 0;
+        margin: 0px 0 12px 0;
         position: relative;
 
-        &::before {
-            content: '';
-            width: 212px;
-            height: 150px;
-            background: url('../images/icons/title-figure.svg') no-repeat;
-            background-size: contain;
-            display: block;
-            opacity: 0.2;
-            position: absolute;
-            top:-40px;
-            left: -40px;
-        }
+        // &::before {
+        //     content: '';
+        //     width: 212px;
+        //     height: 150px;
+        //     background: url('../images/icons/title-figure.svg') no-repeat;
+        //     background-size: contain;
+        //     display: block;
+        //     opacity: 0.2;
+        //     position: absolute;
+        //     top:-40px;
+        //     left: -40px;
+        // }
     }
 
     &__company-slogan {
@@ -85,28 +104,31 @@
     }
 
     &__button {
-        margin: 48px auto 0;
+        margin: auto;
     }
 }
 
 // Animation Before Block
-[data-scroll="out"].about-section__company-info::before {
+[data-scroll="out"].about-section__company-info::before,
+[data-scroll="out"].about-section__company-info::after {
     transform: translateX(-1000px);
-    opacity: 0;
+    opacity: 1;
 }
-[data-scroll="in"].about-section__company-info::before {
+[data-scroll="in"].about-section__company-info::before,
+[data-scroll="in"].about-section__company-info::after {
     transform: translateX(0px);
     opacity: 1;
 }
 
-[data-scroll="out"].about-section__container::before {
+[data-scroll="out"].about-section__container::before, {
     transform: translateX(1000px);
-    opacity: 0;
+    opacity: 1;
 }
 [data-scroll="in"].about-section__container::before {
     transform: translateX(0px);
     opacity: 1;
 }
+
 
 
 .about-section__service-block {
@@ -119,12 +141,14 @@
 .years-block {
     display: flex;
     // flex-wrap: wrap;
-    padding-top: 5px;
+    // padding-top: 5px;
+    flex-direction: column;
+    border-left: 10px solid #e4f5ff;
+    min-height: 232px;
 
     &__num {
-        margin-right: 60px;
-        max-width: 224px;
-        flex: 0 0 224px;
+        margin: 10px 28px 29px;
+        max-width: 147px;
     }
     
     &__year-text {
@@ -139,6 +163,9 @@
 
     &__desc {
         @include font_medium;
-        font-size: 2.0rem;
+        font-size: 1.6rem;
+        overflow: hidden;
+        max-height: 74px;
+        padding: 0 25px;
     }
 }

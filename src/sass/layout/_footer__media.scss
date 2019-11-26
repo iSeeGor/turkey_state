@@ -1,0 +1,54 @@
+// Большие девайсы (большие десктопы, < 1200px)
+@media (max-width: 1199.98px) {
+
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+
+    .footer-widget {
+        margin-bottom: 40px;
+    }
+
+    .creater__text {
+        flex: 0 140px;
+    }
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+    .footer-widget__content--no-title {
+        padding: 0;
+    }
+
+    .footer-widget__list--links {
+        padding-top: 0px;
+    }
+
+    .footer-social__title {
+        display: none;
+    }
+
+    .footer-social__item {
+        flex: 1 1 25%;
+        max-width: 25%;
+        padding: 15px 0;
+    }
+
+    .creater {
+        justify-content: center;
+    }
+
+    .copyrights__text {
+        margin-bottom: 10px;
+    }
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+
+    .footer-logo {
+        display: none;
+    }
+}
