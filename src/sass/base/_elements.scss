@@ -56,7 +56,8 @@ img {
 
 }
 
-.section-title {
+.section-title,
+.block-title {
 	@include font_bold;
 	font-size: 4.2rem;
 	line-height: 1.1428;
@@ -82,6 +83,11 @@ img {
 			background: white;
 		}
 	}
+}
+
+.block-title {
+	font-size: 3.2rem;
+	line-height: 4.0rem;
 }
 
 .head-meta__dropdown {
@@ -193,4 +199,12 @@ img {
 		fill: $blue;
 		transform: rotate(90deg);
 	}
+}
+
+.page-title {
+	margin: 0;
+	font-size: 4.2rem;
+	@include font_bold;
+	line-height: 1.142857142857143;
+	color: $strong_color;
 }

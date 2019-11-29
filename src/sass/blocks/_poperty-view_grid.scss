@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Property(Property) View / Grid
+--------------------------------------------------------------*/
+.property-view {
+    padding-bottom: 50px;
+
+    &__grid {
+        margin-bottom: 30px;
+    }
+
+    &__grid .property-card {
+        margin-bottom: 30px;
+    }
+
+    &__pagination {
+        padding: 20px 0 50px 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .property-view__grid .property-card { max-width: 100%; }
+}

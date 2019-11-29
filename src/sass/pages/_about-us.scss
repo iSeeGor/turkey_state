@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+# About Us Page
+--------------------------------------------------------------*/
+.about-us {
+    position: relative;
+
+    &__text-block {
+        margin-bottom: 110px;
+    }
+
+    &__text-block-inner {
+        padding-top: 60px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 10px solid $lightSkyBlue;
+            border-top: none;
+            border-radius: 0 0 4px 4px;
+
+        }
+    }
+    
+
+    &__box-title,
+    &__slogan {
+        @include font_medium;
+        font-size: 2.0rem;
+        line-height: 3.0rem;
+    }
+
+    &__text-box{
+        margin-bottom: 55px;
+        
+    }
+
+    &__text-box-row {
+        display: flex;
+        justify-content: space-between;
+
+        .about-us__text-box {
+            max-width: 400px;
+        }
+    }
+
+    &__slogan {
+        margin-bottom: 70px;
+        text-align: center;
+    }
+}
+
+.about-us__text-block .container {
+    position: relative;
+}
+
+.about-us__deco {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: url(../images/general/tour-section-block-left-figure.svg);
+        width: 400px;
+        opacity: 0.3;
+    }
+
+    &::before {
+        bottom: -100px;
+        left: -460px;
+    }
+    &::after {
+        right: -420px;
+        bottom: -200px;;
+    }
+}
+
+.about-us__checklist-block {
+    margin-bottom: 150px;
+}
+
+.about-us__privilages {
+    position: relative;
+    z-index: 1;
+}
+
+.privilages-card {
+    border: 10px solid $lightSkyBlue;
+    border-radius: 4px;
+    position: relative;
+    min-height: 322px;
+    margin-bottom: 30px;
+    background: #ffffff;
+
+    &__icon-box {
+        position: absolute;
+        top: -40px;
+        background: $lightSkyBlue;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        left: calc(50%);
+        transform: translateX(-24px);
+    }
+
+    &__icon {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        top: -3px;
+        left: -7px;
+    }
+
+    &__body {
+        padding: 0 10px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        @include font_bold;
+        font-size: 2.0rem;
+        margin-bottom: 8px;
+        color: $heading_color;
+    }
+
+}

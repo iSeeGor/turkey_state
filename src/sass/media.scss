@@ -1,3 +1,6 @@
+// Base
+@import "base/media";
+
 // Header
 @import "layout/header-media";
 
@@ -25,11 +28,16 @@
 // Blog
 @import "blog/news-posts__media";
 
+// Pages
+@import 'pages/media';
+
+
 // Footer
 @import "layout/footer__media";
 
 // Block's
 @import "blocks/main__media.scss";
+
 
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {

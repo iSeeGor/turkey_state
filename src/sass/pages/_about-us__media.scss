@@ -1,0 +1,93 @@
+@media (max-width: 1199.98px) {
+    .about-us__text-box-row .about-us__text-box {
+        max-width: 340px;
+    }
+
+    .privilages-card {
+        margin-bottom: 70px;
+    }
+}
+
+// Средние девайсы («таблетки», < 992px)
+@media (max-width: 991.98px) {
+    .about-us__text-box-row {
+        flex-wrap: wrap;
+    }
+
+    .about-us__text-box-row .about-us__text-box {
+        max-width: 100%;
+    }
+
+    .about-us__text-box {
+        margin-bottom:35px;
+    }
+    
+}
+
+// Малые девайсы («ландшафтные», < 768px)
+@media (max-width: 767.98px) {
+
+    .about-us__text-block-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .privilages-card {
+        min-height: 220px;
+    }
+}
+
+// Экстрамалые девайсы («телефоны», < 576px)
+@media (max-width: 575.98px) {
+}
+
+@media (min-width: 1200px){
+    .about-us__privilages {
+        margin-bottom: -93px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: calc(-50% + 15px);
+            height: 100%;
+            width: 100%;
+            background: #fff;
+            z-index: -1;
+        }
+    }
+    
+    // Horizontal Card
+    .privilages-card_horiz {
+        min-height: auto;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        
+        .privilages-card__icon-box {
+            position: initial;
+            transform: translate(0, 0);
+            margin: 30px 70px;
+        }
+
+        .privilages-card__body {
+            margin: 0;
+        }
+
+    }
+
+    // Card Positioning in Main Block
+    .privilages-card {
+
+        &_prof,
+        &_safe {
+            margin-top: 20px;
+        }
+
+        &_clear,
+        &_ethic {
+            margin-top: -180px;
+            margin-bottom: 37px;
+        }
+    }
+}

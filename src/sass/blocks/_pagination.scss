@@ -1,0 +1,165 @@
+/*-- Pagination --*/
+.pagination__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination {
+    width: 100%;
+    max-width: 480px;
+    border-top: 2px solid #d9dde8;
+    clear: both;
+
+    &__next {
+
+    }
+
+    &__prev {
+        
+    }
+
+    &__icon {
+        width: 9px;
+        height: 8px;
+        fill: $blue;
+
+        &_prev {
+            transform: scaleX(-1);
+        }
+    }
+}
+.pagination li {
+    float: left;
+}
+.pagination a,
+.pagination span,
+.pagination strong {
+    float: left;
+    text-align: center;
+    padding-top: 18px;
+    color: $strong_color;
+}
+
+.pagination a {
+    color: $font_main;
+}
+
+@media screen and (min-width: 48em) {
+    .pagination a,
+    .pagination span,
+    .pagination strong {
+        display: block;
+    }
+}
+.pagination a {
+    text-decoration: none;
+}
+.pagination__prev,
+.pagination__next {
+    width: 33.33333%;
+}
+@media screen and (min-width: 37.5em) {
+    .pagination__prev,
+    .pagination__next {
+        width: 20%;
+    }
+}
+.pagination__prev a,
+.pagination__next a {
+    display: block;
+    width: 100%;
+}
+.pagination__prev {
+    float: left;
+}
+.pagination__prev a {
+    text-align: left;
+}
+.pagination__next {
+    float: right;
+}
+.pagination__next a {
+    text-align: right;
+}
+
+/* <ul> */
+.pagination__list {
+    width: 100%;
+    position: relative;
+    top: -3px;
+}
+
+/* <li> - pagination numbers */
+.pagination__item {
+    width: 33.33333%;
+}
+@media screen and (min-width: 48em) {
+    .pagination__item {
+        width: calc(100% - 230px);
+    }
+}
+.pagination__item a,
+.pagination__item span,
+.pagination__item strong {
+    display: none;
+    text-align: center;
+    width: 100%;
+}
+.pagination__item a.current,
+.pagination__item span.current,
+.pagination__item strong.current {
+    display: block;
+}
+@media screen and (min-width: 37.5em) {
+    .pagination__item a {
+        display: block;
+    }
+}
+
+/* prev/next icon */
+.pagination__prev-icon,
+.pagination__next-icon {
+    margin-top: 1px;
+}
+.disabled .pagination__prev-icon,
+.disabled .pagination__next-icon {
+    color: #bec2d8;
+}
+
+.fullprevnext .pagination__prev-icon {
+    float: left;
+}
+
+.fullprevnext .pagination__next-icon {
+    float: right;
+}
+
+/* prev/next text */
+.pagination__prev-txt,
+.pagination__next-txt {
+    display: none;
+}
+.disabled .pagination__prev-txt,
+.disabled .pagination__next-txt {
+    color: #bec2d8;
+}
+.fullprevnext .pagination__prev-txt,
+.fullprevnext .pagination__next-txt {
+    display: inline-block;
+    padding-top: 0;
+}
+
+.fullprevnext .pagination__prev-txt {
+    float: left;
+}
+
+.fullprevnext .pagination__next-txt {
+    float: right;
+}
+
+.pagination__magic-line {
+    background-color: $strong_color;
+    position: absolute;
+    height: 3px;
+}

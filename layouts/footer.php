@@ -1,3 +1,4 @@
+<!--== Footer -->
 <footer class="site__footer footer">
     <div class="footer-widgets">
         <div class="container">
@@ -169,7 +170,7 @@
     </div>
 </footer>
 
-</div><!-- page -->
+</div>
 
 <!--== scroll-to-top -->
 <div class="scroll-to-top">

@@ -4,7 +4,7 @@
 
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {
-    .search-form__tab-content_current {
+    .search-form__tab-content {
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -36,6 +36,11 @@
     .search-form__tab-item {
         margin-bottom: 40px;
     }
+
+    // Catalog Page Styles
+    .catalog .advanced-search__form {
+        padding: 0 20px;
+    }
 }
 
 // Средние девайсы («таблетки», < 992px) 
@@ -60,6 +65,11 @@
     .search-form__tab-item:last-child {
         max-width: 20%;
         flex: 0 0 20%;
+    }
+
+    // Catalog Page Styles 
+    .catalog .advanced-search__form {
+        padding: 0;
     }
 }
 

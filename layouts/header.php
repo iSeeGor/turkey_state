@@ -11,6 +11,7 @@
 
     <meta name="description" content="Turkey State site description" />
     <meta name="keywords" content="Turkey State keywords" />
+    <meta name="format-detection" content="telephone=no">
 
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
@@ -45,7 +46,7 @@
         <div class="side-nav__container">
             <header class="side-nav__header">
                 <div class="nav__wishlist">
-                    <a href="#" class="nav__wishlist-btn nav__wishlist-btn_active link">
+                    <a href="/pages/wishlist.php" class="nav__wishlist-btn nav__wishlist-btn_active link">
                         <svg class="nav__wishlist-icon icon-wishlist" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 279.9 245" xml:space="preserve" width="24" height="21">
                             <path class="svg-path" d="M255.4,24.4C213.9-17,172.8,1.1,139.9,30.6C107,1.1,66.3-17.4,24.5,24.4c-32.6,32.6-32.7,84.9,0,117.2 C139.6,245.2,139.5,245,139.5,245s0.2,0.3,115.8-103.3C288.1,109.3,287.9,57,255.4,24.4z"></path>
                         </svg>
@@ -62,9 +63,9 @@
                     <li class="mobile-nav__item">
                         <a href="#" class="mobile-nav__link link link_active" title="mobile-nav__link">Главная</a></li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">О компании</a></li>
+                        <a href="/pages/about-us.php" class="mobile-nav__link link" title="mobile-nav__link">О компании</a></li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Каталог недвижимости</a>
+                        <a href="/pages/catalog.php" class="mobile-nav__link link" title="mobile-nav__link">Каталог недвижимости</a>
 
                         <ul class="mobile-nav__subnav mobile-subnav__list">
                             <li class="mobile-subnav__item">
@@ -185,7 +186,7 @@
             </div>
 
             <div class="mobile-logo">
-                <a href="/" title="Логотип"><img src="assets/images/general/mobile__logo.png" alt="Логотип" width="140"></a>
+                <a href="/" title="Логотип"><img src="/assets/images/general/mobile__logo.png" alt="Логотип" width="140"></a>
             </div>
         </div>
     </div>
@@ -197,7 +198,7 @@
             <div class="header__branding">
                 <div class="nav__brand">
                     <div class="nav__brand-image">
-                        <a href="/" title="Логотип"><img src="assets/images/general/logo.png" alt="Логотип"></a>
+                        <a href="/" title="Логотип"><img src="/assets/images/general/logo.png" alt="Логотип"></a>
                     </div>
                 </div>
             </div>
@@ -211,11 +212,11 @@
                         </li>
 
                         <li class="main-menu__item">
-                            <a href="/" class="main-menu__link link" title="О компании" data-text="О компании">О компании</a>
+                            <a href="/pages/about-us.php" class="main-menu__link link" title="О компании" data-text="О компании">О компании</a>
                         </li>
                         
                         <li class="main-menu__item item__has-dropdown">
-                            <a href="/" class="main-menu__link link" title="Каталог недвижимости" data-text="Каталог недвижимости">Каталог недвижимости</a>
+                            <a href="/pages/catalog.php" class="main-menu__link link" title="Каталог недвижимости" data-text="Каталог недвижимости">Каталог недвижимости</a>
 
                             <ul class="main-menu__dropdown dropdown-menu">
                                 <li class="main-menu__item"><a href="/" class="main-menu__link link" title="Недвижимость Алания">Недвижимость Алания</a></li>
@@ -283,7 +284,7 @@
                     </form> -->
 
                     <div class="nav__wishlist">
-                        <a href="#" class="nav__wishlist-btn nav__wishlist-btn_active link">
+                        <a href="/pages/wishlist.php" class="nav__wishlist-btn nav__wishlist-btn_active link">
                             <svg  class="nav__wishlist-icon icon-wishlist" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 279.9 245" xml:space="preserve" width="20" height="17">
                                 <path class="svg-path" d="M255.4,24.4C213.9-17,172.8,1.1,139.9,30.6C107,1.1,66.3-17.4,24.5,24.4c-32.6,32.6-32.7,84.9,0,117.2 C139.6,245.2,139.5,245,139.5,245s0.2,0.3,115.8-103.3C288.1,109.3,287.9,57,255.4,24.4z"/>
                             </svg>

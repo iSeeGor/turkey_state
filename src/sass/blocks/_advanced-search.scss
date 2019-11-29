@@ -94,25 +94,13 @@
 
     &__tab-content {
   
-        visibility: hidden;
-        opacity: 0;
-        height: 0;
-        width: 0;
-        transform: translateY(-10px);
+        visibility: visible;
+        opacity: 1;
+        height: 100%;
+        width: 100%;
+        // transform: translateY(-10px);
         display: flex;
 
-
-
-        &_current {
-            visibility: visible;
-            opacity: 1;
-            height: 100%;
-            width: 100%;
-            transform: translateY(0px);
-            transition: opacity 0.8s ease,
-                        visibility 0.8s ease,
-                        transform 0.8s ease;
-        }
     }
 
     &__tab-item {

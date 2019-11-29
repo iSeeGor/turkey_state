@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
     hamburger();
     sideNav();
     mobileNavMenu();
@@ -19,109 +19,109 @@ $(function () {
     videoPopup();
     scrollToTop();
     headerAnimation();
+    pagination();
     //   filterTabsToggle();
     //   categoryLinksToggle();
     //   bgLinesResize();
     //   hamburgerToggle();
 });
 
-// Hamburger add Class 
+// Hamburger add Class
 const hamburger = () => {
-    let hamburger = document.querySelector('.hamburger-icon');
+    let hamburger = document.querySelector(".hamburger-icon");
 
-    hamburger.addEventListener('click', () => {
-
-        hamburger.classList.toggle('hamburger-icon_active');
-    })  
-}
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("hamburger-icon_active");
+    });
+};
 
 // Side-Nav
 const sideNav = () => {
-    let ham = document.querySelector('.hamburger');
-    let sidenav = document.querySelector('.side-nav');
-    let header = document.querySelector('.mobile-header');
+    let ham = document.querySelector(".hamburger");
+    let sidenav = document.querySelector(".side-nav");
+    let header = document.querySelector(".mobile-header");
 
-    ham.addEventListener('click', () => {
-        sidenav.classList.toggle('side-nav_active');
+    ham.addEventListener("click", () => {
+        sidenav.classList.toggle("side-nav_active");
 
         const headerSlide = () => {
-            header.setAttribute("style", "transform: translateX(calc(100% - 60px));");
-            document.body.style.overflow = 'hidden';
-            
-            
-        }
+            header.setAttribute(
+                "style",
+                "transform: translateX(calc(100% - 60px));"
+            );
+            document.body.style.overflow = "hidden";
+        };
 
         const headerNormal = () => {
             header.setAttribute("style", "transform: translateX(0);");
-            document.body.style.overflow = 'auto';
-            
-        }
+            document.body.style.overflow = "auto";
+        };
 
-        
-        (sidenav.classList.contains('side-nav_active')) ? headerSlide() : headerNormal();
-    })
-}
+        sidenav.classList.contains("side-nav_active")
+            ? headerSlide()
+            : headerNormal();
+    });
+};
 
-// Mobile Accordion Menu 
+// Mobile Accordion Menu
 const mobileNavMenu = () => {
-    
     let AccordionMenu = function(selector) {
         this.colMenu = document.querySelectorAll(`${selector} li`);
         let This = this;
         this.colMenu.forEach(function(items) {
-            if (items.querySelector('ul')) {
-                items.firstElementChild.classList.add('has-dropdown');
+            if (items.querySelector("ul")) {
+                items.firstElementChild.classList.add("has-dropdown");
                 // items.firstElementChild.insertAdjacentHTML('beforeend', '<svg class="mobile-menu__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 451.847 451.847" xml:space="preserve"> <g> <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751 c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0 c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/> </g> </svg>');
-    
+
                 items.firstElementChild.onclick = function(e) {
                     e.preventDefault();
-                    
-                    let isTrue = this.parentElement.classList.toggle('open');
-    
+
+                    let isTrue = this.parentElement.classList.toggle("open");
+
                     if (isTrue) {
                         This.show(this.nextElementSibling);
                     } else {
                         This.hide(this.nextElementSibling);
                     }
-                }
-            } 
-        })
-    }
-    
+                };
+            }
+        });
+    };
+
     // Show an element
     AccordionMenu.prototype.show = function(elem) {
         // Get the natural height of the element
         var getHeight = function() {
-            elem.style.display = 'block'; // Make it visible
-            var height = elem.scrollHeight + 'px'; // Get it's height
+            elem.style.display = "block"; // Make it visible
+            var height = elem.scrollHeight + "px"; // Get it's height
             return height;
         };
-    
+
         var height = getHeight(); // Get the natural height
         elem.style.height = height; // Update the height
-        
+
         setTimeout(function() {
-            elem.style.height = 'auto';
+            elem.style.height = "auto";
         }, 350);
     };
-    
+
     // Hide an element
     AccordionMenu.prototype.hide = function(elem) {
         // Give the element a height to change from
-        elem.style.height = elem.scrollHeight + 'px';
-    
+        elem.style.height = elem.scrollHeight + "px";
+
         // Set the height back to 0
         setTimeout(function() {
-            elem.style.height = '0';
+            elem.style.height = "0";
         }, 110);
-    
+
         setTimeout(function() {
-            elem.style.display = '';
+            elem.style.display = "";
         }, 700);
     };
 
-    new AccordionMenu('.mobile-nav');
-}
+    new AccordionMenu(".mobile-nav");
+};
 
 // SmoothScroll
 const smoothScroll = () => {
@@ -170,30 +170,30 @@ const searchFormPriceMask = () => {
 
 // Search Form Tabs
 const searchFormTabs = () => {
-    $(document).on("click", ".search-form__tab", function () {
+    $(document).on("click", ".search-form__tab", function() {
         let tabName = $(this).attr("data-tab");
 
         $(".search-form__tab").removeClass("search-form__tab_current");
-        $(".search-form__tab-content").removeClass(
-            "search-form__tab-content_current"
-        );
+        // $(".search-form__tab-content").removeClass(
+        //     "search-form__tab-content_current"
+        // );
 
         $(this).addClass("search-form__tab_current");
-        $(".search-form__tab-content_" + tabName).addClass(
-            "search-form__tab-content_current"
-        );
+        // $(".search-form__tab-content_" + tabName).addClass(
+        //     "search-form__tab-content_current"
+        // );
     });
 };
 
 // Meta Dropdown List
 const metaDropdown = () => {
-    $(document).on("click", ".meta-dropdown__button", function () {
+    $(document).on("click", ".meta-dropdown__button", function() {
         $(this)
             .parent()
             .toggleClass("meta-dropdown_opened");
     });
 
-    $(document).on("click", ".meta-dropdown__list-item", function () {
+    $(document).on("click", ".meta-dropdown__list-item", function() {
         let html = $(this).html();
         $(".meta-dropdown__list-item").removeClass(
             "meta-dropdown__list-item_current"
@@ -207,7 +207,7 @@ const metaDropdown = () => {
         $(".meta-dropdown").removeClass("meta-dropdown_opened");
     });
 
-    $("body").on("click", function (event) {
+    $("body").on("click", function(event) {
         if (!$(event.target).is(".meta-dropdown__list")) {
             $(".meta-dropdown").removeClass("meta-dropdown_opened");
         }
@@ -229,7 +229,7 @@ const scrollOutPlugin = () => {
 
 // Add To Favorit Button Toggle
 const toFavoritToggle = () => {
-    $(".to-favorit__button").on("click", function () {
+    $(".to-favorit__button").on("click", function() {
         $(this).toggleClass("to-favorit__button_active");
     });
 };
@@ -346,7 +346,7 @@ const testimonialSlider = () => {
     });
 
     // Add 'current' class when slide is changed
-    testimonialSlider.on("slideChange", function () {
+    testimonialSlider.on("slideChange", function() {
         let slideThumb = $(".testimonialSlider-thumbs__list-item");
         let currentIndex = testimonialSlider.activeIndex;
 
@@ -357,7 +357,7 @@ const testimonialSlider = () => {
     });
 
     // Change Slide when user click on Thumb
-    $(document).on("click", ".testimonialSlider-thumbs__list-item", function () {
+    $(document).on("click", ".testimonialSlider-thumbs__list-item", function() {
         let slideThumb = $(".testimonialSlider-thumbs__list-item");
         let current = slideThumb.index(this);
 
@@ -370,11 +370,11 @@ const testimonialSlider = () => {
 
 // Custom Scrollbar
 const scrollBar = () => {
-    new SimpleBar(document.querySelector(".testimonialSlider__message-inner"), {
-        autoHide: false
-    });
-
-    // console.log(1);
+    if(document.querySelector(".testimonialSlider__message-inner")){
+        new SimpleBar(document.querySelector(".testimonialSlider__message-inner"), {
+            autoHide: false
+        });
+    }
 };
 
 // Video Section Popups
@@ -385,7 +385,7 @@ const videoPopup = () => {
             patterns: {
                 youtube: {
                     index: "youtube.com/",
-                    id: function (url) {
+                    id: function(url) {
                         var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
                         if (!m || !m[1]) return null;
                         return m[1];
@@ -394,7 +394,7 @@ const videoPopup = () => {
                 },
                 vimeo: {
                     index: "vimeo.com/",
-                    id: function (url) {
+                    id: function(url) {
                         var m = url.match(
                             /(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/
                         );
@@ -412,7 +412,7 @@ const videoPopup = () => {
 const scrollToTop = () => {
     let toTopBtn = $(".scroll-to-top");
 
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 1000) {
             toTopBtn.addClass("scroll-to-top_show");
         } else {
@@ -420,34 +420,198 @@ const scrollToTop = () => {
         }
     });
 
-    toTopBtn.on("click", function () {
+    toTopBtn.on("click", function() {
         $("html, body").animate({ scrollTop: 0 }, 1000);
-    });   
+    });
 };
 
 // Header OnScroll Animation
 const headerAnimation = () => {
-    const header = document.querySelector('.site__header');
-    const headerShow = 'header_show';
-    const headerHide = 'header_hide';
+    const header = document.querySelector(".site__header");
+    const headerShow = "header_show";
+    const headerHide = "header_hide";
     let lastOffset = 0;
 
-    window.addEventListener('scroll', () => {
-        let currOffset = window.scrollY;
+    window.addEventListener("scroll", () => {
+        let currOffset = window.pageYOffset;
 
-        if(currOffset > lastOffset && lastOffset != 0 ) {
+        if (currOffset > lastOffset && lastOffset != 0) {
             header.classList.add(headerHide);
             header.classList.remove(headerShow);
-            
         } else {
             header.classList.add(headerShow);
-            header.classList.remove(headerHide);        
+            header.classList.remove(headerHide);
         }
 
         lastOffset = currOffset;
-    })   
-}
+    });
+};
 
+// Pagination
+const pagination = () => {
+    (function() {
+        /*global Modernizr:true */
+        "use strict";
+        (function($) {
+            $.fn.extend({
+                mgPgnation: function(options) {
+                    /* func :: calculate width of each page num */
+                    /* func :: draw magic line */
+                    /* func :: update prev text */
+                    var $curNav,
+                        $magicLine,
+                        $magicNav,
+                        $mainNav,
+                        $nextNav,
+                        $pgnNav,
+                        $prevNav,
+                        $prevNavText,
+                        $this,
+                        calPgnWidth,
+                        magicDraw,
+                        prevNavWidth,
+                        prevText,
+                        showPrevNext,
+                        updatePrevText;
+                    $this = $(this);
+                    if ($this.length) {
+                        $mainNav = this.children();
+                        $pgnNav = $this.find(".pagination__item");
+                        $curNav = $this.find(".current");
+                        $magicNav = $this.find("a");
+                        $prevNav = $this.find(".pagination__prev");
+                        $nextNav = $this.find(".pagination__next");
+                        $prevNavText = $prevNav.find(".pagination__prev-txt");
+                        updatePrevText = function() {
+                            $prevNavText = $prevNav.find(".pagination__prev-txt");
+                            return $prevNavText.html("Prev");
+                        };
+                        calPgnWidth = function() {
+                            var pgnWidth, prevWidth, vsbNav, vsbNavs;
+                            // number of visible <a> plus <strong class="current">
+                            vsbNav = $this.find(".pagination__item a:visible").length + 1;
+                            vsbNavs = vsbNav + 2;
+                            prevWidth = 100 / vsbNavs;
+                            pgnWidth = 100 - prevWidth * 2;
+                            $prevNav.css("width", prevWidth + "%");
+                            $nextNav.css("width", prevWidth + "%");
+                            $pgnNav.css("width", pgnWidth + "%");
+                            // <a> and <strong>
+                            return $pgnNav
+                                .find("a, strong")
+                                .css("width", 100 / vsbNav + "%");
+                        };
+                        /* func :: calculate and display prev/next */
+                        // 85px - display full text
+                        showPrevNext = function() {
+                            var prevNavWidth;
+                            prevNavWidth = $prevNav.innerWidth();
+                            if (prevNavWidth > 100) {
+                                $this.addClass("fullprevnext");
+                                // display Previous
+                                return $prevNavText.html("Previous");
+                            } else if (
+                                prevNavWidth < 101 &&
+                                prevNavWidth > 60
+                            ) {
+                                $this.addClass("fullprevnext");
+                                // display Prev
+                                return $prevNavText.html("Prev");
+                            } else {
+                                return $this.removeClass("fullprevnext");
+                            }
+                        };
+                        magicDraw = function() {
+                            // draw init magic line
+                            $magicLine.width($curNav.width());
+                            if ($curNav.position() !== void 0) {
+                                $magicLine.css("left", $curNav.position().left);
+                            }
+
+                            // assign orig values
+                            $magicLine.data(
+                                "origLeft",
+                                $magicLine.position().left
+                            );
+                            return $magicLine.data(
+                                "origWidth",
+                                $magicLine.width()
+                            );
+                        };
+                        // END funcs
+
+                        // create magic line
+                        $mainNav.append('<li class="pagination__magic-line">');
+
+                        // declare magic line
+                        $magicLine = $this.find(".pagination__magic-line");
+                        // add extra class & element if no prev or next
+                        prevNavWidth = $prevNav.innerWidth();
+                        if (prevNavWidth > 100) {
+                            prevText = "Previous";
+                        } else {
+                            prevText = "Prev";
+                        }
+                        if (!$prevNav.children().length) {
+                            $prevNav.addClass("disabled");
+                            $prevNav.append(
+                                '<a rel="prev"><i class="pagination__prev-icon icon-angle-left"></i><span class="pagination__prev-txt">' +
+                                    prevText +
+                                    "</span></a>"
+                            );
+                        }
+                        if (!$nextNav.children().length) {
+                            $nextNav.addClass("disabled");
+                            $nextNav.append(
+                                '<a rel="next"><i class="pagination__next-icon icon-angle-right"></i><span class="pagination__next-txt">Next</span></a>'
+                            );
+                        }
+                        // calculate pagination width
+                        calPgnWidth();
+                        // show prev/next
+                        showPrevNext();
+                        // draw magic line
+                        magicDraw();
+
+                        // when hover
+                        $magicNav.hover(
+                            function() {
+                                var $el, leftPos, newWidth;
+                                $el = $(this);
+                                leftPos = $el.position().left;
+                                newWidth = $el.width();
+
+                                // animate magic line
+                                return $magicLine.stop().animate({
+                                    left: leftPos,
+                                    width: newWidth
+                                });
+                            },
+                            function() {
+                                return $magicLine.stop().animate({
+                                    left: $magicLine.data("origLeft"),
+                                    width: $magicLine.data("origWidth")
+                                });
+                            }
+                        );
+                        /* Window Resize Changes */
+                        return window.addEventListener("resize", function() {
+                            updatePrevText();
+                            calPgnWidth();
+                            showPrevNext();
+                            return magicDraw();
+                        });
+                    }
+                }
+            });
+
+            // END mgPgnation()
+
+            // call function here
+            return $(".pagination").mgPgnation();
+        })(jQuery);
+    }.call(this));
+};
 
 // // Prevent Defult for all 'a' tag's
 // const preventDefaultLinks = () => {
