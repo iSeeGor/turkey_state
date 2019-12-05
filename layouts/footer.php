@@ -159,7 +159,7 @@
                     <div class="creater copyrights__creater">
                         <div class="creater__text">Сайт разработан и поддерживается</div>
                         <div class="creater__logo">
-                            <a href="https://art-sites.org/ru" title="art-sites.org">
+                            <a href="https://art-sites.org/ru" title="art-sites.org" target="_blank">
                                 <img src="../assets/images/general/art-sites__logo.svg" alt="Art-Sites.Org Logo" width="104">
                             </a>
                         </div>
@@ -183,6 +183,8 @@
 <script src="/assets/js/plugins/jquery-3.4.1.min.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 
+
+
 <!--== JS Plugins -->
 <script src="/assets/js/plugins/jquery.nice-select.min.js"></script>
 <script src="/assets/js/plugins/smooth-scroll.min.js"></script>
@@ -192,10 +194,15 @@
 <script src="/assets/js/plugins/swiper.min.js"></script>
 <script src="/assets/js/plugins/aos.min.js"></script>
 <script src="/assets/js/plugins/simplebar.min.js"></script>
+<script src="/assets/js/plugins/parallaxie.js"></script>
 <script src="/assets/js/plugins/jquery.magnific-popup.min.js"></script>
 
 <!--== JS Scripts -->
 <script src="/assets/js/script.min.js"></script>
+
+<!--== JS On Some Pages  -->
+<script src="/assets/js/pages/about-us.js"></script>
+<script src="/assets/js/pages/home.js"></script>
 
 </body>
 </html>

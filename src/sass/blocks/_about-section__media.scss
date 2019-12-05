@@ -51,6 +51,21 @@
     .about-section__company-info::before {
         background-size: cover;
     }
+
+    .about-us__checklist-block {
+        margin-bottom: 50px;
+    }
+
+    .team-header__quotes-box  {
+        padding-left: 30px;
+    }
+    .team-header__quotes-box::before {
+        left: 0;
+    }
+
+    .team-header__quotes-box::after {
+        left: 0;
+    }
 }
 
 // Экстрамалые девайсы («телефоны», < 576px)

@@ -1,0 +1,246 @@
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+
+.team {
+
+    // background: url('../images/general/team-header-bg.jpg') no-repeat top center;
+
+    &__header {
+
+    }
+}
+
+.team-header {
+    position: relative;
+    padding-top: 160px;
+    height: 515px;
+    margin-bottom: 125px;
+    // overflow: hidden;
+
+    &__main {
+        position: relative;
+        width: 100%;
+        max-width: 544px;
+
+        padding: 0 34px;
+        z-index: 1;
+        margin-bottom: 60px;
+
+        &::after {
+            content: url(../images/general/team-header-text-figure.png);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -70px;
+            left: -75px;
+            z-index: -1;
+        }
+
+        .block-title {
+            margin-bottom: 44px;
+        }
+    }
+
+    &__typography {
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+    }
+
+    &__bottom {
+        position: relative;
+        z-index: 1;
+        background: white;
+    }
+
+    &__quotes-box {
+        padding: 28px 40px 28px 15px;
+        @include font_medium;
+        border: 2px solid $lightSkyBlue;
+        border-left: 0;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border: 2px solid $lightSkyBlue;
+            border-right: 0;
+            width: 100%;
+            height: calc(100% + 4px);
+            top: -2px;
+            left: -30px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -27px;
+            transform: scale(-1, 1);
+            width: 34px;
+            height: 28px;
+            background: url(../images/icons/quots_small.svg) no-repeat;
+        }
+    }
+
+    &__bottom-txt {
+        padding: 24px 10px 24px 28px;
+    }
+}
+
+// Card 
+.team-card {
+    width: 447px;
+    min-height: 400px;
+    position: relative;
+    border: 10px solid $lightSkyBlue;
+    border-radius: 4px;
+    padding: 22px 20px 20px 20px;
+    display: flex;
+    margin-bottom: 26px;
+
+    &__inner {
+        height: auto;
+        display: flex;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        height: auto;
+    }
+
+    &__header {
+        margin-bottom: 15px;
+    }
+
+    &__name {
+        @include font_bold;
+        color: $heading_color;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 10px;   
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-bottom: 14px;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 6px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 4px;
+            background-image: url();
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &_phone::after {
+            background-image: url(../images/icons/phone.svg);
+            // background-repeat: no-repeat;
+            
+        }
+
+        &_mail::after {
+            background-image: url(../images/icons/mail.svg);
+            // background-repeat: no-repeat;
+            
+        }
+
+        &_skype::after {
+            background-image: url(../images/icons/skype.svg);
+            // background-repeat: no-repeat;
+            
+        }
+
+        &_lang::after {
+            background-image: url(../images/icons/globe.svg);
+            // background-repeat: no-repeat;      
+        }
+    }
+
+    &_left {
+        text-align: right;
+        padding-right: 187px;
+        left: -40px;
+
+        .team-card__figure {
+            right: -144px;
+        }
+
+        .team-card__item_phone::after,
+        .team-card__item_skype::after,
+        .team-card__item_mail::after,
+        .team-card__item_lang::after {
+            right: -32px;
+        }
+    }
+
+    &_right {
+        text-align: left;
+        padding-left: 187px;
+        right: -40px;
+
+        .team-card__figure {
+            left: -144px;
+        }
+
+        .team-card__item_phone::after,
+        .team-card__item_skype::after,
+        .team-card__item_mail::after,
+        .team-card__item_lang::after {
+            left: -32px;
+        }
+    }
+
+    &__figure {
+        width: 285px;
+        height: 285px;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        border-radius: 50%;
+        overflow: hidden;
+        top: -10px;
+    }
+
+    &__messengers {
+
+        .messenger__icon {
+            height: 24px;
+            width: 24px;
+            opacity: 1;
+        }
+
+        .messenger {
+            margin-left: 8px;
+        }
+    }
+}
+
+/* Team Cards Grid 
+--------------------------------------------- */ 
+
+.team__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

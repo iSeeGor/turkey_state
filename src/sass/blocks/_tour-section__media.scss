@@ -1,7 +1,13 @@
-// Большие девайсы (большие десктопы, < 1200px)
+@media (min-width: 992px) and (max-width: 1200px) {
+    .tour-section__block_left::before {
+        background-position: 103% bottom;
+    }
+    
+}
+
 @media (max-width: 1199.98px) {
     .tour-section__block_left .tour-section__text-content {
-        padding-right: 100px;
+        padding-right: 20px;
     }
 
     .tour-section__block_right .tour-section__text-content {
@@ -23,12 +29,12 @@
         right: 50%;
         transform: translateX(50%);
         width: 850px;
-        background-position: center 180px;
-        background-size: cover;
+        background-position: center 240px;
+        background-size: contain;
     }
 
     .tour-section__block_left {
-        padding: 96px 0 340px;
+        padding: 96px 0 360px;
     }
 
     .tour-section__block_right::before {

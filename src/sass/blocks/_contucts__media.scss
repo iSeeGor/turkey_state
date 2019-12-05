@@ -1,0 +1,87 @@
+@media (max-width: 1199.98px) {
+
+    .contucts-info {
+        padding-left: 0;
+    }
+
+    .map-holder > div {
+        // top: initial !important;
+        left: -120px !important;
+        
+    }
+
+    .map-holder {
+        width: 600px;
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .contucts-info::after {
+        display: none;
+    }
+
+    .contucts-info__body {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .contucts-info__body-item {
+        flex: 0 0 45%;
+    }
+
+    .contucts-info {
+        padding-right: 20px;
+    }
+
+    .contucts-info::before {
+        right: 50%;
+        width: 1000px;
+        transform: translateX(50%);
+    }
+
+    .map-holder {
+        position: initial;
+        width: 100%;
+        height: 400px;
+        background: #ccc;
+    }
+
+    .map-wrapper {
+        padding-top: 100px;
+        height: 100%;
+    }
+
+    .map-holder > div {
+        top: 0px !important;
+        left: 0px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .checklist-block__image-box {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .contucts-info__body {
+        flex-wrap: wrap;
+    }
+
+    .contucts-info__body-item {
+        flex: 0 0 100%;
+    }
+
+    .contucts-info {
+        padding-left: 40px;
+    }
+
+}
+
+@media (max-width: 420px) {
+    .contucts-info {
+        padding-left: 0px;
+    }
+}

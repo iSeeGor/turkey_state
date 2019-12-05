@@ -3,7 +3,7 @@
 
     <!--== Hero Banner  -->
     <section class="hero home__hero">
-        <div class="hero__banner" style="background-image: url('../assets/images/content/hero-image_02.jpg');" >
+        <div class="hero__banner parallax-bg" style="background-image: url('../assets/images/general/main-hero.jpg');" >
             <!-- <img class="hero__banner-image" src="../assets/images/content/hero-image.jpg" alt="Hero Banner Image"> -->
         </div>
         <div class="container">
@@ -1011,6 +1011,32 @@
 
             <div class="testimonialSlider__container swiper-container">
                 <div class="testimonialSlider__wrapper swiper-wrapper">
+                    <!-- slide 02 -->
+                    <div class="testimonialSlider__slide swiper-slide">
+                        <header class="testimonialSlider__header">
+                            <figure class="testimonialSlider__figure">
+                                <div class="testimonialSlider__figure-inner">
+                                    <img class="testimonialSlider__user-image" src="../assets/images/content/testimonial/testimonial-user-image-02.jpg" alt="Testimonial User Image">
+                                </div>
+                            </figure>
+                            <div class="testimonialSlider-meta">
+                                <div class="testimonialSlider-meta__user-name">Виктор Иванов</div>
+                                <div class="testimonialSlider-meta__address">Стамбул</div>
+                            </div>
+                            <div class="testimonialSlider__date">16.04.2019</div>
+                        </header>
+                        <div class="testimonialSlider__body">
+                            <div class="testimonialSlider__message">
+                                <div class="testimonialSlider__message-inner">
+                                    Уже по прибытию в Тбилиси мы "галопом по Европам" начали составлять план, 
+                                    а что же именно нам нужно посетить. Вариантов было масса. Но посоветовавшись с нашим гостом, 
+                                    у которого мы снимали жилье, решили, что нужно будет непременно заглянуть и в первую столицу Грузии - 
+                                    городок Мцхета. На третий день в Тбилиси мы взяли в аренду машину и направились в два небольших 
+                                    приключения. Первым из них и стала Мцхета.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- slide 01 -->
                     <div class="testimonialSlider__slide swiper-slide">
                         <header class="testimonialSlider__header">
@@ -1056,32 +1082,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- slide 02 -->
-                    <div class="testimonialSlider__slide swiper-slide">
-                        <header class="testimonialSlider__header">
-                            <figure class="testimonialSlider__figure">
-                                <div class="testimonialSlider__figure-inner">
-                                    <img class="testimonialSlider__user-image" src="../assets/images/content/testimonial/testimonial-user-image-02.jpg" alt="Testimonial User Image">
-                                </div>
-                            </figure>
-                            <div class="testimonialSlider-meta">
-                                <div class="testimonialSlider-meta__user-name">Виктор Иванов</div>
-                                <div class="testimonialSlider-meta__address">Стамбул</div>
-                            </div>
-                            <div class="testimonialSlider__date">16.04.2019</div>
-                        </header>
-                        <div class="testimonialSlider__body">
-                            <div class="testimonialSlider__message">
-                                <div class="testimonialSlider__message-inner">
-                                    Уже по прибытию в Тбилиси мы "галопом по Европам" начали составлять план, 
-                                    а что же именно нам нужно посетить. Вариантов было масса. Но посоветовавшись с нашим гостом, 
-                                    у которого мы снимали жилье, решили, что нужно будет непременно заглянуть и в первую столицу Грузии - 
-                                    городок Мцхета. На третий день в Тбилиси мы взяли в аренду машину и направились в два небольших 
-                                    приключения. Первым из них и стала Мцхета.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <!-- slide 03 -->
                     <div class="testimonialSlider__slide swiper-slide">
                         <header class="testimonialSlider__header">

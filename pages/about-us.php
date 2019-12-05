@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="page-header__thumb">
+                        <div class="page-header__thumb" data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="top-bottom">
                             <img class="page-header__image" src="../assets/images/general/page-header/about-us-thumb-image.png" alt="Page Header Image">
                         </div>
                     </div>
@@ -87,7 +87,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="checklist-block__image-box">
+                    <div class="checklist-block__image-box" data-aos="zoom-out" data-aos-duration="900">
                         <!-- Картинка ця має кропитись завжди в квадратну мінімальне розрішення  540 х 540 -->
                         <img src="../assets/images/content/about-us/checklist-block-image.jpg" class="checklist-block__image" alt="Image">
                     </div>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_prof">
-                        <div class="privilages-card__icon-box">
+                        <div class="privilages-card__icon-box" data-aos="fade-right" data-aos-delay="200">
                             <svg class="privilages-card__icon">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__user-analytics"></use>
                             </svg> 
@@ -135,7 +135,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_safe">
-                        <div class="privilages-card__icon-box">
+                        <div class="privilages-card__icon-box" data-aos="fade-right" data-aos-delay="300">
                             <svg class="privilages-card__icon">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__user-shield"></use>
                             </svg> 
@@ -150,7 +150,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_clear">
-                        <div class="privilages-card__icon-box">
+                        <div class="privilages-card__icon-box" data-aos="fade-right" data-aos-delay="400">
                             <svg class="privilages-card__icon">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__file-search"></use>
                             </svg> 
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_ethic">
-                        <div class="privilages-card__icon-box">
+                        <div class="privilages-card__icon-box" data-aos="fade-right" data-aos-delay="500">
                             <svg class="privilages-card__icon">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__handshake"></use>
                             </svg>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_horiz privilages-card_trust">
-                        <div class="privilages-card__icon-box">
+                        <div class="privilages-card__icon-box" data-aos="fade-right" data-aos-delay="400">
                             <svg class="privilages-card__icon">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__hands-heart"></use>
                             </svg>
@@ -195,8 +195,649 @@
         </div>
     </section>
 
-    <section class="next">
-        <img src="../01.jpg" alt="">
+    <!--== Team Section  -->
+    <section class="team about-us__team">
+        <header class="team-header team__header parallax-bg" style="background-image: url('/assets/images/general/team-header-bg.jpg');">
+            <div class="container">
+                <div class="team-header__main">
+                    <div class="block-title">Наша команда</div>
+                    <div class="team-header__typography typography">
+                        <p>Наша команда – ответственные профессионалы своего дела, 
+                        каждый из которых считает делом чести работать добросовестно и качественно. 
+                        В клиенте мы видим, в первую очередь, индивидуальность и стараемся тонко 
+                        уловить его запросы. </p>
+
+                        <p>Ведь в покупке жилья за границей каждый ищет свою философию и реализацию целей: 
+                        для кого-то это важное достижение в жизни, подтверждение статуса или еще один 
+                        этап на пути к внутренней гармонии, для других – выгодное вложение средств, 
+                        перспективный бизнес-проект. Только таким образом, полностью понимая потребности 
+                        покупателя, можно осуществить его мечту.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="team-header__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="team-header__quotes-box">
+                            <div class="team-header__quotes-txt">
+                                Нашему успеху способствуют простые человеческие качества: целеустремленность и желание быть 
+                                лучшими в сфере турецкой недвижимости, неуёмное желание к постоянному развитию, любовь к 
+                                своей профессии и людям. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="team-header__bottom-txt">
+                            Вы можете быть уверены в получении квалифицированной помощи, нашей высокой эффективности, 
+                            оперативности и исполнительности, построении дружеских, конфиденциальных отношений и максимальной 
+                            защите Ваших интересов. Обращайтесь!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--== Team Card's Grid  -->
+        <div class="team__cards-grid about-us__cards-grid">
+            <div class="container team__container">
+                <!-- card 01 -->
+                <div class="team-card team-card_left">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- card 02 -->
+                <div class="team-card team-card_right">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 00 00</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-04.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- card 03 -->
+                <div class="team-card team-card_left">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+                
+                <!-- card 04 -->
+                <div class="team-card team-card_right">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 00 00</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- card 05 -->
+                <div class="team-card team-card_left">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- card 06 -->
+                <div class="team-card team-card_right">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 00 00</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-04.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+
+                <!-- card 07 -->
+                <div class="team-card team-card_left">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+                
+                <!-- card 08 -->
+                <div class="team-card team-card_right">
+                    <div class="team-card__inner">
+                        <div class="team-card__body">
+                            <header class="team-card__header">
+                                <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                            </header>
+                            <div class="team-card__middle">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_phone">
+                                        <a href="tel:+90555222111" class="team-card__link link">+39 000 00 00</a>
+                                    </li>
+                                    <li class="team-card__item">
+                                        <div class="messengers team-card__messengers">
+                                            <span class="messenger messenger__viber">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__viber messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__whatsapp">
+                                                <a href="tel:" title="WhatsApp Call">
+                                                    <svg class="icon__whatsapp messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                    </svg>
+                                                </a>
+                                            </span>
+
+                                            <span class="messenger messenger__telegram">
+                                                <a href="tel:" title="vider call">
+                                                    <svg class="icon__telegram messenger__icon">
+                                                        <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                    </svg>
+                                                </a>    
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="team-card__contacts">
+                                <ul class="team-card__list">
+                                    <li class="team-card__item team-card__item_skype">
+                                        <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_mail">
+                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                    </li>
+                                    <li class="team-card__item team-card__item_lang">
+                                        русский, английский, турецкий
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="team-card__figure">
+                            <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--== Contact Info -->
+    <section class="contucts about-us__contucts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-1">
+                    <div class="contucts__info contucts-info">
+                        <div class="block-title">Контакты</div>
+                        <div class="contucts-info__body">
+                            <div class="contucts-info__body-item">
+                                <div class="contucts-info__address">
+                                    Турция, Алания, Махмутлар.<br>
+                                    Пр. Барбаросса, CEBECI 8, офис 6.
+                                </div>
+
+                                <ul class="contucts-info__list">
+                                    <li class="contucts-info__item contucts-info__item_phone">
+                                        <a href="tel:+902425285234" class="contuts-info__link link">+ 90 242 528 52 34</a>
+                                    </li>
+                                    <li class="contucts-info__item contucts-info__item_fax">
+                                        <a href="tel:+902425285234" class="contuts-info__link link">+ 90 242 528 44 20</a>
+                                    </li>
+                                    <li class="contucts-info__item contucts-info__item_mail">
+                                        <a href="mailto:se@max.com" class="contuts-info__link link">se@max.com</a>
+                                    </li>
+                                </ul>
+                            </div>  
+
+                            <div class="contucts-info__body-item">
+                                <div class="contucts-info__address">
+                                    Россия, Москва<br>
+                                    ул. Льва Толстого, д.8 стр.2, м. Парк Культуры
+                                </div>
+
+                                <ul class="contucts-info__list">
+                                    <li class="contucts-info__item contucts-info__item_phone">
+                                        <a href="tel:+902425285234" class="contuts-info__link link">+7 499 390 52 89</a>
+                                    </li>
+                                    <li class="contucts-info__item contucts-info__item_phone">
+                                        <a href="tel:+902425285234" class="contuts-info__link link">+7(495) 517-22-42</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-0 order-lg-2">
+                    <div class="map-wrapper">
+                        <div class="map-holder">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--== Requisites  -->
+    <section class="requisites about-us__requisites parallax-bg" style='background: url("/assets/images/general/requisits-bg-image.jpg")'>
+        <div class="container">
+            <div class="requisites__inner">
+                <div class="row">
+                    <div class="col-md-5 offset-md-1">
+                        <div class="block-title">Реквизиты  компании</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="requisites__body">
+                            <ul class="requisites__list">
+                                <li class="requisites__item">Форма организации: <span class="requisites__desc">ve Tic.Ltd. Sti</span></li>
+                                <li class="requisites__item">ИНН: <span class="requisites__desc">vergi marali 632 033 4440</span></li>
+                            </ul>
+
+                            <ul class="requisites__list">
+                                <li class="requisites__item">Юридический адрес: <span class="requisites__desc">Alanya Yeni Mah. Barbaros<br> Cad.Cebeci 8 Sitesi B-Blok № 6</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--== Wishes  -->
+    <section class="wishes about-us__wishes">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-md-7 offset-xl-1">
+                    <div class="block-title wishes__title">Есть пожелания или предложения?</div>
+                    <div class="wishes__desc">Мы всегда открыты для наших клиентов.</div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-5">
+                <a href="#" class="button button_orange wishes__button">Связаться с нами <i class="button-icon button-icon__white"></i></a>
+                </div>
+            </div>
+        </div>
     </section>
 </main>
 

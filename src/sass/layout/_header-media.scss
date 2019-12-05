@@ -11,10 +11,23 @@
     }
 
     .head-meta__email {
-        padding: 5px 30px;
+        padding: 5px 24px;
+    }
+
+    .header__branding {
+        margin-left: 0;
+    }
+
+    .service-block_square .service-block__body {
+        // margin-bottom: 20px;
+    }
+
+    .service-block_square .service-block__header {
+        margin-bottom: 12px;
     }
 
 }
+
 
 // Средние девайсы («таблетки», < 992px)
 @media (max-width: 991.98px) {

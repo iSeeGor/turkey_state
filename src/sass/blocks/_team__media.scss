@@ -1,0 +1,112 @@
+@media (max-width: 1199.98px) {
+    .team-card {
+        width: 410px;
+    }
+
+    .team-card_left {
+        left: -20px;
+        // padding-right: 160px;
+
+        .team-card__figure {
+            right: -70px;
+        }
+    }
+
+    .team-card_right {
+        right: -20px;
+        // padding-left: 160px;
+
+        .team-card__figure {
+            left: -70px;
+        }
+    }
+
+    .team-card__figure {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .team-card {
+        padding-right: 20px;
+        width: 48%;
+        padding-top: 130px;
+        text-align: left;
+        padding-left: 60px;
+        margin-top: 120px;
+    }
+
+    .team-card__figure {
+        width: 230px;
+        height: 230px;
+        top: -50%;
+        transform: translate(0, 50%);
+    }
+
+    .team-card_right .team-card__figure {
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+
+    .team-card_left .team-card__figure {
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+    .team-card_left .team-card__item_phone::after, .team-card_left .team-card__item_skype::after, .team-card_left .team-card__item_mail::after, .team-card_left .team-card__item_lang::after {
+        left: -32px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .team__container {
+        justify-content: center;
+    }
+
+    .team-card {
+        width: 80%;
+    }
+
+    .team-card_left {
+        left: 0;
+    }
+
+    .team-card_right {
+        right: 0;
+
+    }
+}
+
+@media (max-width: 575.98px) {
+    .team-card_left .team-card__item_phone::after, .team-card_left .team-card__item_skype::after, .team-card_left .team-card__item_mail::after, .team-card_left .team-card__item_lang::after {
+        left: -39px;
+    }
+
+    .team-card_right .team-card__item_phone::after, .team-card_right .team-card__item_skype::after, .team-card_right .team-card__item_mail::after, .team-card_right .team-card__item_lang::after {
+        left: -39px;
+    }
+
+    .team-header {
+        height: initial;
+    }
+}
+
+@media (max-width: 460px) {
+    .team-card {
+        width: 90%;
+        padding-top: 100px;
+    }
+
+    .team-card__figure {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .team-card {
+        width: 98%;
+    }
+}

@@ -120,10 +120,11 @@
     opacity: 1;
 }
 
-[data-scroll="out"].about-section__container::before, {
+[data-scroll="out"].about-section__container::before {
     transform: translateX(1000px);
     opacity: 1;
 }
+
 [data-scroll="in"].about-section__container::before {
     transform: translateX(0px);
     opacity: 1;

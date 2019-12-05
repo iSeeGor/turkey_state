@@ -90,9 +90,9 @@ img {
 	line-height: 4.0rem;
 }
 
-.head-meta__dropdown {
+// .head-meta__dropdown {
 
-}
+// }
 
 .meta-dropdown {
 	position: relative;
@@ -105,7 +105,7 @@ img {
 		padding: 0;
 		color: $body_color;
 		font-size: 1.3rem;
-		@include font_bold;
+		// @include font_bold;
 		position: relative;
 		padding: 10px 20px 10px 15px;
 		cursor: pointer;
@@ -127,9 +127,9 @@ img {
 		left: -10px;
 		visibility: hidden;
 		opacity: 0;
-		transition: visibility 0.4s ease,
-					opacity 0.4s ease,
-					transform 0.4s ease;
+		transition: visibility 0.2s ease,
+					opacity 0.2s ease,
+					transform 0.2s ease;
 	}
 
 	&__list {
@@ -142,9 +142,9 @@ img {
 	}
 
 	&__list-item {
-		@include font_bold;
+		// @include font_bold;
 		font-size: 1.3rem;
-		color: #a8beb7;
+		color: #6f727c;
 		padding: 7px 24px;
 		cursor: pointer;
 
@@ -181,7 +181,8 @@ img {
 		opacity: 0;	
 	transition: box-shadow 0.3s ease,
 				transform 0.5s ease,
-				opacity 0.3s ease;
+				opacity 0.3s ease,
+				bottom 0.3s ease;
 
 	&_show {
 		transform: translateY(0px);

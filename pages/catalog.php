@@ -28,7 +28,7 @@
                     </div>
 
                     <div class="col-md-6">
-                        <div class="page-header__thumb">
+                        <div class="page-header__thumb" data-aos="fade-up" data-aos-duration="900" data-aos-anchor-placement="top-bottom">
                             <img class="page-header__image" src="../assets/images/general/page-header/catalog-thumb-image.png" alt="Page Header Image">
                         </div>
                     </div>

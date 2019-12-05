@@ -2,10 +2,8 @@ $(function() {
     hamburger();
     sideNav();
     mobileNavMenu();
-    //   preventDefaultLinks();
     smoothScroll();
     themeSelect();
-    // searchCollaps();
     searchFormPriceMask();
     searchFormTabs();
     svg4everybody();
@@ -15,15 +13,12 @@ $(function() {
     propertySLider();
     aosRun();
     testimonialSlider();
-    scrollBar();
     videoPopup();
     scrollToTop();
     headerAnimation();
     pagination();
-    //   filterTabsToggle();
-    //   categoryLinksToggle();
-    //   bgLinesResize();
-    //   hamburgerToggle();
+    paralaxBg();
+    // iOSDetect();
 });
 
 // Hamburger add Class
@@ -40,6 +35,7 @@ const sideNav = () => {
     let ham = document.querySelector(".hamburger");
     let sidenav = document.querySelector(".side-nav");
     let header = document.querySelector(".mobile-header");
+    let site = document.querySelector('.site');
 
     ham.addEventListener("click", () => {
         sidenav.classList.toggle("side-nav_active");
@@ -50,11 +46,13 @@ const sideNav = () => {
                 "transform: translateX(calc(100% - 60px));"
             );
             document.body.style.overflow = "hidden";
+            
         };
 
         const headerNormal = () => {
             header.setAttribute("style", "transform: translateX(0);");
             document.body.style.overflow = "auto";
+
         };
 
         sidenav.classList.contains("side-nav_active")
@@ -247,6 +245,7 @@ const propertySLider = () => {
         slidesPerView: "auto",
         spaceBetween: 30,
         threshold: 10,
+        roundLengths: true,
 
         navigation: {
             nextEl: ".property-slider__button-next",
@@ -271,7 +270,13 @@ const propertySLider = () => {
             },
 
             991: {
-                slidesPerView: 3
+                slidesPerView: 2,
+                spaceBetween: 70,
+            },
+
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             }
         }
     });
@@ -284,6 +289,7 @@ const propertySLider = () => {
         slidesPerView: "auto",
         spaceBetween: 30,
         threshold: 10,
+        roundLengths: true,
 
         navigation: {
             nextEl: ".property-slider__button-next",
@@ -308,7 +314,13 @@ const propertySLider = () => {
             },
 
             991: {
-                slidesPerView: 3
+                slidesPerView: 2,
+                spaceBetween: 70,
+            },
+
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30,
             }
         }
     });
@@ -368,15 +380,6 @@ const testimonialSlider = () => {
     });
 };
 
-// Custom Scrollbar
-const scrollBar = () => {
-    if(document.querySelector(".testimonialSlider__message-inner")){
-        new SimpleBar(document.querySelector(".testimonialSlider__message-inner"), {
-            autoHide: false
-        });
-    }
-};
-
 // Video Section Popups
 const videoPopup = () => {
     $(".video-section__link").magnificPopup({
@@ -423,6 +426,17 @@ const scrollToTop = () => {
     toTopBtn.on("click", function() {
         $("html, body").animate({ scrollTop: 0 }, 1000);
     });
+
+    // bottom position + 15% when scroll to bottom of content
+    $(window).scroll(function() {
+        if(($(window).scrollTop() + $(window).height() + 50) > $(document).height()) {
+            toTopBtn.css('bottom', '115px');
+            // alert('hey')
+        } else {
+            toTopBtn.css('bottom', '5%');
+        }    
+    });
+    
 };
 
 // Header OnScroll Animation
@@ -483,13 +497,17 @@ const pagination = () => {
                         $nextNav = $this.find(".pagination__next");
                         $prevNavText = $prevNav.find(".pagination__prev-txt");
                         updatePrevText = function() {
-                            $prevNavText = $prevNav.find(".pagination__prev-txt");
+                            $prevNavText = $prevNav.find(
+                                ".pagination__prev-txt"
+                            );
                             return $prevNavText.html("Prev");
                         };
                         calPgnWidth = function() {
                             var pgnWidth, prevWidth, vsbNav, vsbNavs;
                             // number of visible <a> plus <strong class="current">
-                            vsbNav = $this.find(".pagination__item a:visible").length + 1;
+                            vsbNav =
+                                $this.find(".pagination__item a:visible")
+                                    .length + 1;
                             vsbNavs = vsbNav + 2;
                             prevWidth = 100 / vsbNavs;
                             pgnWidth = 100 - prevWidth * 2;
@@ -613,159 +631,53 @@ const pagination = () => {
     }.call(this));
 };
 
-// // Prevent Defult for all 'a' tag's
-// const preventDefaultLinks = () => {
+// Paralax Background 
+const paralaxBg = () => {
+    if(!navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+        // let size = 'content';
+    
+        // if(window.innerWidth >= 1921){
+        //     size = 'cover'
+        // }
 
-//   const prventLinks = document.querySelectorAll('a');
+        $('.parallax-bg').parallaxie({
+            speed: 0.3,
+            size: 'cover',
+            offset: -25,
+        });
+    }   
+}
 
-//   for(let i = 0; i < prventLinks.length; i++){
 
-//     prventLinks[i].addEventListener('click', function(e){
-
-//       e.preventDefault();
-
-//     })
-
-//   }
-// }
-
-// // Toggle for Filter Tabs
-// const filterTabsToggle = () => {
-
-//   const tabs = document.querySelectorAll('.filter-tab');
-
-//   function toggle(tab){
-
-//     for(let i = 0; i < tab.length; i++){
-
-//       tab[i].addEventListener('click', function(e){
-
-//         let currentTab = this;
-
-//         for(let i = 0; i < tab.length; i++){
-
-//           if(currentTab == tab[i]){
-//             currentTab.classList.add('filter-tab--active')
-//           }else{
-//             tab[i].classList.remove('filter-tab--active')
-//           }
-
+// Detect IOS 
+// const iOSDetect = () => {
+//     var isMobile = {
+//         Android: function() {
+//             return navigator.userAgent.match(/Android/i);
+//         },
+//         BlackBerry: function() {
+//             return navigator.userAgent.match(/BlackBerry/i);
+//         },
+//         iOS: function() {
+//             return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+//         },
+//         Opera: function() {
+//             return navigator.userAgent.match(/Opera Mini/i);
+//         },
+//         Windows: function() {
+//             return navigator.userAgent.match(/IEMobile/i);
+//         },
+//         any: function() {
+//             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 //         }
-
-//         e.preventDefault();
-//       })
-
-//     }
-
-//   }
-//   toggle(tabs);
-
-// }
-
-// // Toggle Class for Category List Links
-// const categoryLinksToggle = () => {
-
-//   const catLinks = document.querySelectorAll('.category-list__link');
-
-//   for(let i = 0; i < catLinks.length; i++ ){
-
-//     catLinks[i].addEventListener('click', function(e){
-
-//       const currentLink = this;
-
-//       for(let i = 0; i < catLinks.length; i++ ){
-
-//         if(currentLink != catLinks[i]){
-//           catLinks[i].classList.remove('category-list__link--active')
-//         } else {
-//           currentLink.classList.add('category-list__link--active')
-//         }
-
-//       }
-
-//       e.preventDefault();
-//     })
-//   }
-// }
-
-// // Header Sticky + Add Class
-
-// // window.onscroll = () => { sticky() };
-
-// // let stickyHeader = document.querySelector('.site__header');
-// // let paddingTop = document.querySelector('.site');
-
-// // function sticky() {
-// //   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0){
-// //     stickyHeader.classList.add('site__header--sticky');
-// //     paddingTop.style.paddingTop = '120px';
-// //   } else {
-// //     stickyHeader.classList.remove('site__header--sticky');
-// //     paddingTop.style.paddingTop = '0';
-// //   }
-// // };
-
-// // Background Lines Grig Risize
-// const bgLinesResize = () => {
-
-//   (function() {
-//     var throttle = function(type, name, obj) {
-//         obj = obj || window;
-//         var running = false;
-//         var func = function() {
-//             if (running) { return; }
-//             running = true;
-//             requestAnimationFrame(function() {
-//                 obj.dispatchEvent(new CustomEvent(name));
-//                 running = false;
-//             });
-//         };
-//         obj.addEventListener(type, func);
 //     };
-
-//     throttle("resize", "optimizedResize");
-//   })();
-
-//   window.addEventListener("optimizedResize", function() {
-
-//     // call function background resize
-//     bgLinesResize();
-
-//   });
-
-//   const bgLinesResize = () => {
-//     const firstBgLine = document.querySelector('.bg-lines>span');
-//     const container = document.querySelector('main .container');
-//     const containerWidth = container.clientWidth;
-//     const windowWidth = document.body.clientWidth;
-
-//     let bgLineMargin = 0;
-
-//     if(windowWidth <= 1920 &&  windowWidth >= 1500){
-//       bgLineMargin = ((windowWidth - containerWidth)/2) - 192;
-
+    
+//     /* if the device is not ios hide the download button */
+//     if(!isMobile.iOS()){
+//         alert('not-ios');  
 //     } else {
-//       bgLineMargin = ((windowWidth - containerWidth)/2)-1;
+//         alert('ios')
 //     }
-
-//     // bgLineMargin = (windowWidth - containerWidth)/2;
-
-//     firstBgLine.style.marginLeft = Math.floor(bgLineMargin) + 'px';
-
-//   }
-
-//   bgLinesResize();
-// };
-
-// // Hanburger Toggle
-// const hamburgerToggle = () => {
-
-//   const hamburger = document.querySelector('.mobile-header__hamburger');
-
-//   hamburger.addEventListener('click', function(){
-
-//     hamburger.classList.toggle('mobile-header__hamburger--active');
-
-//   })
-
-// };
+//     console.log(1);
+    
+// }

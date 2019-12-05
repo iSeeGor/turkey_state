@@ -33,6 +33,19 @@
             z-index: -1;
             background: url('../images/general/hero-title-overlay.png') no-repeat;            
         }
+
+        ::before{
+            content: '';
+            position: absolute;
+            width: 557px;
+            height: 349px;          
+            border-radius: 48% 110% 84% 76%;
+            top: -40px;
+            left: -20px;
+            z-index: -1;
+            backdrop-filter: blur(3px);
+            opacity: 0.6;
+        }
     }
 
     &__banner-title {
@@ -47,3 +60,18 @@
 
     }
 }
+.hero__banner-title {
+    position: relative;
+}
+// .hero__banner-title::after {
+//     content: '';
+//     position: absolute;
+//     width: 600px;
+//     height: 400px;
+//     backdrop-filter: blur(4px);
+//     // background: #000;
+//     top: 0;
+//     left: 0;
+//     border-radius: 50%;
+//     z-index: -1;
+// }

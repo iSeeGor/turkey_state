@@ -36,6 +36,10 @@
     .privilages-section__title-area {
         margin-bottom: 140px;
     }
+
+    .privilages-section__title-area .section-title {
+        padding-right: 200px;
+    } 
 }
 
 // Малые девайсы («ландшафтные», < 768px)
@@ -49,8 +53,17 @@
         margin-left: 40px;
         margin-right: 40px;
     }
+
+    .privilages-section__title-area .section-title {
+        padding-right: 40px;
+    }
 }
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
+
+    .privilages-section__button {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
 }

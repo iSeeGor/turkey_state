@@ -8,7 +8,7 @@
 
     &__bestseller-section {
         padding-top: 52px;
-        padding-bottom: 80px ;
+        padding-bottom: 20px ;
 
         .section-title {
             margin-bottom: 35px;
@@ -35,5 +35,9 @@
     &__tour-section {
         margin-top: 90px;
         padding-bottom: 50px;
+    }
+
+    &__latestNews-section {
+        margin-bottom: 80px;
     }
 }

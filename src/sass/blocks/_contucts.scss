@@ -1,0 +1,118 @@
+/*--------------------------------------------------------------
+# Contacts
+--------------------------------------------------------------*/
+
+/* Contuct Info
+--------------------------------------------------------------*/ 
+.contucts-info {
+    position: relative;
+    padding: 70px 65px 25px 68px; 
+    // background: $lightSkyBlue;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10000px;
+        height: 100%;
+        background: $lightSkyBlue;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 650px;
+        width: 10000px;
+        height: 480px;
+        background: url('../images/general/page-header/page-header-deco-figure.svg');
+        background-size: 300px;
+    }
+
+
+    .block-title {
+        margin-bottom: 65px;
+    }
+
+    &__body {
+        padding-left: 40px;
+    }
+
+    &__address {
+        @include font_medium;
+        color: $heading_color;
+        line-height: 2.4rem;
+        position: relative;
+        margin-bottom: 38px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 2px;
+            left: -38px;
+            background: url('../images/icons/map-marker.svg') no-repeat;
+            background-size: contain;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        padding-left: 40px;
+        margin-bottom: 17px;
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            left: 1px;
+            top: 4px;
+            width: 19px;
+            height: 19px;
+            background-size: contain;
+        }
+        
+        &_phone::before {
+            background: url('../images/icons/phone.svg') no-repeat;
+        }
+
+        &_fax::before {
+            background: url('../images/icons/printer.svg') no-repeat;
+            width: 20px;
+            height: 20px;
+        }
+
+        &_mail::before {
+            background: url('../images/icons/mail.svg') no-repeat;
+        }
+    }
+}
+
+/* Google Map
+--------------------------------------------------------------*/ 
+.map-wrapper {
+    padding-top: 170px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background: url('../images/general/catalog-deco-bg.svg');
+    background-size: 300px;
+    background-position: 41px 45px;
+}
+
+.map-holder {
+    position: absolute;
+    left: 0;
+    width: 1000px;
+    height: 650px;
+}
+
