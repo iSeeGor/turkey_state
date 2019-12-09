@@ -187,15 +187,22 @@
         max-width: inherit;
         flex: 1 1 auto;
         margin-right: auto;
+        padding-top: 320px;
     }
 
     .testimonialSlider__date {
-        right: 3px;
-        left: inherit;
-        top: 180px;
+        right: initial;
+        left: 8px;
+        top: 280px;
     }
 
     .testimonialSlider-thumbs {
         display: none;
+    }
+
+    .testimonialSlider-navigation {
+        // left: 0;
+        right: 0;
+        top: 260px;
     }
 }

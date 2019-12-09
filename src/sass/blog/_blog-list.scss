@@ -1,0 +1,105 @@
+/*--------------------------------------------------------------
+# Page Blog List
+--------------------------------------------------------------*/
+
+.posts-view {
+    margin-bottom: 80px;
+
+    .news-posts-row {
+        margin-bottom: 65px;
+
+        &:not(:first-child) {
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        margin-bottom: 70px;
+    }
+
+    &__pagination {
+        padding: 20px 0;
+    }
+
+}
+
+/* Posts Categories
+--------------------------------------------------------------*/ 
+.posts-categories {
+    margin-bottom: 120px;
+    &__body {
+        position: relative;
+        padding-top: 76px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-left: 10px solid $lightSkyBlue;
+            border-right: 10px solid $lightSkyBlue;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    &__item {
+        flex: 1 1 20%;
+        padding: 0 20px;
+        // background: #fff;
+        color: $blue;
+        border-radius: 4px 4px 0 0;
+        @include font_bold;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        height: 77px;
+        text-align: center;
+        cursor: pointer;
+        border-bottom: 2px solid $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        z-index: 1;
+        max-width: 20%;
+
+        &:hover:not(.posts-categories__item_active) {
+            opacity: 0.6;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            background: $blue;
+            width: 100%;
+            left: 0;
+            height: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 200ms ease;
+        }
+
+        &_active {
+            // background: $blue;
+            color: white;
+            &::before {
+                height: 100%; 
+            }                 
+        }
+    }
+}
+
+/* Post View Pagination
+--------------------------------------------------------------*/ 
+

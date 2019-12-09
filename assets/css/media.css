@@ -1,6 +1,7 @@
 @media (max-width: 1199.98px)
 {
-    .page-title
+    .page-title,
+    .section-title
     {
         font-size: 3.6rem;
     }
@@ -9,6 +10,14 @@
 @media (max-width: 991.98px)
 {
     .page-title
+    {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 575.98px)
+{
+    .section-title
     {
         font-size: 3rem;
     }
@@ -475,6 +484,16 @@
         margin-right: 35px; 
         margin-left: 35px;
     }
+    .privilages-section__title-area
+    {
+        margin-top: 58px;
+    }
+    .privilages-section .section-title::before
+    {
+        top: -120px; 
+
+        width: 520px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px)
@@ -544,11 +563,18 @@
     }
     .tour-section__block_right-image
     {
-        left: -12%;
+        top: 2.5%; 
+        left: 2.5%;
+
+        width: 95%;
     }
     .tour-section__block_right .tour-section__text-content
     {
         padding-right: 0;
+    }
+    .tour-section__block_right
+    {
+        padding: 348px 30px 110px;
     }
 }
 
@@ -556,7 +582,30 @@
 {
     .tour-section__block_right-image
     {
-        left: -37%;
+        position: relative;
+        left: -30px;
+
+        width: -webkit-calc(100% + 60px);
+        width:         calc(100% + 60px);
+        margin-bottom: 20px;
+    }
+    .tour-section__block_right
+    {
+        padding: 10px 30px 110px;
+    }
+    .tour-section__block_left::before
+    {
+        right: 50%;
+
+        width: -webkit-calc(100% + 30px);
+        width:         calc(100% + 30px); 
+
+        background-position: center 100%;
+        background-size: contain;
+    }
+    .tour-section__block_left
+    {
+        padding: 100px 0 240px;
     }
 }
 
@@ -754,7 +803,8 @@
     .testimonialSlider__header
     {
         max-width: inherit;
-        margin-right: auto; 
+        margin-right: auto;
+        padding-top: 320px; 
 
         -webkit-box-flex: 1;
         -webkit-flex: 1 1 auto;
@@ -763,13 +813,62 @@
     }
     .testimonialSlider__date
     {
-        top: 180px; 
-        right: 3px;
-        left: inherit;
+        top: 280px; 
+        right: initial;
+        left: 8px;
     }
     .testimonialSlider-thumbs
     {
         display: none;
+    }
+    .testimonialSlider-navigation
+    {
+        top: 260px; 
+        right: 0;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    .posts-categories__item
+    {
+        max-width: 33.3333%;
+
+        -webkit-border-radius: 0;
+                border-radius: 0;
+        background: white; 
+
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 33.3333%;
+            -ms-flex: 1 1 33.3333%;
+                flex: 1 1 33.3333%;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .posts-categories__item
+    {
+        max-width: 50%; 
+
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 50%;
+            -ms-flex: 1 1 50%;
+                flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 575.98px)
+{
+    .posts-categories__item
+    {
+        max-width: 100%;
+        height: 60px; 
+
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
     }
 }
 
@@ -843,6 +942,43 @@
     .news-post__figure
     {
         height: 260px;
+    }
+}
+
+@media (max-width: 991.98px)
+{
+    .post .page-header__content::before
+    {
+        left: -30px; 
+
+        width: -webkit-calc(100% + 60px);
+        width:         calc(100% + 60px);
+    }
+    .post-featured
+    {
+        height: 380px;
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .post-featured
+    {
+        height: 330px;
+    }
+}
+
+@media (max-width: 575.98px)
+{
+    .post .page-header__content::before
+    {
+        left: 0; 
+
+        width: 100%;
+    }
+    .post__header
+    {
+        padding: 0 10px 0 25px;
     }
 }
 
@@ -1058,6 +1194,13 @@
     .footer-logo
     {
         display: none;
+    }
+    .creater
+    {
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 }
 
@@ -1488,14 +1631,6 @@
     .contucts-info
     {
         padding-left: 0;
-    }
-}
-
-@media (max-width: 1199.98px)
-{
-    .section-title
-    {
-        font-size: 3.6rem;
     }
 }
 

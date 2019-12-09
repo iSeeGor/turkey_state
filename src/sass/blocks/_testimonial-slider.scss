@@ -215,6 +215,16 @@
 
 }
 
+.testimonialSlider__message-inner::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.simplebar-content::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+
+
 .testimonialSlider-meta {
     color: white;
     padding-left: 10px;
@@ -397,6 +407,11 @@
 
     .video-section__prev-img {
         max-height: initial;
+        height: 100%;
+    }
+
+    .simplebar-content {
+        padding-right: 0 !important;
         height: 100%;
     }
 }

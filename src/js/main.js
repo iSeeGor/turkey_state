@@ -18,6 +18,8 @@ $(function() {
     headerAnimation();
     pagination();
     paralaxBg();
+    categoriesToggle();
+    iframeRatio();
     // iOSDetect();
 });
 
@@ -35,7 +37,7 @@ const sideNav = () => {
     let ham = document.querySelector(".hamburger");
     let sidenav = document.querySelector(".side-nav");
     let header = document.querySelector(".mobile-header");
-    let site = document.querySelector('.site');
+    let main = document.querySelector("main");
 
     ham.addEventListener("click", () => {
         sidenav.classList.toggle("side-nav_active");
@@ -45,14 +47,15 @@ const sideNav = () => {
                 "style",
                 "transform: translateX(calc(100% - 60px));"
             );
+
+            // document.body.classList.add('body__side-nav');
             document.body.style.overflow = "hidden";
-            
         };
 
         const headerNormal = () => {
             header.setAttribute("style", "transform: translateX(0);");
+            // document.body.classList.remove('body__side-nav');
             document.body.style.overflow = "auto";
-
         };
 
         sidenav.classList.contains("side-nav_active")
@@ -132,7 +135,6 @@ const themeSelect = () => {
 };
 
 // Header Search
-
 const searchCollaps = () => {
     let searchBtn = document.querySelector(".nav__search-btn");
     let searchCollaps = document.querySelector(".nav__search-collaps");
@@ -271,12 +273,12 @@ const propertySLider = () => {
 
             991: {
                 slidesPerView: 2,
-                spaceBetween: 70,
+                spaceBetween: 70
             },
 
             1200: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 30
             }
         }
     });
@@ -315,12 +317,12 @@ const propertySLider = () => {
 
             991: {
                 slidesPerView: 2,
-                spaceBetween: 70,
+                spaceBetween: 70
             },
 
             1200: {
                 slidesPerView: 3,
-                spaceBetween: 30,
+                spaceBetween: 30
             }
         }
     });
@@ -429,14 +431,20 @@ const scrollToTop = () => {
 
     // bottom position + 15% when scroll to bottom of content
     $(window).scroll(function() {
-        if(($(window).scrollTop() + $(window).height() + 50) > $(document).height()) {
-            toTopBtn.css('bottom', '115px');
-            // alert('hey')
-        } else {
-            toTopBtn.css('bottom', '5%');
-        }    
+        const btnPostition = () => {
+            if (
+                $(window).scrollTop() + $(window).height() + 50 >
+                $(document).height()
+            ) {
+                toTopBtn.css("bottom", "115px");
+                // alert('hey')
+            } else {
+                toTopBtn.css("bottom", "5%");
+            }
+        };
+
+        window.innerWidth > 768 ? btnPostition() : false;
     });
-    
 };
 
 // Header OnScroll Animation
@@ -631,25 +639,64 @@ const pagination = () => {
     }.call(this));
 };
 
-// Paralax Background 
+// Paralax Background
 const paralaxBg = () => {
-    if(!navigator.userAgent.match(/iPhone|iPad|iPod/i)){
+    if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
         // let size = 'content';
-    
+
         // if(window.innerWidth >= 1921){
         //     size = 'cover'
         // }
 
-        $('.parallax-bg').parallaxie({
+        $(".parallax-bg").parallaxie({
             speed: 0.3,
-            size: 'cover',
-            offset: -25,
+            size: "cover",
+            offset: -25
         });
-    }   
+    }
+};
+
+// Blog List Categories Toggle
+const categoriesToggle = () => {
+    $(document).on("click", ".posts-categories__item", function() {
+        let $this = $(this);
+
+        $this
+            .addClass("posts-categories__item_active")
+            .siblings()
+            .removeClass("posts-categories__item_active");
+    });
+};
+
+
+// IFrame Ratio Scale
+const iframeRatio = () => {
+    // Find all iframes
+    var $iframes = $( ".typography iframe" );
+    
+    // Find &amp;amp;#x26; save the aspect ratio for all iframes
+    $iframes.each(function () {
+    $( this ).data( "ratio", this.height / this.width )
+        // Remove the hardcoded width &amp;amp;#x26; height attributes
+        .removeAttr( "width" )
+        .removeAttr( "height" );
+    });
+    
+    // Resize the iframes when the window is resized
+    $( window ).resize( function () {
+    $iframes.each( function() {
+        // Get the parent container&amp;amp;#x27;s width
+        var width = $( this ).parent().width();
+        console.log(width );
+        
+        $( this ).width( width )
+        .height( width * $( this ).data( "ratio" ) );
+    });
+    // Resize to fix all iframes on page load.
+    }).resize();
+
 }
-
-
-// Detect IOS 
+// Detect IOS
 // const iOSDetect = () => {
 //     var isMobile = {
 //         Android: function() {
@@ -671,13 +718,13 @@ const paralaxBg = () => {
 //             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 //         }
 //     };
-    
+
 //     /* if the device is not ios hide the download button */
 //     if(!isMobile.iOS()){
-//         alert('not-ios');  
+//         alert('not-ios');
 //     } else {
 //         alert('ios')
 //     }
 //     console.log(1);
-    
+
 // }

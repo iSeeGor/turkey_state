@@ -1,0 +1,128 @@
+/*--------------------------------------------------------------
+# Post Single Page
+--------------------------------------------------------------*/
+.post {
+    padding: 0 0 60px 0;
+
+    .page-header::before {
+        display: none;
+    }
+    .page-header__content {
+        min-height: 240px;
+    }
+
+    &__main-content {
+        margin-top: -186px ;
+    }
+
+    &__content {
+        margin-bottom: 50px ;
+    }
+}
+
+/* Post Header
+--------------------------------------------------------------*/ 
+
+.post-header {
+
+    &__title {
+        @include font_bold;
+        font-size: 3.2rem;
+        line-height: 4.0rem;
+        color: $heading_color;
+        padding-bottom: 20px;
+        position: relative;
+        margin: 0 0 15px 0;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 4px;
+            background: #0691e0;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__meta-item {
+
+        .post-category {
+            font-size: 1.5rem;
+            color: #0c1937;
+            @include font_medium;
+        }
+
+        .post-date {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            padding: 8px 27px;
+            border-radius: 4px 4px 0 0;
+            background: white;
+            color: #0c1937;
+        }
+    }
+}
+
+
+/* Post Fetured Image
+--------------------------------------------------------------*/ 
+.post-featured {
+    height: 410px;
+    border-radius: 4px 0 4px 4px;
+    overflow: hidden;
+    margin-bottom: 32px;
+
+    &__body {
+        height: 100%;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+
+/* Post Share
+--------------------------------------------------------------*/ 
+.share-widget {
+    border-top: 4px solid $lightSkyBlue;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 40px;
+
+    &__title {
+        line-height: 1;
+        display: block;
+        margin-top: -3px;
+        margin-right: 20px;
+    }
+
+    
+    &__content {
+        display: flex;
+        background: $lightSkyBlue;
+        align-items: center;
+        padding: 0px 20px 4px 20px;
+    }
+}
+
+
+/* Related Section Posts
+--------------------------------------------------------------*/ 
+.post__related {
+    margin: 35px 0 60px 0;
+
+    .block-title {
+
+        margin-bottom: 116px;
+    }
+}

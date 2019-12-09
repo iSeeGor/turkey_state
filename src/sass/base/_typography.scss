@@ -71,15 +71,22 @@ textarea {
 		@include font_bold;
 	}
 
-	a {
-		color: $font_main;
-		text-decoration: none;
-	}
-	
 	a:active,
 	a:visited {
-		color: $font_main;
+		color: $orange;
 	}
+
+	a {
+		color: $orange;
+		text-decoration: none;
+		transition: color .2s ease;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+	
+	
 	
 	p {	
     	line-height: 2.6rem;
@@ -106,17 +113,23 @@ textarea {
 		list-style: none;
 		padding: 0;
 		margin: 0 0 2.0rem 1.5rem;
+		line-height: 1.42;
 	}
 	
 	ul {
 		li {
 			margin-bottom: 0.5rem;
+			position: relative;
+			padding-left: 20px;
 			
 			&::before {
 				content: '';
+				position: absolute;
 				display: inline-block;
 				width: 9px;
 				height: 9px;
+				left: 0;
+				top: 5px;
 				margin-right: 13px;
 				border-radius: 50%;
 				background: #528fdc;
@@ -129,6 +142,8 @@ textarea {
 		li {
 			counter-increment: item;
 			margin-bottom: 0.5rem;
+			position: relative;
+			padding-left: 20px;
 
 			&::before {
 				content: counter(item)'.';
@@ -136,6 +151,8 @@ textarea {
 				margin-right: 11px;
 				color: $heading_color;
 				font-weight: bold;
+				position: absolute;
+				left: 0;
 			}
 		}
 	}
@@ -213,5 +230,10 @@ textarea {
 
 	big {
 		font-size: 125%;
+	}
+
+	iframe {
+		width: 100%;
+		margin: 35px 0 30px;
 	}
 }

@@ -57,17 +57,41 @@
     }
 
     .tour-section__block_right-image {
-        left: -12%;
+        width: 95%;
+        left: 2.5%;
+        top: 2.5%;
     }
 
     .tour-section__block_right .tour-section__text-content {
         padding-right: 0px;
+    }
+
+    .tour-section__block_right {
+        padding: 348px 30px 110px;
     }
 }
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
     .tour-section__block_right-image {
-        left: -37%;
+        position: relative;
+        width: calc(100% + 60px);
+        left: -30px;
+        margin-bottom: 20px;
+    }
+
+    .tour-section__block_right {
+        padding: 10px 30px 110px;
+    }
+
+    .tour-section__block_left::before {
+        right: 50%;
+        background-position: center 100%;
+        background-size: contain;
+        width: calc(100% + 30px);
+    }
+
+    .tour-section__block_left {
+        padding: 100px 0 240px;
     }
 }

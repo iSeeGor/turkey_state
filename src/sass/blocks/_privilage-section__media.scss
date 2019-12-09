@@ -66,4 +66,13 @@
         margin-left: 35px;
         margin-right: 35px;
     }
+
+    .privilages-section__title-area {
+        margin-top: 58px;
+    }
+
+    .privilages-section .section-title::before {
+        width: 520px;
+        top: -120px
+    }
 }

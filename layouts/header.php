@@ -65,46 +65,46 @@
             <nav class="side-nav__mobile-nav mobile-nav">
                 <ul class="mobile-nav__list">
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link link_active" title="mobile-nav__link">Главная</a></li>
+                        <a href="/" class="mobile-nav__link link link_active" title="Главная">Главная</a></li>
                     <li class="mobile-nav__item">
-                        <a href="/pages/about-us.php" class="mobile-nav__link link" title="mobile-nav__link">О компании</a></li>
+                        <a href="/pages/about-us.php" class="mobile-nav__link link" title="О компании">О компании</a></li>
                     <li class="mobile-nav__item">
-                        <a href="/pages/catalog.php" class="mobile-nav__link link" title="mobile-nav__link">Каталог недвижимости</a>
+                        <a href="/pages/catalog.php" class="mobile-nav__link link" title="Каталог недвижимости">Каталог недвижимости</a>
 
                         <ul class="mobile-nav__subnav mobile-subnav__list">
                             <li class="mobile-subnav__item">
-                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                             <li class="mobile-subnav__item">
-                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                             <li class="mobile-subnav__item">
-                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a>
+                                <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a>
 
                                 <ul class="mobile-nav__subnav mobile-subnav__list">
                                     <li class="mobile-subnav__item">
-                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                        <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                                     <li class="mobile-subnav__item">
-                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                        <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                                     <li class="mobile-subnav__item">
-                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                        <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                                     <li class="mobile-subnav__item">
-                                        <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                        <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                                 </ul>
                             </li>    
                             <li class="mobile-subnav__item">
-                                <a href="#" class="mobile-subnav__link link" title="sub-menu">Недвижимость Аланьи</a></li>
+                                <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                         </ul>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Услуги</a>
+                        <a href="#" class="mobile-nav__link link" title="Услуги">Услуги</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Вопросы-ответы</a>
+                        <a href="#" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Отзывы</a>
+                        <a href="#" class="mobile-nav__link link" title="Отзывы">Отзывы</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="mobile-nav__link">Новости</a>
+                        <a href="/blog/blog-list.php" class="mobile-nav__link link" title="Новости">Новости</a>
                     </li>
                 </ul>
 
@@ -254,7 +254,7 @@
                             <a href="/" class="main-menu__link link" title="оТЗЫВЫ" data-text="оТЗЫВЫ">оТЗЫВЫ</a>
                         </li>
                         <li class="main-menu__item">
-                            <a href="/" class="main-menu__link link" title="оТЗЫВЫ" data-text="ноВОСТИ">ноВОСТИ</a>
+                            <a href="/blog/blog-list.php" class="main-menu__link link" title="оТЗЫВЫ" data-text="ноВОСТИ">ноВОСТИ</a>
                         </li>
                     </ul>
 

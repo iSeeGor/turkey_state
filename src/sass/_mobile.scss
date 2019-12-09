@@ -79,21 +79,19 @@
 /* Side-Nav
  ------------------------------------------------------------*/
 
-.side-nav {
-    background: #E4F5FF;
-    position: fixed;
-    width: calc(100% - 60px);
-    height: 100%;
-    z-index: 100;
-    transform: translateX(-100%);
-    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-    overflow: auto;
-    touch-action: none;
-    
-    
+.side-nav {    
 
     &__container {
+        position: fixed;
         padding: 0 20px ;
+        // width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        background: #E4F5FF;
+        width: calc(100% - 60px);
+        transform: translateX(-100%);
+        transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: 101;
     }
 
     &__header {
@@ -112,7 +110,17 @@
     }
 
     &_active {
-        transform: translateX(0); 
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        touch-action: none;
+
+        .side-nav__container {
+            transform: translateX(0);
+        }
     }
 
     &__button {
@@ -159,6 +167,11 @@
             background: #fff;
         }
     }
+}
+
+.body__side-nav {
+    position: fixed;
+    width: 100%;
 }
 
 /* Mobile Menu
@@ -232,7 +245,7 @@
     &__link {
         font-size: 1.4rem;
         display: block;
-        padding: 4px 0;
+        padding: 8px 0;
     }
 }
 

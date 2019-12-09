@@ -1,0 +1,42 @@
+@media (max-width: 1199.98px) {
+    
+
+}
+
+@media (max-width: 991.98px) {
+
+    .post .page-header__content::before {
+        width: calc(100% + 60px);
+        left: -30px;
+    }
+
+    .post-featured {
+        height: 380px;
+    }
+    
+}
+
+
+@media (max-width: 767.98px) {
+
+    .post-featured {
+        height: 330px;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+
+    .post .page-header__content::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .post__header {
+        padding: 0 10px 0 25px;
+    }
+
+    .post-featured {
+        // height: 290px;
+    }
+}

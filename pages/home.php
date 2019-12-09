@@ -326,7 +326,7 @@
                                     <div class="property-card__meta">
                                         <ul class="property-card__meta-list">
                                             <li class="property-card__meta-item property-card__meta-item_location">Алания / Алания Центр Алания / Центр Алания</li>
-                                            <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1</li>
+                                            <li class="property-card__meta-item property-card__meta-item_rooms">2+1, 3+1, 3+1, 2+1, 3+1, 3+1 , 2+1, 3+1, 3+1</li>
                                             <li class="property-card__meta-item property-card__meta-item_square">160-368 м2</li>
                                         </ul>
                                     </div>
@@ -1230,7 +1230,7 @@
                 <div class="news-posts-row__inner">
                     <article class="news-post" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
                         <div class="news-post__content">
-                            <a href="#" title="News Post Title" class="news-post__expert link">
+                            <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                 Длинное название новостей, состоящее из нескольких строк
                             </a>
                             <div class="news-post__meta">
@@ -1244,7 +1244,7 @@
                     </article>
                     <article class="news-post" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
                         <div class="news-post__content">
-                            <a href="#" title="News Post Title" class="news-post__expert link">
+                            <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                 Длинное название новостей, состоящее из нескольких строк
                             </a>
                             <div class="news-post__meta">
@@ -1258,7 +1258,7 @@
                     </article>
                     <article class="news-post" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1200">
                         <div class="news-post__content">
-                            <a href="#" title="News Post Title" class="news-post__expert link">
+                            <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                 Длинное название новостей, состоящее из нескольких строк, состоящее из нескольких строк
                             </a>
                             <div class="news-post__meta">
