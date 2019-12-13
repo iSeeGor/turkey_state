@@ -190,7 +190,7 @@
             </div>
 
             <div class="mobile-logo">
-                <a href="/" title="Логотип"><img src="/assets/images/general/mobile__logo.png" alt="Логотип" width="140"></a>
+                <a href="/" title="Mobile Logo"><img src="/assets/images/general/turkestate-h.svg" alt="Mobile Logo" width="110"></a>
             </div>
         </div>
     </div>
@@ -202,7 +202,7 @@
             <div class="header__branding">
                 <div class="nav__brand">
                     <div class="nav__brand-image">
-                        <a href="/" title="Логотип"><img src="/assets/images/general/logo.png" alt="Логотип"></a>
+                        <a href="/" title="terkestate logo"><img src="/assets/images/general/turkestate.svg" alt="terkestate logo"></a>
                     </div>
                 </div>
             </div>

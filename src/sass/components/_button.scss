@@ -123,7 +123,8 @@
     }
 }
 
-.to-favorit__button {
+.to-favorit__button,
+.print__button {
     border-radius: 50%;
     border: 2px solid white;
     width: 39px;
@@ -143,6 +144,18 @@
     transition: fill 0.3s ease;
 }
 
+.print__icon {
+    fill: white;
+    width: 19px;
+    height: 17px;
+    transition: fill 0.3s ease;
+    margin-top: 2px;
+}
+
+.print__button:hover .icon-print{
+    fill: #40b5f8;
+}
+
 .to-favorit__button:hover .icon-heart {
     fill: rgba(255, 107, 124, 0.5);
 }
@@ -152,5 +165,20 @@
     fill: #ff6d7e;
 }
 
+.button__anchor {
+    font-size: 1.1rem;
+    padding: 9px 10px;
+    letter-spacing: 0.025em;
+    border-width: 1px;
+    // transition: all .3s ease ;
+
+    &_active {
+        background: $orange;
+        padding: 10px;
+        color: white;
+        font-size: 1.3rem;
+        
+    }
+}
 
 

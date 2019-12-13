@@ -20,6 +20,11 @@ $(function() {
     paralaxBg();
     categoriesToggle();
     iframeRatio();
+    anchorToggle();
+    imageSlider();
+    stickyTabs();
+    formValidation();
+    phoneFomMask();
     // iOSDetect();
 });
 
@@ -668,34 +673,184 @@ const categoriesToggle = () => {
     });
 };
 
-
 // IFrame Ratio Scale
 const iframeRatio = () => {
     // Find all iframes
-    var $iframes = $( ".typography iframe" );
-    
-    // Find &amp;amp;#x26; save the aspect ratio for all iframes
-    $iframes.each(function () {
-    $( this ).data( "ratio", this.height / this.width )
-        // Remove the hardcoded width &amp;amp;#x26; height attributes
-        .removeAttr( "width" )
-        .removeAttr( "height" );
-    });
-    
-    // Resize the iframes when the window is resized
-    $( window ).resize( function () {
-    $iframes.each( function() {
-        // Get the parent container&amp;amp;#x27;s width
-        var width = $( this ).parent().width();
-        console.log(width );
-        
-        $( this ).width( width )
-        .height( width * $( this ).data( "ratio" ) );
-    });
-    // Resize to fix all iframes on page load.
-    }).resize();
+    var $iframes = $(".typography iframe");
 
+    // Find &amp;amp;#x26; save the aspect ratio for all iframes
+    $iframes.each(function() {
+        $(this)
+            .data("ratio", this.height / this.width)
+            // Remove the hardcoded width &amp;amp;#x26; height attributes
+            .removeAttr("width")
+            .removeAttr("height");
+    });
+
+    // Resize the iframes when the window is resized
+    $(window)
+        .resize(function() {
+            $iframes.each(function() {
+                // Get the parent container&amp;amp;#x27;s width
+                var width = $(this)
+                    .parent()
+                    .width();
+
+                $(this)
+                    .width(width)
+                    .height(width * $(this).data("ratio"));
+            });
+            // Resize to fix all iframes on page load.
+        })
+        .resize();
+};
+
+// Single Property Page Anchor Button Toggle & Slide
+const anchorToggle = () => {
+    $(document).on("click", ".button__anchor", function(e) {
+        // e.preventDefault();
+        $(this)
+            .addClass("button__anchor_active")
+            .siblings()
+            .removeClass("button__anchor_active");
+    });
+
+    // Slide to Anchor
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        if (
+            location.pathname.replace(/^\//, "") ===
+                this.pathname.replace(/^\//, "") &&
+            location.hostname === this.hostname
+        ) {
+            var target = $(this.hash);
+            target = target.length
+                ? target
+                : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html, body").animate(
+                    {
+                        scrollTop: target.offset().top - 160
+                    },
+                    800
+                );
+                return false;
+            }
+        }
+    });
+};
+
+// Image Slider
+const imageSlider = () => {
+    let sliderSelector = ".slider-container",
+        thumbsSelector = ".thumb-container";
+
+    let slidesOptions = {
+        wrapperClass: "slider-wrapper",
+        slideClass: "slider-item",
+        spaceBetween: 20,
+        loop: true,
+        loopedSlides: 5,
+        navigation: {
+            nextEl: ".slider-btn__next",
+            prevEl: ".slider-btn__prev"
+        }
+    };
+
+    let thumbOptions = {
+        wrapperClass: "thumb-wrapper",
+        slideClass: "thumb-item",
+        spaceBetween: 10,
+        // centeredSlides: true,
+        slidesPerView: 4,
+        touchRatio: 0.2,
+        slideToClickedSlide: true,
+        loop: true,
+        loopedSlides: 5,
+        direction: "vertical"
+    };
+
+    let thumbSlider = new Swiper(thumbsSelector, thumbOptions);
+    let imageSlider = new Swiper(sliderSelector, slidesOptions);
+
+    imageSlider.controller.control = thumbSlider;
+    thumbSlider.controller.control = imageSlider;
+
+    $(".slider-item a").magnificPopup({
+        type: "image"
+        // cursor: 'mfp-zoom-out-cur',
+        // gallery:{
+        //     enabled:true
+        // }
+    });
+};
+
+// Sticky Property Side Bar Buttons
+const stickyTabs = () => {
+    var $window = $(window);
+    var $sidebar = $(".p-sidebar__item_sticky");
+    var $sidebarHeight = $sidebar.innerHeight();
+    var $footerOffsetTop = $(".property-page__cb-form").offset().top;
+    var $sidebarOffset = $sidebar.offset();
+
+    if(window.innerWidth > 992){
+        $window.scroll(function() {
+            if ($window.scrollTop() + 140 >= $sidebarOffset.top) {
+                $sidebar.addClass("fixed");
+            } else {
+                $sidebar.removeClass("fixed");
+            }
+            if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop - 105) {
+                $sidebar.css({
+                    top: -($window.scrollTop() + $sidebarHeight - $footerOffsetTop - 55)
+                });
+            } else {
+                $sidebar.css({ top: "140px" });
+            }
+        });
+    }
+    
+};
+
+// Form Validation 
+const formValidation = () => {
+    $(".cb-form__body").validate({
+        errorClass: "form__error",
+
+        rules: {
+            name: {
+                required: true
+            },
+            email: {
+                required: true
+            },
+            phone: {
+                required: true,
+                minlength: 10
+            }
+        },
+
+        messages: {
+            name: {
+                required: "Введите ваше Имя"
+            },
+            email: {
+                required: "Пожалуйста введите корректный почтовый адрес"
+            },
+            phone: {
+                required: "Введите ваш номер телефона",
+                minlength: "Минимальное количество символов - 10"
+            }
+        }
+    });
 }
+
+// Phone Form Mask
+const phoneFomMask = () => {
+    $('.phone-mask').mask('(000) 000-00-00');
+    console.log(1);
+    
+}
+
 // Detect IOS
 // const iOSDetect = () => {
 //     var isMobile = {

@@ -209,3 +209,23 @@ img {
 	line-height: 1.142857142857143;
 	color: $strong_color;
 }
+
+.page-section__title {
+	@include font_bold;
+	font-size: 2.3rem;
+	line-height: 2.6rem;
+	color: $strong_color;
+	margin: 0 0 20px 0; 
+	padding: 0 0 14px 0;
+	position: relative;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30px;
+		height: 4px;
+		content: '';
+		background: #0691e0;
+	}
+}

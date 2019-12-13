@@ -226,7 +226,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -328,7 +328,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -379,7 +379,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -430,7 +430,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -481,7 +481,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -532,7 +532,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -583,7 +583,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -634,7 +634,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -685,7 +685,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -736,7 +736,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>
@@ -787,7 +787,7 @@
                                         </ul>
                                     </div>
 
-                                    <a href="#" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
+                                    <a href="/pages/object.php" class="button button_pure property-card__button" title="Подробнее">подробнее</a>
                                 </div>
                             </div>
                         </div>

@@ -78,7 +78,7 @@ $(function() {
     }
 
     //Resize the width of map on large screen
-    let mapHolder = document.querySelector('.map-holder');
+    let mapHolder = document.querySelector('.map-wrapper .map-holder');
     let holderWidth = '';
     
     if(window.innerWidth >= 992){

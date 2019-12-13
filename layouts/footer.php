@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-4">
                     <div class="footer__logo footer-logo">
-                        <img src="../assets/images/general/logo.png" alt="Footer Logo" class="footer-logo__image">
+                        <img src="../assets/images/general/turestate-dark.svg" alt="Footer Logo" class="footer-logo__image" width="160">
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-8">
@@ -196,6 +196,7 @@
 <script src="/assets/js/plugins/simplebar.min.js"></script>
 <script src="/assets/js/plugins/parallaxie.js"></script>
 <script src="/assets/js/plugins/jquery.magnific-popup.min.js"></script>
+<script src="/assets/js/plugins/jquery.validate.min.js"></script>
 
 <!--== JS Scripts -->
 <script src="/assets/js/script.min.js"></script>

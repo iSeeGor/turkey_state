@@ -1,0 +1,78 @@
+@keyframes click-wave {
+    0% {
+        height: 20px;
+        width: 20px;
+        opacity: 0.35;
+        position: relative;
+    }
+    100% {
+        height: 100px;
+        width: 100px;
+        margin-left: -40px;
+        margin-top: -40px;
+        opacity: 0;
+    }
+}
+
+.checkbox,
+.radio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    top: 4px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    transition: all 0.15s ease-out 0s;
+    background: #d5e5ef;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 0.5rem;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    border-radius: 4px;
+}
+.checkbox:hover,
+.radio:hover {
+    background: #c8d7e0;
+}
+.checkbox:checked, 
+.radio:checked {
+    background: #d9f8eb;
+}
+.checkbox:checked::before,
+.radio:checked::before {
+    height: 13px;
+    width: 13px;
+    position: absolute;
+    content: url('../images/icons/icon-check.svg');
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.checkbox:checked::after,
+.radio:checked::after {
+    -webkit-animation: click-wave 0.65s;
+    -moz-animation: click-wave 0.65s;
+    animation: click-wave 0.65s;
+    background: #a9d4c2;
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 100;
+    border-radius: 4px;
+}
+.radio {
+    border-radius: 50%;
+}
+.radio::after {
+    border-radius: 50%;
+}

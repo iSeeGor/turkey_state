@@ -1,0 +1,227 @@
+@media (max-width: 1199.98px) {
+
+    // Slider 
+    .p-detail__slider {
+        height: 440px;
+    }
+
+    .image-slider .slider-btn__next, .image-slider .slider-btn__prev {
+        transform: translate(0, -50%);
+    }
+
+    // Option Block
+    .p-options__list {
+        margin-right: 30px;
+    }
+
+    .p-options__item_id {
+        max-width: 280px;
+    }
+
+    // Object Detail
+    .p-detail__main {
+        flex-wrap: wrap;
+    }
+
+    .p-detail__main .p-detail__content {
+        flex: 0 0 70%;
+    }
+
+    // Team Card 
+    .sidebar__team .team-card {
+        width: auto;
+    }
+    
+    .p-detail__main .p-detail__sidebar {
+        flex: 0 0;
+    }
+
+    // Send Form
+    .cb-form .cb-form__info-block,
+    .cb-form .cb-form__options {
+        flex: 0 0 47%;
+        max-width: 47%;
+    }
+
+    .related-block {
+        .property-card__meta-item_rooms, .property-card__meta-item_square {
+            width: calc(100% - 130px);
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+
+    .property-header__title {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+    }
+
+    .property-header .page-header__item_title {
+        flex: 1 1 60%;
+    }
+
+    .p-detail__top {
+        flex-wrap: wrap;
+    }
+
+    .p-detail__top .p-detail__sidebar {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .p-sidebar__control {
+        justify-content: flex-start;
+        padding: 0px 33px 0px 33px;
+
+        > button {
+            margin-right: 10px;
+        }
+    }
+
+    .p-sidebar__anchors {
+        display: flex;
+
+        > * {
+            margin-right: 10px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .button__anchor {
+            height: 100%;
+        }
+
+        .button__anchor_active {
+            font-size: 1.1rem;
+            padding: 9px 10px;
+        }
+    }
+
+    .p-sidebar__callback {
+        display: none;
+    }
+
+    .p-detail__top .p-detail__content {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .p-detail__main {
+        padding-left: 0;
+
+        .p-detail__content {
+            max-width: 100%;
+            flex: 1 1 100%;
+        }
+
+        .p-detail__sidebar {
+            flex: 1 1 100%;
+            padding-left: 0;
+        }
+    }
+
+    .sidebar__team {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .sidebar__team .team-card {
+        padding: 0 10px;
+        margin-top: 0px;
+        flex: 0 0 33.3%;
+        
+        
+    }
+
+    .sidebar__team .team-card__figure {
+        transform: translate(0, 0);
+        top: 0;
+    }
+
+    .cb-form__main {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .cb-form__banner {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .property-header__title {
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+
+    .page-header__item_currency {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        z-index: 2;
+    }
+
+    .image-slider .slider-container {
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-right: 0;
+    }
+
+    .thumb-container {
+        display: none;
+    }
+
+    .p-detail__slider {
+        height: 400px;
+    }
+
+    .p-options {
+        flex-wrap: wrap;
+    }
+
+    .p-options__list {
+        margin-right: 0;
+        flex: 0 0 100%;
+    }
+
+    .p-options__item_id {
+        max-width: 100%;
+    }
+
+    .p-options__item_id .p-options__name {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .cb-form__main {
+        padding: 40px 30px 40px 30px;
+    }
+
+    .cb-form__body {
+        padding-top: 20px;
+    }
+
+    .cb-form .cb-form__info-block, .cb-form .cb-form__options {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .cb-form .cb-form__info-block {
+        order: 1;
+        margin-top: 30px;
+    }
+    
+}
+
+
+@media (max-width: 575.98px) {
+
+    
+}
