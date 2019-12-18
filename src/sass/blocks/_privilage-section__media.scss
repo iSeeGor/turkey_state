@@ -29,12 +29,13 @@
         background: url('../images/general/privilage-section-title-bg.png') no-repeat;
         background-size: contain;
         transform: rotate(-8deg);
-        top: -194px;
-        right: 70px;
+        top: -140px;
+        right: 100px;
     }
 
     .privilages-section__title-area {
-        margin-bottom: 140px;
+        margin-bottom: 190px;
+        margin-top: 100px;
     }
 
     .privilages-section__title-area .section-title {
@@ -44,9 +45,15 @@
 
 // Малые девайсы («ландшафтные», < 768px)
 @media (max-width: 767.98px) {
+    .privilages-section__title-area {
+        margin-bottom: 200px;
+        margin-top: 100px;
+    }
+
 
     .privilages-section .section-title::before {
-        right: -30px;
+        right: -55px;
+        top: -130px;
     }
 
     .privilages-section__button {
@@ -71,8 +78,34 @@
         margin-top: 58px;
     }
 
+    .privilages-section__title-area .section-title {
+        padding-right: 140px;
+    }
+
     .privilages-section .section-title::before {
-        width: 520px;
-        top: -120px
+        width: 530px;
+        top: -100px;
+        left: -55px;
+    }
+}
+
+@media (max-width: 420px) {
+    .privilages-section__title-area .section-title {
+        padding-right: 40px;
+    }
+
+    .privilages-section .section-title::before {
+        left: -70px;
+        top: -80px;
+    }
+}
+
+@media (max-width: 320px) {
+    .privilages-section__title-area .section-title {
+        padding-right: 0px;
+    }
+
+    .privilages-section .section-title::before {
+        left: -100px;
     }
 }

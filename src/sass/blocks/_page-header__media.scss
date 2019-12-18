@@ -1,3 +1,10 @@
+@media (max-width: 1400px) {
+    .page-header__deco-block::before,
+    .page-header__deco-block::after {
+        display: none;
+    }
+}
+
 // Большие девайсы (большие десктопы, < 1200px)
 @media (max-width: 1199.98px) {
     .page-header__deco-block {
@@ -40,6 +47,7 @@
 
     .breadcrumbs {
         padding: 20px 0;
+        min-height: 64px;
     }
 }
 

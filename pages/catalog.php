@@ -8,14 +8,6 @@
 
             <!--== breadcrumbs  -->
             <div class="breadcrumbs">
-                <nav class="breadcrumbs__nav">
-                    <ol class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="/" class="breadcrumbs__link" title="Главная">Главная</a></li>
-                        <li class="breadcrumbs__item breadcrumbs__item_current">
-                            Каталог недвижимости</li>
-                    </ol>
-                </nav>
             </div>
 
             <!--== page-header content  -->
@@ -181,7 +173,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card property-card__special-price">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -232,7 +224,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -283,7 +275,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -334,7 +326,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card property-card__special-price">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -385,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -436,7 +428,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -487,7 +479,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card property-card__special-price">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -538,7 +530,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -589,7 +581,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -640,7 +632,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card property-card__special-price">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -691,7 +683,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -742,7 +734,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">

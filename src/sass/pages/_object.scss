@@ -232,7 +232,7 @@
     .slider-item,
     .thumb-item  {
         flex-shrink: 0;
-        // width: 100%;
+        width: 100%;
         // height: 100%;
         position: relative;
         transition-property: transform;
@@ -474,11 +474,13 @@
     display: flex;
 
     .p-detail__content {
-        flex: 0 0 74%;     
+        flex: 0 0 74%;
+        max-width: 74%;     
     }
 
     .p-detail__sidebar {
-        flex: 1 1 auto;
+        flex: 0 0 26%;
+        max-width: 26%;
         padding-left: 30px;
     }
 }
@@ -550,6 +552,7 @@
 
     .team-card__inner {
         flex-direction: column;
+        max-width: 100%;
     }
 
     .team-card__figure {
@@ -600,6 +603,59 @@
 
     .team-card__contacts .team-card__item {
         margin-bottom: 10px;
+    }
+}
+
+// Team Owl Nav Style
+.sidebar__team {
+    .owl-nav {
+
+        
+
+        span {
+            display: none;
+        }
+
+        .owl-prev,
+        .owl-next {
+            width: 30px;
+            height: 30px;
+            // background: #000 !important;
+            position: absolute;
+            position: absolute;
+            // top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url('/assets/images/icons/arrow_owl.svg');
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                top: 0;
+                left: 0;
+                background-position:  center;
+            }
+        }
+
+        .owl-prev {
+
+            &::before {
+                transform: scaleX(-1);
+            }
+        }
+
+        .owl-next {
+            left: inherit;
+            right: 0;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: inherit;
+        }
     }
 }
 

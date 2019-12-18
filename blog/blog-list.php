@@ -8,14 +8,6 @@
 
             <!--== breadcrumbs  -->
             <div class="breadcrumbs">
-                <nav class="breadcrumbs__nav">
-                    <ol class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="/" class="breadcrumbs__link" title="Главная">Главная</a></li>
-                        <li class="breadcrumbs__item breadcrumbs__item_current">
-                            Новости</li>
-                    </ol>
-                </nav>
             </div>
 
             <!--== page-header content  -->
@@ -58,9 +50,9 @@
     <div class="posts-view">
         <div class="container">
             <div class="posts-view__list">
-                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="400">
+                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="200">
                     <div class="news-posts-row__inner">
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -74,7 +66,7 @@
                                 <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -88,7 +80,7 @@
                             <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк, состоящее из нескольких строк
@@ -105,9 +97,9 @@
                     </div>
                 </div>
 
-                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="400">
+                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="200">
                     <div class="news-posts-row__inner">
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -121,7 +113,7 @@
                                 <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -135,7 +127,7 @@
                             <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк, состоящее из нескольких строк
@@ -152,9 +144,9 @@
                     </div>
                 </div>
 
-                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="400">
+                <div class="news-posts-row" data-aos="fade-up" data-aos-delay="200">
                     <div class="news-posts-row__inner">
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -168,7 +160,7 @@
                                 <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк
@@ -182,7 +174,7 @@
                             <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
-                        <article class="news-post" data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1200">
+                        <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
                             <div class="news-post__content">
                                 <a href="/blog/post.php" title="News Post Title" class="news-post__expert link">
                                     Длинное название новостей, состоящее из нескольких строк, состоящее из нескольких строк

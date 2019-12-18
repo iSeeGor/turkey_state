@@ -50,6 +50,7 @@ textarea {
 	h3, .h3 {
 		font-size: 3.2rem;
 		line-height: 1.25;
+		// line-height: 4rem;
 	}
 
 	h4, .h4 {
@@ -100,6 +101,7 @@ textarea {
 
 	img {
 		margin: 2rem 0 2rem 0;
+		border-radius: 4px;
 	}
 
 	hr {
@@ -129,7 +131,7 @@ textarea {
 				width: 9px;
 				height: 9px;
 				left: 0;
-				top: 5px;
+				top: 7px;
 				margin-right: 13px;
 				border-radius: 50%;
 				background: #528fdc;
@@ -234,6 +236,7 @@ textarea {
 
 	iframe {
 		width: 100%;
-		margin: 35px 0 30px;
+		margin: 2rem 0 1.2rem 0;
+		border-radius: 4px;
 	}
 }

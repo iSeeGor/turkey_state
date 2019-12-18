@@ -4,14 +4,15 @@
         padding-left: 0;
     }
 
-    .map-wrapper .map-holder > div {
-        // top: initial !important;
-        left: -120px !important;
-        
-    }
 
     .map-wrapper .map-holder {
         width: 600px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-us__team .team__header {
+        background-position: center;
     }
 }
 
@@ -53,15 +54,23 @@
         height: 100%;
     }
 
-    .map-wrapper .map-holder > div {
-        top: 0px !important;
-        left: 0px !important;
+    .checklist-block__image-box {
+        margin-bottom: 50px;
     }
+
 }
 
 @media (max-width: 767.98px) {
-    .checklist-block__image-box {
-        margin-bottom: 50px;
+    .about-us__privilages {
+        padding-top: 40px;
+
+        .block-title {
+            margin-bottom: 80px;
+        }
+    }
+
+    .about-us__team .team__header {
+        background-position: bottom center;
     }
 }
 

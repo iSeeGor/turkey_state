@@ -161,6 +161,7 @@
 
     &__meta-item_location {
         max-height: 36px;
+        min-height: 23px;
         overflow: hidden;
 
         &::before {
@@ -173,7 +174,7 @@
     &__meta-item_rooms,
     &__meta-item_square {
         // padding-right: 130px;
-        width: calc(100% - 150px);
+        width: calc(100% - 160px);
         // white-space: nowrap;
         // text-overflow: ellipsis;
         // overflow: hidden;
@@ -249,6 +250,6 @@
     }
 
     .property-card__content {
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
     }
 }

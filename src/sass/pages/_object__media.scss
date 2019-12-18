@@ -33,7 +33,8 @@
     }
     
     .p-detail__main .p-detail__sidebar {
-        flex: 0 0;
+        max-width: 30%;
+        flex: 0 0 30%;
     }
 
     // Send Form
@@ -43,11 +44,6 @@
         max-width: 47%;
     }
 
-    .related-block {
-        .property-card__meta-item_rooms, .property-card__meta-item_square {
-            width: calc(100% - 130px);
-        }
-    }
 }
 
 @media (max-width: 991.98px) {
@@ -111,6 +107,7 @@
 
     .p-detail__main {
         padding-left: 0;
+        flex-wrap: wrap;
 
         .p-detail__content {
             max-width: 100%;
@@ -119,21 +116,28 @@
 
         .p-detail__sidebar {
             flex: 1 1 100%;
+            max-width: 100%;
             padding-left: 0;
         }
     }
 
-    .sidebar__team {
+    .sidebar__team_flex {
         display: flex;
-        flex: 1 1 auto;
+        // flex: 1 1 auto;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    .sidebar__team .owl-item {
+        display: flex;
+        justify-content: center;
     }
 
     .sidebar__team .team-card {
         padding: 0 10px;
         margin-top: 0px;
-        flex: 0 0 33.3%;
+        // flex: 0 0 33.3%;
+        max-width: 240px;
         
         
     }
@@ -222,6 +226,29 @@
 
 
 @media (max-width: 575.98px) {
-
+    .p-detail__slider {
+        height: 300px;
+    }
     
+}
+
+@media (max-width: 413.98px) {
+    .p-sidebar__item_sticky {
+        display: none;
+    }
+
+    .p-options__item {
+        flex-wrap: wrap;
+    }
+
+    .p-options__name,
+    .p-options__item_id .p-options__name {
+        flex: 1 1 70%;
+        max-width: 70%;
+    }
+
+    .cb-form .button {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
 }

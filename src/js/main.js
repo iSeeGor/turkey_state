@@ -19,13 +19,10 @@ $(function() {
     pagination();
     paralaxBg();
     categoriesToggle();
-    iframeRatio();
     anchorToggle();
-    imageSlider();
-    stickyTabs();
     formValidation();
     phoneFomMask();
-    // iOSDetect();
+    iframeRatio();
 });
 
 // Hamburger add Class
@@ -436,19 +433,19 @@ const scrollToTop = () => {
 
     // bottom position + 15% when scroll to bottom of content
     $(window).scroll(function() {
-        const btnPostition = () => {
+        const btnPostition = bottom => {
             if (
                 $(window).scrollTop() + $(window).height() + 50 >
                 $(document).height()
             ) {
-                toTopBtn.css("bottom", "115px");
-                // alert('hey')
+                toTopBtn.css("bottom", bottom);
             } else {
                 toTopBtn.css("bottom", "5%");
             }
         };
 
-        window.innerWidth > 768 ? btnPostition() : false;
+        window.innerWidth > 768 ? btnPostition("115px") : false;
+        window.innerWidth <= 330 ? btnPostition("175px") : false;
     });
 };
 
@@ -646,17 +643,11 @@ const pagination = () => {
 
 // Paralax Background
 const paralaxBg = () => {
-    if (!navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-        // let size = 'content';
-
-        // if(window.innerWidth >= 1921){
-        //     size = 'cover'
-        // }
-
+    if (window.innerWidth >= 1025) {
         $(".parallax-bg").parallaxie({
             speed: 0.3,
-            size: "cover",
-            offset: -25
+            size: "auto"
+            // offset: -25
         });
     }
 };
@@ -739,79 +730,7 @@ const anchorToggle = () => {
     });
 };
 
-// Image Slider
-const imageSlider = () => {
-    let sliderSelector = ".slider-container",
-        thumbsSelector = ".thumb-container";
-
-    let slidesOptions = {
-        wrapperClass: "slider-wrapper",
-        slideClass: "slider-item",
-        spaceBetween: 20,
-        loop: true,
-        loopedSlides: 5,
-        navigation: {
-            nextEl: ".slider-btn__next",
-            prevEl: ".slider-btn__prev"
-        }
-    };
-
-    let thumbOptions = {
-        wrapperClass: "thumb-wrapper",
-        slideClass: "thumb-item",
-        spaceBetween: 10,
-        // centeredSlides: true,
-        slidesPerView: 4,
-        touchRatio: 0.2,
-        slideToClickedSlide: true,
-        loop: true,
-        loopedSlides: 5,
-        direction: "vertical"
-    };
-
-    let thumbSlider = new Swiper(thumbsSelector, thumbOptions);
-    let imageSlider = new Swiper(sliderSelector, slidesOptions);
-
-    imageSlider.controller.control = thumbSlider;
-    thumbSlider.controller.control = imageSlider;
-
-    $(".slider-item a").magnificPopup({
-        type: "image"
-        // cursor: 'mfp-zoom-out-cur',
-        // gallery:{
-        //     enabled:true
-        // }
-    });
-};
-
-// Sticky Property Side Bar Buttons
-const stickyTabs = () => {
-    var $window = $(window);
-    var $sidebar = $(".p-sidebar__item_sticky");
-    var $sidebarHeight = $sidebar.innerHeight();
-    var $footerOffsetTop = $(".property-page__cb-form").offset().top;
-    var $sidebarOffset = $sidebar.offset();
-
-    if(window.innerWidth > 992){
-        $window.scroll(function() {
-            if ($window.scrollTop() + 140 >= $sidebarOffset.top) {
-                $sidebar.addClass("fixed");
-            } else {
-                $sidebar.removeClass("fixed");
-            }
-            if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop - 105) {
-                $sidebar.css({
-                    top: -($window.scrollTop() + $sidebarHeight - $footerOffsetTop - 55)
-                });
-            } else {
-                $sidebar.css({ top: "140px" });
-            }
-        });
-    }
-    
-};
-
-// Form Validation 
+// Form Validation
 const formValidation = () => {
     $(".cb-form__body").validate({
         errorClass: "form__error",
@@ -842,14 +761,12 @@ const formValidation = () => {
             }
         }
     });
-}
+};
 
 // Phone Form Mask
 const phoneFomMask = () => {
-    $('.phone-mask').mask('(000) 000-00-00');
-    console.log(1);
-    
-}
+    $(".phone-mask").mask("(000) 000-00-00");
+};
 
 // Detect IOS
 // const iOSDetect = () => {

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Turkey State</title>
+    <title>TurkeyState</title>
 
-    <meta name="description" content="Turkey State site description" />
-    <meta name="keywords" content="Turkey State keywords" />
+    <meta name="description" content="TurkeyState site description" />
+    <meta name="keywords" content="TurkeyState keywords" />
     <meta name="format-detection" content="telephone=no">
 
     <link rel="shortcut icon" href="/favicon.png" type="image/png" />
@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="/assets/css/plugins/swiper.min.css" />
     <link rel="stylesheet" href="/assets/css/plugins/simplebar.css" />
     <link rel="stylesheet" href="/assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="/assets/css/plugins/owl.carousel.min.css" />
+
 
     <!--== CSS main style -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
@@ -95,7 +97,7 @@
                         </ul>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="Услуги">Услуги</a>
+                        <a href="/pages/services/service-main.php" class="mobile-nav__link link" title="Услуги">Услуги</a>
                     </li>
                     <li class="mobile-nav__item">
                         <a href="#" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
@@ -245,7 +247,7 @@
                         </li>
 
                         <li class="main-menu__item">
-                            <a href="/" class="main-menu__link link" title="Услуги" data-text="Услуги">Услуги</a>
+                            <a href="/pages/services/service-main.php" class="main-menu__link link" title="Услуги" data-text="Услуги">Услуги</a>
                         </li>
                         <li class="main-menu__item">
                             <a href="/" class="main-menu__link link" title="Вопросы-ответы" data-text="Вопросы-ответы">Вопросы-ответы</a>

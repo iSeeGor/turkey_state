@@ -70,4 +70,20 @@
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
+
+    .about-section__company-name {
+        font-size: 3.6rem;
+    }
+}
+
+@media (max-width: 400px){
+    .about-section__company-info {
+        padding: 60px 15px 52px;
+    }
+
+    .about-section__company-name {
+        font-size: 3.1rem;
+    }
+
+    
 }

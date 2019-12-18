@@ -1,0 +1,181 @@
+/*--------------------------------------------------------------
+# Services Main Page
+--------------------------------------------------------------*/
+
+.services-main {
+    padding-bottom: 40px;
+
+    &__inner {
+        padding-top: 45px;
+        padding-bottom: 55px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-left: 10px solid $lightSkyBlue;
+            border-right: 10px solid $lightSkyBlue;
+            width: 100%;
+            height: 100%;
+            top: 0;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        padding: 0 0 0 65px;
+    }
+
+    &__subtitle {
+        padding: 0 0 0 65px;
+    }
+
+    &__categories {
+        padding-bottom: 50px;
+    }
+
+}
+
+.services-cat {
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -15px;
+        margin-right: -15px;
+        position: relative;
+    }
+
+    &__item {
+        max-width: 350px;
+        flex: 1 0 350px;
+        height: 198px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    &__item-link {
+        display: block;
+        position: relative;
+        height: 100%;
+
+        &::before {
+            content:'';
+            position: absolute;
+            height: 40%;
+            width: 100%;
+            bottom: 0;
+            background: rgb(6,145,224);
+            background: -moz-linear-gradient(0deg, rgba(6,145,224,1) 0%, rgba(6,145,224,0) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(6,145,224,1) 0%, rgba(6,145,224,0) 100%);
+            background: linear-gradient(0deg, rgba(6,145,224,1) 0%, rgba(6,145,224,0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0691e0",endColorstr="#0691e0",GradientType=1);
+
+            transition: height .3s ease;
+        }
+
+        &:hover::before {
+            height: 100%;
+        }
+    }
+
+    &__item-media {
+        height: 100%;
+    }
+
+    &__item-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__item-icon {
+        position: absolute;
+        width: 124px;
+        height: 88px;
+        bottom: -20px;
+        left: -30px;
+        background-image: url('/assets/images/general/services/service-cat-item-figure.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        .services-cat__icon {
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            top: 17px;
+            right: 34px;
+        }
+
+        .icon__chart-pie {
+            width: 42px;
+            height: 42px;
+            top: 12px;
+        }
+
+        .icon__handshake-alt {
+            top: 15px;
+            right: 32px;
+            width: 44px;
+            height: 44px;
+        }
+
+        .icon__hand-holding-seedling {
+            width: 36px;
+            height: 36px;
+            top: 13px;
+        }
+    }
+
+    &__icon {
+        fill: $blue;
+    }
+
+    &__item-title {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        font-size: 1.6rem;
+        @include font_bold;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        padding-left: 108px;
+        width: 100%;
+        margin: 8px 0;
+        min-height: 35px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px){
+
+    .services-cat__items {
+        &::before,
+        &::after {
+            position: absolute;
+            width: 400px;
+            content: url('../images/general/tour-section-block-left-figure.svg');
+            opacity: .3;
+            left: 0;
+            bottom: 0;
+        }
+
+        &::before {
+            left: -420px;
+            bottom: inherit;
+            top: -140px;
+        } 
+
+        &::after {
+            left: initial;
+            right: -420px;
+            bottom: 60px;
+        } 
+    }
+}

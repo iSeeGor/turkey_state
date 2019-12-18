@@ -9,7 +9,7 @@
         background: white;
         border-radius: 4px;
         position: relative;
-        z-index: 1;
+        z-index: 20;
         // overflow: hidden;
     }
 }
@@ -135,7 +135,7 @@
     }
 
     &__input {
-        border: 0;
+        border: 0 !important;
         border-radius: 0;
         -webkit-appearance: none; 
         -moz-appearance:textfield;
@@ -160,7 +160,7 @@
         }
 
         &_id {
-            border-bottom: 2px solid #d9dde8;
+            border-bottom: 2px solid #d9dde8 !important;
             max-width: 100%;
         }
     }

@@ -284,7 +284,7 @@
                                                 <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                             </li>
                                             <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                             </li>
                                             <li class="team-card__item team-card__item_lang">
                                                 русский, английский, турецкий
@@ -345,7 +345,7 @@
                                                 <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                             </li>
                                             <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                             </li>
                                             <li class="team-card__item team-card__item_lang">
                                                 русский, английский, турецкий
@@ -406,7 +406,7 @@
                                                 <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                             </li>
                                             <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                             </li>
                                             <li class="team-card__item team-card__item_lang">
                                                 русский, английский, турецкий
@@ -419,6 +419,7 @@
                                 </figure>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>

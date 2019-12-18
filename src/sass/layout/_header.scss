@@ -26,20 +26,10 @@
         flex: 1 1 auto;
     }
 
-    transition: transform 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-    transition-delay: 0.3s;
-
-    // &_hide {
-    //     transform: translate3d(0, -100%, 0);
-    // }
-
-    // &_show {
-    //     transform: translate3d(0, 0, 0);
-    // }
+    transition: transform 0.5s ease;
 
     &__bottom {
-        transition-delay: .3s;
-        transition: all .3s ease;
+        transition: all .5s ease;
     }
 }
 
@@ -56,73 +46,40 @@
     border-bottom: 1px solid $border_color;
 }
 
-/* Header Slide Animation */
-.header_hide {
 
-    .header__bottom {
-        margin-top: -51px;
-    }
-
-    .nav__brand-image {
-        height: 0;
-
-        &::before {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-    .nav__brand-image img {
-        width: 65px;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    .main-menu {
-        padding: 0;
-    }
-    
-}
 
 
 /* Logo
  ------------------------------------------------------------*/
 
-.header__branding {
-    // margin-left: -15px;
-}
-
 .nav__brand {
-    // max-width: 100px;
     margin-right: 50px;
     width: 90px;
+    position: relative;
 }
 
 .nav__brand-image {
     text-align: center;
     margin-bottom: 11px;
-    position: relative;
+    position: absolute;
+    width: 100%;
 
     &::before {
         content: url('../images/general/turkestate-logotype-icon.svg');
         position: absolute;
-        width: 48px;
-        height: 48px;
-        left: 20px;
-        top: -2px;
+        top: 0px;
+        left: 13px;
+        width: 64px;
+        height: 64px;
         visibility: hidden;
         opacity: 0;
-        transition-delay: .3s;
-        transition: visibility .4s ease,
-                    opacity .4s ease;
+        transition: all .4s ease;
+
 
     }
 
     img {
-        transition-delay: .3s;
-        transition: width .3s ease,
-                    visibility .4s ease,
-                    opacity .4s ease;
-        width: 90px;
+        transition: all .4s ease;
     }
 }
 
@@ -149,7 +106,7 @@
     max-width: 830px;
     align-self: flex-start;
     justify-content: space-between;
-    transition: padding .3s ease;
+    transition: padding .5s ease;
 }
 
 .main-menu__item {
@@ -190,7 +147,6 @@
         color: $orange;
         @include transition(width, 0.4s);
         white-space: nowrap;
-        // transform: translateY(-50.5%);
         transform: translateY(-0.96rem);
 
     }
@@ -207,14 +163,6 @@
         background-color: $orange;
         @include transition;
     }
-
-    // &:hover {
-    //     &::after {
-    //         opacity: 1;
-    //         transform: translateX(0);
-
-    //     }
-    // }
 
 }
 
@@ -682,4 +630,36 @@
     .list {
         padding: 5px 0 10px; 
     } 
+}
+
+
+/* Header Slide Animation */
+.header_hide {
+
+    .header__bottom {
+        margin-top: -51px;
+    }
+
+    .nav__brand-image {
+        height: 0;
+
+        &::before {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(0.85);
+            margin-top: -8px;
+            
+        }
+    }
+    .nav__brand-image img {
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.75);
+        margin-top: -13px;
+    }
+
+    .main-menu {
+        padding: 0;
+    }
+    
 }

@@ -56,7 +56,7 @@
 
                     <!-- post content-->
                     <div class="post__content typography">
-                        <h2>Heading H2</h2>
+                        <h3>Heading H3</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Obcaecati, voluptas ullam non mollitia perferendis blanditiis est dolor 
                             quam aperiam amet, sapiente officiis quae laboriosam architecto minus esse? Itaque, officia? 
@@ -67,7 +67,7 @@
                             repudiandae facere ipsam aliquid amet maxime excepturi? Itaque unde voluptate eum exercitationem
                             iure animi hic? Eaque quisquam harum <a href="http://" title="distinctio excepturi"> distinctio excepturi</a> qui earum porro?</p>
 
-                        <h3>Heading H3</h3>
+                        <h4>Heading H4</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illum! Labore commodi voluptate illum cupiditate quae hic cum nobis similique voluptatibus rem, perspiciatis quisquam? Aliquam nihil itaque maiores fugit esse.</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illum! Labore commodi voluptate illum cupiditate quae hic cum nobis similique voluptatibus rem, perspiciatis quisquam? Aliquam nihil itaque maiores fugit esse.</p>
 
@@ -76,6 +76,8 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, illum! Labore commodi voluptate illum cupiditate quae hic cum nobis similique voluptatibus rem, perspiciatis quisquam? Aliquam nihil itaque maiores fugit esse.</p>
 
                         <p><iframe width="560" height="315" src="https://www.youtube.com/embed/MtCMtC50gwY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+                        
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, nam quia nesciunt officia blanditiis similique, expedita quo veniam dolorum, autem ipsa. Voluptas temporibus a numquam obcaecati! Ducimus explicabo eos minus nam at qui dolorum, adipisci officia, dicta eum earum quidem sequi iusto numquam minima ad doloribus? Corrupti provident repellendus delectus!</p>
                         
                         <ul>
                             <li><a href="/" title="distinctio excepturi">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></li>

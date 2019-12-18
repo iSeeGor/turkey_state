@@ -105,7 +105,7 @@
             <div class="row">
                 <div class="col-md-3 col-sm-4">
                     <div class="footer__logo footer-logo">
-                        <img src="../assets/images/general/turestate-dark.svg" alt="Footer Logo" class="footer-logo__image" width="160">
+                        <img src="/assets/images/general/turestate-dark.svg" alt="Footer Logo" class="footer-logo__image" width="160">
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-8">
@@ -152,7 +152,7 @@
             <div class="row">
                 <div class="col-md-6 d-flex">
                     <div class="copyrights__text">
-                        Copyright 2019. Turkey State (Obereg Emlak Insaat urizim ith ihr)
+                        Copyright 2019. TurkeyState (Obereg Emlak Insaat urizim ith ihr)
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -160,7 +160,7 @@
                         <div class="creater__text">Сайт разработан и поддерживается</div>
                         <div class="creater__logo">
                             <a href="https://art-sites.org/ru" title="art-sites.org" target="_blank">
-                                <img src="../assets/images/general/art-sites__logo.svg" alt="Art-Sites.Org Logo" width="104">
+                                <img src="/assets/images/general/art-sites__logo.svg" alt="Art-Sites.Org Logo" width="104">
                             </a>
                         </div>
                     </div>
@@ -197,13 +197,13 @@
 <script src="/assets/js/plugins/parallaxie.js"></script>
 <script src="/assets/js/plugins/jquery.magnific-popup.min.js"></script>
 <script src="/assets/js/plugins/jquery.validate.min.js"></script>
+<script src="/assets/js/plugins/owl.carousel.min.js"></script>
 
 <!--== JS Scripts -->
 <script src="/assets/js/script.min.js"></script>
 
 <!--== JS On Some Pages  -->
-<script src="/assets/js/pages/about-us.js"></script>
-<script src="/assets/js/pages/home.js"></script>
+<script src="/assets/js/on-some-pages.js"></script>
 
 </body>
 </html>

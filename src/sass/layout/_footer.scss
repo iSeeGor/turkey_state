@@ -47,6 +47,12 @@
     }
 }
 
+.messenger__icon.icon__viber {
+    height: 21px;
+    width: 21px;
+    transform: translateY(1px);
+}
+
 .site__footer {
     background-color: $brand_footer;
 }

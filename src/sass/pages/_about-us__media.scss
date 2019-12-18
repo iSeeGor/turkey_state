@@ -30,6 +30,10 @@
         margin-bottom:35px;
     }
 
+    .about-us__text-box_right {
+        padding: 0;
+    }
+
     .about-us__contucts {
         padding-bottom: 40px;
     }
@@ -64,6 +68,13 @@
 
 // Экстрамалые девайсы («телефоны», < 576px)
 @media (max-width: 575.98px) {
+
+    .about-us__team .team__header::before {
+        content: '';
+        width: 100%;
+        background: #fff;
+        height: 100%;
+    }
 }
 
 @media (min-width: 1200px){

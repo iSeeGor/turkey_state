@@ -3,7 +3,7 @@
 
     <!--== Hero Banner  -->
     <section class="hero home__hero">
-        <div class="hero__banner parallax-bg" style="background-image: url('../assets/images/general/main-hero.jpg');" >
+        <div class="hero__banner parallax-bg" style="background-image: url('../assets/images/general/main-hero_2.jpg');" >
             <!-- <img class="hero__banner-image" src="../assets/images/content/hero-image.jpg" alt="Hero Banner Image"> -->
         </div>
         <div class="container">
@@ -140,7 +140,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-section__company-info" data-scroll=''>
-                        <h2 class="about-section__company-name">Turkey State</h2>
+                        <h2 class="about-section__company-name">TurkeyState</h2>
                         <div class="about-section__company-slogan">Путь к успеху.<br> Финансовый нетворкинг</div>
                     </div>
                 </div>
@@ -601,7 +601,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="privilages-section__title-area">
-                            <h2 class="section-title section-title_white" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">Приумножте Ваш капитал с Turkey State</h2>
+                            <h2 class="section-title section-title_white" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1500">Приумножте Ваш капитал с TurkeyState</h2>
                         </div>
                     </div>
                     <div class="col-lg-6">
@@ -960,7 +960,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="tour-section__block tour-section__block_left" data-scroll=''>
-                        <h2 class="section-title tour-section__section-title">Ознакомительный тур от компании "Turkey State"</h2>
+                        <h2 class="section-title tour-section__section-title">Ознакомительный тур от компании "TurkeyState"</h2>
                         <div class="tour-section__text-content typography">
                             <p>Если Вам не терпится поехать в Турцию и выбрать для себя второй дом у моря, нужно просто позвонить 
                                 нам и сообщить удобную для Вас дату вылета.</p>

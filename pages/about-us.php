@@ -8,14 +8,6 @@
 
             <!--== breadcrumbs  -->
             <div class="breadcrumbs">
-                <nav class="breadcrumbs__nav">
-                    <ol class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">
-                            <a href="/" class="breadcrumbs__link" title="Главная">Главная</a></li>
-                        <li class="breadcrumbs__item breadcrumbs__item_current">
-                            О компании</li>
-                    </ol>
-                </nav>
             </div>
 
             <!--== page-header content  -->
@@ -23,7 +15,7 @@
                 <div class="row no-gutters">
                     <div class="col-md-6">
                         <div class="page-header__title">
-                            <h1 class="page-title">Агенство недвижимости Turkey State</h1>
+                            <h1 class="page-title">Агенство недвижимости TurkeyState</h1>
                         </div>
                     </div>
 
@@ -43,29 +35,28 @@
         <div class="container">
             <div class="about-us__text-block-inner">
                 <div class="row">
-                    <div class="offset-md-1 col-md-10 col-xl-6">
-                        <div class="about-us__box-title">Компания Turkey State <br>(Obereg Emlak Insaat urizim ith ihr)</div>
-                        <div class="about-us__text-box">
-                            Основана в 2005 году и одной из первых стала оказывать высокопрофессиональные услуги на рынке 
-                            зарубежной недвижимости в таких странах, как Турция и Болгария.
-                        </div>
+                    <div class="offset-md-1 col-md-10 col-lg-5">
+                        <div class="about-us__box-title">Компания TurkeyState (Obereg Emlak Insaat urizim ith ihr)</div>
                     </div>
                 </div>
-
                 <div class="row">
-                    <div class="offset-md-1 col-md-10">
-                        <div class="about-us__text-box-row">
-                            <div class="about-us__text-box">
-                                Это позволило нам стать признанным лидером в этом направлении. Мы никогда не стремились опередить время, 
-                                но там, где видели перспективу, старались быть на шаг впереди других, чтобы иметь конкурентные преимущества 
-                                в будущем.
-                            </div>
+                    <div class="offset-md-1 col-md-10  col-lg-5">
+                        <div class="about-us__text-box">
+                            основана в 2005 году и одной из первых стала оказывать высокопрофессиональные услуги на рынке 
+                            зарубежной недвижимости в таких странах, как Турция и Болгария.
+                        </div>
 
-                            <div class="about-us__text-box">
-                                Наша компания имеет обширную, актуальную базу объектов жилой (и коммерческой – добавить, если и такой занимаются) 
-                                собственности, охватывающую Средиземноморское, Эгейское и Черноморское побережье. Для российских инвесторов, 
-                                заинтересованных в работе на рынке зарубежной недвижимости, можем предложить надёжные и выгодные проекты.
-                            </div>
+                        <div class="about-us__text-box">
+                            Это позволило нам стать признанным лидером в этом направлении. Мы никогда не стремились опередить время, 
+                            но там, где видели перспективу, старались быть на шаг впереди других, чтобы иметь конкурентные преимущества 
+                            в будущем.
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-md-1 col-md-10 offset-lg-0">
+                        <div class="about-us__text-box about-us__text-box_right">
+                            Наша компания имеет обширную, актуальную базу объектов жилой (и коммерческой – добавить, если и такой занимаются) 
+                            собственности, охватывающую Средиземноморское, Эгейское и Черноморское побережье. Для российских инвесторов, 
+                            заинтересованных в работе на рынке зарубежной недвижимости, можем предложить надёжные и выгодные проекты.
                         </div>
                     </div>
                 </div>
@@ -86,13 +77,13 @@
     <section class="checklist-block about-us__checklist-block">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="checklist-block__image-box" data-aos="zoom-out" data-aos-duration="900">
                         <!-- Картинка ця має кропитись завжди в квадратну мінімальне розрішення  540 х 540 -->
                         <img src="../assets/images/content/about-us/checklist-block-image.jpg" class="checklist-block__image" alt="Image">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="checklist-block__content">
                         <div class="block-title checklist-block__title">Помогая Вам приобрести недвижимость, мы предлагаем:</div>
                         <div class="checklist-block__text-content typography">
@@ -116,7 +107,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-4 col-md-6">
-                    <div class="block-title">Принципы и нормы компании Turkey State</div>
+                    <div class="block-title">Принципы и нормы компании TurkeyState</div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <div class="privilages-card privilages-card_prof">
@@ -172,7 +163,7 @@
                         <div class="privilages-card__body">
                             <div class="privilages-card__title">Этика</div>
                             <div class="privilages-card__text">Этика и честность – крепкий фундамент, на котором агентство 
-                            Turkey Stateуспешно трудится много лет, предлагая своим клиентам только лучшую недвижимость.</div>
+                            TurkeyStateуспешно трудится много лет, предлагая своим клиентам только лучшую недвижимость.</div>
                         </div>
                     </div>
                 </div>
@@ -291,7 +282,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -353,7 +344,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -415,7 +406,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -477,7 +468,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -539,7 +530,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -601,7 +592,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -663,7 +654,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -725,7 +716,7 @@
                                         <a href="skype:echo123?call" class="team-card__link link">skype</a>
                                     </li>
                                     <li class="team-card__item team-card__item_mail">
-                                        <a href="mailto:semple@email.com" class="team-card__link link">se@max.com</a>
+                                        <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
                                     </li>
                                     <li class="team-card__item team-card__item_lang">
                                         русский, английский, турецкий
@@ -765,7 +756,7 @@
                                         <a href="tel:+902425285234" class="contuts-info__link link">+ 90 242 528 44 20</a>
                                     </li>
                                     <li class="contucts-info__item contucts-info__item_mail">
-                                        <a href="mailto:se@max.com" class="contuts-info__link link">se@max.com</a>
+                                        <a href="mailto:office@turkestate.ru" class="contuts-info__link link">office@turkestate.ru</a>
                                     </li>
                                 </ul>
                             </div>  
@@ -801,7 +792,7 @@
     </section>
     
     <!--== Requisites  -->
-    <section class="requisites about-us__requisites parallax-bg" style='background: url("/assets/images/general/requisits-bg-image.jpg")'>
+    <section class="requisites about-us__requisites parallax-bg" style='background: url("/assets/images/general/requisits-bg-image_2.jpg")'>
         <div class="container">
             <div class="requisites__inner">
                 <div class="row">

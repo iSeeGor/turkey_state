@@ -14,6 +14,10 @@
     .home__about-section {
         padding-bottom: 40px;
     }
+
+    .home .news-post:nth-child(3n) {
+        display: none;
+    }
 }
 
 // Малые девайсы («ландшафтные», < 768px)

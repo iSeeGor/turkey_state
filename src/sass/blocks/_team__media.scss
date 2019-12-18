@@ -103,10 +103,37 @@
         width: 200px;
         height: 200px;
     }
+
+    .about-us__team .team-header {
+        background-position: center -250px !important;
+    }
 }
 
 @media (max-width: 400px) {
     .team-card {
         width: 98%;
     }
+
+    .team-card_right .team-card__item_phone::after, 
+    .team-card_right .team-card__item_skype::after, 
+    .team-card_right .team-card__item_mail::after, 
+    .team-card_right .team-card__item_lang::after,
+    .team-card_left .team-card__item_phone::after, 
+    .team-card_left .team-card__item_skype::after, 
+    .team-card_left .team-card__item_mail::after, 
+    .team-card_left .team-card__item_lang::after {
+        left: -30px;
+    }
+
+    .about-us__cards-grid {
+        .container {
+            padding: 0;
+        }
+    }
+
+    .team-card {
+        padding-left: 40px;
+    }
+
+    
 }

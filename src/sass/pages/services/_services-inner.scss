@@ -1,0 +1,290 @@
+/*--------------------------------------------------------------
+# Services Inner Page's
+--------------------------------------------------------------*/
+
+/* Services Header
+--------------------------------------------------------------*/
+.services-header {
+    position: relative;
+    padding-top: 127px;
+    background: #e4f5ff;
+    overflow: hidden;
+    margin-bottom: 72px;
+
+    .breadcrumbs {
+        padding-bottom: 0;
+        font-size: 1.4rem;
+        min-height: auto;
+    }
+
+    &__title {
+        position: relative;
+        margin-top: 90px;
+        padding-bottom: 15px;
+        color: rgb(12, 25, 55);
+        margin: 0px 0px 20px 25px;
+        z-index: 1;
+
+        &::before {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 40px;
+            height: 5px;
+            content: "";
+            background: rgb(12, 25, 55);
+        }
+
+        &::after {
+            content: url('../images/general/services/service-header-title-figure.png');
+            position: absolute;
+            top: -30px;
+            left: -25px;
+            z-index: -1;
+        }
+    }
+
+    &__content {
+        // min-height: 234px;
+    }
+
+    &__media {
+        min-height: 234px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background:  no-repeat;
+        }
+    }
+}
+
+.services-investment {
+
+    .services-header__media::before {
+        content: url('../images/general/services/service-header-image-investment.jpg');
+    }
+}
+
+.services-hypotec {
+
+    .services-header__media::before {
+        content: url('../images/general/services/service-header-image-hypotec.jpg');
+    }
+}
+
+.services-consulting {
+
+    .services-header__media::before {
+        content: url('../images/general/services/service-header-image-consulting.jpg');
+    }
+}
+
+.services-tour {
+
+    .services-header__media::before {
+        content: url('../images/general/services/service-header-image-tour.jpg');
+    }
+}
+
+.services-afterservice {
+
+    .services-header__media::before {
+        content: url('../images/general/services/service-header-image-afterservice.jpg');
+    }
+}
+
+/* Centered Text Block
+--------------------------------------------------------------*/
+.centered-text-block {
+    margin-bottom: 60px;
+    
+
+    &__typography {
+        padding-bottom: 35px;
+        border-bottom: 4px solid $lightSkyBlue;
+
+        p {
+            margin-bottom: 1.1rem;
+        }
+    }
+}
+
+
+/* Chees Style Block
+--------------------------------------------------------------*/
+.chess-style-block {
+    margin-bottom: 85px;
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__title {
+        @include font_bold;
+        font-size: 2.3rem;
+        line-height: 3.0rem;
+        color: $heading_color;
+        margin: 0 0 30px 0;
+
+    }
+
+    &__text p:last-child {
+        margin-bottom: 0;
+    }
+    
+    &__left {
+
+        .chess-style-block__body {
+            padding: 0 55px 0 40px;
+        }
+    }
+
+    &__right {
+
+        .chess-style-block__body {
+            padding: 0 40px 0 55px;
+        }
+    }
+
+    &__media {
+        height: 394px;
+        min-width: 540px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Subscribe Block
+--------------------------------------------------------------*/
+.subscribe-section {
+    padding: 20px 0;
+    background: $lightSkyBlue;
+}
+.subscribe {
+    display: flex;
+    max-width: 780px;
+    justify-content: center;
+    margin: 0 auto;
+
+    &__media {
+        width: 430px;
+        height: 310px;
+        border: 10px solid white;
+        border-radius: 4px;
+        flex: 1 0 auto;
+    }
+
+    &__image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            content: url('../images/general/subscribe-figure.png');
+            position: absolute;
+            top: 0;
+            left: -85px;
+            z-index: -1;
+        }
+    }
+
+    &__title {
+        @include font_bold;
+        font-size: 2.3rem;
+        line-height: 3rem;
+        color: $heading_color;
+        position: relative;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+
+        &::before {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 40px;
+            height: 4px;
+            content: "";
+            background: rgb(12, 25, 55);
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    .button {
+        padding: 12px 15px 10px;
+        align-self: flex-start;
+    }
+}
+
+/* Checklist Block
+--------------------------------------------------------------*/
+.services .checklist-block {
+    margin-bottom: 80px;
+}
+
+.services .checklist-block__title {
+    @include font_bold;
+    font-size: 2.3rem;
+    line-height: 3rem;
+    color: $heading_color;
+    padding-left: 40px;
+    margin-bottom: 40px;
+}
+
+.services .checklist-block__content ul li {
+    margin-bottom: 32px;
+}
+
+/* Centered List Block
+--------------------------------------------------------------*/
+.centered-list-block {
+
+    &__typography {
+
+        padding-bottom: 30px;
+        margin-bottom: 60px;
+        border-bottom: 4px solid $lightSkyBlue;
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 50px;
+        }
+
+        p {
+            margin-bottom: 1.1rem;
+        }
+
+        ul {
+            margin-left: 0;
+            margin-bottom: 2.2rem;
+
+            li {
+                margin-bottom: 0.55rem;
+                &::before {
+                    background-color: $blue;
+                }
+            }
+        }
+    }
+}

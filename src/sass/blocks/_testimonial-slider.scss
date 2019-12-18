@@ -4,7 +4,7 @@
 
 .testimonialSlider {
     overflow: hidden;
-    padding: 70px 0;
+    padding: 70px 0 100px;
 
     &__title {
         margin-bottom: -4px;
@@ -237,6 +237,9 @@
     
     &__address {
         font-size: 1.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 

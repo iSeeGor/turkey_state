@@ -320,6 +320,13 @@
     }
 }
 
+
 .side-nav__email {
     color: $blue;
+    @include font_medium;
+
+    &:active,
+    &:visited {
+        color: $blue;   
+    }
 }
