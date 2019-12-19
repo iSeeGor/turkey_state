@@ -101,7 +101,7 @@
         position: absolute;
         top: -19px;
         right: 14px;
-        z-index: 1;
+        // z-index: 1;
     }
 
     &__content {
@@ -212,9 +212,10 @@
     .property-card__header {
         position: relative;
     }
-    .property-card__header::before {
+    .property-card__header::after {
         position: absolute;
-        z-index: 10;
+        top: 0;
+        // z-index: 10;
         left: -1px;
         content: url('../images/general/special-price-flag.png');
     }

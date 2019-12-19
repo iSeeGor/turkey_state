@@ -9,6 +9,7 @@
     <li><a href="#popup__get-help" class="js-open-popup"><h3>popup__get-help</h3></a></li>
     <li><a href="#popup__tour" class="js-open-popup"><h3>popup__tour</h3></a></li>
     <li><a href="#popup__stock" class="js-open-popup"><h3>popup__stock</h3></a></li>
+    <li><a href="#popup__thnx" class="js-open-popup"><h3>popup__thnx</h3></a></li>
 </ul>
 
 
@@ -196,6 +197,23 @@
     <figure class="popup__side-banner">
         <img class="popup__image" src="/assets/images/general/popup/popup-side-image-05.jpg" alt="Popup Image Banner">
     </figure>
+    <a class="button-close popup__close">
+        <svg class="close-icon">
+            <use xlink:href="/assets/images/symbol/sprite.svg#close__icon"></use>
+        </svg>
+    </a>
+</div>
+
+<div class="popup popup-success mfp-hide" id="popup__thnx">
+    <div class="popup__inner">
+    <header class="popup__header popup-header">
+            <div class="popup-header__title">Спасибо, заявка успешно отправлена</div>
+            <div class="popup-headre__message">
+                Мы свяжемся с Вами в ближайшее время
+            </div>
+        </header>
+    </div>
+
     <a class="button-close popup__close">
         <svg class="close-icon">
             <use xlink:href="/assets/images/symbol/sprite.svg#close__icon"></use>

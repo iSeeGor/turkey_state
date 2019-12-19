@@ -16,8 +16,60 @@
 
 
 @media (max-width: 767.98px) {
+
+    .popup__side-banner {
+        display: none;
+    }
+
+    .popup {
+        max-width: 460px;
+        left: 0;
+    }
+
+    .popup::before {
+        width: calc(100% + 86px);
+        left: -43px;
+    }
 }
 
 
 @media (max-width: 575.98px) {
+
+    .popup::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .popup {
+        margin: 45px 20px;
+    }
+}
+
+@media (max-width: 414px) {
+    .popup__inner {
+        padding: 30px;
+    }
+
+    .popup__form {
+        margin: 0 ;
+    }
+}
+
+@media (max-width: 370px) {
+    .popup-header__title {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .popup-headre__message {
+        font-size: 1.4rem;
+    }
+
+    .popup .button {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
 }

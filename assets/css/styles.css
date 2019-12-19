@@ -4436,7 +4436,6 @@ textarea
 .property-card__to-favorit
 {
     position: absolute;
-    z-index: 1; 
     top: -19px;
     right: 14px;
 }
@@ -4563,10 +4562,10 @@ textarea
     position: relative;
 }
 
-.property-card__special-price .property-card__header::before
+.property-card__special-price .property-card__header::after
 {
     position: absolute;
-    z-index: 10;
+    top: 0;
     left: -1px;
 
     content: url('../images/general/special-price-flag.png');
@@ -5722,7 +5721,7 @@ textarea
 .filter-bar
 {
     position: relative;
-    z-index: 20; 
+    z-index: 1; 
 
     padding-top: 55px;
     padding-bottom: 50px;
