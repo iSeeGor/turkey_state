@@ -2,4 +2,6 @@
 
 <?php include 'pages/home.php'; ?>
 
+<?php include 'layouts/popup.php'; ?>
+
 <?php include 'layouts/footer.php'; ?>

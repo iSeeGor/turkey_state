@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
@@ -77,7 +77,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                            <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                     </div>
@@ -110,7 +110,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                            <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
@@ -138,7 +138,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                     </div>
@@ -157,7 +157,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-01.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1200">
@@ -171,7 +171,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                            <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-02.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                         <article class="news-post" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1200">
@@ -185,7 +185,7 @@
                                 </div>
                             </div>
                             <figure class="news-post__figure">
-                                <a href="#" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
+                                <a href="/blog/post.php" title="Post News Title"><img src="../assets/images/content/news/news-post-annonce-image-03.jpg" alt="News Post Annonce Image" class="news-post__image"></a>
                             </figure>
                         </article>
                     </div>
@@ -225,4 +225,5 @@
 
 </main>
 
+<?php include '../layouts/popup.php'; ?>
 <?php include '../layouts/footer.php'; ?>

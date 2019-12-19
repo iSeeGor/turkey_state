@@ -125,3 +125,16 @@
     font-size: 2rem;
     line-height: 2.6rem;
 }
+
+.popup-success {
+    left: 0 !important;
+    
+    &::before {
+        left: -43px;
+        width: calc(100% + 86px);
+    }
+
+    .popup__inner {
+        min-height: auto;
+    }
+}

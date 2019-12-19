@@ -114,7 +114,7 @@
                         </div>
                         <div class="search-form__tab-item">
                             <select name="layout" class="select search-form__select">
-                                <option selected="" value="Все планировки ">Все планировки </option>
+                                <option selected="" value="Комнат ">Комнат </option>
                                 <option value="0+1">0+1</option>
                                 <option value="1+1">1+1</option>
                                 <option value="2+1">2+1</option>
@@ -178,7 +178,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -331,7 +331,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -484,7 +484,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -637,7 +637,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -874,4 +874,5 @@
     </section>
 </main>
 
+<?php include '../layouts/popup.php'; ?>
 <?php include '../layouts/footer.php'; ?>

@@ -24,11 +24,11 @@
             <!--== header content  -->
             <div class="services-header__content">
                 <div class="row">
-                    <div class="col-lg-6 col-md-7">
+                    <div class="col-lg-6">
                         <h1 class="services-header__title">Ознакомительный тур</h1>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="services-header__media" data-aos="zoom-out-left">
+                    <div class="col-lg-6">
+                        <div class="services-header__media" data-aos="zoom-out-left" style="background-image: url('/assets/images/general/services/service-header-image-tour.jpg');" >
                         </div>
                     </div>
                 </div>
@@ -99,13 +99,14 @@
                     <img src="/assets/images/general/subscribe-avatar-image.jpg" alt="Subscribe Image" class="subscribe__image">
                 </div>
                 <div class="subscribe__body" data-aos="fade-left">
-                    <div class="subscribe__title">Хотите выгодно инвестировать деньги?</div>
-                    <div class="subscribe__text">Оставьте заявку чтобы узнать подробности</div>
-                    <button class="button button_orange ">Получить предложение<i class="button-icon button-icon__white"></i></button>
+                    <div class="subscribe__title">Хотите приехать в ознакомительный тур?</div>
+                    <div class="subscribe__text">Оставьте заявку и мы все организуем</div>
+                    <a href="#popup__tour" class="js-open-popup button button_orange ">Заказать<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
+<?php include '../../layouts/popup.php'; ?>
 <?php include '../../layouts/footer.php'; ?>

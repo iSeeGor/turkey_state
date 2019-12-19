@@ -62,7 +62,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -215,7 +215,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -368,7 +368,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -553,5 +553,5 @@
         </div>
     </section>
 </main>
-
+<?php include '../layouts/popup.php'; ?>
 <?php include '../layouts/footer.php'; ?>

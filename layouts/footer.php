@@ -11,27 +11,27 @@
 
                             <div class="messengers footer-widget__messengers">
                                 <span class="messenger messenger__viber">
-                                    <a href="tel:" title="vider call">
+
                                         <svg class="icon__viber messenger__icon">
                                             <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                         </svg>
-                                    </a>
+
                                 </span>
 
                                 <span class="messenger messenger__whatsapp">
-                                    <a href="tel:" title="WhatsApp Call">
+
                                         <svg class="icon__whatsapp messenger__icon">
                                             <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                         </svg>
-                                    </a>
+
                                 </span>
 
                                 <span class="messenger messenger__telegram">
-                                    <a href="tel:" title="vider call">
+
                                         <svg class="icon__telegram messenger__icon">
                                             <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                         </svg>
-                                    </a>    
+   
                                 </span>
 
                             </div>
@@ -39,9 +39,9 @@
                             <div class="footer-widget__title-content">Телефон:</div>
 
                             <ul class="footer-widget__list">
-                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link link">TR + 90 242 528 52 34</a></li>
-                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link link">RU +7 499 390 52 89</a></li>
-                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="#" class="footer-widget__link link">RU +7(495) 517 22 42</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="tel:+902425285234" class="footer-widget__link link">TR + 90 242 528 52 34</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="tel:+74993905289" class="footer-widget__link link">RU +7 499 390 52 89</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--phone"><a href="tel:+74955172242" class="footer-widget__link link">RU +7(495) 517 22 42</a></li>
                             </ul>
                         </div>
                     </div>
@@ -113,28 +113,28 @@
                         <div class="footer-social__title">Мы в социальных сетях</div>
                         <ul class="footer-social__list">
                             <li class="footer-social__item">
-                                <a href="#" class="footer-social__link footer-social__link_footer">
+                                <a href="#" target="_blank" class="footer-social__link footer-social__link_footer">
                                     <svg class="social-media__icon icon-facebook">
                                         <use xlink:href="/assets/images/symbol/sprite.svg#facebook__icon"></use>
                                     </svg> 
                                 </a>
                             </li>
                             <li class="footer-social__item">
-                                <a href="#" class="footer-social__link footer-social__link_vk">
+                                <a href="#" target="_blank" class="footer-social__link footer-social__link_vk">
                                     <svg class="social-media__icon icon-vk">
                                         <use xlink:href="/assets/images/symbol/sprite.svg#vk__icon"></use>
                                     </svg> 
                                 </a>
                             </li>
                             <li class="footer-social__item">
-                                <a href="#" class="footer-social__link footer-social__link_instagram">
+                                <a href="#" target="_blank" class="footer-social__link footer-social__link_instagram">
                                     <svg class="social-media__icon icon-instagram">
                                         <use xlink:href="/assets/images/symbol/sprite.svg#instagram__icon"></use>
                                     </svg> 
                                 </a>
                             </li>
                             <li class="footer-social__item">
-                                <a href="#" class="footer-social__link footer-social__link_youtube">
+                                <a href="#" target="_blank" class="footer-social__link footer-social__link_youtube">
                                     <svg class="social-media__icon icon-youtube ">
                                         <use xlink:href="/assets/images/symbol/sprite.svg#youtube__icon"></use>
                                     </svg> 
@@ -159,7 +159,7 @@
                     <div class="creater copyrights__creater">
                         <div class="creater__text">Сайт разработан и поддерживается</div>
                         <div class="creater__logo">
-                            <a href="https://art-sites.org/ru" title="art-sites.org" target="_blank">
+                            <a href="https://art-sites.org/?utm_source=TurkeyState" title="art-sites.org" target="_blank">
                                 <img src="/assets/images/general/art-sites__logo.svg" alt="Art-Sites.Org Logo" width="104">
                             </a>
                         </div>
@@ -181,6 +181,7 @@
 
 <!--== JS JQuery -->
 <script src="/assets/js/plugins/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/plugins/jquery.cookie.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
 
 

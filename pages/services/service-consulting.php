@@ -24,11 +24,11 @@
             <!--== header content  -->
             <div class="services-header__content">
                 <div class="row">
-                    <div class="col-lg-6 col-md-7">
+                    <div class="col-lg-6">
                         <h1 class="services-header__title">Консалтинг</h1>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="services-header__media" data-aos="zoom-out-left">
+                    <div class="col-lg-6">
+                        <div class="services-header__media" style="background-image: url('/assets/images/general/services/service-header-image-consulting.jpg');" data-aos="zoom-out-left">
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="checklist-block__content">
-                        <div class="checklist-block__title">Компания Turkey State предоставляет <br>консалтинговые услуги:</div>
+                        <div class="checklist-block__title">Компания TurkeyState предоставляет <br>консалтинговые услуги:</div>
                         <div class="checklist-block__text-content typography">
                             <ul>
                                 <li data-aos="fade-left" data-aos-duration="500" data-aos-easing="ease-in-out">Профессиональные качественные консультации в выборе Вашего объекта недвижимости;</li>
@@ -87,13 +87,14 @@
                     <img src="/assets/images/general/subscribe-avatar-image.jpg" alt="Subscribe Image" class="subscribe__image">
                 </div>
                 <div class="subscribe__body" data-aos="fade-left">
-                    <div class="subscribe__title">Хотите выгодно инвестировать деньги?</div>
+                    <div class="subscribe__title">Вам нужны<br> консалтинговые услуги?</div>
                     <div class="subscribe__text">Оставьте заявку чтобы узнать подробности</div>
-                    <button class="button button_orange ">Получить предложение<i class="button-icon button-icon__white"></i></button>
+                    <a href="#popup__call-back" class="js-open-popup button button_orange ">Отправить запрос<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
+<?php include '../../layouts/popup.php'; ?>
 <?php include '../../layouts/footer.php'; ?>

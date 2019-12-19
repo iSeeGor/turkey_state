@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-xl-7 col-lg-9">
                         <div class="services-main__subtitle typography" data-aos="fade-left" data-aos-offset="300" data-aos-duration="700">
-                            <div class="h3">Компания Turkey State предлагает Вам весь спектр услуг</div>
+                            <div class="h3">Компания TurkeyState предлагает Вам весь спектр услуг</div>
                         </div>
                     </div>
                 </div>
@@ -129,4 +129,5 @@
     </div>
 </main>
 
+<?php include '../../layouts/popup.php'; ?>
 <?php include '../../layouts/footer.php'; ?>

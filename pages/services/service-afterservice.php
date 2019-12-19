@@ -24,11 +24,11 @@
             <!--== header content  -->
             <div class="services-header__content">
                 <div class="row">
-                    <div class="col-lg-6 col-md-7">
+                    <div class="col-lg-6">
                         <h1 class="services-header__title">Послепродажный сервис</h1>
                     </div>
-                    <div class="col-lg-6 col-md-5">
-                        <div class="services-header__media" data-aos="zoom-out-left">
+                    <div class="col-lg-6">
+                        <div class="services-header__media" style="background-image: url('/assets/images/general/services/service-header-image-afterservice.jpg');" data-aos="zoom-out-left">
                         </div>
                     </div>
                 </div>
@@ -47,10 +47,10 @@
                             У владельцев часто возникают вопросы: как платить счета, налоги, где приобрести хорошую мебель, 
                             бытовую технику со скидками, кто будет присматривать за ставшей уже любимой квартирой после 
                             отъезда и многие другие. </p>
-                        <p>Не волнуйтесь! Все необходимые хлопоты Turkey State готовы взять на себя. Для этого мы 
+                        <p>Не волнуйтесь! Все необходимые хлопоты TurkeyState готовы взять на себя. Для этого мы 
                             разработали сервисный договор, заключив который Вы будете избавлены от необходимости 
                             беспокоиться о Ваших апартаментах на период отсутствия.</p>
-                        <p><strong>Заключив сервисный договор с компанией Turkey State, Вы можете быть уверены, 
+                        <p><strong>Заключив сервисный договор с компанией TurkeyState, Вы можете быть уверены, 
                             что Ваша недвижимость в надёжных руках.</strong></p>
                     </div>
                 </div>
@@ -121,13 +121,14 @@
                     <img src="/assets/images/general/subscribe-avatar-image.jpg" alt="Subscribe Image" class="subscribe__image">
                 </div>
                 <div class="subscribe__body" data-aos="fade-left">
-                    <div class="subscribe__title">Хотите выгодно инвестировать деньги?</div>
+                    <div class="subscribe__title">Хотите заключить <br>сервисный договор?</div>
                     <div class="subscribe__text">Оставьте заявку чтобы узнать подробности</div>
-                    <button class="button button_orange ">Получить предложение<i class="button-icon button-icon__white"></i></button>
+                    <a href="#popup__call-back" class="js-open-popup button button_orange ">Отправить запрос<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
+<?php include '../../layouts/popup.php'; ?>
 <?php include '../../layouts/footer.php'; ?>

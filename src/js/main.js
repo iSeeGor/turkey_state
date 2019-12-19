@@ -25,6 +25,7 @@ $(function() {
     iframeRatio();
     popupsRun();
     textareaAutoHeight();
+    popupAutoRun();
 });
 
 // Hamburger add Class
@@ -821,6 +822,12 @@ const popupsRun = () => {
                     }
                 });
             },
+            close: function(){
+                $('.mfp-bg').css({
+                    'background': '#0b0b0b',
+                    'opacity': '0.8',
+                });
+            }
             
 		}
 	});
@@ -840,6 +847,84 @@ const textareaAutoHeight = () => {
         this.style.height =  
                 (this.scrollHeight) + 'px'; 
     }); 
+} 
+
+// Popup Auto Run
+const popupAutoRun = () => {
+    let check_cookie = $.cookie('mfp-fire');
+
+    let cookieMin = 10;
+    let timeoutMs = 2000;
+
+    if (check_cookie == undefined) {
+        let date = new Date();
+        date.setTime((new Date()).getTime() + (cookieMin * 60 * 1000));
+
+        $.cookie('mfp-fire', 'yes', {expires: date});
+
+        let runPopup = () => {
+            $.magnificPopup.open({
+                items: {src: '#popup__stock'},
+                type: 'inline',
+                preloader: false,
+                focus: '#username',
+                modal: true,
+                
+                callbacks: {
+                    open: function() {
+                        $('.mfp-bg').css({
+                            'background': '#e8f7ff',
+                            'opacity': '1',
+                        });
+
+                        let validator = $(".popup__form").validate({
+                            errorClass: "form__error",
+                    
+                            rules: {
+                                name: {
+                                    required: true,
+                                    minlength: 3
+                                },
+                                email: {
+                                    required: true,
+                                    email: true
+                                },
+                                phone: {
+                                    required: true,
+                                    minlength: 10
+                                }
+                            },
+                    
+                            messages: {
+                                name: {
+                                    required: "Введите ваше Имя",
+                                    minlength: "Минимальное количество символов - 3"
+                                },
+                                email: {
+                                    required: "Введите ваш email",
+                                    email: "Пожалуйста введите корректный почтовый адрес",
+                                },
+                                phone: {
+                                    required: "Введите ваш номер телефона",
+                                    minlength: "Минимальное количество символов - 10"
+                                }
+                            }
+                        });
+                    },
+                    close: function(){
+                        $('.mfp-bg').css({
+                            'background': '#0b0b0b',
+                            'opacity': '0.8',
+                        });
+                    }
+                    
+                }
+            });
+        }
+
+        setTimeout(runPopup, timeoutMs);      
+    }
+
 } 
 
 // Detect IOS

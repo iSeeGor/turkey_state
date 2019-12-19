@@ -992,6 +992,15 @@
         margin-bottom: 0; 
         padding-top: 0;
     }
+    .post__related .block-title
+    {
+        margin-bottom: 40px;
+    }
+    .block-title
+    {
+        font-size: 2.8rem;
+        line-height: 3.2rem;
+    }
 }
 
 @media (max-width: 413px)
@@ -1148,6 +1157,10 @@
     .post__header
     {
         padding: 0 10px 0 25px;
+    }
+    .breadcrumbs__list
+    {
+        width: 90%;
     }
 }
 
@@ -1746,6 +1759,11 @@
     {
         min-width: 100%;
     }
+    .services .checklist-block .container::before,
+    .services .checklist-block .container::after
+    {
+        display: none;
+    }
 }
 
 @media (max-width: 991.98px)
@@ -1769,7 +1787,7 @@
     }
     .chess-style-block__body
     {
-        min-height: 394px;
+        padding: 30px 20px 50px 20px !important;
     }
     .checklist-block__row-left .checklist-block__content,
     .checklist-block__row-right .checklist-block__content
@@ -1778,6 +1796,14 @@
         padding-top: 0;
         padding-left: 15px;
     }
+    .services-header__media
+    {
+        left: 50%;
+
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 767.98px)
@@ -1785,14 +1811,6 @@
     .services-header__title
     {
         margin-top: 50px;
-    }
-    .services-header__media::before
-    {
-        left: 0;
-
-        -webkit-transform: translateX(-50%);
-            -ms-transform: translateX(-50%);
-                transform: translateX(-50%);
     }
     .subscribe
     {
@@ -1831,17 +1849,11 @@
     .chess-style-block__body
     {
         height: auto;
-        min-height: 340px;
+        min-height: auto;
     }
     .chess-style-block__media
     {
         height: 340px;
-    }
-    .chess-style-block__right .chess-style-block__body,
-    .chess-style-block__left .chess-style-block__body
-    {
-        padding-top: 30px;
-        padding-bottom: 30px;
     }
 }
 
@@ -1870,6 +1882,13 @@
         height: auto;
         min-height: auto; 
         padding: 30px 15px;
+    }
+    .services-header__title
+    {
+        font-size: 2.8rem;
+        line-height: 3rem; 
+
+        margin-left: 0;
     }
 }
 

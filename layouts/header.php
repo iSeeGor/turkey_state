@@ -75,6 +75,8 @@
 
                         <ul class="mobile-nav__subnav mobile-subnav__list">
                             <li class="mobile-subnav__item">
+                                <a href="/pages/catalog.php" class="mobile-subnav__link link" title="Каталог недвижимости">Каталог недвижимости</a></li>
+                            <li class="mobile-subnav__item">
                                 <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
                             <li class="mobile-subnav__item">
                                 <a href="#" class="mobile-subnav__link link" title="Недвижимость Аланьи">Недвижимость Аланьи</a></li>
@@ -114,7 +116,7 @@
             </nav>
 
             <div class="side-nav__item">
-                <button class="button button_pure side-nav__button">Обратный звонок</button>
+                <a href="#popup__call-back" class="js-open-popup button button_pure side-nav__button">Обратный звонок</a>
             </div>
 
             <div class="side-nav__item side-nav__item_phone-list">
@@ -138,7 +140,7 @@
             <footer class="side-nav__footer">
                 <ul class="social-media__list side-nav__social-list">
                     <li class="social-media__item">
-                        <a href="#" class="social-media__link social-media__link_facebook">
+                        <a href="#" target="_blank" class="social-media__link social-media__link_facebook">
                             <svg class="social-media__icon icon-facebook">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#facebook__icon"></use>
                             </svg> 
@@ -146,7 +148,7 @@
                     </li>
 
                     <li class="social-media__item">
-                        <a href="#" class="social-media__link social-media__link_vk">
+                        <a href="#" target="_blank" class="social-media__link social-media__link_vk">
                             <svg class="social-media__icon icon-vk">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#vk__icon"></use>
                             </svg> 
@@ -154,7 +156,7 @@
                     </li>
 
                     <li class="social-media__item">
-                        <a href="#" class="social-media__link social-media__link_instagram">
+                        <a href="#" target="_blank" class="social-media__link social-media__link_instagram">
                             <svg class="social-media__icon icon-instagram">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#instagram__icon"></use>
                             </svg> 
@@ -162,7 +164,7 @@
                     </li>
 
                     <li class="social-media__item ">
-                        <a href="#" class="social-media__link social-media__link_youtube">
+                        <a href="#" target="_blank" class="social-media__link social-media__link_youtube">
                             <svg class="social-media__icon icon-youtube">
                                 <use xlink:href="/assets/images/symbol/sprite.svg#youtube__icon"></use>
                             </svg> 
@@ -335,7 +337,7 @@
                             <div class="head-meta__social-media social-media">
                                 <ul class="social-media__list">
                                     <li class="social-media__item">
-                                        <a href="#" class="social-media__link social-media__link_facebook">
+                                        <a href="#" target="_blank" class="social-media__link social-media__link_facebook">
                                             <svg class="social-media__icon icon-facebook">
                                                 <use xlink:href="/assets/images/symbol/sprite.svg#facebook__icon"></use>
                                             </svg> 
@@ -343,7 +345,7 @@
                                     </li>
 
                                     <li class="social-media__item">
-                                        <a href="#" class="social-media__link social-media__link_vk">
+                                        <a href="#" target="_blank" class="social-media__link social-media__link_vk">
                                             <svg class="social-media__icon icon-vk">
                                                 <use xlink:href="/assets/images/symbol/sprite.svg#vk__icon"></use>
                                             </svg> 
@@ -351,7 +353,7 @@
                                     </li>
 
                                     <li class="social-media__item">
-                                        <a href="#" class="social-media__link social-media__link_instagram">
+                                        <a href="#" target="_blank" class="social-media__link social-media__link_instagram">
                                             <svg class="social-media__icon icon-instagram">
                                                 <use xlink:href="/assets/images/symbol/sprite.svg#instagram__icon"></use>
                                             </svg> 
@@ -359,7 +361,7 @@
                                     </li>
 
                                     <li class="social-media__item ">
-                                        <a href="#" class="social-media__link social-media__link_youtube">
+                                        <a href="#" target="_blank" class="social-media__link social-media__link_youtube">
                                             <svg class="social-media__icon icon-youtube">
                                                 <use xlink:href="/assets/images/symbol/sprite.svg#youtube__icon"></use>
                                             </svg> 
@@ -372,7 +374,7 @@
                         
                         <div class="head-meta__item head-meta__item_call">
                             <div class="head-meta__call-btn">
-                                <a href="#" class="pure-green__btn btn link">ОБРАТНЫЙ звонок</a>
+                                <a href="#popup__call-back" class="pure-green__btn btn link js-open-popup">ОБРАТНЫЙ звонок</a>
                             </div>
                         </div>
 

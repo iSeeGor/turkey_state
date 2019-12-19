@@ -20,9 +20,9 @@
     </section>
 
     <!--== Advanced Search  -->
-    <section class="advanced-search home__advanced-search">
+    <section class="advanced-search home__advanced-search" data-aos="fade-up" data-aos-delay="400">
         <div class="container advanced-search__container">
-            <form class="search-form advanced-search__form" action="#">
+            <form class="search-form advanced-search__form" action="#" autocomplete="off">
                 <div class="search-form__tabs">
                     <div class="search-form__tab search-form__tab_sale search-form__tab_current" data-tab="sales">            
                         <svg class="search-form__tab-icon">
@@ -103,7 +103,7 @@
                         </div>
                         <div class="search-form__tab-item">
                             <select name="layout" class="select search-form__select">
-                                <option selected="" value="Все планировки ">Все планировки </option>
+                                <option selected="" value="Комнат ">Комнат </option>
                                 <option value="0+1">0+1</option>
                                 <option value="1+1">1+1</option>
                                 <option value="2+1">2+1</option>
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex order-2 order-lg-0">
-                    <button class="button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__orange"></i></button>
+                    <a href="#popup__get-help" class="js-open-popup button button_pure about-section__button">Получить помощь в подборе недвижимости <i class="button-icon button-icon__orange"></i></a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="about-section__years-block years-block">
@@ -214,7 +214,7 @@
         <div class="container video-section__container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="video-section__item">
+                    <div class="video-section__item" data-aos="fade-up" data-aos-delay="0">
                         <div class="video-section__prev-img">
                             <a class="video-section__link" href="https://www.youtube.com/watch?v=wmGvDWSb9A8" title="Video Player Link">
                                 <img src="../assets/images/content/video-section/preview-video-image-01.jpg" alt="Video Section Image" class="video-section__image">
@@ -229,7 +229,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="video-section__item">
+                    <div class="video-section__item" data-aos="fade-up" data-aos-delay="200">
                         <div class="video-section__prev-img">
                             <a class="video-section__link" href="https://www.youtube.com/watch?v=a9UKV_ED_xU" title="Video Player Link">
                                 <img src="../assets/images/content/video-section/preview-video-image-02.jpg" alt="Video Section Image" class="video-section__image">
@@ -244,7 +244,7 @@
                 </div>
 
                 <div class="col-md-4">
-                    <div class="video-section__item">
+                    <div class="video-section__item" data-aos="fade-up" data-aos-delay="400">
                         <div class="video-section__prev-img">
                             <a class="video-section__link" href="https://www.youtube.com/watch?v=H98J4KqzJEk" title="Video Player Link">
                                 <img src="//img.youtube.com/vi/H98J4KqzJEk/mqdefault.jpg" alt="Video Section Image" class="video-section__image">
@@ -291,7 +291,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -340,7 +340,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_02.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -389,7 +389,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -438,7 +438,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -487,7 +487,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -536,7 +536,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -587,7 +587,7 @@
 
             <div class="row">
                 <div class="col-12 d-flex">
-                    <a href="#" class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></a>
+                    <a href="#popup__hot-properties" class="js-open-popup button button_orange property-slider__button">ДРУГИЕ ПРЕДЛОЖНИЯ<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
             
@@ -614,7 +614,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <button class="button button_pure privilages-section__button">Узнать больше про инвестирование в Турции <i class="button-icon button-icon__orange"></i></button>
+                    <a href="#popup__more-know" class="js-open-popup button button_pure privilages-section__button"> УЗНАТЬ БОЛЬШЕ ОБ ИНВЕСТИРОВАНИИ В ТУРЦИИ <i class="button-icon button-icon__orange"></i></a>
                 </div>
             </div>
         </div>
@@ -651,7 +651,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -700,7 +700,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_02.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -749,7 +749,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -798,7 +798,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -847,7 +847,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -896,7 +896,7 @@
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
-                                        <a href="#" class="property-card__figure-link" title="Property Image Link">
+                                        <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_03.jpg" alt="Property Card Image">
                                         </a>
                                     </figure>
@@ -947,7 +947,7 @@
 
             <div class="row">
                 <div class="col-12 d-flex">
-                    <a href="#" class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></a>
+                    <a href="/pages/object.php" class="button button_orange property-slider__button">смотреть все <i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
 
@@ -960,7 +960,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="tour-section__block tour-section__block_left" data-scroll=''>
-                        <h2 class="section-title tour-section__section-title">Ознакомительный тур от компании "TurkeyState"</h2>
+                        <h2 class="section-title tour-section__section-title">Ознакомительный тур от компании TurkeyState</h2>
                         <div class="tour-section__text-content typography">
                             <p>Если Вам не терпится поехать в Турцию и выбрать для себя второй дом у моря, нужно просто позвонить 
                                 нам и сообщить удобную для Вас дату вылета.</p>
@@ -993,7 +993,7 @@
                                 собственный кусочек рая в теплых, южных краях.</p>
                         </div>
 
-                        <button class="button button_orange">Заказать ознакомительный тур<i class="button-icon button-icon__white"></i></button>
+                        <a href="#popup__tour" class="js-open-popup button button_orange">Заказать ознакомительный тур<i class="button-icon button-icon__white"></i></a>
                     </div>
                 </div>
             </div>
@@ -1215,7 +1215,7 @@
                 </div>
 
                 <!-- Button -->
-                <a href="#" class="button button_pure testimonialSlider__button">смотреть все<i class="button-icon button-icon__orange"></i></a>
+                <a href="/pages/testimonials.php" class="button button_pure testimonialSlider__button">смотреть все<i class="button-icon button-icon__orange"></i></a>
             </div>
         </div>
     </section>
@@ -1224,7 +1224,7 @@
     <section class="related-posts home__latestNews-section">
         <div class="container">
             <div class="row">
-                <div class="col-12"><h2 class="section-title related-posts__title">Последние новости в Турции</h2></div>
+                <div class="col-12"><h2 class="section-title related-posts__title">Полезно знать о Турции</h2></div>
             </div>
             <div class="news-posts-row" data-aos="fade-up" data-aos-delay="400">
                 <div class="news-posts-row__inner">
@@ -1275,7 +1275,7 @@
             </div>
             <div class="row">
                 <div class="col-12 d-flex">
-                    <a href="#" class="button button_orange">Смотреть все<i class="button-icon button-icon__white"></i></a>
+                    <a href="/blog/blog-list.php" class="button button_orange">Смотреть все<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>

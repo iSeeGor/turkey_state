@@ -235,7 +235,7 @@
         <div class="team__cards-grid about-us__cards-grid">
             <div class="container team__container">
                 <!-- card 01 -->
-                <div class="team-card team-card_left">
+                <div class="team-card team-card_left" data-aos="fade-right">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -290,14 +290,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
 
                 <!-- card 02 -->
-                <div class="team-card team-card_right">
+                <div class="team-card team-card_right" data-aos="fade-left">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -352,14 +352,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-04.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
 
                 <!-- card 03 -->
-                <div class="team-card team-card_left">
+                <div class="team-card team-card_left" data-aos="fade-right">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -414,14 +414,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
                 
                 <!-- card 04 -->
-                <div class="team-card team-card_right">
+                <div class="team-card team-card_right" data-aos="fade-left">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -476,14 +476,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
 
                 <!-- card 05 -->
-                <div class="team-card team-card_left">
+                <div class="team-card team-card_left" data-aos="fade-right">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -538,14 +538,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
 
                 <!-- card 06 -->
-                <div class="team-card team-card_right">
+                <div class="team-card team-card_right" data-aos="fade-left">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -600,14 +600,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-04.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
 
                 <!-- card 07 -->
-                <div class="team-card team-card_left">
+                <div class="team-card team-card_left" data-aos="fade-right">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -662,14 +662,14 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
                 </div>
                 
                 <!-- card 08 -->
-                <div class="team-card team-card_right">
+                <div class="team-card team-card_right" data-aos="fade-left">
                     <div class="team-card__inner">
                         <div class="team-card__body">
                             <header class="team-card__header">
@@ -724,7 +724,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <figure class="team-card__figure">
+                        <figure class="team-card__figure" data-aos="fade-up" data-aos-delay="150">
                             <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
                         </figure>
                     </div>
@@ -825,11 +825,12 @@
                     <div class="wishes__desc">Мы всегда открыты для наших клиентов.</div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-5">
-                <a href="#" class="button button_orange wishes__button">Связаться с нами <i class="button-icon button-icon__white"></i></a>
+                <a href="#popup__call-back" class="js-open-popup button button_orange wishes__button">Связаться с нами <i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>
     </section>
 </main>
 
+<?php include '../layouts/popup.php'; ?>
 <?php include '../layouts/footer.php'; ?>

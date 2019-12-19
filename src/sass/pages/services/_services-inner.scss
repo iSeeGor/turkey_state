@@ -51,51 +51,11 @@
     &__media {
         min-height: 234px;
         position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background:  no-repeat;
-        }
+        width: 896px;
+        background-repeat: no-repeat;
     }
 }
 
-.services-investment {
-
-    .services-header__media::before {
-        content: url('../images/general/services/service-header-image-investment.jpg');
-    }
-}
-
-.services-hypotec {
-
-    .services-header__media::before {
-        content: url('../images/general/services/service-header-image-hypotec.jpg');
-    }
-}
-
-.services-consulting {
-
-    .services-header__media::before {
-        content: url('../images/general/services/service-header-image-consulting.jpg');
-    }
-}
-
-.services-tour {
-
-    .services-header__media::before {
-        content: url('../images/general/services/service-header-image-tour.jpg');
-    }
-}
-
-.services-afterservice {
-
-    .services-header__media::before {
-        content: url('../images/general/services/service-header-image-afterservice.jpg');
-    }
-}
 
 /* Centered Text Block
 --------------------------------------------------------------*/
@@ -237,6 +197,7 @@
     .button {
         padding: 12px 15px 10px;
         align-self: flex-start;
+        min-width: 267px;
     }
 }
 
@@ -268,7 +229,7 @@
     font-size: 2.3rem;
     line-height: 3rem;
     color: $heading_color;
-    padding-left: 40px;
+    padding-left: 50px;
     margin-bottom: 40px;
 }
 
