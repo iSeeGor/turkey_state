@@ -23,6 +23,8 @@ $(function() {
     formValidation();
     phoneFomMask();
     iframeRatio();
+    popupsRun();
+    textareaAutoHeight();
 });
 
 // Hamburger add Class
@@ -740,7 +742,7 @@ const formValidation = () => {
                 required: true
             },
             email: {
-                required: true
+                email: true
             },
             phone: {
                 required: true,
@@ -753,7 +755,7 @@ const formValidation = () => {
                 required: "Введите ваше Имя"
             },
             email: {
-                required: "Пожалуйста введите корректный почтовый адрес"
+                email: "Пожалуйста введите корректный почтовый адрес",
             },
             phone: {
                 required: "Введите ваш номер телефона",
@@ -761,12 +763,84 @@ const formValidation = () => {
             }
         }
     });
+
+    
 };
 
 // Phone Form Mask
 const phoneFomMask = () => {
     $(".phone-mask").mask("(000) 000-00-00");
 };
+
+// Popup's Run
+const popupsRun = () => {
+    $('.js-open-popup').magnificPopup({
+		type: 'inline',
+		preloader: false,
+		focus: '#username',
+        modal: true,
+        
+        callbacks: {
+			open: function() {
+				$('.mfp-bg').css({
+                    'background': '#e8f7ff',
+                    'opacity': '1',
+                });
+
+                let validator = $(".popup__form").validate({
+                    errorClass: "form__error",
+            
+                    rules: {
+                        name: {
+                            required: true,
+                            minlength: 3
+                        },
+                        email: {
+                            required: true,
+                            email: true
+                        },
+                        phone: {
+                            required: true,
+                            minlength: 10
+                        }
+                    },
+            
+                    messages: {
+                        name: {
+                            required: "Введите ваше Имя",
+                            minlength: "Минимальное количество символов - 3"
+                        },
+                        email: {
+                            required: "Введите ваш email",
+                            email: "Пожалуйста введите корректный почтовый адрес",
+                        },
+                        phone: {
+                            required: "Введите ваш номер телефона",
+                            minlength: "Минимальное количество символов - 10"
+                        }
+                    }
+                });
+            },
+            
+		}
+	});
+	$(document).on('click', '.popup__close', function (e) {
+		e.preventDefault();
+		$.magnificPopup.close();
+    });
+
+} 
+
+// Textarea Auto Height
+const textareaAutoHeight = () => {
+
+    $('.js-textarea-auto-height').on('input', function () { 
+        this.style.height = 'auto'; 
+          
+        this.style.height =  
+                (this.scrollHeight) + 'px'; 
+    }); 
+} 
 
 // Detect IOS
 // const iOSDetect = () => {

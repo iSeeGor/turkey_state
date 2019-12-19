@@ -48,11 +48,11 @@ const googleMap = () => {
         let popupContent = '<p class="marker_content">Турция, Алания, Махмутлар. <br>Пр. Барбаросса,<br> CEBECI 8, офис 6.</p>',
             image = {
                 url: "../assets/images/icons/google-map-marker.svg",
-                // size: new google.maps.Size(126, 40),
-                // origin: new google.maps.Point(0, 0)
+                // size: new google.maps.Size(49, 65),
+                // origin: new google.maps.Point(-3, 0),
                 // anchor: new google.maps.Point(-40, 140)
             },
-            coordinates = { lat: 36.491339, lng: 32.0888163 },
+            coordinates = { lat: 36.4912844, lng: 32.0909761 },
             map = new google.maps.Map(document.querySelector(".map-holder"), {
                 center: coordinates,
                 zoom: 16,
@@ -199,12 +199,14 @@ const imageSlider = () => {
     thumbSlider.controller.control = imageSlider;
 
     // Popup For Single Image
-    $(".slider-item a").magnificPopup({
+    $(".slider-item a").not('.swiper-slide-duplicate a').magnificPopup({
         type: "image",
         gallery: {
             enabled: true,
         }
     });
+
+    console.log($(".slider-item a").not('.swiper-slide-duplicate a'));
     
 };
 

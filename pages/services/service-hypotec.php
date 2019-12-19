@@ -24,10 +24,10 @@
             <!--== header content  -->
             <div class="services-header__content">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-7">
                         <h1 class="services-header__title">Ипотека и рассрочка</h1>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-5">
                         <div class="services-header__media" data-aos="zoom-out-left">
                         </div>
                     </div>
@@ -133,7 +133,7 @@
 
             <!-- right image row -->
             <div class="row chess-style-block__right" >
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6 order-1 order-lg-0">
                     <div class="chess-style-block__body" data-aos="fade-up" data-aos-offset="250" data-aos-duration="700" data-aos-delay="300">
                         <div class="chess-style-block__title">Рассроска платежа от застройщика</div>
                         <div class="chess-style-block__text typography">
@@ -143,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="chess-style-block__media" data-aos="fade-left" data-aos-offset="250" data-aos-duration="700">
                         <img src="/assets/images/general/services/service-chess-image-04.jpg" alt="Service Image" class="chess-style-block__image">
                     </div>
@@ -152,12 +152,12 @@
 
             <!-- left image row -->
             <div class="row chess-style-block__left">
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="chess-style-block__media" data-aos="fade-right" data-aos-offset="250" data-aos-duration="700">
                         <img src="/assets/images/general/services/service-chess-image-05.jpg" alt="Service Image" class="chess-style-block__image">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="chess-style-block__body" data-aos="fade-up" data-aos-offset="250" data-aos-duration="700" data-aos-delay="300">
                         <!-- <div class="chess-style-block__title"></div> -->
                         <div class="chess-style-block__text typography">
@@ -173,7 +173,7 @@
 
             <!-- right image row -->
             <div class="row chess-style-block__right" >
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6 order-1 order-lg-0">
                     <div class="chess-style-block__body" data-aos="fade-up" data-aos-offset="250" data-aos-duration="700" data-aos-delay="300">
                         <!-- <div class="chess-style-block__title"></div> -->
                         <div class="chess-style-block__text typography">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8 offset-md-2 offset-lg-0 col-lg-6">
                     <div class="chess-style-block__media" data-aos="fade-left" data-aos-offset="250" data-aos-duration="700">
                         <img src="/assets/images/general/services/service-chess-image-06.jpg" alt="Service Image" class="chess-style-block__image">
                     </div>

@@ -23,10 +23,8 @@
 @import 'blog/main';
 
 // Footer
+@import 'layout/popup';
+
+// Footer
 @import 'layout/footer';
 
-.test-slider {
-    height: 750px;
-    background: url('../images/content/slider.jpg') no-repeat center;
-    background-size: cover;
-}

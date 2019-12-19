@@ -170,6 +170,8 @@
 .subscribe-section {
     padding: 20px 0;
     background: $lightSkyBlue;
+    overflow: hidden;
+
 }
 .subscribe {
     display: flex;
@@ -243,6 +245,23 @@
 .services .checklist-block {
     margin-bottom: 80px;
 }
+.services .checklist-block .container {
+    position: relative;
+}
+.services .checklist-block .container::before,
+.services .checklist-block .container::after {
+    position: absolute;
+    top: -30px;
+    left: -470px;
+    width: 484px;
+    content: url('../images/general/stars-figure-bg-03.svg');
+}
+
+.services .checklist-block .container::after {
+    left: inherit;
+    right: -550px;
+    top: 20px;
+}
 
 .services .checklist-block__title {
     @include font_bold;
@@ -255,6 +274,13 @@
 
 .services .checklist-block__content ul li {
     margin-bottom: 32px;
+}
+
+.checklist-block__row-left {
+    .checklist-block__content {
+        padding-top: 70px;
+        padding-left: 60px;
+    }
 }
 
 /* Centered List Block

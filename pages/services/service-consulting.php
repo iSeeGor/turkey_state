@@ -24,10 +24,10 @@
             <!--== header content  -->
             <div class="services-header__content">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-7">
                         <h1 class="services-header__title">Консалтинг</h1>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-5">
                         <div class="services-header__media" data-aos="zoom-out-left">
                         </div>
                     </div>

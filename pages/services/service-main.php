@@ -61,7 +61,7 @@
         <div class="container">
             <div class="services-cat__items">
                 <div class="services-cat__item" data-aos="fade-up" data-aos-offset="200">
-                    <a href="#" class="services-cat__item-link" title="Service Category Title" >
+                    <a href="/pages/services/service-tour.php" class="services-cat__item-link" title="Service Category Title" >
                         <div class="services-cat__item-media">
                             <img class="services-cat__item-image" src="/assets/images/general/services/services-cat_tour.jpg" alt="Service Category Title" ></div>
                         <div class="services-cat__item-icon">
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="services-cat__item"  data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">
-                    <a href="#" class="services-cat__item-link" title="Service Category Title" >
+                    <a href="/pages/services/service-consulting.php" class="services-cat__item-link" title="Service Category Title" >
                         <div class="services-cat__item-media">
                             <img class="services-cat__item-image" src="/assets/images/general/services/services-cat_consulting.jpg" alt="Service Category Title" ></div>
                         <div class="services-cat__item-icon">
@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="services-cat__item"  data-aos="fade-up" data-aos-delay="400" data-aos-offset="200">
-                    <a href="#" class="services-cat__item-link" title="Service Category Title" >
+                    <a href="/pages/services/service-hypotec.php" class="services-cat__item-link" title="Service Category Title" >
                         <div class="services-cat__item-media">
                             <img class="services-cat__item-image" src="/assets/images/general/services/services-cat_hypotec.jpg" alt="Service Category Title" ></div>
                         <div class="services-cat__item-icon">
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="services-cat__item"  data-aos="fade-up" data-aos-delay="200" data-aos-offset="200">
-                    <a href="#" class="services-cat__item-link" title="Service Category Title" >
+                    <a href="/pages/services/service-afterservice.php" class="services-cat__item-link" title="Service Category Title" >
                         <div class="services-cat__item-media">
                             <img class="services-cat__item-image" src="/assets/images/general/services/services-cat_afterservice.jpg" alt="Service Category Title" ></div>
                         <div class="services-cat__item-icon">

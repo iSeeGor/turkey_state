@@ -103,3 +103,28 @@ select {
 textarea {
 	width: 100%;
 }
+
+
+.form {
+
+	.form__row {
+		margin-bottom: 35px;
+		position: relative;
+		
+		label.form__error {
+			font-size: 1.2rem;
+			position: absolute;
+			bottom: -20px;
+			left: 0px;
+			color: red;
+		}
+		
+	}
+
+	.textarea-row {
+		height: 75px;
+		// background: #ccc;
+		overflow: auto;
+		display: flex;
+	}
+}

@@ -124,7 +124,8 @@
 }
 
 .to-favorit__button,
-.print__button {
+.print__button,
+.button-close {
     border-radius: 50%;
     border: 2px solid white;
     width: 39px;
@@ -150,6 +151,14 @@
     height: 17px;
     transition: fill 0.3s ease;
     margin-top: 2px;
+}
+
+.close-icon {
+    fill: white;
+    width: 15px;
+    height: 15px;
+    transition: fill 0.3s ease;
+    // margin-top: 2px;
 }
 
 .print__button:hover .icon-print{

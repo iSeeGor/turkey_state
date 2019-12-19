@@ -5,6 +5,8 @@
 .filter-bar {
     padding-top: 55px;
     padding-bottom: 50px;
+    position: relative;
+    z-index: 20;
 
     &__inner {
         background: $lightSkyBlue;
