@@ -69,7 +69,7 @@
                             <a href="#typography" class="button button_pure button__anchor">Описание объекта</a>
                             <a href="#google-map" class="button button_pure button__anchor">Показать на карте</a>
                             <a href="#related" class="button button_pure button__anchor">Похожие объекты</a>
-                            <a class="button button_pure button__anchor button__anchor_active">Онлайн просмотр</a>
+                            <a href="#popup__tour" class="js-open-popup button button_pure button__anchor button__anchor_active">Онлайн просмотр</a>
                         </div>
                         <div class="p-sidebar__callback">
                             <div class="callback__block">
