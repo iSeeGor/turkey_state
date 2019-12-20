@@ -173,7 +173,7 @@
 </div>
 
 <!--== scroll-to-top -->
-<div class="scroll-to-top">
+<div class="scroll-to-top js-scroll-to-top">
     <svg class="scroll-to-top__icon">
         <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
     </svg>

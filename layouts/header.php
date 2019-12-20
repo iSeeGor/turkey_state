@@ -43,7 +43,7 @@
     
 </head>    
 
-<body>
+<body id="js-to-top">
 
 <!--== Site   -->
 <div class="site">
