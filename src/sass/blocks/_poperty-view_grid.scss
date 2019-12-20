@@ -7,7 +7,7 @@
     &__grid {
         margin-bottom: 30px;
 
-        .property-card__meta-item_rooms, .property-card__meta-item_square {
+        .property-card__meta-item_square {
             width: calc(100% - 130px);
         }
     }
@@ -29,7 +29,7 @@
 }
  
 @media (max-width: 420px) {
-    .property-card__meta-item_rooms, .property-card__meta-item_square {
+     .property-card__meta-item_square {
         width: 100% !important;
     }
 }

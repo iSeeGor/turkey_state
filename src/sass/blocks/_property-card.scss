@@ -171,14 +171,9 @@
         }  
     }
 
-    &__meta-item_rooms,
     &__meta-item_square {
-        // padding-right: 130px;
         width: calc(100% - 160px);
-        // white-space: nowrap;
-        // text-overflow: ellipsis;
-        // overflow: hidden;
-    }
+    }    
 
     &__meta-item_rooms {
         &::before {
@@ -239,7 +234,7 @@
 }
 
 @media (max-width: 420px) {
-    .property-card__meta-item_rooms, .property-card__meta-item_square {
+    .property-card__meta-item_square {
         width: auto;
         padding-right: 0px;
     }
@@ -250,7 +245,7 @@
         max-width: 200px;
     }
 
-    .property-card__content {
-        // margin-bottom: 20px;
-    }
+    // .property-card__content {
+    //     // margin-bottom: 20px;
+    // }
 }

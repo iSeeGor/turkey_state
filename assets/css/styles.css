@@ -4237,6 +4237,8 @@ textarea
     font-weight: 500;
 
     margin: 0;
+
+    color: #0c1937;
 }
 
 .service-block_square
@@ -4526,7 +4528,6 @@ textarea
 
     background-image: url('../images/icons/location.svg');
 }
-.property-card__meta-item_rooms,
 .property-card__meta-item_square
 {
     width: -webkit-calc(100% - 160px);
@@ -4596,7 +4597,6 @@ textarea
 
 @media (max-width: 420px)
 {
-    .property-card__meta-item_rooms,
     .property-card__meta-item_square
     {
         width: auto;
@@ -5786,7 +5786,6 @@ textarea
 {
     margin-bottom: 30px;
 }
-.property-view__grid .property-card__meta-item_rooms,
 .property-view__grid .property-card__meta-item_square
 {
     width: -webkit-calc(100% - 130px);
@@ -5814,7 +5813,6 @@ textarea
 
 @media (max-width: 420px)
 {
-    .property-card__meta-item_rooms,
     .property-card__meta-item_square
     {
         width: 100% !important;
@@ -7123,11 +7121,13 @@ textarea
     margin-bottom: 24px;
 }
 
-.p-sidebar__callback
+.p-sidebar__callback,
+.callback__block
 {
     margin-top: auto;
 }
-.p-sidebar__callback .callback__title
+.p-sidebar__callback .callback__title,
+.callback__block .callback__title
 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.3rem;
@@ -7138,11 +7138,13 @@ textarea
 
     color: #ffa940;
 }
-.p-sidebar__callback .callback__text
+.p-sidebar__callback .callback__text,
+.callback__block .callback__text
 {
     margin-bottom: 40px;
 }
-.p-sidebar__callback .button
+.p-sidebar__callback .button,
+.callback__block .button
 {
     font-size: 1.3rem;
 
@@ -7390,6 +7392,31 @@ textarea
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
+}
+
+.p-detail__callback-block
+{
+    display: none;
+
+    padding-top: 40px;
+}
+.p-detail__callback-block .callback__title
+{
+    float: left; 
+
+    width: 70%;
+}
+.p-detail__callback-block .callback__text
+{
+    float: left;
+
+    width: 70%;
+    margin-bottom: 0 !important;
+}
+.p-detail__callback-block .button
+{
+    width: 25%;
+    margin: 25px 0;
 }
 
 /* Property Options List
@@ -8023,6 +8050,25 @@ label.form__error
 {
     margin-bottom: 50px;
     margin-left: 30px;
+}
+.related-block .property-slider__navigation
+{
+    display: none;
+}
+
+@media (min-width: 1200px)
+{
+    .related-block .property-slider__body
+    {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+                justify-content: space-around;
+    }
 }
 
 /*--------------------------------------------------------------

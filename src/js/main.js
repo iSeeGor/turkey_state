@@ -2,6 +2,7 @@ $(function() {
     // Sliders & Carousels
     testimonialSlider();
     propertySLider();
+    similarProperySlider();
 
 
     // Scroll and etc.
@@ -196,6 +197,69 @@ const propertySLider = () => {
         }
     });
 };
+const similarProperySlider = () => {
+    let slider = "";
+    let sliderClass = '.related-block .property-slider__container';
+    let sliderOptions = {};
+
+    sliderOptions = {
+        wrapperClass: 'property-slider__body',
+        slideClass: 'property-slider__slide',
+        // loop: true,
+        speed: 600,
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        threshold: 10,
+        roundLengths: true,
+        // centeredSlides: true,
+
+        navigation: {
+            nextEl: '.property-slider__button-next',
+            prevEl: '.property-slider__button-prev'
+        },
+
+        scrollbar: {
+            el: '.property-slider__scrollbar',
+            draggable: true
+        },
+
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 60
+            },
+
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 70
+            },
+
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    };
+
+    if (window.innerWidth <= 1200 ){
+        slider = new Swiper(sliderClass, sliderOptions);
+    };
+
+    $(window).resize(function(){
+        if (window.innerWidth <= 1200 ){
+            slider = new Swiper(sliderClass, sliderOptions);
+        } else {
+            
+        }
+    })
+
+}
 
 
 /* Scroll Anchors and etc. */
@@ -776,18 +840,17 @@ const iframeRatio = () => {
     });
 
     // Resize the iframes when the window is resized
-    $(window)
-        .resize(function() {
-            $iframes.each(function() {
-                // Get the parent container&amp;amp;#x27;s width
-                var width = $(this)
-                    .parent()
-                    .width();
+    $(window).resize(function() {
+        $iframes.each(function() {
+            // Get the parent container&amp;amp;#x27;s width
+            var width = $(this)
+                .parent()
+                .width();
 
-                $(this)
-                    .width(width)
-                    .height(width * $(this).data('ratio'));
-            });
+            $(this)
+                .width(width)
+                .height(width * $(this).data('ratio'));
+        });
             // Resize to fix all iframes on page load.
         })
         .resize();

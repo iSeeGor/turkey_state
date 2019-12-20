@@ -168,7 +168,7 @@
                                 </div>
                             </header>
                             <div class="service-block__body">
-                                <h5 class="service-block__desc">Работаем в управлении продаваемых объектов</h5>
+                                <div class="service-block__desc">Работаем в управлении продаваемых объектов</div>
                             </div>   
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                                 </div>
                             </header>
                             <div class="service-block__body">
-                                <h5 class="service-block__desc">Помощь на всех этапах покупки</h5>
+                                <div class="service-block__desc">Помощь на всех этапах покупки</div>
                             </div>   
                         </div>
                     </div>
@@ -200,7 +200,7 @@
                                 </div>
                             </header>
                             <div class="service-block__body">
-                                <h5 class="service-block__desc">Более 1000 проверенных  объектов</h5>
+                                <div class="service-block__desc">Более 1000 проверенных  объектов</div>
                             </div>   
                         </div>
                     </div>

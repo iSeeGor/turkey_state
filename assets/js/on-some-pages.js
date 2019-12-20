@@ -206,7 +206,6 @@ const imageSlider = () => {
         }
     });
 
-    console.log($(".slider-item a").not('.swiper-slide-duplicate a'));
     
 };
 
@@ -239,15 +238,16 @@ const stickyTabs = () => {
             }
         });
     };
-    if (window.innerWidth > 1024) {
-        stickyRun();
-    }
 
-    $(window).on("resize", function() {
-        if (window.innerWidth > 1024) {
+    $(window).resize(function() {
+        if (window.innerWidth > 1025) {
             stickyRun();
+        } else {
+            // $sidebar.removeClass("fixed");
+            // console.log('sadasadds');
+            
         }
-    });
+    }).resize();
 };
 
 const sideTeamCarousel = () => {
@@ -274,7 +274,7 @@ const sideTeamCarousel = () => {
         });
     }
     
-    $(window).on('resize', function(){
+    $(window).resize(function(){
         if(window.innerWidth <= 991.98 && teamList.length >= 3){
             runOwl();
 
@@ -301,7 +301,7 @@ const sideTeamCarousel = () => {
             teamCarousel.classList.remove('owl-carousel');
             teamCarousel.classList.remove('sidebar__team_flex');
         }
-    })  
+    }).resize();  
 }
 
 

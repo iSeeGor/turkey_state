@@ -87,9 +87,9 @@
                         <div class="footer-widget__content">
 
                             <ul class="footer-widget__list footer-widget__list--links">
-                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link link">Каталог недвижимости</a></li>
-                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link link">Услуги</a></li>
-                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="#" class="footer-widget__link link">Вопросы - Ответы</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="/pages/catalog.php" class="footer-widget__link link">Каталог недвижимости</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="/pages/services/service-main.php" class="footer-widget__link link">Услуги</a></li>
+                                <li class="footer-widget__list-item footer-widget__list-item--link"><a href="/pages/faq.php" class="footer-widget__link link">Вопросы - Ответы</a></li>
                             </ul>
 
                         </div>

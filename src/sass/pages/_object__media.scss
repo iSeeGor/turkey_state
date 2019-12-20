@@ -24,7 +24,8 @@
     }
 
     .p-detail__main .p-detail__content {
-        flex: 0 0 70%;
+        max-width: 69%;
+        flex: 0 0 69%;
     }
 
     // Team Card 
@@ -44,7 +45,12 @@
         max-width: 47%;
     }
 
+    .property-slider__navigation {
+        display: block !important;
+    }
+
 }
+
 
 @media (max-width: 991.98px) {
 
@@ -155,6 +161,14 @@
     .cb-form__banner {
         display: none;
     }
+
+    .p-detail__container::before, .p-detail__container::after {
+        display: none;
+    }
+
+    .p-detail__callback-block {
+        display: block;
+    }
 }
 
 
@@ -221,6 +235,24 @@
         order: 1;
         margin-top: 30px;
     }
+
+
+    .p-detail__callback-block {
+    
+        .callback__title {
+            width: 60%;
+        }
+    
+        .callback__text {
+            width: 60%;
+        }
+    
+        .button {
+            width: 35%;
+            float: right;
+            margin: 0px 0;
+        }
+    }
     
 }
 
@@ -230,11 +262,50 @@
         height: 300px;
     }
     
+    .services-header__media {
+        min-height: 160px;
+    }
+
+
+    .p-detail__callback-block {        
+    
+        .callback__title {
+            width: 100%;
+            float: none;
+        }
+    
+        .callback__text {
+            width: 100%;
+            float: none;
+            margin-bottom: 0 !important;
+        }
+    
+        .button {
+            margin: 25px 0 0;
+            float: none;
+            width: 100%;
+            max-width: 265px;
+        }
+    }
 }
 
 @media (max-width: 413.98px) {
     .p-sidebar__item_sticky {
-        display: none;
+        
+    }
+
+    .p-sidebar__anchors > * {
+        margin-right: 0;
+    }
+
+    .p-sidebar__anchors {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    } 
+
+    .button__anchor {
+        max-width: 47%;
+        flex: 1 0 47%;
     }
 
     .p-options__item {
@@ -250,5 +321,15 @@
     .cb-form .button {
         padding-right: 30px;
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .property-header__title {
+        margin-bottom: 100px;
+    }
+
+    .p-sidebar__control {
+        transform: translateY(-40px);
     }
 }
