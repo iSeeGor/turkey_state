@@ -102,7 +102,7 @@
                         <a href="/pages/services/service-main.php" class="mobile-nav__link link" title="Услуги">Услуги</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
+                        <a href="/pages/faq.php" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
                     </li>
                     <li class="mobile-nav__item">
                         <a href="#" class="mobile-nav__link link" title="Отзывы">Отзывы</a>
@@ -252,7 +252,7 @@
                             <a href="/pages/services/service-main.php" class="main-menu__link link" title="Услуги" data-text="Услуги">Услуги</a>
                         </li>
                         <li class="main-menu__item">
-                            <a href="/" class="main-menu__link link" title="Вопросы-ответы" data-text="Вопросы-ответы">Вопросы-ответы</a>
+                            <a href="/pages/faq.php" class="main-menu__link link" title="Вопросы-ответы" data-text="Вопросы-ответы">Вопросы-ответы</a>
                         </li>
                         <li class="main-menu__item">
                             <a href="/" class="main-menu__link link" title="оТЗЫВЫ" data-text="оТЗЫВЫ">оТЗЫВЫ</a>

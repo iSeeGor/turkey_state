@@ -191,3 +191,12 @@
     content: url('../images/general/page-header/services-page-header-figure-right.png');
 }
 
+// FAQ
+.faq .page-header__deco-block::before {
+    content: url('../images/general/page-header/faq-page-header-figure-left.png');
+}
+
+.faq .page-header__deco-block::after {
+    content: url('../images/general/page-header/faq-page-header-figure-right.png');
+}
+

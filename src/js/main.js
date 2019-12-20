@@ -5,7 +5,7 @@ $(function() {
     similarProperySlider();
 
 
-    // Scroll and etc.
+    // // Scroll and etc.
     pageSmoothScrolling();
     scrollOutPlugin();
     scrollToTop();
@@ -34,6 +34,7 @@ $(function() {
     // Select, Radio, Checkbox, Dropdowns
     metaDropdown();
     themeSelect();
+    faqAccordion();
     
     
     // Popup's
@@ -311,7 +312,7 @@ const scrollOutPlugin = () => {
 };
 const anchorScroll = () => {
 
-    $('a[href*="#"]:not([href="#"])').click(function() {
+    $('a[href*="#a_"]:not([href="#"])').click(function() {
         if (
             location.pathname.replace(/^\//, '') ===
                 this.pathname.replace(/^\//, '') &&
@@ -485,6 +486,29 @@ const metaDropdown = () => {
 const themeSelect = () => {
     $('select').niceSelect();
 };
+const faqAccordion = () => {
+    $('.accordion__heading').on('click', function(e) {
+        e.preventDefault();
+    
+        // Add the correct active class
+        if($(this).closest('.accordion__item').hasClass('active')) {
+            // Remove active classes
+            $('.accordion__item').removeClass('active');
+        } else {
+            // Remove active classes
+            $('.accordion__item').removeClass('active');
+    
+            // Add the active class
+            $(this).closest('.accordion__item').addClass('active');
+        }
+    
+        // Show the content
+        var $content = $(this).next();
+        $content.slideToggle(100);
+        $('.accordion__content').not($content).slideUp('fast');
+    });
+    
+}
 
 
 /* Popup's */ 

@@ -3474,6 +3474,16 @@ textarea
     content: url('../images/general/page-header/services-page-header-figure-right.png');
 }
 
+.faq .page-header__deco-block::before
+{
+    content: url('../images/general/page-header/faq-page-header-figure-left.png');
+}
+
+.faq .page-header__deco-block::after
+{
+    content: url('../images/general/page-header/faq-page-header-figure-right.png');
+}
+
 /*--------------------------------------------------------------
 # Hero Banner
 --------------------------------------------------------------*/
@@ -6524,6 +6534,187 @@ textarea
     height: 650px;
 }
 
+.accordion
+{
+    width: 100%;
+    max-width: 79rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.accordion__item
+{
+    position: relative;
+
+    margin-bottom: 16px;
+}
+
+.accordion__item.active .accordion__heading
+{
+    color: #ffa940;
+}
+
+.accordion__item.active .accordion__icon
+{
+    border-color: #e4f5ff; 
+    background: #e4f5ff;
+}
+
+.accordion__item.active .accordion__icon:before
+{
+    background: #0691e0;
+}
+
+.accordion__item.active .accordion__icon:after
+{
+    width: 0;
+}
+
+.accordion__item .accordion__heading
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    line-height: 3rem;
+
+    position: relative;
+
+    display: block;
+
+    padding: 1.5rem 1.5rem 1.5rem 8.3rem;
+
+    -webkit-transition: .3s ease-in-out;
+         -o-transition: .3s ease-in-out;
+            transition: .3s ease-in-out; 
+    text-decoration: none;
+
+    color: #0c1937;
+}
+
+.accordion__item .accordion__heading:hover
+{
+    color: #ffa940;
+}
+
+.accordion__item .accordion__heading:hover .accordion__icon:before,
+.accordion__item .accordion__heading:hover .accordion__icon:after
+{
+    background: #0691e0;
+}
+
+.accordion__item .accordion__icon
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    display: block;
+
+    width: 5.5rem;
+    height: 5.5rem;
+
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); 
+
+    border: 1px solid #0691e0;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+}
+
+.accordion__item .accordion__icon:before,
+.accordion__item .accordion__icon:after
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 3.1rem;
+    height: .5rem;
+
+    content: '';
+    -webkit-transition: .3s ease-in-out;
+         -o-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); 
+
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background: #0691e0;
+}
+
+.accordion__item .accordion__icon:after
+{
+    z-index: -1; 
+
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+        -ms-transform: translate(-50%, -50%) rotate(90deg);
+            transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion__item .accordion__content
+{
+    display: none;
+
+    padding: 17px 0;
+}
+
+.accordion__pagination
+{
+    padding: 70px 0 10px;
+}
+
+@media (max-width: 992px)
+{
+    .accordion__item .accordion__heading
+    {
+        font-size: 2rem;
+        line-height: 2.6rem;
+    }
+    .accordion__item .accordion__icon:before,
+    .accordion__item .accordion__icon:after
+    {
+        width: 2.6rem;
+        height: .4rem;
+    }
+    .accordion__item .accordion__heading
+    {
+        padding-left: 7.2rem;
+    }
+    .accordion__item .accordion__icon
+    {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media (max-width: 576px)
+{
+    .accordion__item .accordion__heading
+    {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .accordion__item .accordion__icon:before,
+    .accordion__item .accordion__icon:after
+    {
+        width: 2.2rem;
+        height: .3rem;
+    }
+    .accordion__item .accordion__heading
+    {
+        padding-right: 0; 
+        padding-left: 6.2rem;
+    }
+    .accordion__item .accordion__icon
+    {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
 .home__advanced-search
 {
     position: relative;
@@ -8074,6 +8265,66 @@ label.form__error
 }
 
 /*--------------------------------------------------------------
+# Page FAQ
+--------------------------------------------------------------*/
+.faq__accordion-block
+{
+    padding: 44px 0 25px;
+}
+
+.faq-content__inner
+{
+    position: relative;
+
+    padding: 38px 55px;
+
+    border-right: 10px solid #e4f5ff; 
+    border-left: 10px solid #e4f5ff;
+}
+
+.faq-content__text_right
+{
+    padding-top: 110px;
+    padding-left: 20px;
+}
+
+.faq-content__inner::before,
+.faq-content__inner::after
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 400px;
+
+    content: url('../images/general/tour-section-block-left-figure.svg');
+
+    opacity: .3;
+}
+
+.faq-content__inner::before
+{
+    bottom: -240px; 
+    left: -460px;
+}
+
+.faq-content__inner::after
+{
+    right: -420px;
+    bottom: -440px; 
+    left: inherit;
+}
+
+@media (max-width: 992px)
+{
+    .faq-content__inner::before,
+    .faq-content__inner::after
+    {
+        display: none;
+    }
+}
+
+/*--------------------------------------------------------------
 # Services Main Page
 --------------------------------------------------------------*/
 .services-main
@@ -8909,7 +9160,7 @@ label.form__error
     line-height: 1.8rem;
 
     position: relative;
-    z-index: 1;
+    z-index: 1; 
 
     display: -webkit-box;
     display: -webkit-flex;
@@ -8917,7 +9168,6 @@ label.form__error
     display:         flex;
     overflow: hidden;
 
-    max-width: 20%; 
     height: 77px;
     padding: 0 20px;
 

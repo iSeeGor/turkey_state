@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Page FAQ
+--------------------------------------------------------------*/
+.faq {
+
+    &__accordion-block {
+        padding: 44px 0 25px;
+    }
+}
+
+.faq-content {
+    &__inner {
+        position: relative;
+        padding: 38px 55px;
+        border-left: 10px solid $lightSkyBlue;
+        border-right: 10px solid $lightSkyBlue;
+    }
+
+    &__text_right {
+        padding-top: 110px;
+        padding-left: 20px;
+    }
+}
+
+.faq-content__inner::before, .faq-content__inner::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    content: url('../images/general/tour-section-block-left-figure.svg');
+    opacity: .3;
+}
+
+.faq-content__inner::before {
+    left: -460px;
+    bottom: -240px;
+}
+
+.faq-content__inner::after {
+    right: -420px;
+    left: inherit;
+    bottom: -440px;
+}
+
+@media (max-width: 992px){
+    .faq-content__inner::before, .faq-content__inner::after {
+        display: none;
+    }
+}

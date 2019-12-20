@@ -20,7 +20,7 @@
             </div>
 
             <!--== page-header content  -->
-            <div class="page-header__content">
+            <div class="page-header__content" id="a_object-view">
                 <div class="page-header__item page-header__item_title">
                     <h1 class="property-header__title">Название обьекта</h1>
                 </div>
@@ -66,9 +66,9 @@
                     </div>
                     <div class="p-sidebar__item p-sidebar__item_sticky">
                         <div class="p-sidebar__anchors">
-                            <a href="#typography" class="button button_pure button__anchor">Описание объекта</a>
-                            <a href="#google-map" class="button button_pure button__anchor">Показать на карте</a>
-                            <a href="#related" class="button button_pure button__anchor">Похожие объекты</a>
+                            <a href="#a_object-view" class="button button_pure button__anchor">Описание объекта</a>
+                            <a href="#a_google-map" class="button button_pure button__anchor">Показать на карте</a>
+                            <a href="#a_related" class="button button_pure button__anchor">Похожие объекты</a>
                             <a href="#popup__tour" class="js-open-popup button button_pure button__anchor button__anchor_active">Онлайн просмотр</a>
                         </div>
                         <div class="p-sidebar__callback">
@@ -206,7 +206,7 @@
             <!-- main content -->
             <div class="p-detail__main">
                 <div class="p-detail__content">
-                    <section id="typography" class="p-detail__typography typography">
+                    <section class="p-detail__typography typography">
                         <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
                         <p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. </p>
                         <p>При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке</p>
@@ -234,7 +234,7 @@
                     <section class="p-detail__video typography">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/kIrhC8UUQmQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </section>
-                    <section id="google-map" class="p-detail__map">
+                    <section id="a_google-map" class="p-detail__map">
                         <div class="page-section__title">Рассположение объекта на карте</div>
                         <div class="p-detail__map-holder map-holder">
                             
@@ -433,7 +433,7 @@
     </div>
 
     <!--== Page Main Form  -->
-    <section class="cb-form property-page__cb-form" id="online-form">
+    <section class="cb-form property-page__cb-form" id="a_online-form">
         <div class="container">
             <div class="cb-form__inner">
                 <div class="cb-form__main">
@@ -486,7 +486,7 @@
     </section>
 
     <!--== Related Block  -->
-    <section class="related-block" id="related">
+    <section class="related-block" id="a_related">
         <div class="container">
             <div class="row">
                 <div class="col-12">
