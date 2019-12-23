@@ -45,6 +45,7 @@ $(function() {
     
     // Other
     pagination();
+    readMoreText();
 
 
     // Utils
@@ -547,6 +548,7 @@ const popupsRun = () => {
         preloader: false,
         focus: '#username',
         modal: true,
+        // mainClass: 'animated fadeInUp',
 
         callbacks: {
             open: function() {
@@ -554,6 +556,8 @@ const popupsRun = () => {
                     background: '#e8f7ff',
                     opacity: '1'
                 });
+
+                $('.mfp-wrap').addClass('mfp-slideInUp');
 
                 let validator = $('.popup__form').validate({
                     errorClass: 'form__error',
@@ -595,6 +599,8 @@ const popupsRun = () => {
                     background: '#0b0b0b',
                     opacity: '0.8'
                 });
+
+                
             }
         }
     });
@@ -629,6 +635,8 @@ const popupAutoRun = () => {
                             background: '#e8f7ff',
                             opacity: '1'
                         });
+
+                        $('.mfp-wrap').addClass('mfp-slideInUp');
 
                         let validator = $('.popup__form').validate({
                             errorClass: 'form__error',
@@ -846,6 +854,45 @@ const pagination = () => {
         })(jQuery);
     }.call(this));
 };
+const readMoreText = () => {
+    let charLim = 700;
+    let firsHalf = '';
+    let lastHalf = '';
+    let newText = '';
+    let textBlock = $('.js-readMore-text');
+    let btn = `<a href="#" class="moreLess-btn">Показать все</a>`;
+    
+    
+    
+    textBlock.each(function (){
+        let $this = $(this);
+        let allText = $this.text();
+
+        if(allText.length > charLim){
+            firsHalf = allText.substring(0, charLim);
+            lastHalf = allText.substring(charLim, allText.length);
+            newText = `${firsHalf} <span class="readMore-allTxt"> ${lastHalf} </span>
+                        <span class="readMore-dots">...</span>`;
+            $this.html(newText);
+            $this.append(btn);
+     
+        }
+                 
+    });
+
+    $('.moreLess-btn').on('click', function(e){
+        e.preventDefault();
+        textBlock.toggleClass('show');
+
+        if( textBlock.hasClass('show')){
+            $(this).html('Свернуть');
+        } else {
+            $(this).html('Показать все');
+        }
+        
+    });
+
+}
 
 
 

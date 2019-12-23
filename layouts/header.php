@@ -105,7 +105,7 @@
                         <a href="/pages/faq.php" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
                     </li>
                     <li class="mobile-nav__item">
-                        <a href="#" class="mobile-nav__link link" title="Отзывы">Отзывы</a>
+                        <a href="/pages/testimonials.php" class="mobile-nav__link link" title="Отзывы">Отзывы</a>
                     </li>
                     <li class="mobile-nav__item">
                         <a href="/blog/blog-list.php" class="mobile-nav__link link" title="Новости">Новости</a>
@@ -255,10 +255,10 @@
                             <a href="/pages/faq.php" class="main-menu__link link" title="Вопросы-ответы" data-text="Вопросы-ответы">Вопросы-ответы</a>
                         </li>
                         <li class="main-menu__item">
-                            <a href="/" class="main-menu__link link" title="оТЗЫВЫ" data-text="оТЗЫВЫ">оТЗЫВЫ</a>
+                            <a href="/pages/testimonials.php" class="main-menu__link link" title="оТЗЫВЫ" data-text="оТЗЫВЫ">оТЗЫВЫ</a>
                         </li>
                         <li class="main-menu__item">
-                            <a href="/blog/blog-list.php" class="main-menu__link link" title="оТЗЫВЫ" data-text="ноВОСТИ">ноВОСТИ</a>
+                            <a href="/blog/blog-list.php" class="main-menu__link link" title="ноВОСТИ" data-text="ноВОСТИ">ноВОСТИ</a>
                         </li>
                     </ul>
 

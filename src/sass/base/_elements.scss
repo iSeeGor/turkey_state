@@ -230,8 +230,15 @@ img {
 	}
 }
 
-// @media (max-width: 320px){
-// 	.scroll-to-top {
-// 		bottom: 175px;
-// 	}
-// }
+/* Read More Plugin Styles */
+.readMore-allTxt {
+	display: none;
+}
+
+.show .readMore-allTxt {
+	display: inline-block !important;
+}
+
+.show .readMore-dots {
+	display: none;
+}

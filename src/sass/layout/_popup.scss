@@ -138,3 +138,24 @@
         min-height: auto;
     }
 }
+
+// Amination 
+
+@keyframes slideInUp {
+    from {
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.mfp-slideInUp {
+    animation-duration: 800ms;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
+}

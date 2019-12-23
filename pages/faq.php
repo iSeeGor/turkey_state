@@ -35,7 +35,7 @@
             <div class="faq-content__inner">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="faq-content__text typography">
+                        <div class="faq-content__text typography" data-aos="fade-right">
                             <p>Бесспорно, у каждого иностранного покупателя турецкой недвижимости на первых этапах 
                                 знакомства с государством и его законами возникает очень много вопросов что до 
                                 оформления собственности, вида на жительство, гражданства, законности всех юридических 
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-xl-5 d-flex">
-                        <div class="faq-content__text faq-content__text_right typography">
+                        <div class="faq-content__text faq-content__text_right typography" data-aos="fade-right" data-aos-delay="200">
                             <p>Также профессиональные сотрудники агентства TurkeyState готовы при личной встрече 
                                 провести дополнительное консультирование для Вас на все волнующие темы, 
                                 касающиеся приобретения жилья в Турции. </p>
@@ -72,7 +72,7 @@
     <section class="faq__accordion-block">
         <div class="container">
             <div class="accordion">
-                <div class="accordion__item">
+                <div class="accordion__item" data-aos="fade-down" data-aos-delay="0">
                     <a href="#" class="accordion__heading">
                         <div class="accordion__icon"></div>
                         <div class="accordion__title">Закон о покупке иностранцами недвижимости в Турции</div>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="accordion__item">
+                <div class="accordion__item" data-aos="fade-down" data-aos-delay="100">
                     <a href="#" class="accordion__heading">
                         <div class="accordion__icon"></div>
                         <div class="accordion__title">Как россиянину юридически оформить права владения недвижимостью в Турции?</div>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="accordion__item">
+                <div class="accordion__item" data-aos="fade-down" data-aos-delay="200">
                     <a href="#" class="accordion__heading">
                         <div class="accordion__icon"></div>
                         <div class="accordion__title">Что такое ТАПУ?</div>
@@ -193,13 +193,6 @@
         </div>
     </section>
 
-
-    <!--== FAQ Pagination -->
-    <section class="faq__pagination">
-        <div class="container">
-            
-        </div>
-    </section>
     <!--== Subscribe Section -->
     <section class="subscribe-section">
         <div class="container">

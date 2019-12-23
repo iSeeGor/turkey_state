@@ -764,6 +764,22 @@ img
     background: #0691e0;
 }
 
+/* Read More Plugin Styles */
+.readMore-allTxt
+{
+    display: none;
+}
+
+.show .readMore-allTxt
+{
+    display: inline-block !important;
+}
+
+.show .readMore-dots
+{
+    display: none;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -3482,6 +3498,16 @@ textarea
 .faq .page-header__deco-block::after
 {
     content: url('../images/general/page-header/faq-page-header-figure-right.png');
+}
+
+.testimonials .page-header__deco-block::before
+{
+    content: url('../images/general/page-header/testimonial-page-header-figure-left.png');
+}
+
+.testimonials .page-header__deco-block::after
+{
+    content: url('../images/general/page-header/testimonial-page-header-figure-right.png');
 }
 
 /*--------------------------------------------------------------
@@ -8325,6 +8351,213 @@ label.form__error
 }
 
 /*--------------------------------------------------------------
+# Testimonials List View
+--------------------------------------------------------------*/
+.testimonials__list-view
+{
+    padding: 65px 0;
+}
+
+.testimonials__list
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column; 
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+
+.testimonials__item
+{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    margin-bottom: 40px;
+}
+.testimonials__item:last-child
+{
+    padding-bottom: 0;
+}
+
+.testimonials__media
+{
+    position: relative;
+
+    max-width: 460px;
+    padding-left: 30px; 
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 460px;
+        -ms-flex: 1 0 460px;
+            flex: 1 0 460px;
+}
+
+.testimonials__user-ava
+{
+    position: relative;
+    z-index: 1; 
+
+    width: 315px;
+    height: 315px;
+    margin-bottom: 18px;
+
+    border: 10px solid #0691e0;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.testimonials__user-ava::before,
+.testimonials__user-ava::after
+{
+    position: absolute;
+    z-index: -1; 
+
+    width: 48px;
+    height: 39px;
+
+    content: url('../images/icons/testimonial-quots-blue.svg');
+}
+.testimonials__user-ava::before
+{
+    top: 80px;
+    right: -90px; 
+
+    width: 110px;
+    height: 90px;
+
+    -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+            transform: scaleX(-1);
+}
+.testimonials__user-ava::after
+{
+    bottom: 10px;
+    left: -50px;
+}
+
+.testimonials__image
+{
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+
+.testimonials__user-info
+{
+    display: block;
+
+    padding-left: 5px;
+}
+
+.testimonials__name
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+
+    margin-bottom: 8px; 
+
+    color: #0c1937;
+}
+
+.testimonials__city
+{
+    font-size: 1.8rem;
+}
+
+.testimonials__date
+{
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+.testimonials__message
+{
+    position: relative;
+
+    min-height: 392px;
+    margin: 5px 0;
+
+    border: 10px solid #e4f5ff;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+}
+
+.testimonials__text
+{
+    height: 100%; 
+    padding: 50px 55px 75px 65px;
+}
+
+.testimonials__video
+{
+    height: 100%; 
+    padding: 20px;
+}
+.testimonials__video iframe
+{
+    width: 100%; 
+    height: 100%;
+}
+
+.testimonials__pagination
+{
+    padding: 50px 0 20px;
+}
+
+.testimonials .moreLess-btn
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+
+    position: absolute;
+    bottom: 35px;
+    left: 65px;
+
+    text-decoration: none;
+    letter-spacing: .08rem; 
+
+    color: #ffa940;
+}
+.testimonials .moreLess-btn::before
+{
+    position: absolute;
+    top: 6px;
+    right: -20px;
+
+    width: 13px;
+    height: 13px;
+
+    content: '';
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+
+    background: url('../images/icons/arrow_button_orange.svg') no-repeat;
+    background-position: center; 
+    background-size: contain;
+}
+
+.show .moreLess-btn::before
+{
+    -webkit-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+            transform: rotate(270deg);
+}
+
+/*--------------------------------------------------------------
 # Services Main Page
 --------------------------------------------------------------*/
 .services-main
@@ -9601,6 +9834,49 @@ label.form__error
 .popup-success .popup__inner
 {
     min-height: auto;
+}
+
+@-webkit-keyframes slideInUp
+{
+    from
+    {
+        visibility: visible; 
+
+        -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+    }
+    to
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInUp
+{
+    from
+    {
+        visibility: visible; 
+
+        -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+    }
+    to
+    {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+    }
+}
+
+.mfp-slideInUp
+{
+    -webkit-animation-name: slideInUp;
+            animation-name: slideInUp; 
+    -webkit-animation-duration: 800ms;
+            animation-duration: 800ms;
+
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
 }
 
 /*--------------------------------------------------------------
