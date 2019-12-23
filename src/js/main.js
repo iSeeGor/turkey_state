@@ -882,7 +882,7 @@ const readMoreText = () => {
 
     $('.moreLess-btn').on('click', function(e){
         e.preventDefault();
-        textBlock.toggleClass('show');
+        $(this).closest('.js-readMore-text').toggleClass('show');
 
         if( textBlock.hasClass('show')){
             $(this).html('Свернуть');
