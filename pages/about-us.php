@@ -54,8 +54,7 @@
                     </div>
                     <div class="col-lg-6 offset-md-1 col-md-10 offset-lg-0">
                         <div class="about-us__text-box about-us__text-box_right">
-                            Наша компания имеет обширную, актуальную базу объектов жилой (и коммерческой – добавить, если и такой занимаются) 
-                            собственности, охватывающую Средиземноморское, Эгейское и Черноморское побережье. Для российских инвесторов, 
+                            Наша компания имеет обширную, актуальную базу объектов жилой собственности, охватывающую Средиземноморское, Эгейское и Черноморское побережье. Для российских инвесторов, 
                             заинтересованных в работе на рынке зарубежной недвижимости, можем предложить надёжные и выгодные проекты.
                         </div>
                     </div>
@@ -119,8 +118,7 @@
                         <div class="privilages-card__body">
                             <div class="privilages-card__title">Профессионализм</div>
                             <div class="privilages-card__text">Мы – опытные специалисты своего дела, знаем всё о 
-                                зарубежной недвижимости и всегда ориентированы исключительно на интересы на 
-                                покупателя. </div>
+                                зарубежной недвижимости и всегда ориентированы исключительно на интересы покупателя. </div>
                         </div>
                     </div>
                 </div>
@@ -250,7 +248,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -258,7 +256,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -266,7 +264,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -312,7 +310,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -320,7 +318,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -328,7 +326,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -374,7 +372,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -382,7 +380,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -390,7 +388,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -436,7 +434,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -444,7 +442,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -452,7 +450,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -498,7 +496,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -506,7 +504,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -514,7 +512,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -560,7 +558,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -568,7 +566,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -576,7 +574,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -622,7 +620,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -630,7 +628,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -638,7 +636,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -684,7 +682,7 @@
                                     <li class="team-card__item">
                                         <div class="messengers team-card__messengers">
                                             <span class="messenger messenger__viber">
-                                                <a href="tel:" title="vider call">
+                                                <a href="viber://chat?number=+380000000" title="vider call">
                                                     <svg class="icon__viber messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                     </svg>
@@ -692,7 +690,7 @@
                                             </span>
 
                                             <span class="messenger messenger__whatsapp">
-                                                <a href="tel:" title="WhatsApp Call">
+                                                <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                     <svg class="icon__whatsapp messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                     </svg>
@@ -700,7 +698,7 @@
                                             </span>
 
                                             <span class="messenger messenger__telegram">
-                                                <a href="tel:" title="vider call">
+                                                <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                     <svg class="icon__telegram messenger__icon">
                                                         <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                     </svg>
@@ -825,7 +823,10 @@
                     <div class="wishes__desc">Мы всегда открыты для наших клиентов.</div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-5">
-                <a href="#popup__call-back" class="js-open-popup button button_orange wishes__button">Связаться с нами <i class="button-icon button-icon__white"></i></a>
+                <a href="#popup__tour" class="js-open-popup button button_orange wishes__button"
+                    data-popup-title="Связаться с нами"
+                    data-popup-image="/assets/images/general/popup/popup-side-image-02.jpg"
+                >Связаться с нами <i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>

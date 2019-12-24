@@ -14,7 +14,7 @@
                         <li class="breadcrumbs__item">
                             <a href="/" class="breadcrumbs__link" title="Главная">Главная</a></li>
                         <li class="breadcrumbs__item">
-                            <a href="/pages/services/service-main.php" class="breadcrumbs__link" title="Услиги">Услиги</a></li>
+                            <a href="/pages/services/service-main.php" class="breadcrumbs__link" title="Услуги">Услуги</a></li>
                         <li class="breadcrumbs__item breadcrumbs__item_current">
                         Консалтинг</li>
                     </ol>
@@ -89,7 +89,10 @@
                 <div class="subscribe__body" data-aos="fade-left">
                     <div class="subscribe__title">Вам нужны<br> консалтинговые услуги?</div>
                     <div class="subscribe__text">Оставьте заявку чтобы узнать подробности</div>
-                    <a href="#popup__call-back" class="js-open-popup button button_orange ">Отправить запрос<i class="button-icon button-icon__white"></i></a>
+                    <a href="#popup__tour" class="js-open-popup button button_orange "
+                        data-popup-title='Вам нужны консалтинговые услуги?'
+                        data-popup-image='/assets/images/general/popup/popup-side-image-02.jpg'
+                    >Отправить запрос<i class="button-icon button-icon__white"></i></a>
                 </div>
             </div>
         </div>

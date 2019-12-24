@@ -21,7 +21,7 @@ $(function() {
     // Forms, Validators, Mask's, etc.
     searchFormPriceMask(); 
     formValidation();
-    phoneFormMask();
+    // phoneFormMask();
     textareaAutoHeight();
 
 
@@ -397,7 +397,7 @@ const formValidation = () => {
             },
             phone: {
                 required: true,
-                minlength: 10
+                // minlength: 10
             }
         },
 
@@ -412,14 +412,14 @@ const formValidation = () => {
             },
             phone: {
                 required: 'Введите ваш номер телефона',
-                minlength: 'Минимальное количество символов - 10'
+                // minlength: 'Минимальное количество символов - 10'
             }
         }
     });
 };
-const phoneFormMask = () => {
-    $('.phone-mask').mask('(000) 000-00-00');
-};
+// const phoneFormMask = () => {
+//     $('.phone-mask').mask('(000) 000-00-00');
+// };
 const textareaAutoHeight = () => {
     $('.js-textarea-auto-height').on('input', function() {
         this.style.height = 'auto';
@@ -554,7 +554,7 @@ const popupsRun = () => {
             open: function() {
                 $('.mfp-bg').css({
                     background: '#e8f7ff',
-                    opacity: '1'
+                    opacity: '0.95',
                 });
 
                 $('.mfp-wrap').addClass('mfp-slideInUp');
@@ -573,7 +573,7 @@ const popupsRun = () => {
                         },
                         phone: {
                             required: true,
-                            minlength: 10
+                            // minlength: 10
                         }
                     },
 
@@ -589,7 +589,7 @@ const popupsRun = () => {
                         },
                         phone: {
                             required: 'Введите ваш номер телефона',
-                            minlength: 'Минимальное количество символов - 10'
+                            // minlength: 'Минимальное количество символов - 10'
                         }
                     }
                 });
@@ -597,9 +597,8 @@ const popupsRun = () => {
             close: function() {
                 $('.mfp-bg').css({
                     background: '#0b0b0b',
-                    opacity: '0.8'
+                    opacity: '0.95'
                 });
-
                 
             }
         }
@@ -608,11 +607,35 @@ const popupsRun = () => {
         e.preventDefault();
         $.magnificPopup.close();
     });
+
+    $(document).on('click', '.js-open-popup', function () {
+        let $this = $(this);
+        let popup = $($this.attr('href'));
+        let popupTitle = popup.find('.popup-header__title');
+        let popupImage = popup.find('.popup__image');
+        let dataID = $this.data('popup-object-id');
+        let dataTitle = $this.data('popup-title');
+        let dataImage = $this.data('popup-image');
+
+        if(dataTitle){
+            popupTitle.html(dataTitle)
+        }
+
+        if (dataImage) {
+            popupImage.attr('src', dataImage);
+        }
+
+        if (dataID) {
+            popupTitle.append(' ',dataID);
+        }
+     
+    })
+    
 };
 const popupAutoRun = () => {
     let check_cookie = $.cookie('mfp-fire');
 
-    let cookieMin = 10;
+    let cookieMin = 720;
     let timeoutMs = 2000;
 
     if (check_cookie == undefined) {
@@ -633,7 +656,7 @@ const popupAutoRun = () => {
                     open: function() {
                         $('.mfp-bg').css({
                             background: '#e8f7ff',
-                            opacity: '1'
+                            opacity: '0.8'
                         });
 
                         $('.mfp-wrap').addClass('mfp-slideInUp');

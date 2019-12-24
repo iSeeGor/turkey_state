@@ -57,14 +57,18 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="property-card property-card__special-price">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
                                         <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
+
+                                        <div class="property-card__in-stock in-stock">
+                                            <div class="in-stock__text">супер цена</div>
+                                        </div>
                                     </figure>
 
                                     <div class="property-card__header-meta">
@@ -108,7 +112,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -159,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -210,14 +214,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="property-card property-card__special-price">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
                                         <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
+
+                                        <div class="property-card__in-stock in-stock">
+                                            <div class="in-stock__text">супер цена</div>
+                                        </div>
                                     </figure>
 
                                     <div class="property-card__header-meta">
@@ -261,7 +269,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -312,7 +320,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -363,14 +371,18 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
-                        <div class="property-card property-card__special-price">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
                                         <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
+
+                                        <div class="property-card__in-stock in-stock">
+                                            <div class="in-stock__text">супер цена</div>
+                                        </div>
                                     </figure>
 
                                     <div class="property-card__header-meta">
@@ -414,7 +426,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
@@ -465,7 +477,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="property-card">
                             <div class="property-card__inner">
                                 <header class="property-card__header">

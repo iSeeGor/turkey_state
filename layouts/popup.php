@@ -15,7 +15,7 @@
                 </div>
 
                 <div class="form__row">
-                    <input type="text" class="input phone-mask" name="phone" placeholder="Номер телефона">
+                    <input type="text" class="input" name="phone" placeholder="Номер телефона">
                 </div>
 
 
@@ -49,7 +49,7 @@
                 </div>
 
                 <div class="form__row">
-                    <input type="text" class="input phone-mask" name="phone" placeholder="Номер телефона">
+                    <input type="text" class="input" name="phone" placeholder="Номер телефона">
                 </div>
 
 
@@ -67,7 +67,7 @@
             </svg>
         </a>
     </div>
-
+    
     <div class="popup mfp-hide" id="popup__get-help">
         <div class="popup__inner">
         <header class="popup__header popup-header">
@@ -83,7 +83,7 @@
                 </div>
 
                 <div class="form__row">
-                    <input type="text" class="input phone-mask" name="phone" placeholder="Номер телефона">
+                    <input type="text" class="input" name="phone" placeholder="Номер телефона">
                 </div>
 
 
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="form__row">
-                    <input type="text" class="input phone-mask" name="phone" placeholder="Номер телефона">
+                    <input type="text" class="input" name="phone" placeholder="Номер телефона">
                 </div>
 
                 <div class="form__row">
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="form__row">
-                    <input type="text" class="input phone-mask" name="phone" placeholder="Номер телефона">
+                    <input type="text" class="input" name="phone" placeholder="Номер телефона">
                 </div>
 
                 <div class="form__row">

@@ -634,7 +634,9 @@
 .sidebar__team {
     .owl-nav {
 
-        
+        position: absolute;
+        top: 0;
+        width: 100%;
 
         span {
             display: none;

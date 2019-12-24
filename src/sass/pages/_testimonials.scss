@@ -4,8 +4,34 @@
 
 .testimonials {
     
+    
     &__list-view {
         padding: 65px 0;
+
+        .container {
+            position: relative;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: url('../images/general/testimonial-slide-header-bg-02.svg');
+                width: 770px;
+                height: 330px;
+                opacity: 0.1;
+                z-index: -1;
+
+            }
+
+            &::before {
+                top: 140px;
+                left: -900px;
+            }
+
+            &::after {
+                top: -60px;
+                right: -440px;
+            }
+        }
     }
 
     &__list {
@@ -99,6 +125,7 @@
         min-height: 392px;
         position: relative;
         flex: 1 1 auto;
+        background: #fff;
         
     }
 

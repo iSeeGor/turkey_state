@@ -48,7 +48,8 @@
                     <div class="search-form__tab-content search-form__tab-content_current">
                         <div class="search-form__tab-item">
                             <select name="сity" class="select search-form__select">
-                                <option selected="" value="Город">Город</option>
+                                <option selected="" value="Все Города">Все Города</option>
+                                <option value="Город">Город</option>
                                 <option value="Алания">Алания</option>
                                 <option value="Газипаша">Газипаша</option>
                                 <option value="Анталия">Анталия</option>
@@ -57,7 +58,7 @@
                         </div>
                         <div class="search-form__tab-item">
                             <select name="area" class="select search-form__select">
-                                <option value="Район ">Район </option>
+                                <option value="Район">Все Районы</option>
                                 <option value="Авсаллар ">Авсаллар </option>
                                 <option value="Махмутлар ">Махмутлар </option>
                                 <option value="Кестель ">Кестель </option>
@@ -103,7 +104,7 @@
                         </div>
                         <div class="search-form__tab-item">
                             <select name="layout" class="select search-form__select">
-                                <option selected="" value="Комнат ">Комнат </option>
+                                <option selected="" value="Все планировки">Все планировки</option>
                                 <option value="0+1">0+1</option>
                                 <option value="1+1">1+1</option>
                                 <option value="2+1">2+1</option>
@@ -287,13 +288,17 @@
                     </header>              
                     <div class="property-slider__body">
 
-                        <div class="property-card property-card__special-price property-slider__slide">
+                        <div class="property-card property-slider__slide">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
                                         <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
+
+                                        <div class="property-card__in-stock in-stock">
+                                            <div class="in-stock__text">супер цена</div>
+                                        </div>
                                     </figure>
 
                                     <div class="property-card__header-meta">

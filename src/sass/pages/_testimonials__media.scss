@@ -22,12 +22,18 @@
     }
 
     .testimonials__media {
-        flex: 0 0 auto;
-        margin: 0 auto;
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 0 70px;
+    }
+
+    .testimonials__user-ava {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .testimonials__date {
-        right: -60px;
+        right: 50px;
     } 
     
     .testimonials__message {
@@ -60,13 +66,19 @@
     .testimonials__video {
         height: 260px;
     }
+
+    .testimonials__media {
+        padding: 0 40px;
+    }
+
+    .testimonials__date {
+        right: 10px;
+    }
 }
 
 
 @media (max-width:414px){
-    .testimonials__date {
-        right: -50px;
-    }
+    
 }
 
 @media (max-width: 400px) {
@@ -76,11 +88,15 @@
     }
 
     .testimonials__media {
-        margin: 0 20px;
+        margin: 0;
+        padding: 0;
     }
 
     .testimonials__date {
         right: -10px;
+    }
+    .testimonials__user-info {
+        padding-left: 25px;
     }
 
     .testimonials__user-ava {

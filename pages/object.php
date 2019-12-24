@@ -69,13 +69,21 @@
                             <a href="#a_object-view" class="button button_pure button__anchor">Описание объекта</a>
                             <a href="#a_google-map" class="button button_pure button__anchor">Показать на карте</a>
                             <a href="#a_related" class="button button_pure button__anchor">Похожие объекты</a>
-                            <a href="#popup__tour" class="js-open-popup button button_pure button__anchor button__anchor_active">Онлайн просмотр</a>
+                            <a href="#popup__tour" class="js-open-popup button button_pure button__anchor button__anchor_active"
+                                data-popup-title="Онлайн просмотр"
+                                data-popup-image="/assets/images/general/popup/popup-side-image-online-review.jpg"
+                                
+                            >Онлайн просмотр</a>
                         </div>
                         <div class="p-sidebar__callback">
                             <div class="callback__block">
                                 <div class="callback__title">Понравился объект?</div>
                                 <div class="callback__text">Оставьте заявку и получите детальную консультацию от нашего менеджера.</div>
-                                <a href="#popup__call-back" class="js-open-popup button button_orange">Оставить заявку</a>
+                                <a href="#popup__tour"  class="js-open-popup button button_orange"
+                                    data-popup-object-id="1255"
+                                    data-popup-title="Оставить заявку на объект"
+                                    data-popup-image="/assets/images/general/popup/popup-side-image-02.jpg"
+                                >Оставить заявку</a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +266,7 @@
                                             <li class="team-card__item">
                                                 <div class="messengers team-card__messengers">
                                                     <span class="messenger messenger__viber">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="viber://chat?number=+380000000" title="vider call">
                                                             <svg class="icon__viber messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                             </svg>
@@ -266,7 +274,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__whatsapp">
-                                                        <a href="tel:" title="WhatsApp Call">
+                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                             <svg class="icon__whatsapp messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                             </svg>
@@ -274,7 +282,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__telegram">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                             <svg class="icon__telegram messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                             </svg>
@@ -319,7 +327,7 @@
                                             <li class="team-card__item">
                                                 <div class="messengers team-card__messengers">
                                                     <span class="messenger messenger__viber">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="viber://chat?number=+380000000" title="vider call">
                                                             <svg class="icon__viber messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                             </svg>
@@ -327,7 +335,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__whatsapp">
-                                                        <a href="tel:" title="WhatsApp Call">
+                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                             <svg class="icon__whatsapp messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                             </svg>
@@ -335,7 +343,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__telegram">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                             <svg class="icon__telegram messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                             </svg>
@@ -380,7 +388,7 @@
                                             <li class="team-card__item">
                                                 <div class="messengers team-card__messengers">
                                                     <span class="messenger messenger__viber">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="viber://chat?number=+380000000" title="vider call">
                                                             <svg class="icon__viber messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
                                                             </svg>
@@ -388,7 +396,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__whatsapp">
-                                                        <a href="tel:" title="WhatsApp Call">
+                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
                                                             <svg class="icon__whatsapp messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
                                                             </svg>
@@ -396,7 +404,7 @@
                                                     </span>
 
                                                     <span class="messenger messenger__telegram">
-                                                        <a href="tel:" title="vider call">
+                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
                                                             <svg class="icon__telegram messenger__icon">
                                                                 <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
                                                             </svg>
@@ -441,13 +449,13 @@
                     <form class="cb-form__body form" autocomplete="off">
                         <div class="cb-form__info-block">
                             <div class="cb-form__row">
-                                <input class="input" type="text" name="name" placeholder="Имя*">
+                                <input class="input" type="text" name="name" placeholder="Имя">
                             </div>
                             <div class="cb-form__row">
-                                <input class="input phone-mask" type="text" name="phone" placeholder="Номер телефона*">
+                                <input class="input" type="text" name="phone" placeholder="Номер телефона">
                             </div>
                             <div class="cb-form__row">
-                                <input class="input" type="email" name="email" placeholder="Email*">
+                                <input class="input" type="email" name="email" placeholder="Email">
                             </div>
                             <div class="cb-form__row">
                                 <textarea class="textarea" name="message" placeholder="Напишите Ваш комментарий"></textarea>
@@ -513,13 +521,17 @@
                     </header>              
                     <div class="property-slider__body">
                         <!-- в данном блоке количество записей должно быть не больше 3-х -->
-                        <div class="property-card property-card__special-price property-slider__slide">
+                        <div class="property-card property-slider__slide">
                             <div class="property-card__inner">
                                 <header class="property-card__header">
                                     <figure class="property-card__figure">
                                         <a href="/pages/object.php" class="property-card__figure-link" title="Property Image Link">
                                             <img class="property-card__image" src="../assets/images/content/property/property-card-image_01.jpg" alt="Property Card Image">
                                         </a>
+
+                                        <div class="property-card__in-stock in-stock">
+                                            <div class="in-stock__text">супер цена</div>
+                                        </div>
                                     </figure>
 
                                     <div class="property-card__header-meta">

@@ -1542,7 +1542,7 @@
     }
     .sidebar__team .team-card
     {
-        max-width: 240px; 
+        max-width: 190px; 
         margin-top: 0;
         padding: 0 10px;
     }
@@ -2066,16 +2066,22 @@
     }
     .testimonials__media
     {
-        margin: 0 auto; 
+        max-width: 100%;
+        padding: 0 70px; 
 
-        -webkit-box-flex: 0;
-        -webkit-flex: 0 0 auto;
-            -ms-flex: 0 0 auto;
-                flex: 0 0 auto;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
+    }
+    .testimonials__user-ava
+    {
+        margin-right: auto; 
+        margin-left: auto;
     }
     .testimonials__date
     {
-        right: -60px;
+        right: 50px;
     }
     .testimonials__message
     {
@@ -2109,13 +2115,13 @@
     {
         height: 260px;
     }
-}
-
-@media (max-width: 414px)
-{
+    .testimonials__media
+    {
+        padding: 0 40px;
+    }
     .testimonials__date
     {
-        right: -50px;
+        right: 10px;
     }
 }
 
@@ -2129,11 +2135,16 @@
     }
     .testimonials__media
     {
-        margin: 0 20px;
+        margin: 0;
+        padding: 0;
     }
     .testimonials__date
     {
         right: -10px;
+    }
+    .testimonials__user-info
+    {
+        padding-left: 20px;
     }
     .testimonials__user-ava
     {

@@ -100,6 +100,14 @@
                     </li>
                     <li class="mobile-nav__item">
                         <a href="/pages/services/service-main.php" class="mobile-nav__link link" title="Услуги">Услуги</a>
+
+                        <ul class="mobile-nav__subnav mobile-subnav__list">
+                            <li class="mobile-subnav__item"><a href="/pages/services/service-tour.php" class="mobile-subnav__link link" title="Ознакомительный тур">Ознакомительный тур</a></li>
+                            <li class="mobile-subnav__item"><a href="/pages/services/service-consulting.php" class="mobile-subnav__link link" title="Консалтинг">Консалтинг</a></li>
+                            <li class="mobile-subnav__item"><a href="/pages/services/service-hypotec.php" class="mobile-subnav__link link" title="Ипотека и рассрочка">Ипотека и рассрочка</a></li>
+                            <li class="mobile-subnav__item"><a href="/pages/services/service-afterservice.php" class="mobile-subnav__link link" title="Послепродажный сервис">Послепродажный сервис</a></li>
+                            <li class="mobile-subnav__itemі"><a href="/pages/services/service-investment.php" class="mobile-subnav__link link" title="Инвестиционная деятельность">Инвестиционная деятельность</a></li>
+                        </ul>
                     </li>
                     <li class="mobile-nav__item">
                         <a href="/pages/faq.php" class="mobile-nav__link link" title="Вопросы-ответы">Вопросы-ответы</a>
@@ -248,8 +256,16 @@
                             </ul>
                         </li>
 
-                        <li class="main-menu__item">
+                        <li class="main-menu__item item__has-dropdown">
                             <a href="/pages/services/service-main.php" class="main-menu__link link" title="Услуги" data-text="Услуги">Услуги</a>
+
+                            <ul class="main-menu__dropdown dropdown-menu">
+                                <li class="main-menu__item"><a href="/pages/services/service-tour.php" class="main-menu__link link" title="Ознакомительный тур">Ознакомительный тур</a></li>
+                                <li class="main-menu__item"><a href="/pages/services/service-consulting.php" class="main-menu__link link" title="Консалтинг">Консалтинг</a></li>
+                                <li class="main-menu__item"><a href="/pages/services/service-hypotec.php" class="main-menu__link link" title="Ипотека и рассрочка">Ипотека и рассрочка</a></li>
+                                <li class="main-menu__item"><a href="/pages/services/service-afterservice.php" class="main-menu__link link" title="Послепродажный сервис">Послепродажный сервис</a></li>
+                                <li class="main-menu__item"><a href="/pages/services/service-investment.php" class="main-menu__link link" title="Инвестиционная деятельность">Инвестиционная деятельность</a></li>
+                            </ul>
                         </li>
                         <li class="main-menu__item">
                             <a href="/pages/faq.php" class="main-menu__link link" title="Вопросы-ответы" data-text="Вопросы-ответы">Вопросы-ответы</a>
