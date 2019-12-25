@@ -217,8 +217,21 @@ const stickyTabs = () => {
     let $sidebarHeight = $sidebar.innerHeight();
     let $footerOffsetTop = $('.property-page__cb-form').offset().top;
     let $sidebarOffset = $sidebar.offset();
+    
 
-    const stickyRun = () => {
+    const breakpointChecker = function(){
+        if(window.matchMedia('(min-width:1024px)').matches){
+            stickyRun();
+            $sidebar.css('position', '');
+            console.log('fire');
+
+        } else {
+            console.log('stop');
+            $sidebar.css('position', 'inherit');
+        }
+    };
+
+    let stickyRun = () => {
         $window.scroll(function() {
             if ($window.scrollTop() + 140 >= $sidebarOffset.top) {
                 $sidebar.addClass('fixed');
@@ -240,16 +253,18 @@ const stickyTabs = () => {
         });
     };
 
-    $(window)
-        .resize(function() {
-            if (window.innerWidth > 1025) {
-                stickyRun();
-            } else {
-                // $sidebar.removeClass("fixed");
-                // console.log('sadasadds');
-            }
-        })
-        .resize();
+    // $(window)
+    //     .resize(function() {
+    //         if (window.innerWidth > 1025) {
+    //             stickyRun();
+    //         } else {
+    //             // $sidebar.removeClass("fixed");
+    //             // console.log('sadasadds');
+    //         }
+    //     })
+    //     .resize();
+    window.matchMedia('(min-width:1024px)').addListener(breakpointChecker)
+    breakpointChecker();
 };
 
 const sideTeamCarousel = () => {
