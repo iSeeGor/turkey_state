@@ -36,8 +36,8 @@
 @media (max-width: 575.98px) {
 
     .popup::before {
-        width: 100%;
-        left: 0;
+        width: calc(100% - 30px);
+        left: 15px
     }
 }
 

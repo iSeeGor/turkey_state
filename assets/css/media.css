@@ -2244,9 +2244,10 @@
 {
     .popup::before
     {
-        left: 0; 
+        left: 15px; 
 
-        width: 100%;
+        width: -webkit-calc(100% - 30px);
+        width:         calc(100% - 30px);
     }
 }
 
