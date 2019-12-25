@@ -81,7 +81,7 @@
                                 <div class="callback__text">Оставьте заявку и получите детальную консультацию от нашего менеджера.</div>
                                 <a href="#popup__tour"  class="js-open-popup button button_orange"
                                     data-popup-object-id="1255"
-                                    data-popup-title="Оставить заявку на объект"
+                                    data-popup-title="Оставить заявку на объект ID"
                                     data-popup-image="/assets/images/general/popup/popup-side-image-02.jpg"
                                 >Оставить заявку</a>
                             </div>
@@ -251,191 +251,206 @@
                 </div>
                 <div class="p-detail__sidebar">
                     <div class="sidebar__team">
-                        <div class="team-card team-card_simple">
-                            <div class="team-card__inner">
-                                <div class="team-card__body">
-                                    <header class="team-card__header">
-                                        <div class="team-card__name">Фамилия Имя <br>Отчество</div>
-                                        <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
-                                    </header>
-                                    <div class="team-card__middle">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_phone">
-                                                <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
-                                            </li>
-                                            <li class="team-card__item">
-                                                <div class="messengers team-card__messengers">
-                                                    <span class="messenger messenger__viber">
-                                                        <a href="viber://chat?number=+380000000" title="vider call">
-                                                            <svg class="icon__viber messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
+                        <header class="property-slider__navigation">
+                            <div class="property-slider__button-prev swiper-button-disabled" tabindex="0" role="button" aria-label="Previous slide" aria-disabled="true">
+                                <svg class="property-slider__icon-arrow icon-arrow">
+                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                                </svg> 
+                            </div>
+                            <div class="property-slider__button-next" tabindex="0" role="button" aria-label="Next slide" aria-disabled="false">
+                                <svg class="property-slider__icon-arrow icon-arrow">
+                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__arrow"></use>
+                                </svg>
+                            </div>
 
-                                                    <span class="messenger messenger__whatsapp">
-                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
-                                                            <svg class="icon__whatsapp messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
+                            <div class="property-slider__scrollbar"><div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); width: 361.429px;"></div></div>
 
-                                                    <span class="messenger messenger__telegram">
-                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
-                                                            <svg class="icon__telegram messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
-                                                            </svg>
-                                                        </a>    
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                        </header>
+                        <div class="sidebar__team-wrapper">
+                            <div class="team-card team-card_simple">
+                                <div class="team-card__inner">
+                                    <div class="team-card__body">
+                                        <header class="team-card__header">
+                                            <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                            <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                                        </header>
+                                        <div class="team-card__middle">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_phone">
+                                                    <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                                </li>
+                                                <li class="team-card__item">
+                                                    <div class="messengers team-card__messengers">
+                                                        <span class="messenger messenger__viber">
+                                                            <a href="viber://chat?number=+380000000" title="vider call">
+                                                                <svg class="icon__viber messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__whatsapp">
+                                                            <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
+                                                                <svg class="icon__whatsapp messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__telegram">
+                                                            <a href="tg://resolve?domain=turkestate" title="telegram call">
+                                                                <svg class="icon__telegram messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                                </svg>
+                                                            </a>    
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="team-card__contacts">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_skype">
+                                                    <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_mail">
+                                                    <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_lang">
+                                                    русский, английский, турецкий
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="team-card__contacts">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_skype">
-                                                <a href="skype:echo123?call" class="team-card__link link">skype</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_lang">
-                                                русский, английский, турецкий
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <figure class="team-card__figure">
+                                        <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
+                                    </figure>
                                 </div>
-                                <figure class="team-card__figure">
-                                    <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-03.jpg" alt="Manager Card Image">
-                                </figure>
+                            </div>
+                            <div class="team-card team-card_simple">
+                                <div class="team-card__inner">
+                                    <div class="team-card__body">
+                                        <header class="team-card__header">
+                                            <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                            <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                                        </header>
+                                        <div class="team-card__middle">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_phone">
+                                                    <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                                </li>
+                                                <li class="team-card__item">
+                                                    <div class="messengers team-card__messengers">
+                                                        <span class="messenger messenger__viber">
+                                                            <a href="viber://chat?number=+380000000" title="vider call">
+                                                                <svg class="icon__viber messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__whatsapp">
+                                                            <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
+                                                                <svg class="icon__whatsapp messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__telegram">
+                                                            <a href="tg://resolve?domain=turkestate" title="telegram call">
+                                                                <svg class="icon__telegram messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                                </svg>
+                                                            </a>    
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="team-card__contacts">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_skype">
+                                                    <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_mail">
+                                                    <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_lang">
+                                                    русский, английский, турецкий
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <figure class="team-card__figure">
+                                        <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="team-card team-card_simple">
+                                <div class="team-card__inner">
+                                    <div class="team-card__body">
+                                        <header class="team-card__header">
+                                            <div class="team-card__name">Фамилия Имя <br>Отчество</div>
+                                            <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
+                                        </header>
+                                        <div class="team-card__middle">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_phone">
+                                                    <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
+                                                </li>
+                                                <li class="team-card__item">
+                                                    <div class="messengers team-card__messengers">
+                                                        <span class="messenger messenger__viber">
+                                                            <a href="viber://chat?number=+380000000" title="vider call">
+                                                                <svg class="icon__viber messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__whatsapp">
+                                                            <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
+                                                                <svg class="icon__whatsapp messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
+                                                                </svg>
+                                                            </a>
+                                                        </span>
+
+                                                        <span class="messenger messenger__telegram">
+                                                            <a href="tg://resolve?domain=turkestate" title="telegram call">
+                                                                <svg class="icon__telegram messenger__icon">
+                                                                    <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
+                                                                </svg>
+                                                            </a>    
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="team-card__contacts">
+                                            <ul class="team-card__list">
+                                                <li class="team-card__item team-card__item_skype">
+                                                    <a href="skype:echo123?call" class="team-card__link link">skype</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_mail">
+                                                    <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
+                                                </li>
+                                                <li class="team-card__item team-card__item_lang">
+                                                    русский, английский, турецкий
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <figure class="team-card__figure">
+                                        <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
+                                    </figure>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="team-card team-card_simple">
-                            <div class="team-card__inner">
-                                <div class="team-card__body">
-                                    <header class="team-card__header">
-                                        <div class="team-card__name">Фамилия Имя <br>Отчество</div>
-                                        <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
-                                    </header>
-                                    <div class="team-card__middle">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_phone">
-                                                <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
-                                            </li>
-                                            <li class="team-card__item">
-                                                <div class="messengers team-card__messengers">
-                                                    <span class="messenger messenger__viber">
-                                                        <a href="viber://chat?number=+380000000" title="vider call">
-                                                            <svg class="icon__viber messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
-
-                                                    <span class="messenger messenger__whatsapp">
-                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
-                                                            <svg class="icon__whatsapp messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
-
-                                                    <span class="messenger messenger__telegram">
-                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
-                                                            <svg class="icon__telegram messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
-                                                            </svg>
-                                                        </a>    
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="team-card__contacts">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_skype">
-                                                <a href="skype:echo123?call" class="team-card__link link">skype</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_lang">
-                                                русский, английский, турецкий
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figure class="team-card__figure">
-                                    <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-02.jpg" alt="Manager Card Image">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="team-card team-card_simple">
-                            <div class="team-card__inner">
-                                <div class="team-card__body">
-                                    <header class="team-card__header">
-                                        <div class="team-card__name">Фамилия Имя <br>Отчество</div>
-                                        <div class="team-card__profession">Должность сотрудника компании в г. Москва</div>
-                                    </header>
-                                    <div class="team-card__middle">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_phone">
-                                                <a href="tel:+90555222111" class="team-card__link link">+39 000 000 000</a>
-                                            </li>
-                                            <li class="team-card__item">
-                                                <div class="messengers team-card__messengers">
-                                                    <span class="messenger messenger__viber">
-                                                        <a href="viber://chat?number=+380000000" title="vider call">
-                                                            <svg class="icon__viber messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__viber"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
-
-                                                    <span class="messenger messenger__whatsapp">
-                                                        <a href="whatsapp://send?phone=7900000000" title="WhatsApp Call">
-                                                            <svg class="icon__whatsapp messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__whatsApp"></use>
-                                                            </svg>
-                                                        </a>
-                                                    </span>
-
-                                                    <span class="messenger messenger__telegram">
-                                                        <a href="tg://resolve?domain=turkestate" title="telegram call">
-                                                            <svg class="icon__telegram messenger__icon">
-                                                                <use xlink:href="/assets/images/symbol/sprite.svg#icon__telegram"></use>
-                                                            </svg>
-                                                        </a>    
-                                                    </span>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="team-card__contacts">
-                                        <ul class="team-card__list">
-                                            <li class="team-card__item team-card__item_skype">
-                                                <a href="skype:echo123?call" class="team-card__link link">skype</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_mail">
-                                                <a href="mailto:semple@email.com" class="team-card__link link">office@turkestate.ru</a>
-                                            </li>
-                                            <li class="team-card__item team-card__item_lang">
-                                                русский, английский, турецкий
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figure class="team-card__figure">
-                                    <img class="team-card__image" src="../assets/images/content/about-us/card-manager-image-01.jpg" alt="Manager Card Image">
-                                </figure>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

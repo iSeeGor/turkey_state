@@ -1,102 +1,106 @@
 $(function() {
+    /*
+     *   Страницы:
+     *       "О компании (about-us.php)"
+     *       убрать проверку if
+     */
 
+    if (document.querySelector('.map-wrapper .map-holder')) {
+        resizeMapContainer();
+    }
 
     /*
-    *   Страницы: 
-    *       "О компании (about-us.php)"
-    *       убрать проверку if
-    */ 
-        if (document.querySelector('.map-wrapper .map-holder')) { resizeMapContainer() };
+     *   Страницы:
+     *       "Главная (home.php)"
+     *       убрать проверку if
+     */
 
-    
-    /*
-    *   Страницы: 
-    *       "Главная (home.php)"
-    *       убрать проверку if
-    */ 
-        if (document.querySelectorAll('.testimonialSlider__message-inner')) { testimonialMessageScrollBar() };
-
+    if (document.querySelectorAll('.testimonialSlider__message-inner')) {
+        testimonialMessageScrollBar();
+    }
 
     /*
-    *   Страницы: 
-    *       "Обьекта (Object.php)"
-    *       убрать проверку if
-    */ 
-        if (document.querySelector('.property-page')){
-            imageSlider();
-            stickyTabs();
-            sideTeamCarousel();
-        };
+     *   Страницы:
+     *       "Обьекта (Object.php)"
+     *       убрать проверку if
+     */
 
+    if (document.querySelector('.property-page')) {
+        imageSlider();
+        stickyTabs();
+        sideTeamCarousel();
+    }
 
     /*
-    *   Страницы: 
-    *       "О компании (about-us.php)"
-    *       "Страница обьекта (object.php)"
-    */ 
-        googleMap();
+     *   Страницы:
+     *       "О компании (about-us.php)"
+     *       "Страница обьекта (object.php)"
+     */
 
+    googleMap();
 });
 
-/* Itig Google Map 
-*  Страницы: 
-*       "О компании (about-us.php)"
-*       "Страница обьекта (object.php)"
-*/ 
+/* Itig Google Map
+ *  Страницы:
+ *       "О компании (about-us.php)"
+ *       "Страница обьекта (object.php)"
+ */
+
 const googleMap = () => {
-    function initMap(){
-        let popupContent = '<p class="marker_content">Турция, Алания, Махмутлар. <br>Пр. Барбаросса,<br> CEBECI 8, офис 6.</p>',
+    function initMap() {
+        let popupContent =
+                '<p class="marker_content">Турция, Алания, Махмутлар. <br>Пр. Барбаросса,<br> CEBECI 8, офис 6.</p>',
             image = {
-                url: "../assets/images/icons/google-map-marker.svg",
+                url: '../assets/images/icons/google-map-marker.svg'
                 // size: new google.maps.Size(49, 65),
                 // origin: new google.maps.Point(-3, 0),
                 // anchor: new google.maps.Point(-40, 140)
             },
             coordinates = { lat: 36.4912844, lng: 32.0909761 },
-            map = new google.maps.Map(document.querySelector(".map-holder"), {
+            map = new google.maps.Map(document.querySelector('.map-holder'), {
                 center: coordinates,
                 zoom: 16,
                 // disableDefaultUI: true,
                 styles: [
                     {
-                        "featureType": "poi",
-                        "elementType": "geometry.fill",
-                        "stylers": [
+                        featureType: 'poi',
+                        elementType: 'geometry.fill',
+                        stylers: [
                             {
-                                "color": "#C5E3BF"
+                                color: '#C5E3BF'
                             }
                         ]
                     },
                     {
-                        "featureType": "road",
-                        "elementType": "geometry",
-                        "stylers": [
+                        featureType: 'road',
+                        elementType: 'geometry',
+                        stylers: [
                             {
-                                "lightness": 100
+                                lightness: 100
                             },
                             {
-                                "visibility": "simplified"
+                                visibility: 'simplified'
                             }
                         ]
                     },
                     {
-                        "featureType": "road",
-                        "elementType": "geometry.fill",
-                        "stylers": [
+                        featureType: 'road',
+                        elementType: 'geometry.fill',
+                        stylers: [
                             {
-                                "color": "#D1D1B8"
+                                color: '#D1D1B8'
                             }
                         ]
                     },
                     {
-                        "featureType": "water",
-                        "elementType": "geometry",
-                        "stylers": [
+                        featureType: 'water',
+                        elementType: 'geometry',
+                        stylers: [
                             {
-                                "visibility": "on"
+                                visibility: 'on'
                             },
                             {
-                                "color": "#C6E2FF"
+                                color: '#C6E2FF'
                             }
                         ]
                     }
@@ -111,77 +115,75 @@ const googleMap = () => {
             infowindow = new google.maps.InfoWindow({
                 content: popupContent
             });
-    
-        marker.addListener("click", function() {
+
+        marker.addListener('click', function() {
             infowindow.open(map, marker);
         });
-    };
-
+    }
 
     /*
-    *  Убрать Проверку if !!!!
-    */ 
+     *  Убрать Проверку if !!!!
+     */
+
     if (document.querySelector('.map-holder')) {
         initMap();
     }
 };
 
-
 /* Resize Map Container on Large Screen
-*  Страницы: 
-*       "О компании (about-us.php)"
-*/ 
+ *  Страницы:
+ *       "О компании (about-us.php)"
+ */
+
 const resizeMapContainer = () => {
     let mapHolder = document.querySelector('.map-wrapper .map-holder');
     let holderWidth = '';
-    
-    if(window.innerWidth >= 992){
-    
-        holderWidth = window.innerWidth / 2 - 15;    
+
+    if (window.innerWidth >= 992) {
+        holderWidth = window.innerWidth / 2 - 15;
         mapHolder.style.width = holderWidth + 'px';
     }
 };
 
-
 /* Testimonial Message Custom ScrollBar
-*  Страницы: 
-*       "Главная (home.php)"
-*/ 
+ *  Страницы:
+ *       "Главная (home.php)"
+ */
+
 const testimonialMessageScrollBar = () => {
     let list = document.querySelectorAll('.testimonialSlider__message-inner');
 
-    list.forEach(function (item) {
-        new SimpleBar(item,
-            {
-                autoHide: false
-            });    
+    list.forEach(function(item) {
+        new SimpleBar(item, {
+            autoHide: false
+        });
     });
-}
+};
 
+/* Image Slaider || Sticky SideBar Tabs || Sidebar TEam Carousel
+ *  Страницы:
+ *       "Обьекта (Object.php)"
+ */
 
-/* Image Slaider || Sticky SideBar Tabs || Sidebar TEam Carousel 
-*  Страницы: 
-*       "Обьекта (Object.php)"
-*/ 
 const imageSlider = () => {
-    let sliderSelector = ".slider-container",
-        thumbsSelector = ".thumb-container";
+    let sliderSelector = '.slider-container',
+        thumbsSelector = '.thumb-container';
 
     let slidesOptions = {
-        wrapperClass: "slider-wrapper",
-        slideClass: "slider-item",
+        wrapperClass: 'slider-wrapper',
+        slideClass: 'slider-item',
         spaceBetween: 20,
         loop: true,
         loopedSlides: 5,
         navigation: {
-            nextEl: ".slider-btn__next",
-            prevEl: ".slider-btn__prev"
+            nextEl: '.slider-btn__next',
+            prevEl: '.slider-btn__prev'
         }
     };
 
     let thumbOptions = {
-        wrapperClass: "thumb-wrapper",
-        slideClass: "thumb-item",
+        wrapperClass: 'thumb-wrapper',
+        slideClass: 'thumb-item',
         spaceBetween: 10,
         // centeredSlides: true,
         slidesPerView: 4,
@@ -189,7 +191,7 @@ const imageSlider = () => {
         slideToClickedSlide: true,
         loop: true,
         loopedSlides: 5,
-        direction: "vertical"
+        direction: 'vertical'
     };
 
     let thumbSlider = new Swiper(thumbsSelector, thumbOptions);
@@ -199,30 +201,29 @@ const imageSlider = () => {
     thumbSlider.controller.control = imageSlider;
 
     // Popup For Single Image
-    $(".slider-item a").not('.swiper-slide-duplicate a').magnificPopup({
-        type: "image",
-        gallery: {
-            enabled: true,
-        }
-    });
-
-    
+    $('.slider-item a')
+        .not('.swiper-slide-duplicate a')
+        .magnificPopup({
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
 };
 
 const stickyTabs = () => {
-    
     let $window = $(window);
-    let $sidebar = $(".p-sidebar__item_sticky");
+    let $sidebar = $('.p-sidebar__item_sticky');
     let $sidebarHeight = $sidebar.innerHeight();
-    let $footerOffsetTop = $(".property-page__cb-form").offset().top;
+    let $footerOffsetTop = $('.property-page__cb-form').offset().top;
     let $sidebarOffset = $sidebar.offset();
 
     const stickyRun = () => {
         $window.scroll(function() {
             if ($window.scrollTop() + 140 >= $sidebarOffset.top) {
-                $sidebar.addClass("fixed");
+                $sidebar.addClass('fixed');
             } else {
-                $sidebar.removeClass("fixed");
+                $sidebar.removeClass('fixed');
             }
             if ($window.scrollTop() + $sidebarHeight > $footerOffsetTop - 105) {
                 $sidebar.css({
@@ -234,74 +235,147 @@ const stickyTabs = () => {
                     )
                 });
             } else {
-                $sidebar.css({ top: "140px" });
+                $sidebar.css({ top: '140px' });
             }
         });
     };
 
-    $(window).resize(function() {
-        if (window.innerWidth > 1025) {
-            stickyRun();
-        } else {
-            // $sidebar.removeClass("fixed");
-            // console.log('sadasadds');
-            
-        }
-    }).resize();
+    $(window)
+        .resize(function() {
+            if (window.innerWidth > 1025) {
+                stickyRun();
+            } else {
+                // $sidebar.removeClass("fixed");
+                // console.log('sadasadds');
+            }
+        })
+        .resize();
 };
 
 const sideTeamCarousel = () => {
-    let teamCarousel = document.querySelector('.sidebar__team');
+    const breakpoint = window.matchMedia('(min-width:992px)');
+    let teamSlider;
     let teamList = document.querySelectorAll('.team-card_simple');
+    // let sliderSelector = '.sidebar__team';
 
-    const runOwl = () => {
-        teamCarousel.classList.add('owl-carousel');
 
-        $(".owl-carousel").owlCarousel({
-            loop:false,
-            margin: 40,
-            nav:true,
-            // center:true,
-            responsive:{
-                0:{
-                    items:1,
-                    
+    let breakpointChecker = function() {
+        // if (breakpoint.matches === true) {
+        //     return enableSlider();
+            
+        // } else if (breakpoint.matches === false) {
+        //     if (teamSlider !== undefined) teamSlider.destroy(true, true);
+            
+        //     return;
+        // }
+
+        if(window.innerWidth <= 991.98 && teamList.length >= 3){
+            return enableSlider();
+
+        } else if(window.innerWidth <= 520 && teamList.length >= 2){
+            return enableSlider();
+
+        } else {
+
+            if (teamSlider !== undefined) teamSlider.destroy(true, true);
+            
+            return;
+        }
+    };
+
+    
+
+    const enableSlider = function() {
+        teamSlider = new Swiper ('.sidebar__team', {
+            wrapperClass: 'sidebar__team-wrapper',
+            slideClass: 'team-card_simple',
+            speed: 600,
+            slidesPerView: 2,
+            spaceBetween: 30,
+            threshold: 10,
+            navigation: {
+                nextEl: '.sidebar__team .property-slider__button-next',
+                prevEl: '.sidebar__team .property-slider__button-prev'
+            },
+            scrollbar: {
+                el: '.sidebar__team .property-slider__scrollbar',
+                draggable: true
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 60
                 },
-                520:{
-                    items:2
+
+                575: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+    
+                767: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
                 },
             }
         });
-    }
-    
-    $(window).resize(function(){
-        if(window.innerWidth <= 991.98 && teamList.length >= 3){
-            runOwl();
+    };
 
-        } else if(window.innerWidth <= 991.98 && window.innerWidth > 768){
-            teamCarousel.classList.add('sidebar__team_flex');         
-        
-        } else if(window.innerWidth <= 768 && teamList.length >= 3){
-            teamCarousel.classList.remove('sidebar__team_flex');
-            runOwl();     
-        
-        } else if(window.innerWidth <= 768 && window.innerWidth > 520){
-            teamCarousel.classList.add('sidebar__team_flex'); 
-            
-        } else if(window.innerWidth <= 520 && teamList.length >= 2){
-            teamCarousel.classList.remove('sidebar__team_flex');
-            runOwl();
+    breakpoint.addListener(breakpointChecker);
+    breakpointChecker();
 
-        } else if(window.innerWidth <= 520){
-            teamCarousel.classList.add('sidebar__team_flex');       
-        
-        } else {
-            
-            $(".owl-carousel").trigger('destroy.owl.carousel');
-            teamCarousel.classList.remove('owl-carousel');
-            teamCarousel.classList.remove('sidebar__team_flex');
-        }
-    }).resize();  
-}
+};
 
+// const sideTeamCarousel = () => {
+//     let teamCarousel = document.querySelector('.sidebar__team');
+//     let teamList = document.querySelectorAll('.team-card_simple');
 
+//     const runOwl = () => {
+//         teamCarousel.classList.add('owl-carousel');
+
+//         $(".owl-carousel").owlCarousel({
+//             loop:false,
+//             margin: 40,
+//             nav:true,
+//             // center:true,
+//             responsive:{
+//                 0:{
+//                     items:1,
+
+//                 },
+//                 520:{
+//                     items:2
+//                 },
+//             }
+//         });
+//     }
+
+//     $(window).resize(function(){
+//         if(window.innerWidth <= 991.98 && teamList.length >= 3){
+//             runOwl();
+
+//         } else if(window.innerWidth <= 991.98 && window.innerWidth > 768){
+//             teamCarousel.classList.add('sidebar__team_flex');
+
+//         } else if(window.innerWidth <= 768 && teamList.length >= 3){
+//             teamCarousel.classList.remove('sidebar__team_flex');
+//             runOwl();
+
+//         } else if(window.innerWidth <= 768 && window.innerWidth > 520){
+//             teamCarousel.classList.add('sidebar__team_flex');
+
+//         } else if(window.innerWidth <= 520 && teamList.length >= 2){
+//             teamCarousel.classList.remove('sidebar__team_flex');
+//             runOwl();
+
+//         } else if(window.innerWidth <= 520){
+//             teamCarousel.classList.add('sidebar__team_flex');
+
+//         } else {
+
+//             $(".owl-carousel").trigger('destroy.owl.carousel');
+//             teamCarousel.classList.remove('owl-carousel');
+//             teamCarousel.classList.remove('sidebar__team_flex');
+//         }
+//     }).resize();
+// }

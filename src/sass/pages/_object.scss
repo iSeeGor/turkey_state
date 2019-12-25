@@ -630,58 +630,10 @@
     }
 }
 
-// Team Owl Nav Style
+// // Team Owl Nav Style
 .sidebar__team {
-    .owl-nav {
-
-        position: absolute;
-        top: 0;
-        width: 100%;
-
-        span {
-            display: none;
-        }
-
-        .owl-prev,
-        .owl-next {
-            width: 30px;
-            height: 30px;
-            // background: #000 !important;
-            position: absolute;
-            position: absolute;
-            // top: 50%;
-            transform: translateY(-50%);
-            left: 0;
-
-            &::before {
-                content: '';
-                position: absolute;
-                background-image: url('/assets/images/icons/arrow_owl.svg');
-                background-repeat: no-repeat;
-                width: 30px;
-                height: 30px;
-                top: 0;
-                left: 0;
-                background-position:  center;
-            }
-        }
-
-        .owl-prev {
-
-            &::before {
-                transform: scaleX(-1);
-            }
-        }
-
-        .owl-next {
-            left: inherit;
-            right: 0;
-        }
-
-        .disabled {
-            opacity: 0.6;
-            cursor: inherit;
-        }
+    .property-slider__navigation {
+        display: none !important;
     }
 }
 
