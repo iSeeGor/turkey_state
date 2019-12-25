@@ -218,6 +218,8 @@ const stickyTabs = () => {
     let $footerOffsetTop = '';
     let $sidebarOffset = $sidebar.offset();
 
+    
+
     let stickyRun = () => {
         $window.scroll(function() {
             if ($window.scrollTop() + 140 >= $sidebarOffset.top) {
